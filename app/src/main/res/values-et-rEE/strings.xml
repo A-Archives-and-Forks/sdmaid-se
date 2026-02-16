@@ -1095,5 +1095,5 @@
     <!-- Swiper help dialog -->
     <string name="swiper_help_action">Abi</string>
     <string name="swiper_help_title">Kuidas Pühkija töötab</string>
-    <string name="swiper_help_message">Otsuse tegemiseks pühi iga faili:\n\n← Pühi vasakule: %1$s\n→ Pühi paremale: %2$s\n↑ Pühi üles: Jäta vahele\n↓ Pühi alla: Võta tagasi (pärast esimest pühkimist)\n\nVõite kasutada ka allpool olevaid nuppe.\n\nKui olete lõpetanud, puudutage \"Vaata üle\", et näha kõiki oma otsuseid. Midagi ei kustutata enne, kui kinnitate ülevaatekuval.</string>
+    <string name="swiper_help_message">Otsustamiseks pühi iga faili:\n\n← Pühi vasakule: %1$s\n→ Pühi paremale: %2$s\n↑ Pühi üles: jäta vahele\n↓ Pühi alla: võta tagasi (pärast esimest pühkimist)\n\nVõid kasutada ka alumisi nuppe.\n\nKui oled lõpetanud, puuduta „Vaata üle“, et näha kõiki oma otsuseid. Midagi ei kustutata enne, kui kinnitad ülevaatekuval.</string>
 </resources>
