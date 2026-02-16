@@ -711,6 +711,36 @@
     <string name="appcontrol_archive_selection_action">Архіваваць праграмы</string>
     <string name="appcontrol_archive_description">Архіваваць для вызвалення месца с захаваннем даных праграмы для наступнага аднаўлення.</string>
     <string name="appcontrol_progress_archiving_app">Архіваванне праграмы…</string>
+    <string name="appcontrol_archive_confirmation_title">Пацвердзіць архіваванне</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="one">Архіваваць %d праграму?</item>
+        <item quantity="few">Архіваваць %d праграмы?</item>
+        <item quantity="many">Архіваваць %d праграм?</item>
+        <item quantity="other">Архіваваць %d праграм?</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="one">%d праграма архівавана</item>
+        <item quantity="few">%d праграмы архіваваны</item>
+        <item quantity="many">%d праграм архівавана</item>
+        <item quantity="other">%d праграм архівавана</item>
+    </plurals>
+    <string name="appcontrol_restore_action">Аднавіць</string>
+    <string name="appcontrol_restore_selection_action">Аднавіць праграмы</string>
+    <string name="appcontrol_restore_description">Аднавіць архівавану праграму да поўнага ўсталяванага стану. Даныя праграмы захаваны.</string>
+    <string name="appcontrol_progress_restoring_app">Аднаўленне праграмы…</string>
+    <string name="appcontrol_restore_confirmation_title">Пацвердзіць аднаўленне</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="one">Аднавіць %d праграму?</item>
+        <item quantity="few">Аднавіць %d праграмы?</item>
+        <item quantity="many">Аднавіць %d праграм?</item>
+        <item quantity="other">Аднавіць %d праграм?</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="one">%d праграма адноўлена</item>
+        <item quantity="few">%d праграмы адноўлены</item>
+        <item quantity="many">%d праграм адноўлена</item>
+        <item quantity="other">%d праграм адноўлена</item>
+    </plurals>
     <string name="appcontrol_app_sizes_title">Памер праграмы</string>
     <string name="appcontrol_app_sizes_apk_label">Праграма</string>
     <string name="appcontrol_app_sizes_data_label">Даныя</string>
@@ -767,6 +797,10 @@
     <string name="appcontrol_automation_subtitle_force_stopping">Прымусовае спыненне…</string>
     <string name="appcontrol_automation_progress_find_force_stop">Пошук кнопкі \"Прымусовае спыненне\" (ключавыя словы: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">Спроба пацвердзіць папярэдняе дзеянне (ключавыя словы: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">Архіваванне…</string>
+    <string name="appcontrol_automation_progress_find_archive">Пошук кнопкі \"Архіваваць\" (ключавыя словы: %s)</string>
+    <string name="appcontrol_automation_subtitle_restoring">Аднаўленне…</string>
+    <string name="appcontrol_automation_progress_find_restore">Пошук кнопкі \"Аднавіць\" (ключавыя словы: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Час выкарыстання: %1$s з %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Апошняе абнаўленне: %s</string>
     <string name="appcontrol_item_installedat_x_label">Усталявана: %s</string>
@@ -840,6 +874,7 @@
     <string name="exclusion_type_segment">Выключэнне сегмента</string>
     <string name="exclusion_tags_alltools">Усе інструменты</string>
     <string name="exclusion_target_label">Мэта выключэння</string>
+    <string name="exclusion_editor_path_change_action">Націсніце, каб змяніць шлях</string>
     <string name="exclusion_option_allow_partial">Дазволіць частковыя супадзенні</string>
     <string name="exclusion_option_ignore_casing">Без уліку рэгістра</string>
     <string name="exclusion_editor_affected_tools_label">Звязаныя інструменты</string>

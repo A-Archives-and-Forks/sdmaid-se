@@ -7,6 +7,9 @@
     <string name="dashboard_settings_oneclick_summary">Filloni skanimin dhe fshirjen për të gjitha mjetet me një prekje në butonin e veprimit të pultit, pa konfirmime shtesë.</string>
     <string name="dashboard_settings_oneclick_tools_title">Veglat me një prekje</string>
     <string name="dashboard_settings_oneclick_tools_desc">Cilat mjete duhet të përfshihen në operacionet me një prekje?</string>
+    <string name="dashboard_card_config_title">Kartat e panelit</string>
+    <string name="dashboard_card_config_desc">Konfiguroni cilat karta shfaqen dhe renditja e tyre</string>
+    <string name="dashboard_card_config_header_title">Zvarritni për të rirenditur, ndërroni për të shfaqur/fshehur</string>
     <string name="debug_notification_channel_label">Njoftime për rezultatet</string>
     <string name="debug_debuglog_file_label">Skedari i regjistrit të regjistruar</string>
     <string name="debug_debuglog_recording_progress">Inçizimi i regjistrit të korrigjimit</string>
@@ -88,6 +91,14 @@
     <string name="support_installid_desc">Raportet automatike të gabimeve janë anonime. Ndani ID-në tuaj të instalimit nëse zhvilluesi duhet të gjejë raportet tuaja të gabimit.</string>
     <string name="support_debuglog_label">Regjistër diagnostikimesh</string>
     <string name="support_debuglog_desc">Regjistroni gjithçka që bën aplikacioni në një skedar teksti që mund të ndani.</string>
+    <string name="support_debuglog_folder_label">Dosja e regjistrit të korrigjimit</string>
+    <plurals name="support_debuglog_folder_desc">
+        <item quantity="one">%1$d skedar duke përdorur %2$s</item>
+        <item quantity="other">%1$d skedarë duke përdorur %2$s</item>
+    </plurals>
+    <string name="support_debuglog_folder_empty_desc">Nuk ka regjistra korrigjimi të ruajtura</string>
+    <string name="support_debuglog_folder_delete_confirmation_title">Të fshihen të gjitha regjistrat e korrigjimit?</string>
+    <string name="support_debuglog_folder_delete_confirmation_message">Kjo do të fshijë përgjithmonë të gjitha sesionet e regjistrit të korrigjimit të ruajtura. Ky veprim nuk mund të zhbëhet.</string>
     <string name="discord_label">Discord</string>
     <string name="discord_description">Një vend për t\'u ndenjur dhe për të bërë pyetje.</string>
     <string name="changelog_label">Trungu i ndryshimeve</string>
@@ -418,7 +429,9 @@
     <string name="appcleaner_automation_error_no_settings_body">Ky aplikacion sistemi nuk ka ekran cilësimesh. Pastrimi i cache-it përmes shërbimit të aksesueshmërisë nuk është i mundur. Përjashtojeni për të përshpejtuar pastrimin e cache-it.</string>
     <string name="appcleaner_automation_error_securitycenter_permission_title">Aplikacioni i sistemit është konfiguruar gabimisht</string>
     <string name="appcleaner_automation_error_securitycenter_permission_body">Aplikacionit të Sigurisë së HyperOS (com.miui.securitycenter) i mungon leja e Statistikave të Përdorimit (GET_USAGE_STATS). Kjo dëmton funksione si \"Pastro të Dhënat\" në detajet e aplikacionit dhe pastrimin e cache-it përmes aksesueshmërisë. Jepni lejen për të rivendosur funksionalitetin e plotë.</string>
+    <string name="appcleaner_forcestop_before_clearing_label">Ndalim me forcë para pastrimit</string>
     <string name="appcleaner_forcestop_before_clearing_summary">Ndaloni me forcë aplikacionet para se të pastroni memorien e fshehur. Kjo mund të ndihmojë në pastrimin e memorive të fshehura të disa aplikacioneve, por mund të shkaktojë keqfunksionim të aplikacioneve dhe të kërkojë rinisje manuale.</string>
+    <string name="appcleaner_progress_force_stopping">Po ndalohen me forcë aplikacionet…</string>
     <string name="deduplicator_tool_name">Fshirja e skedarëve duplikat</string>
     <string name="deduplicator_explanation_short">Gjeni të dhëna të kopjuara në pajisjen tuaj.</string>
     <plurals name="deduplicator_result_x_clusters_processed">
@@ -522,7 +535,9 @@
     <string name="squeezer_quality_warning_low">Cilësi më e ulët mund të shkaktojë artefakte të dukshme.</string>
     <string name="squeezer_quality_warning_high">Cilësia shumë e lartë ofron kursime minimale të hapësirës.</string>
     <string name="squeezer_types_category_label">Llojet e imazheve</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Përfshi imazhet JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Përfshi imazhet WebP (.webp).</string>
     <string name="squeezer_skip_compressed_title">Kapërce të kompresuarat më parë</string>
     <string name="squeezer_skip_compressed_description">Kapërce imazhet që janë kompresuar tashmë nga SD Maid.</string>

@@ -496,7 +496,9 @@
     <string name="squeezer_quality_warning_low">Ang mas mababang kalidad ay maaaring magdulot ng nakikitang artifact.</string>
     <string name="squeezer_quality_warning_high">Ang napakataas na kalidad ay nagbibigay ng kaunting matitipid na espasyo.</string>
     <string name="squeezer_types_category_label">Mga uri ng larawan</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Isama ang mga JPEG na larawan (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Isama ang mga WebP na larawan (.webp).</string>
     <string name="squeezer_skip_compressed_title">Laktawan ang mga dating na-compress</string>
     <string name="squeezer_skip_compressed_description">Laktawan ang mga larawang na-compress na ng SD Maid.</string>
@@ -727,6 +729,7 @@ Palaging malinaw na ipapakita ng SD Maid kung kailan ginagamit ang service na it
 Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disable ulit ang service na ito anumang oras nang walang masamang epekto.</string>
     <string name="automation_screenoverlay_explanation">Nakikipag-ugnayan ang SD Maid sa inyong device. Hindi maaaring gamitin ang screen sa parehong oras. Maghintay hanggang matapos ang operasyon o kanselahin ito.</string>
     <string name="automation_active_title">Tumatrabaho ang SD Maid</string>
+    <string name="automation_error_no_consent_title">Error sa automation</string>
     <string name="automation_error_no_consent_body">Hindi naka-set up ang accessibility service. Kumpletuhin ang setup at magbigay ng consent.</string>
     <string name="automation_error_not_enabled_title">Hindi naka-enable ang service</string>
     <string name="automation_error_not_enabled_body">Naka-disable ang accessibility service. Buksan ito ulit.</string>
@@ -734,12 +737,18 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="automation_error_not_running_body">Hindi tumatakbo ang accessibility service. Subukang i-reboot ang device.</string>
     <string name="automation_error_screen_unavailable_title">Hindi available ang screen</string>
     <string name="automation_error_screen_unavailable_body">Ang operasyon ay na-abort dahil naging hindi available ang screen (hal. display off o lockscreen active).</string>
+    <string name="automation_error_compatibility_title">Pagkakatugma ng automation</string>
     <string name="automation_error_compatibility_body">Hindi na-figure out ng SD Maid ang screen layout. Kung patuloy itong mangyayari, maaaring hindi ganap na supported ang inyong wika o setup. Mag-check ng mga update o makipag-ugnayan sa akin para maayos ko ito.</string>
+    <string name="automation_error_timeout_title">Nag-timeout ang automation</string>
     <string name="automation_error_timeout_body">Hindi nakumpleto ng SD Maid ang lahat ng hakbang sa loob ng time limit. Kung patuloy itong mangyayari, maaaring kailangan kong mag-adjust ng app para sa inyong device. Mag-check ng mga update o makipag-ugnayan sa akin para maayos ko ito.</string>
+    <string name="automation_error_overlay_title">Overlay ng automation</string>
     <string name="automation_error_overlay_body">Hindi naipakita ng SD Maid ang automation overlay. I-check ang mga permission at subukang i-reboot ang inyong device.</string>
+    <string name="history_label">Kasaysayan</string>
     <string name="history_description">Isang chronological na listahan ng mga kamakailang aksyon at apektadong data.</string>
+    <string name="scheduler_label">Taga-iskedyul</string>
     <string name="scheduler_execution_label">Susunod na execution (humigit-kumulang)</string>
     <string name="scheduler_execution_last_label">Huling execution</string>
+    <string name="scheduler_settings_label">Taga-iskedyul</string>
     <string name="scheduler_settings_summary">I-adjust ang mga scheduler related na setting.</string>
     <string name="scheduler_new_schedule_action">Gumawa ng schedule</string>
     <string name="scheduler_schedule_name_label">Pangalan ng schedule</string>
@@ -748,6 +757,7 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="scheduler_edit_schedule_action">I-edit ang schedule</string>
     <string name="scheduler_schedule_time_label">Humigit-kumulang na oras</string>
     <string name="scheduler_schedule_repeat_label">Ulit-ulitin ang interval sa mga araw</string>
+    <string name="scheduler_schedule_default_name">Default na iskedyul</string>
     <string name="scheduler_current_schedule_x_at_x">%1$s sa paligid ng %2$s</string>
     <string name="scheduler_schedule_next_at_x">Plano para sa %s</string>
     <string name="scheduler_schedule_last_at_x">Huling na-execute sa %s</string>
@@ -762,12 +772,15 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="scheduler_setting_nopowersaving_summary">Kung ang device ay nasa power-saving mode, ang naka-schedule na execution ay lalaktawan.</string>
     <string name="scheduler_setting_charging_title">Laktawan kapag hindi nag-charge</string>
     <string name="scheduler_setting_charging_summary">Kung ang device ay hindi nag-charge, ang naka-schedule na execution ay lalaktawan.</string>
+    <string name="scheduler_setting_automation_title">Serbisyo ng accessibility</string>
     <string name="scheduler_setting_automation_summary">Isama ang mga aksyon na gumagamit ng accessibility service. Ito ay nangangailangan na makakipag-ugnayan ang SD Maid sa inyong screen (ibig sabihin naka-unlock ito) kapag na-execute ang mga task.</string>
+    <string name="scheduler_notification_channel_label">Taga-iskedyul</string>
     <string name="scheduler_notification_title">Naka-schedule na task</string>
     <string name="scheduler_notification_message">Ine-execute: \"%s\"</string>
     <string name="scheduler_notification_result_title">Tapos na ang scheduler</string>
     <string name="scheduler_notification_result_success_message">Lahat ng naka-schedule na task ay matagumpay na nag-run.</string>
     <string name="scheduler_notification_result_failure_message">Ang ilang naka-schedule na task ay nabigo o nakatagpo ng mga error. Subukang patakbuhin ito nang mano-mano.</string>
+    <string name="scheduler_commands_after_schedule_label">Mga utos pagkatapos ng iskedyul</string>
     <string name="scheduler_commands_after_schedule_desc">Mga Android shell command na iae-execute sa dulo ng isang schedule.</string>
     <string name="scheduler_battery_optimization_hint">Isaalang-alang ang pag-disable ng battery optimization para sa SD Maid kung makakatagpo ninyo ng mga problema sa background execution.</string>
     <string name="updates_dashcard_title">May available na update</string>
@@ -777,8 +790,11 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="translation_translators_title">Ang version na ito ay isinalin nina</string>
     <string name="motd_setting_enabled_label">Mga mahalagang mensahe</string>
     <string name="motd_setting_enabled_explanation">Payagan ang SD Maid na mag-check ng mga mahalagang mensahe mula sa developer.</string>
+    <string name="updatecheck_setting_enabled_label">Pag-check ng update</string>
     <string name="updatecheck_setting_enabled_explanation">Payagan ang SD Maid na mag-check ng mga update para maipakita sa inyo kung may mas bagong version na available.</string>
+    <string name="device_settings_category">Device</string>
     <string name="beta_version_indicator_desc">Ang mga pre-release version ay nagpapakita ng maliit na ribbon sa start screen. Mas madalas itong na-update, maaaring may mas maraming feature, ngunit maaari rin namang may mas maraming bug.</string>
+    <string name="review_app_review_action">I-review</string>
     <string name="review_app_dismiss_action">Siguro mamaya</string>
     <string name="review_app_body">Gusto ba ninyong mag-iwan ng review para sa SD Maid?️ ❤️</string>
     <string name="anniversary_card_title">Maligayang SD Maid Anniversary ❤️</string>
@@ -792,6 +808,7 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
         <item quantity="one">%1$d taon kasama ang SD Maid — Napalaya na espasyo: %2$s. Pinapanatiling malinis at maayos ang iyong Android. #SDMaid\nSubukan: %3$s</item>
         <item quantity="other">%1$d taon kasama ang SD Maid — Napalaya na espasyo: %2$s. Pinapanatiling malinis at maayos ang iyong Android. #SDMaid\nSubukan: %3$s</item>
     </plurals>
+    <string name="stats_label">Kasaysayan</string>
     <plurals name="stats_dash_body_size">
         <item quantity="one">%s ay na-free.</item>
         <item quantity="other">%s ay na-free.</item>
@@ -804,6 +821,7 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="stats_report_status_partial_success">Bahagyang tagumpay</string>
     <string name="stats_report_status_partial_failure">Nabigo</string>
     <string name="stats_settings_desc">I-configure ang mga statistics, report at data retention ng SD Maid.</string>
+    <string name="stats_settings_retention_category">Pagpapanatili</string>
     <string name="stats_settings_retention_reports_label">Mga general report</string>
     <string name="stats_settings_retention_reports_desc">Bilang ng mga araw bago burahin ang mga basic SD Maid operation report.</string>
     <string name="stats_settings_retention_paths_label">Detalyadong path information</string>
@@ -830,12 +848,20 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="area_type_public_obb_label">Pampublikong app resources</string>
     <string name="area_type_private_data_label">Pribadong app data</string>
     <string name="area_type_portable_label">Portable na storage</string>
+    <string name="shortcut_appcontrol_short">Kontrol ng App</string>
     <string name="shortcut_appcontrol_long">Pamahalaan ang mga naka-install na app</string>
+    <string name="shortcut_onetap_short">Scan + Burahin</string>
     <string name="shortcut_onetap_long">Mag-scan at mag-delete sa isang aksyon</string>
     <string name="shortcuts_settings_category">Mga Shortcut</string>
+    <string name="shortcuts_onetap_enabled_title">One-tap na shortcut</string>
     <string name="shortcuts_onetap_enabled_summary">Ipakita ang \"Scan + Delete\" shortcut kapag matagal na pinindot ang app icon. Gumagamit ng parehong mga tool tulad ng one-tap dashboard.</string>
+    <string name="swiper_label">Swiper</string>
+    <string name="swiper_tool_name">Swiper</string>
+    <string name="swiper_tool_description">Mabilis na linisin ang mga folder — mag-swipe ng mga file para itabi, burahin, o laktawan.</string>
+    <string name="swiper_dashcard_description">Linisin ang mga tiyak na folder nang mas mabilis kaysa sa file explorer — i-swipe lang ang bawat file.</string>
     <string name="swiper_start_action">Magsimulang mag-swipe</string>
     <string name="swiper_continue_action">Ipagpatuloy ang session</string>
+    <string name="swiper_sessions_description">Suriin ang mga file sa 3 simpleng hakbang:\n\n1. Pumili ng folder na i-scan\n2. Mag-swipe ng mga file para itabi, burahin, o laktawan\n3. Suriin ang mga pagpapasya at kumpirmahin\n\nWalang maaalis hanggang hindi mo na-tap ang huling delete button.</string>
     <string name="swiper_select_folders_action">Pumili ng mga folder</string>
     <string name="swiper_scanning_title">Nag-i-scan…</string>
     <plurals name="swiper_result_x_items_found">
@@ -874,6 +900,7 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="swiper_settings_swap_directions_summary">Mag-swipe pakaliwa upang itabi, pakanan upang i-delete.</string>
     <string name="swiper_settings_show_details_title">Ipakita ang mga detalye ng file</string>
     <string name="swiper_settings_show_details_summary">Ipakita ang pangalan, sukat at petsa ng file sa swipe screen.</string>
+    <string name="swiper_settings_haptic_feedback_title">Haptic na feedback</string>
     <string name="swiper_settings_haptic_feedback_summary">Mag-vibrate kapag gumagawa ng desisyon na itabi o i-delete.</string>
     <string name="swiper_discard_session_confirmation_title">Itapon ang session?</string>
     <string name="swiper_discard_session_confirmation_message">Mawawala ang lahat ng desisyon. Sigurado ka ba?</string>
@@ -881,6 +908,10 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <plurals name="swiper_dashcard_session_context">
         <item quantity="one">Ipagpatuloy ang session mula %1$d araw na ang nakalipas (%2$d%% tapos na)</item>
         <item quantity="other">Ipagpatuloy ang session mula %1$d araw na ang nakalipas (%2$d%% tapos na)</item>
+    </plurals>
+    <plurals name="swiper_dashcard_x_sessions">
+        <item quantity="one">%d session</item>
+        <item quantity="other">%d mga session</item>
     </plurals>
     <plurals name="swiper_dashcard_x_undecided_items">
         <item quantity="one">%d hindi pa napagpasyahang item</item>
@@ -894,10 +925,16 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
         <item quantity="one">%d file bawat session</item>
         <item quantity="other">%d mga file bawat session</item>
     </plurals>
+    <plurals name="swiper_sessions_upgrade_sessions_limit">
+        <item quantity="one">%d session</item>
+        <item quantity="other">%d mga session</item>
+    </plurals>
+    <string name="swiper_session_default_label">Session #%d</string>
     <string name="swiper_session_rename_title">I-rename ang session</string>
     <string name="swiper_session_rename_hint">Maglagay ng pangalan para sa session na ito</string>
     <string name="swiper_sessions_current_sessions">Mga kasalukuyang session</string>
     <string name="swiper_session_paths_label">Mga Path</string>
+    <string name="swiper_session_status_label">Katayuan</string>
     <plurals name="swiper_session_status_to_keep">
         <item quantity="one">%d itatabi</item>
         <item quantity="other">%d itatabi</item>
@@ -930,7 +967,9 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="swiper_exclude_confirmation_message">I-exclude ang \"%1$s\" sa mga Swiper scan?</string>
     <string name="swiper_sessions_header_title">Handa nang mag-declutter?</string>
     <string name="swiper_sessions_suggestions_label">Subukang magsimula sa:</string>
+    <string name="swiper_sessions_suggestion_downloads">Folder ng mga download</string>
     <string name="swiper_sessions_suggestion_screenshots">Mga Screenshot</string>
+    <string name="swiper_sessions_suggestion_camera">Camera roll</string>
     <!-- Swiper stamp variations (Tinder-style labels) -->
     <string name="swiper_stamp_keep_1">Itabi!</string>
     <string name="swiper_stamp_keep_2">Ganda!</string>
@@ -941,6 +980,7 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="swiper_stamp_delete_3">Basura!</string>
     <string name="swiper_stamp_delete_4">Burahin!</string>
     <string name="swiper_stamp_skip_1">Laktawan!</string>
+    <string name="swiper_stamp_skip_2">Basta!</string>
     <string name="swiper_stamp_skip_3">Mamaya!</string>
     <string name="swiper_stamp_skip_4">Siguro!</string>
     <string name="swiper_stamp_undo_1">I-undo!</string>
@@ -948,5 +988,16 @@ Walang gagawing aksyon nang walang nauunang approval ng user. Maaaring ma-disabl
     <string name="swiper_stamp_undo_3">Ay!</string>
     <string name="swiper_stamp_undo_4">Teka!</string>
     <!-- Swiper gesture overlay -->
+    <string name="swiper_gesture_overlay_dismiss">I-tap kahit saan para magsimula</string>
+    <string name="swiper_gesture_overlay_dismiss_action">Nakuha ko</string>
+    <string name="swiper_gesture_overlay_left_delete">← Burahin</string>
+    <string name="swiper_gesture_overlay_right_keep">Itabi →</string>
+    <string name="swiper_gesture_overlay_left_keep">← Itabi</string>
+    <string name="swiper_gesture_overlay_right_delete">Burahin →</string>
+    <string name="swiper_gesture_overlay_up_skip">↑ Laktawan</string>
+    <string name="swiper_gesture_overlay_down_undo">↓ I-undo</string>
     <!-- Swiper help dialog -->
+    <string name="swiper_help_action">Tulong</string>
+    <string name="swiper_help_title">Paano gumagana ang Swiper</string>
+    <string name="swiper_help_message">I-swipe ang bawat file para gumawa ng desisyon:\n\n← I-swipe pakaliwa: %1$s\n→ I-swipe pakanan: %2$s\n↑ I-swipe pataas: Laktawan\n↓ I-swipe pababa: I-undo (pagkatapos ng unang swipe)\n\nMaaari ka ring gumamit ng mga button sa ibaba.\n\nKapag tapos ka na, i-tap ang \"Suriin\" para makita ang lahat ng iyong desisyon. Walang nabubura hanggang hindi mo kinukumpirma sa review screen.</string>
 </resources>

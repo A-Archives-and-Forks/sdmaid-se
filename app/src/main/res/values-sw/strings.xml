@@ -230,6 +230,7 @@
     <string name="corpsefinder_filter_appsource_private_summary">Data ya usakinishaji iliyozuiliwa, k.m. programu za wahusika wengine zilizolindwa.</string>
     <string name="corpsefinder_filter_appasec_label">Rasilimali za programu zilizosimbwa</string>
     <string name="corpsefinder_filter_appasec_summary">Rasilimali za programu zilizosimbwa, k.m. mali za mchezo.</string>
+    <string name="corpsefinder_filter_app2sd_label">App2SD</string>
     <string name="corpsefinder_filter_app2sd_summary">Data iliyohamishwa kwenye hifadhi ya nje na App2SD mods.</string>
     <plurals name="corpsefinder_result_x_corpses_deleted">
         <item quantity="one">Baki %d la programu limefutwa</item>
@@ -398,8 +399,11 @@
     <string name="appcleaner_filter_whatsapp_sent_summary">Faili zilizotumwa kutoka WhatsApp kwa wengine.</string>
     <string name="appcleaner_filter_telegram_label">Faili za vyombo vya Telegram</string>
     <string name="appcleaner_filter_telegram_summary">Faili zilizopokewa au kutumwa kupitia Telegram.</string>
+    <string name="appcleaner_filter_threema_label">Threema</string>
     <string name="appcleaner_filter_threema_summary">Faili zilizopokewa kupitia Threema.</string>
+    <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">Faili zilizotumwa au kupokewa katika mazungumzo na wakati wa WeChat.</string>
+    <string name="appcleaner_filter_viber_label">Viber</string>
     <string name="appcleaner_filter_viber_summary">Faili za vyombo vya akiba zinazopakuliwa tena zinapotazamwa kwenye mazungumzo.</string>
     <string name="appcleaner_filter_qqchat_label">Mazungumzo ya QQ</string>
     <string name="appcleaner_filter_qqchat_summary">Faili zilizotumwa au kupokewa katika mazungumzo ya QQ.</string>
@@ -455,6 +459,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">Onyesha chaguo zinazokruhusu kufuta faili zote katika seti ya nakala ili hakuna faili inayobaki.</string>
     <string name="deduplicator_search_locations_title">Maeneo ya kutafutia</string>
     <string name="deduplicator_search_locations_all_summary">Maeneo yote yanayoweza kufikiwa</string>
+    <string name="deduplicator_keep_prefer_paths_title">Pendelea kuhifadhi katika</string>
+    <string name="deduplicator_keep_prefer_paths_summary">Wakati wa kuamua nakala ipi ya kuhifadhi, pendelea kuhifadhi faili katika maeneo haya.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">Hakuna maeneo yaliyosanidiwa</string>
     <string name="deduplicator_skip_minsize_title">Ukubwa wa chini</string>
     <string name="deduplicator_skip_minsize_description">Ruka faili zilizo chini ya ukubwa wa chini.</string>
     <string name="deduplicator_skip_uncommon_title">Ruka aina za faili zisizo za kawaida</string>
@@ -547,7 +554,9 @@
     <string name="squeezer_quality_warning_low">Ubora wa chini unaweza kusababisha kasoro zinazoonekana.</string>
     <string name="squeezer_quality_warning_high">Ubora wa juu sana unatoa akiba ndogo ya nafasi.</string>
     <string name="squeezer_types_category_label">Aina za picha</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Jumuisha picha za JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Jumuisha picha za WebP (.webp).</string>
     <string name="squeezer_skip_compressed_title">Ruka zilizobaniwa hapo awali</string>
     <string name="squeezer_skip_compressed_description">Ruka picha ambazo tayari zimebaniwa na SD Maid.</string>
@@ -620,6 +629,7 @@
     <string name="appcontrol_app_exclude_add_description">Tenga programu hii kutoka shughuli nyingine katika SD Maid.</string>
     <string name="appcontrol_app_exclude_edit_title">Hariri kutengwa</string>
     <string name="appcontrol_app_exclude_edit_description">Programu hii kwa sasa imetengwa kutoka zana moja au zaidi.</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
     <string name="appcontrol_tag_user">Mtumiaji</string>
     <string name="appcontrol_tag_active">Zimekuwa zinafanya kazi hivi karibuni</string>
     <string name="appcontrol_tag_apk_bundle">Bundla</string>
@@ -629,6 +639,7 @@
     <string name="appcontrol_tag_not_installed">Haijasakinishwa</string>
     <string name="appcontrol_tag_enabled">Imewashwa</string>
     <string name="appcontrol_tag_disabled">Imezimwa</string>
+    <string name="appcontrol_tag_debug">Debug</string>
     <string name="appcontrol_progress_enabling_package">Inawasha programu</string>
     <string name="appcontrol_progress_disabling_package">Inazima programu</string>
     <string name="appcontrol_list_filteroptions_label">Chaguo za kichungi</string>
@@ -672,6 +683,7 @@
     </plurals>
     <string name="appcontrol_app_sizes_title">Ukubwa wa programu</string>
     <string name="appcontrol_app_sizes_apk_label">Programu</string>
+    <string name="appcontrol_app_sizes_data_label">Data</string>
     <string name="appcontrol_app_sizes_cache_label">Akiba</string>
     <string name="appcontrol_toggle_confirmation_title">Thibitisha kitendo</string>
     <plurals name="appcontrol_toggle_confirmation_message_x">
@@ -686,8 +698,11 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">Pata makadirio ya jumla ya ukubwa wa kila programu.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">Bainisha shughuli</string>
     <string name="appcontrol_settings_module_activity_enabled_description">Gundua ikiwa programu inafanya kazi (au ilikuwa inafanya kazi hivi karibuni).</string>
+    <string name="appcontrol_include_multiuser_label">Jumuisha watumiaji wengine</string>
+    <string name="appcontrol_include_multiuser_summary">Jumuisha programu kutoka wasifu wa watumiaji wengine kwenye kifaa hiki.</string>
     <string name="appcontrol_export_app_selection_action">Hamisha programu</string>
     <string name="appcontrol_export_title">Hamisha programu</string>
+    <string name="appcontrol_export_description">Hifadhi faili za usakinishaji wa programu hii. Hii haijumuishi data ya programu.</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="one">Programu %d imehamishwa</item>
         <item quantity="other">Programu %d zimehamishwa</item>
@@ -783,6 +798,7 @@
     <string name="exclusion_type_segment">Kutengwa kwa kipande</string>
     <string name="exclusion_tags_alltools">Zana zote</string>
     <string name="exclusion_target_label">Lengo la kutengwa</string>
+    <string name="exclusion_editor_path_change_action">Gusa kubadilisha njia</string>
     <string name="exclusion_option_allow_partial">Ruhusu vifaanisho vya kigeni</string>
     <string name="exclusion_option_ignore_casing">Puuza uandishi wa herufi</string>
     <string name="exclusion_editor_affected_tools_label">Zana zilizoathiriwa</string>

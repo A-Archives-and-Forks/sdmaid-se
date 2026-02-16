@@ -264,6 +264,9 @@
     <string name="systemcleaner_filter_screenshots_age_label">Ekran Görüntüsü Yaşı</string>
     <string name="systemcleaner_filter_screenshots_age_summary">Ekran görüntülerinin silinmek üzere değerlendirilebilmesi için minimum yaş.</string>
     <string name="systemcleaner_filter_superfluosapks_label">Gereksiz APK\'lar</string>
+    <string name="systemcleaner_filter_superfluosapks_summary">Yüklü uygulama sürümlerine göre artık gerekli olmayan kurulum dosyaları.</string>
+    <string name="systemcleaner_filter_superfluosapks_includesameversion_label">Aynı sürümü dahil et</string>
+    <string name="systemcleaner_filter_superfluosapks_includesameversion_summary">Yüklü sürümle eşleşen APK dosyalarını da hedefle. Yalnızca eski sürümleri kaldırmak için devre dışı bırakın.</string>
     <string name="systemcleaner_filter_lostdir_label">LOST.DIR klasörleri</string>
     <string name="systemcleaner_filter_lostdir_summary">Android cihazlar arasında veri aktarımı yapılırken oluşturulan geçici dosyalar.</string>
     <string name="systemcleaner_filter_linuxfiles_label">Linux dosyaları</string>
@@ -324,6 +327,14 @@
     <string name="systemcleaner_customfilter_editor_name_matching_mode_equal_label">Ad, anahtar kelimeye eşittir</string>
     <string name="systemcleaner_customfilter_last_edit">Son düzenleme: %s</string>
     <string name="systemcleaner_customfilter_editor_livesearch_label">Canlı arama</string>
+    <string name="systemcleaner_customfilter_editor_size_label">Boyut kısıtlamaları</string>
+    <string name="systemcleaner_customfilter_editor_size_minimum_label">Minimum boyut</string>
+    <string name="systemcleaner_customfilter_editor_size_maximum_label">Maksimum boyut</string>
+    <string name="systemcleaner_customfilter_editor_size_explanation">Dosya boyutuna göre eşleşmeleri sınırlayın. Herhangi bir boyutu eşleştirmek için ayarlamayın.</string>
+    <string name="systemcleaner_customfilter_editor_age_label">Yaş kısıtlamaları</string>
+    <string name="systemcleaner_customfilter_editor_age_minimum_label">Minimum yaş</string>
+    <string name="systemcleaner_customfilter_editor_age_maximum_label">Maksimum yaş</string>
+    <string name="systemcleaner_customfilter_editor_age_explanation">Dosya yaşına (son değiştirme zamanı) göre eşleşmeleri sınırlayın. Herhangi bir yaşı eşleştirmek için ayarlamayın.</string>
     <string name="systemcleaner_customfilter_import_action">Yeni filtreyi içe aktar</string>
     <string name="systemcleaner_customfilter_export_action">Seçili filtreyi dışa aktar</string>
     <string name="appcleaner_tool_name">Uygulama Temizleyici</string>
@@ -413,6 +424,7 @@
     </plurals>
     <string name="appcleaner_progress_shizuku_deleting_caches">Shizuku kullanılarak önbellekler siliniyor</string>
     <string name="appcleaner_progress_determining_inaccessible_caches">Erişilemeyen önbellekler belirleniyor</string>
+    <string name="appcleaner_progress_force_stopping">Uygulamalar zorla durduruluyor…</string>
     <string name="appcleaner_automation_error_locked_appcache_title">Önbellek temizleme kullanılamıyor</string>
     <string name="appcleaner_automation_error_locked_appcache_body">Sistem bu uygulama için \"Önbelleği temizle\" düğmesini devre dışı bıraktı. Önbelleği temizlemeyi hızlandırmak için bunu hariç tutun.</string>
     <string name="appcleaner_automation_error_no_settings_title">Ayarlar ekranı kullanılamıyor</string>
@@ -434,6 +446,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">Tekrar eden dosyalar için tüm dosyaları sil seçeneklerini göster, sonucunda hiçbir dosya kalmayacaktır.</string>
     <string name="deduplicator_search_locations_title">Arama konumları</string>
     <string name="deduplicator_search_locations_all_summary">Tüm erişilebilir alanlar</string>
+    <string name="deduplicator_keep_prefer_paths_title">Saklamayı tercih et</string>
+    <string name="deduplicator_keep_prefer_paths_summary">Hangi yineleneni saklayacağına karar verirken, bu konumlardaki dosyaları saklamayı tercih et.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">Yapılandırılmış konum yok</string>
     <string name="deduplicator_skip_minsize_title">Minimum boyut</string>
     <string name="deduplicator_skip_minsize_description">Minimum boyutun altındaki dosyaları geç.</string>
     <string name="deduplicator_skip_uncommon_title">Tanıdık olmayan dosya türlerini geç</string>
@@ -461,7 +476,14 @@
     <string name="deduplicator_details_cluster_title">Yinelenenler kümesi</string>
     <string name="deduplicator_matches_exact_label">Birebir kopyalar</string>
     <string name="deduplicator_matches_similar_label">Benzer dosyalar</string>
+    <string name="deduplicator_arbiter_title">Silme stratejisi</string>
+    <string name="deduplicator_arbiter_summary">Hangi dosyaların saklanacağını ve hangilerinin silineceğini yapılandırın.</string>
     <string name="deduplicator_arbiter_explanation">Yinelenenleri silerken SD Maid, her bir kriteri sırayla kontrol ederek hangi dosyanın saklanacağına karar verir. Net bir sonuç veren ilk kriter sonucu belirler. Yeniden sıralamak için sürükleyin, modu değiştirmek için dokunun.</string>
+    <string name="deduplicator_arbiter_select_mode_title">Modu seçin</string>
+    <string name="deduplicator_arbiter_configure_paths_action">Yolları yapılandır…</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_title">Yineleme türü</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_description">Benzer dosyalar yerine tam eşleşmeleri tercih edin.</string>
+    <string name="deduplicator_arbiter_criterium_media_provider_title">Medya dizinleme</string>
     <string name="deduplicator_arbiter_criterium_media_provider_description">Dosyaların medya sağlayıcı tarafından dizine alınıp alınmadığını değerlendirin.</string>
     <string name="deduplicator_arbiter_criterium_location_title">Depolama konumu</string>
     <string name="deduplicator_arbiter_criterium_location_description">Dahili veya harici depolamadaki dosyaları tercih edin.</string>
@@ -519,7 +541,9 @@
     <string name="squeezer_quality_warning_low">Düşük kaliteler görünür bozulmalara neden olabilir.</string>
     <string name="squeezer_quality_warning_high">Çok yüksek kalite minimum alan tasarrufu sağlar.</string>
     <string name="squeezer_types_category_label">Resim türleri</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">JPEG resimleri dahil et (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">WebP resimleri dahil et (.webp).</string>
     <string name="squeezer_skip_compressed_title">Önceden sıkıştırılmışları atla</string>
     <string name="squeezer_skip_compressed_description">SD Maid tarafından zaten sıkıştırılmış resimleri atla.</string>
@@ -603,6 +627,7 @@
     <string name="appcontrol_tag_not_installed">Yüklü değil</string>
     <string name="appcontrol_tag_enabled">Etkin</string>
     <string name="appcontrol_tag_disabled">Devre dışı</string>
+    <string name="appcontrol_tag_debug">Hata ayıklama</string>
     <string name="appcontrol_progress_enabling_package">Uygulama etkinleştiriliyor</string>
     <string name="appcontrol_progress_disabling_package">Uygulama devre dışı bırakılıyor</string>
     <string name="appcontrol_list_filteroptions_label">Filtre seçenekleri</string>

@@ -42,6 +42,7 @@
     <string name="onboarding_welcome_body2">ଅନ୍ୟ ଆପ୍ସର ପଛରେ ସଫା କରି ଷ୍ଟୋରେଜ୍ ସ୍ଥାନ ହାସଲ କରନ୍ତୁ। ଖର୍ଚ୍ଚଯୋଗ୍ୟ ଫାଇଲ୍‌ଗୁଡିକ ଡିଲିଟ୍ କରନ୍ତୁ ଏବଂ ବଳକା ଡାଟା ଅପସାରଣ କରନ୍ତୁ।</string>
     <string name="onboarding_welcome_body_beta">ଏହା ଏକ ବିଟା (ପରୀକ୍ଷଣ) ବିଲ୍ଡ। ହାସ୍ୟବୋଧ ଏବଂ ବ୍ୟାକଅପ୍ ଯୋଜନା ସହିତ ଆଗକୁ ବଢ଼ନ୍ତୁ। ଆପଣ ସମ୍ମୁଖୀନ ହେଉଥିବା ସମସ୍ୟାଗୁଡିକ ରିପୋର୍ଟ କରନ୍ତୁ।</string>
     <string name="onboarding_welcome_continue_action">ଚାଲୁ ରଖନ୍ତୁ</string>
+    <string name="onboarding_versus_title">SD Maid / SD Maid SE</string>
     <string name="onboarding_versus_body1">SD Maid SE (ଅର୍ଥାତ୍ SD Maid 2) ହେଉଛି SD Maid (ଅର୍ଥାତ୍ SD Maid 1)ର ଉତ୍ତରାଧିକାରୀ। ଆଧୁନିକ Android ପାଇଁ ଅପ୍ଟିମାଇଜ୍ ହୋଇଥିବା ଏକ ନୂତନ ଆପ୍।</string>
     <string name="onboarding_versus_body2">ଏହାର ପୂର୍ବବର୍ତ୍ତୀର ସ୍ଥାପତ୍ୟ 7 ବର୍ଷରୁ ଅଧିକ ପୁରୁଣା ଏବଂ ନୂତନ Android ସଂସ୍କରଣର ଚ୍ୟାଲେଞ୍ଜଗୁଡିକ ପାଇଁ ଡିଜାଇନ୍ କରାଯାଇ ନାହିଁ। ବିକାଶ ଜାରି ରଖିବା ପାଇଁ ଏକ ସମ୍ପୂର୍ଣ୍ଣ ପୁନଃଡିଜାଇନ୍ ଆବଶ୍ୟକ ଥିଲା।</string>
     <string name="onboarding_versus_body3">ଉନ୍ନତ ଫଳାଫଳ ପାଇଁ SD Maid SE କୁ ବଦଳାଇବାକୁ ବିଚାର କରନ୍ତୁ।</string>
@@ -98,6 +99,7 @@
     <string name="support_debuglog_folder_empty_desc">କୌଣସି ଡିବଗ୍ ଲଗ୍ ଗଚ୍ଛିତ ନାହିଁ</string>
     <string name="support_debuglog_folder_delete_confirmation_title">ସମସ୍ତ ଡିବଗ୍ ଲଗ୍ ଡିଲିଟ୍ କରିବେ?</string>
     <string name="support_debuglog_folder_delete_confirmation_message">ଏହା ସମସ୍ତ ଗଚ୍ଛିତ ଡିବଗ୍ ଲଗ୍ ସେସନ୍‌ଗୁଡିକୁ ସ୍ଥାୟୀ ଭାବରେ ଡିଲିଟ୍ କରିବ। ଏହି କାର୍ଯ୍ୟ ପ୍ରତ୍ୟାବର୍ତ୍ତନ ଯୋଗ୍ୟ ନୁହେଁ।</string>
+    <string name="discord_label">Discord</string>
     <string name="discord_description">ଘୁରାଘୁରି କରିବା ଓ ପ୍ରଶ୍ନ ପଚାରିବା ପାଇଁ ଏକ ସ୍ଥାନ।</string>
     <string name="changelog_label">ପରିବର୍ତ୍ତନ ପୋଥି</string>
     <string name="settings_acknowledgements_label">ସ୍ୱୀକୃତି</string>
@@ -231,6 +233,7 @@
     <string name="corpsefinder_filter_appsource_private_summary">ପ୍ରତିବନ୍ଧିତ ଆପ୍ ଇନଷ୍ଟଲେସନ୍ ଡାଟା, ଯଥା ସୁରକ୍ଷିତ ତୃତୀୟ ପକ୍ଷ ଆପ୍ସ।</string>
     <string name="corpsefinder_filter_appasec_label">ଏନକ୍ରିପ୍ଟେଡ୍ ଆପ୍ ସମ୍ବଳଗୁଡ଼ିକ</string>
     <string name="corpsefinder_filter_appasec_summary">ଏନକ୍ରିପ୍ଟେଡ୍ ଆପ୍ ସମ୍ବଳ, ଯଥା ଗେମ୍ ସମ୍ପତ୍ତି।</string>
+    <string name="corpsefinder_filter_app2sd_label">App2SD</string>
     <string name="corpsefinder_filter_app2sd_summary">App2Sd ମୋଡ୍ ଦ୍ୱାରା ବାହ୍ୟ ଷ୍ଟୋରେଜ୍ କୁ ସ୍ଥାନାନ୍ତରିତ ଡାଟା।</string>
     <plurals name="corpsefinder_result_x_corpses_deleted">
         <item quantity="one">%d ଆପ୍ ଅବଶିଷ୍ଟାଂଶ ଡିଲିଟ୍ ହୋଇଛି</item>
@@ -399,8 +402,11 @@
     <string name="appcleaner_filter_whatsapp_sent_summary">WhatsAppରୁ ଅନ୍ୟମାନଙ୍କୁ ପଠାଯାଇଥିବା ଫାଇଲ୍‌ସବୁ।</string>
     <string name="appcleaner_filter_telegram_label">Telegram ମିଡିଆ ଫାଇଲ</string>
     <string name="appcleaner_filter_telegram_summary">Telegram ମାଧ୍ୟମରେ ପାଇଥିବା କିମ୍ବା ପଠାଯାଇଥିବା ଫାଇଲଗୁଡ଼ିକ।</string>
+    <string name="appcleaner_filter_threema_label">Threema</string>
     <string name="appcleaner_filter_threema_summary">Threema ମାଧ୍ୟମରେ ପାଇଥିବା ଫାଇଲଗୁଡ଼ିକ।</string>
+    <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">କଥାବାର୍ତ୍ତା ଏବଂ WeChat ମୋମେଣ୍ଟରେ ପଠାଯାଇଥିବା କିମ୍ବା ପାଇଥିବା ଫାଇଲଗୁଡ଼ିକ।</string>
+    <string name="appcleaner_filter_viber_label">Viber</string>
     <string name="appcleaner_filter_viber_summary">କ୍ୟାଶ କରାଯାଇଥିବା ମିଡିଆ ଫାଇଲଗୁଡ଼ିକ ଯାହା ଚ୍ୟାଟରେ ଦେଖାଯିବାବେଳେ ପୁନଃଡାଉନଲୋଡ ହୁଏ।</string>
     <string name="appcleaner_filter_qqchat_label">QQ ଚ୍ୟାଟ</string>
     <string name="appcleaner_filter_qqchat_summary">QQ ଚ୍ୟାଟ କଥାବାର୍ତ୍ତାରେ ପଠାଯାଇଥିବା କିମ୍ବା ପାଇଥିବା ଫାଇଲଗୁଡ଼ିକ।</string>
@@ -456,6 +462,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">ଡୁପ୍ଲିକେଟଗୁଡ଼ିକର ଏକ ସେଟରେ ସମସ୍ତ ଫାଇଲ ଡିଲିଟ କରିବା ପାଇଁ ବିକଳ୍ପ ଦେଖାନ୍ତୁ ଯାହାଫଳରେ କୌଣସି ଫାଇଲ ବାକି ରହିବ ନାହିଁ।</string>
     <string name="deduplicator_search_locations_title">ଖୋଜ ସ୍ଥାନ</string>
     <string name="deduplicator_search_locations_all_summary">ସମସ୍ତ ଆକ୍ସେସ କରିହେବା ଅଞ୍ଚଳ</string>
+    <string name="deduplicator_keep_prefer_paths_title">ରଖିବାକୁ ପସନ୍ଦ</string>
+    <string name="deduplicator_keep_prefer_paths_summary">କେଉଁ ନକଲ ରଖିବା ନିଷ୍ପତ୍ତି ନେବା ସମୟରେ, ଏହି ସ୍ଥାନଗୁଡ଼ିକରେ ଫାଇଲ ରଖିବାକୁ ପସନ୍ଦ କରନ୍ତୁ।</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">କୌଣସି ସ୍ଥାନ ବିନ୍ୟାସିତ ହୋଇନାହିଁ</string>
     <string name="deduplicator_skip_minsize_title">ସର୍ବନିମ୍ନ ଆକାର</string>
     <string name="deduplicator_skip_minsize_description">ସର୍ବନିମ୍ନ ଆକାରଠାରୁ କମ ଥିବା ଫାଇଲଗୁଡ଼ିକୁ ଛାଡ଼ି ଦିଅନ୍ତୁ।</string>
     <string name="deduplicator_skip_uncommon_title">ଅସାଧାରଣ ଫାଇଲ ପ୍ରକାର ଛାଡ଼ି ଦିଅନ୍ତୁ</string>
@@ -548,7 +557,9 @@
     <string name="squeezer_quality_warning_low">କମ୍ ଗୁଣବତ୍ତା ଦୃଶ୍ୟମାନ ତ୍ରୁଟି ସୃଷ୍ଟି କରିପାରେ।</string>
     <string name="squeezer_quality_warning_high">ଅତ୍ୟଧିକ ଉଚ୍ଚ ଗୁଣବତ୍ତା ସର୍ବନିମ୍ନ ସ୍ଥାନ ସଞ୍ଚୟ ପ୍ରଦାନ କରେ।</string>
     <string name="squeezer_types_category_label">ଚିତ୍ର ପ୍ରକାର</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">JPEG ଚିତ୍ର (.jpg, .jpeg) ଅନ୍ତର୍ଭୁକ୍ତ କରନ୍ତୁ।</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">WebP ଚିତ୍ର (.webp) ଅନ୍ତର୍ଭୁକ୍ତ କରନ୍ତୁ।</string>
     <string name="squeezer_skip_compressed_title">ପୂର୍ବରୁ ସଙ୍କୋଚିତ ଛାଡନ୍ତୁ</string>
     <string name="squeezer_skip_compressed_description">SD Maid ଦ୍ୱାରା ପୂର୍ବରୁ ସଙ୍କୋଚିତ ହୋଇଥିବା ଚିତ୍ର ଛାଡନ୍ତୁ।</string>
@@ -616,6 +627,7 @@
     <string name="appcontrol_app_launch_title">ଆପ୍ ଲଞ୍ଚ କରନ୍ତୁ</string>
     <string name="appcontrol_app_launch_description">ଏହି ଆପ୍ର ପ୍ରାଥମିକ ଆକ୍ଟିଭିଟି ଲଞ୍ଚ କରନ୍ତୁ।</string>
     <string name="appcontrol_app_forcestop_title">ବଳପୂର୍ବକ ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="appcontrol_app_forcestop_description">ଆପ୍ ବନ୍ଦ କରନ୍ତୁ। ଆପଣ ଏହାକୁ ଖୋଲିବା କିମ୍ବା ଡିଭାଇସ୍ ରିବୁଟ୍ ନ ହେବା ପର୍ଯ୍ୟନ୍ତ ଏହା ନିଜେ ଆରମ୍ଭ ହେବାକୁ ବାରଣ କରନ୍ତୁ।</string>
     <string name="appcontrol_app_uninstall_description">ଆପଣଙ୍କ ଡିଭାଇସରୁ ଏହି ଆପ୍ କୁ ଅନଇନଷ୍ଟଲ କରନ୍ତୁ।</string>
     <string name="appcontrol_app_exclude_add_title">ଆପ୍ କୁ ବାଦ୍ ଦିଅନ୍ତୁ</string>
     <string name="appcontrol_app_exclude_add_description">SD Maid ର ଅନ୍ୟ କାର୍ଯ୍ୟରୁ ଏହି ଆପ୍ କୁ ବାଦ୍ ଦିଅନ୍ତୁ।</string>
@@ -623,6 +635,7 @@
     <string name="appcontrol_app_exclude_edit_description">ଏହି ଆପ୍ ବର୍ତ୍ତମାନ ଏକ କିମ୍ବା ଅଧିକ ଟୁଲ୍ସରୁ ବାଦ୍ ପଡ଼ିଛି।</string>
     <string name="appcontrol_tag_user">ଉପଭୋକ୍ତା</string>
     <string name="appcontrol_tag_active">ସମ୍ପ୍ରତି ସକ୍ରିୟ</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
     <string name="appcontrol_tag_apk_bundle">ବଣ୍ଡଲ୍</string>
     <string name="appcontrol_tag_system">ସିଷ୍ଟମ୍</string>
     <string name="appcontrol_tag_archived">ଆର୍କାଇଭ୍ଡ</string>
@@ -630,6 +643,7 @@
     <string name="appcontrol_tag_not_installed">ଇନଷ୍ଟଲ୍ ହୋଇନାହିଁ</string>
     <string name="appcontrol_tag_enabled">ସକ୍ଷମ ଅଛି</string>
     <string name="appcontrol_tag_disabled">ଅକ୍ଷମ ଅଛି</string>
+    <string name="appcontrol_tag_debug">ଡିବଗ୍</string>
     <string name="appcontrol_progress_enabling_package">ଆପ୍ ସକ୍ଷମ ହେଉଛି</string>
     <string name="appcontrol_progress_disabling_package">ଆପ୍ ଅକ୍ଷମ ହେଉଛି</string>
     <string name="appcontrol_list_filteroptions_label">ଫିଲ୍ଟର ବିକଳ୍ପଗୁଡ଼ିକ</string>
@@ -688,8 +702,11 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">ପ୍ରତ୍ୟେକ ଆପ୍ର ଆକାରର ଏକ ଆନୁମାନିକ ପରିମାଣ ପ୍ରାପ୍ତ କରନ୍ତୁ।</string>
     <string name="appcontrol_settings_module_activity_enabled_label">କାର୍ଯ୍ୟକଳାପ ନିର୍ଦ୍ଧାରଣ</string>
     <string name="appcontrol_settings_module_activity_enabled_description">ଏକ ଆପ୍ ସକ୍ରିୟ (କିମ୍ବା ସମ୍ପ୍ରତି ସକ୍ରିୟ ଥିଲା) କି ନାହିଁ ଜାଣନ୍ତୁ।</string>
+    <string name="appcontrol_include_multiuser_label">ଅନ୍ୟ ଉପଭୋକ୍ତାମାନଙ୍କୁ ଅନ୍ତର୍ଭୁକ୍ତ କରନ୍ତୁ</string>
+    <string name="appcontrol_include_multiuser_summary">ଏହି ଡିଭାଇସରେ ଅନ୍ୟ ଉପଭୋକ୍ତା ପ୍ରୋଫାଇଲରୁ ଆପ୍ସ ଅନ୍ତର୍ଭୁକ୍ତ କରନ୍ତୁ।</string>
     <string name="appcontrol_export_app_selection_action">ଆପ୍ ଗୁଡ଼ିକ ରପ୍ତାନି କରନ୍ତୁ</string>
     <string name="appcontrol_export_title">ଆପ୍ ରପ୍ତାନି କରନ୍ତୁ</string>
+    <string name="appcontrol_export_description">ଏହି ଆପ୍ର ଇନଷ୍ଟଲେସନ୍ ଫାଇଲ୍ ସେଭ୍ କରନ୍ତୁ। ଏଥିରେ ଆପ୍ ଡାଟା ଅନ୍ତର୍ଭୁକ୍ତ ନାହିଁ।</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="one">%d ଆପ୍ ଏକ୍ସପୋର୍ଟ ହୋଇଛି</item>
         <item quantity="other">%d ଆପ୍ ଏକ୍ସପୋର୍ଟ ହୋଇଛି</item>
@@ -721,6 +738,7 @@
     <string name="appcontrol_item_screentime_x_since_y_label">ସ୍କ୍ରିନ୍ ସମୟ: %2$s ପରଠାରୁ %1$s</string>
     <string name="appcontrol_item_lastupdate_x_label">ଶେଷ ଅପଡେଟ୍: %s</string>
     <string name="appcontrol_item_installedat_x_label">ଇନଷ୍ଟଲ୍ ହୋଇଥିବା: %s</string>
+    <string name="analyzer_tool_name">ଷ୍ଟୋରେଜ୍ ବିଶ୍ଳେଷକ</string>
     <string name="analyzer_explanation_short">ଜାଣନ୍ତୁ ଆପଣଙ୍କ ଡିଵାଇସ୍‌ରେ କ\'ଣ ଜାଗା ଖାଉଛି।</string>
     <string name="analyzer_progress_scanning_device">ଷ୍ଟୋରେଜ୍ ଉପକରଣ ଖୋଜୁଛି</string>
     <string name="analyzer_progress_scanning_storage">ଷ୍ଟୋରେଜ୍ ସ୍କ୍ୟାନ୍ କରୁଛି</string>
@@ -784,6 +802,7 @@
     <string name="exclusion_type_segment">ସେଗମେଣ୍ଟ ବହିଷ୍କାର</string>
     <string name="exclusion_tags_alltools">ସମସ୍ତ ଟୁଲ୍</string>
     <string name="exclusion_target_label">ବହିଷ୍କାର ଲକ୍ଷ୍ୟ</string>
+    <string name="exclusion_editor_path_change_action">ପଥ ପରିବର୍ତ୍ତନ କରିବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
     <string name="exclusion_option_allow_partial">ଆଂଶିକ ମେଳକୁ ଅନୁମତି ଦିଅନ୍ତୁ</string>
     <string name="exclusion_option_ignore_casing">କେସିଂକୁ ଅଣଦେଖା କରନ୍ତୁ</string>
     <string name="exclusion_editor_affected_tools_label">ପ୍ରଭାବିତ ଟୁଲ୍ଗୁଡ଼ିକ</string>

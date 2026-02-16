@@ -7,6 +7,9 @@
     <string name="dashboard_settings_oneclick_summary">Inicia el escaneo y eliminación para todas las herramientas con un toque en el botón de acción del panel de control, sin confirmaciones adicionales.</string>
     <string name="dashboard_settings_oneclick_tools_title">Herramientas de un solo toque</string>
     <string name="dashboard_settings_oneclick_tools_desc">¿Qué herramientas deben incluirse en las operaciones de un solo toque?</string>
+    <string name="dashboard_card_config_title">Tarjetas del panel</string>
+    <string name="dashboard_card_config_desc">Configura qué tarjetas se muestran y su orden</string>
+    <string name="dashboard_card_config_header_title">Arrastra para reordenar, activa para mostrar/ocultar</string>
     <string name="debug_notification_channel_label">Notificaciones de depuración</string>
     <string name="debug_debuglog_file_label">Archivo de registro grabado</string>
     <string name="debug_debuglog_recording_progress">Grabando registro de depuración</string>
@@ -1053,4 +1056,25 @@
     <string name="swiper_help_action">Ayuda</string>
     <string name="swiper_help_title">Cómo funciona Swiper</string>
     <string name="swiper_help_message">Desliza cada archivo para tomar una decisión:\n\n← Desliza a la izquierda: %1$s\n→ Desliza a la derecha: %2$s\n↑ Desliza hacia arriba: Omitir\n↓ Desliza hacia abajo: Deshacer (después del primer deslizamiento)\n\nTambién puedes usar los botones de la parte inferior.\n\nCuando termines, toca \"Revisar\" para ver todas tus decisiones. Nada se elimina hasta que confirmes en la pantalla de revisión.</string>
+
+    <string name="support_debuglog_folder_label">Carpeta del registro de depuración</string>
+    <plurals name="support_debuglog_folder_desc">
+        <item quantity="one">%1$d archivo usando %2$s</item>
+        <item quantity="other">%1$d archivos usando %2$s</item>
+    </plurals>
+    <string name="support_debuglog_folder_empty_desc">No hay registros de depuración almacenados</string>
+    <string name="support_debuglog_folder_delete_confirmation_title">¿Eliminar todos los registros de depuración?</string>
+    <string name="support_debuglog_folder_delete_confirmation_message">Esto eliminará permanentemente todas las sesiones de registro de depuración almacenadas. Esta acción no se puede deshacer.</string>
+
+    <string name="appcleaner_forcestop_before_clearing_label">Forzar detención antes de limpiar</string>
+    <string name="appcleaner_progress_force_stopping">Forzando detención de aplicaciones…</string>
+
+    <string name="deduplicator_arbiter_title">Estrategia de eliminación</string>
+    <string name="deduplicator_arbiter_summary">Configura qué archivos se conservan y cuáles se eliminan.</string>
+    <string name="deduplicator_arbiter_select_mode_title">Seleccionar modo</string>
+    <string name="deduplicator_arbiter_configure_paths_action">Configurar rutas…</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_title">Tipo de duplicado</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_description">Preferir copias exactas sobre archivos similares.</string>
+    <string name="deduplicator_arbiter_criterium_media_provider_title">Indexación multimedia</string>
+
 </resources>

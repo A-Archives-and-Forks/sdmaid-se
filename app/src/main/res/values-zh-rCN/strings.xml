@@ -456,6 +456,7 @@
     <string name="deduplicator_detection_method_checksum_title">内容校验和</string>
     <string name="deduplicator_detection_method_checksum_summary">通过计算文件的校验和来确定重复项，校验和匹配的文件具有「完全相同」的内容</string>
     <string name="deduplicator_detection_method_phash_title">感知哈希</string>
+    <string name="deduplicator_detection_method_phash_summary">通过分析内容特征并比较感知哈希值来查找相似文件。⚠️ 基于相似度的检测可能包含需要人工验证的误报。</string>
     <string name="deduplicator_occupied_space_label">占用的存储空间</string>
     <plurals name="deduplicator_x_space_occupied_by_duplicates_msg">
         <item quantity="other">重复项占用 %s</item>
@@ -534,7 +535,9 @@
     <string name="squeezer_quality_warning_low">较低的质量可能会导致明显的伪影。</string>
     <string name="squeezer_quality_warning_high">非常高的质量只能节省极少空间。</string>
     <string name="squeezer_types_category_label">图片类型</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">包含 JPEG 图片（.jpg、.jpeg）。</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">包含 WebP 图片（.webp）。</string>
     <string name="squeezer_skip_compressed_title">跳过已压缩的图片</string>
     <string name="squeezer_skip_compressed_description">跳过已被 SD Maid 压缩过的图片。</string>

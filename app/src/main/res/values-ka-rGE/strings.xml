@@ -77,6 +77,7 @@
     <string name="ui_theme_style_setting_label">თემის სტილი</string>
     <string name="ui_theme_style_setting_explanation">ფერადი სტილი, რომელიც გამოიყენება აპის თემისთვის.</string>
     <string name="ui_theme_style_default_label">ნაგულისხმევი</string>
+    <string name="ui_theme_style_materialyou_label">Material You</string>
     <string name="ui_previews_title">ფაილის წინასწარი ხედები</string>
     <string name="ui_previews_summary">ფაილის წინასწარი ხედების ჩვენება ყველა ხელსაწყოში (მაგ. სურათებისა და ვიდეოების მინიატურები).</string>
     <string name="ui_language_override_label">აპის ენა</string>
@@ -134,6 +135,7 @@
     <string name="setup_root_enable_root_use_label">Გამოიყენეთ root წვდომა, თუ ეს შესაძლებელია</string>
     <string name="setup_root_disable_root_use_label">არ გამოიყენოთ root წვდომა</string>
     <string name="setup_root_card_body2">ხელმისაწვდომია მხოლოდ root მოწყობილობებზე. თუ თქვენ არ გააკეთეთ ეს მოდიფიკაცია, მაშინ თქვენი მოწყობილობა არ არის დაყენებული და ეს პარამეტრი არ მოქმედებს.</string>
+    <string name="setup_shizuku_card_title">Shizuku</string>
     <string name="setup_shizuku_card_body">მიეცით SD Maid-ს Shizuku-ს გამოყენების ნება შესაძლოა სადაც კი შეიძლება, შედეგების გასაუმჯობესებლად და ფუნქციების ასაქმედად.</string>
     <string name="setup_shizuku_card_body2">ამ პარამეტრს არ აქვს ეფექტი, თუ Shizuku აპი არ არის დაყენებული თქვენს მოწყობილობაზე.</string>
     <string name="setup_shizuku_card_root_info">Shizuku root წვდომასთან ერთად არ ამქმედებს დამატებით ფუნქციებს, მაგრამ აუმჯობესებს სანდოობას. SD Maid გამოიყენებს მას როგორც სარეზერვო მეთოდს.</string>
@@ -232,6 +234,7 @@
     <string name="corpsefinder_filter_appasec_label">დაშიფრული აპლიკაციის რესურსები</string>
     <string name="corpsefinder_filter_appasec_summary">დაშიფრული აპლიკაციის რესურსები, მაგ. თამაშის აქტივები.</string>
     <string name="corpsefinder_filter_app2sd_summary">მონაცემები გადატანილია გარე მეხსიერებაში App2Sd მოდიფიკაციით.</string>
+    <string name="corpsefinder_filter_app2sd_label">App2SD</string>
     <plurals name="corpsefinder_result_x_corpses_deleted">
         <item quantity="one">%d ნარჩენი წაშლილია</item>
         <item quantity="other">%d ნარჩენი წაშლილია</item>
@@ -246,6 +249,7 @@
     <string name="corpsefinder_owner_unknown">უცნობი მფლობელი</string>
     <string name="corpsefinder_corpse_hint_keeper">ეს ელემენტი შეიძლება შეიცავდეს მონაცემებს, რომლებიც გსურთ შეინარჩუნოთ მისი მფლობელის წაშლის მიუხედავად, მაგ. ფოტოები ან სარეზერვო ასლები.</string>
     <string name="corpsefinder_corpse_hint_common">ამ ელემენტს აქვს ძალიან ჩვეულებრივი სახელი და შეიძლება ეკუთვნოდეს ჯერ კიდევ დაინსტალირებულ აპებს, რომლებსაც SD Maid არ იცნობს.</string>
+    <string name="systemcleaner_tool_name">SystemCleaner</string>
     <string name="systemcleaner_explanation_short">ზედმეტი მონაცემები, რომლებიც არ ეკუთვნის არცერთ კონკრეტულ აპს.</string>
     <plurals name="systemcleaner_result_x_items_deleted">
         <item quantity="one">%d ელემენტი წაშლილია</item>
@@ -402,6 +406,7 @@
     <string name="appcleaner_filter_threema_summary">ფაილები მიღებული Threema-ს მეშვეობით.</string>
     <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">გაგზავნილი ან მიღებული ფაილები საუბრებში და WeChat-ის მომენტებში.</string>
+    <string name="appcleaner_filter_viber_label">Viber</string>
     <string name="appcleaner_filter_viber_summary">ქეშირებული მედია ფაილები, რომლებიც ხელახლა იტვირთება ჩეთში ნახვისას.</string>
     <string name="appcleaner_filter_qqchat_label">QQ ჩეთი</string>
     <string name="appcleaner_filter_qqchat_summary">გაგზავნილი ან მიღებული ფაილები QQ ჩეთის საუბრებში.</string>
@@ -443,6 +448,7 @@
     <string name="appcleaner_forcestop_before_clearing_label">გასუფთავებამდე იძულებითი გაჩერება</string>
     <string name="appcleaner_forcestop_before_clearing_summary">აპების იძულებითი გაჩერება მათი ქეშის გასუფთავებამდე. ეს დაგეხმარებათ ზოგიერთი აპის ქეშის გასუფთავებაში, მაგრამ აპებმა შეიძლება არასწორად იმუშაონ და ხელით გადატვირთვა დაგჭირდეთ.</string>
     <string name="appcleaner_progress_force_stopping">აპების იძულებითი გაჩერება…</string>
+    <string name="deduplicator_tool_name">Deduplicator</string>
     <string name="deduplicator_explanation_short">დუბლიკატი მონაცემების პოვნა თქვენს მოწყობილობაზე.</string>
     <plurals name="deduplicator_result_x_clusters_processed">
         <item quantity="one">%d კლასტერი დამუშავებულია</item>
@@ -456,6 +462,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">აჩვენეთ ოფციები, რომლებიც საშუალებას მოგცემთ წაშალოთ ყველა ფაილი დუბლიკატების ნაკრებში, ისე რომ ფაილი არ დარჩეს.</string>
     <string name="deduplicator_search_locations_title">ძიების ადგილები</string>
     <string name="deduplicator_search_locations_all_summary">ყველა ხელმისაწვდომი ზონა</string>
+    <string name="deduplicator_keep_prefer_paths_title">უპირატესობა შენარჩუნებას</string>
+    <string name="deduplicator_keep_prefer_paths_summary">დუბლიკატის შენარჩუნების გადაწყვეტისას, უპირატესობა მიეცეს ამ ადგილებში არსებული ფაილების შენარჩუნებას.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">ადგილები არ არის კონფიგურირებული</string>
     <string name="deduplicator_skip_minsize_title">მინიმალური ზომა</string>
     <string name="deduplicator_skip_minsize_description">გამოტოვეთ ფაილები, რომლებიც მინიმალურ ზომაზე ნაკლებია.</string>
     <string name="deduplicator_skip_uncommon_title">გამოტოვეთ უჩვეულო ფაილის ტიპები</string>
@@ -548,7 +557,9 @@
     <string name="squeezer_quality_warning_low">დაბალმა ხარისხმა შეიძლება ხილული არტეფაქტები გამოიწვიოს.</string>
     <string name="squeezer_quality_warning_high">ძალიან მაღალი ხარისხი მინიმალურ დაზოგვას უზრუნველყოფს.</string>
     <string name="squeezer_types_category_label">სურათების ტიპები</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">JPEG სურათების ჩართვა (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">WebP სურათების ჩართვა (.webp).</string>
     <string name="squeezer_skip_compressed_title">ადრე შეკუმშულების გამოტოვება</string>
     <string name="squeezer_skip_compressed_description">SD Maid-ის მიერ უკვე შეკუმშული სურათების გამოტოვება.</string>
@@ -598,6 +609,7 @@
         <item quantity="other">სულ მცირე %d დღის</item>
     </plurals>
     <string name="squeezer_estimated_savings_percent">JPEG ფაილებისთვის სავარაუდოდ ~%d%% დაზოგვა</string>
+    <string name="appcontrol_tool_name">AppControl</string>
     <string name="appcontrol_explanation_short">აპები, რომლებიც დაინსტალირებულია თქვენს მოწყობილობაზე.</string>
     <plurals name="appcontrol_x_apps_detected_label">
         <item quantity="one">%d აპი ნაპოვნია</item>
@@ -615,6 +627,7 @@
     <string name="appcontrol_app_launch_title">აპის გაშვება</string>
     <string name="appcontrol_app_launch_description">ამ აპის ძირითადი აქტივობის გაშვება.</string>
     <string name="appcontrol_app_forcestop_title">იძულებითი გაჩერება</string>
+    <string name="appcontrol_app_forcestop_description">აპის გაჩერება. აპი ვერ შეძლებს თავისით გაშვებას, სანამ თქვენ არ გახსნით ან მოწყობილობა არ გადაიტვირთება.</string>
     <string name="appcontrol_app_uninstall_description">ამ აპის წაშლა თქვენი მოწყობილობიდან.</string>
     <string name="appcontrol_app_exclude_add_title">აპის გამორიცხვა</string>
     <string name="appcontrol_app_exclude_add_description">გამორიცხეთ ეს აპი SD Maid-ის სხვა ოპერაციებიდან.</string>
@@ -628,6 +641,9 @@
     <string name="appcontrol_tag_not_installed">არ არის დაინსტალირებული</string>
     <string name="appcontrol_tag_enabled">ჩართული</string>
     <string name="appcontrol_tag_disabled">გათიშული</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
+    <string name="appcontrol_tag_apk_bundle">Bundle</string>
+    <string name="appcontrol_tag_debug">გამართვა</string>
     <string name="appcontrol_progress_enabling_package">აპის ჩართვა</string>
     <string name="appcontrol_progress_disabling_package">აპის გათიშვა</string>
     <string name="appcontrol_list_filteroptions_label">ფილტრის ოფციები</string>
@@ -686,8 +702,11 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">თითოეული აპის ზომის დაახლოებითი შეფასება.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">აქტივობის განსაზღვრა</string>
     <string name="appcontrol_settings_module_activity_enabled_description">გაიგეთ აქტიურია (ან ახლახანს იყო აქტიური) აპი თუ არა.</string>
+    <string name="appcontrol_include_multiuser_label">სხვა მომხმარებლების ჩართვა</string>
+    <string name="appcontrol_include_multiuser_summary">ამ მოწყობილობაზე სხვა მომხმარებლის პროფილების აპების ჩართვა.</string>
     <string name="appcontrol_export_app_selection_action">აპების ექსპორტი</string>
     <string name="appcontrol_export_title">აპის ექსპორტი</string>
+    <string name="appcontrol_export_description">ამ აპის ინსტალაციის ფაილების შენახვა. აპის მონაცემებს არ მოიცავს.</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="one">%d აპი ექსპორტირებულია</item>
         <item quantity="other">%d აპი ექსპორტირებულია</item>
@@ -718,6 +737,8 @@
     <string name="appcontrol_automation_progress_find_restore">\"აღდგენის\" ღილაკის ძიება (საკვანძო სიტყვები: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">ეკრანის დრო: %1$s %2$s-დან</string>
     <string name="appcontrol_item_lastupdate_x_label">ბოლოს განახლდა: %s</string>
+    <string name="appcontrol_item_installedat_x_label">დაინსტალირდა: %s</string>
+    <string name="analyzer_tool_name">StorageAnalyzer</string>
     <string name="analyzer_explanation_short">გაიგეთ რა იკავებს ადგილს თქვენს მოწყობილობაში.</string>
     <string name="analyzer_progress_scanning_device">მეხსიერების მოწყობილობების ძიება</string>
     <string name="analyzer_progress_scanning_storage">მეხსიერების სკანირება</string>
@@ -781,6 +802,7 @@
     <string name="exclusion_type_segment">სეგმენტის გამონაკლისი</string>
     <string name="exclusion_tags_alltools">ყველა ხელსაწყო</string>
     <string name="exclusion_target_label">გამონაკლისის სამიზნე</string>
+    <string name="exclusion_editor_path_change_action">შეეხეთ ბილიკის შესაცვლელად</string>
     <string name="exclusion_option_allow_partial">ნაწილობრივი დამთხვევების დაშვება</string>
     <string name="exclusion_option_ignore_casing">რეგისტრის იგნორირება</string>
     <string name="exclusion_editor_affected_tools_label">დაზარალებული ხელსაწყოები</string>
@@ -861,6 +883,7 @@
     <string name="translation_encourage_title">თარგმნეთ SD Maid</string>
     <string name="translation_encourage_body">SD Maid ითარგმნება მოხალისეების მიერ. თარგმანი, მიმოხილვა ან კორექტირება - თქვენი დახმარება დაფასებულია!</string>
     <string name="translation_translators_title">ეს ვერსია ითარგმნა შემდეგის მიერ</string>
+    <string name="translation_translators_people">Person1;Person2(optional@email.com)</string>
     <string name="motd_setting_enabled_label">მნიშვნელოვანი შეტყობინებები</string>
     <string name="motd_setting_enabled_explanation">SD Maid-ის ნების დართვა დეველოპერისგან მნიშვნელოვანი შეტყობინებების შესამოწმებლად.</string>
     <string name="updatecheck_setting_enabled_label">განახლების შემოწმება</string>
@@ -885,6 +908,10 @@
     <plurals name="stats_dash_body_size">
         <item quantity="one">%s ზომა</item>
         <item quantity="other">%s ზომა</item>
+    </plurals>
+    <plurals name="stats_dash_body_count">
+        <item quantity="one">%s ელემენტი დამუშავებულია მას შემდეგ, რაც SD Maid მოიწვიეთ თქვენს მოწყობილობაზე.</item>
+        <item quantity="other">%s ელემენტი დამუშავებულია მას შემდეგ, რაც SD Maid მოიწვიეთ თქვენს მოწყობილობაზე.</item>
     </plurals>
     <string name="stats_report_status_success">წარმატება</string>
     <string name="stats_report_status_partial_success">ნაწილობრივი წარმატება</string>

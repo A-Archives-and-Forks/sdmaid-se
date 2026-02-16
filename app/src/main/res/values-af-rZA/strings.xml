@@ -42,6 +42,7 @@
     <string name="onboarding_welcome_body2">Kry bergingsruimte deur skoon te maak agter ander toepassings. Skrap uitgeebare lêers en verwyder oorblywende data.</string>
     <string name="onboarding_welcome_body_beta">Dit is \'n beta (toets) bou. Gaan voort met \'n sin vir humor en \'n rugsteun plan. Rapporteer asseblief probleme wat jy ondervind.</string>
     <string name="onboarding_welcome_continue_action">Gaan voort</string>
+    <string name="onboarding_versus_title">SD Maid / SD Maid SE</string>
     <string name="onboarding_versus_body1">SD Maid SE (aka. SD Maid 2) is die opvolger van SD Maid (aka. SD Maid 1). \'n Nuwe toepassing, geoptimaliseer vir moderne Android.</string>
     <string name="onboarding_versus_body2">Dit se voorganger se argitektuur is oor 7 jaar oud en nie ontwerp vir die uitdagings van nuwer Android weergawes nie. \'n Volledige herontwerp was nodig om ontwikkeling voort te sit.</string>
     <string name="onboarding_versus_body3">Oorweeg om te skakel na SD Maid SE vir verbeterde resultate.</string>
@@ -76,6 +77,7 @@
     <string name="ui_theme_style_setting_label">Tema styl</string>
     <string name="ui_theme_style_setting_explanation">Die kleur styl wat gebruik word wanneer die toepassing getema word.</string>
     <string name="ui_theme_style_default_label">Verstek</string>
+    <string name="ui_theme_style_materialyou_label">Material You</string>
     <string name="ui_previews_title">Lêer voorsiening</string>
     <string name="ui_previews_summary">Vertoon lêer voorsiening in alle gereedskap (bv. beeld en video duimnaels).</string>
     <string name="ui_language_override_label">Toepassing taal</string>
@@ -97,9 +99,16 @@
     <string name="support_debuglog_folder_empty_desc">Geen ontfoutingslogs gestoor nie</string>
     <string name="support_debuglog_folder_delete_confirmation_title">Verwyder alle ontfoutingslogs?</string>
     <string name="support_debuglog_folder_delete_confirmation_message">Dit sal alle gestoorde ontfoutingslog-sessies permanent verwyder. Hierdie aksie kan nie ongedaan gemaak word nie.</string>
+    <string name="discord_label">Discord</string>
     <string name="discord_description">\'n Plek om te hang en vrae te vra.</string>
     <string name="changelog_label">Verandering log</string>
     <string name="settings_acknowledgements_label">Erkennings</string>
+    <string name="settings_acknowledgements_category_translations_title">Vertalings</string>
+    <string name="settings_acknowledgements_category_translations_subtitle">Wie het dit vertaal?</string>
+    <string name="settings_acknowledgements_category_thanks_title">Dankie</string>
+    <string name="settings_acknowledgements_category_thanks_subtitle">Spesiale dank aan ons vriende.</string>
+    <string name="settings_acknowledgements_category_licenses_title">Lisensies</string>
+    <string name="settings_acknowledgements_category_licenses_subtitle">Sagteware gebruik deur SD Maid.</string>
     <string name="setup_label">Opstelling</string>
     <string name="setup_incomplete_card_title">Opstelling is onvolledig</string>
     <string name="setup_incomplete_card_body">Voltooi SD Maid se opstelling om beter resultate te kry.</string>
@@ -126,6 +135,7 @@
     <string name="setup_root_enable_root_use_label">Gebruik root toegang as beskikbaar</string>
     <string name="setup_root_disable_root_use_label">Moenie root toegang gebruik nie</string>
     <string name="setup_root_card_body2">Slegs beskikbaar op gewortel toestelle. As jy nie hierdie wysiging gemaak het nie, dan is jou toestel nie gewortel nie en hierdie instelling het geen effek nie.</string>
+    <string name="setup_shizuku_card_title">Shizuku</string>
     <string name="setup_shizuku_card_body">Laat SD Maid toe om Shizuku te gebruik waar moontlik om resultate te verbeter en kenmerke te aktiveer.</string>
     <string name="setup_shizuku_card_body2">Hierdie instelling het geen effek as die Shizuku toepassing nie opgestel is op jou toestel nie.</string>
     <string name="setup_shizuku_card_root_info">Shizuku in kombinasie met root toegang aktiveer nie addisionele kenmerke nie, maar dit verbeter betroubaarheid. SD Maid sal dit as terugval metode gebruik.</string>
@@ -163,6 +173,7 @@
     <string name="setup_inventory_card_body">SD Maid moet weet watter toepassings jy het om lêers te vind wat nie aan enige geïnstalleerde toepassings behoort nie.</string>
     <string name="setup_inventory_card_extra">Soek vir \'n toestemming genaamd \"Toepassing lys\" of \"Vraag alle pakkette\".</string>
     <string name="setup_inventory_invalid_message">Die stelsel het \'n ongeldige lys van geïnstalleerde toepassings verskaf (bv. te min of sommige was vermis). Gaan na stelsel instellings en laat SD Maid toegang toe tot \"Toepassing lys\".</string>
+    <string name="dataarea_warningcard_label">Data-areas</string>
     <string name="dataarea_warningcard_empty_message">SD Maid het geen data areas gevind wat geskandeer kan word nie. Het jy die opstelling voltooi?</string>
     <string name="dataarea_warningcard_reload_action">Herlaai data areas</string>
     <string name="debug_mode_label">Ontfout modus</string>
@@ -178,7 +189,9 @@
     <string name="debug_card_root_test_action">Toets root</string>
     <string name="debug_card_shizuku_test_action">Toets Shizuku</string>
     <string name="settings_category_tools_label">Gereedskap</string>
+    <string name="settings_category_filter">Filter</string>
     <string name="settings_category_risklevel">Risiko vlak</string>
+    <string name="corpsefinder_tool_name">CorpseFinder</string>
     <string name="corpsefinder_explanation_short">Data wat behoort aan reeds verwyderde toepassings.</string>
     <string name="corpsefinder_settings_summary">Stel skandering filters en risiko vlakke af.</string>
     <string name="corpsefinder_settings_risk_keeper_title">Sluit wenslike oorblyfsels in</string>
@@ -220,6 +233,7 @@
     <string name="corpsefinder_filter_appsource_private_summary">Beperkte toepassing installasie data, bv. beskermde derde party toepassings.</string>
     <string name="corpsefinder_filter_appasec_label">Versleutelde toepassing hulpbronne</string>
     <string name="corpsefinder_filter_appasec_summary">Versleutelde toepassing hulpbronne, bv. spel bates.</string>
+    <string name="corpsefinder_filter_app2sd_label">App2SD</string>
     <string name="corpsefinder_filter_app2sd_summary">Data geskuif na eksterne berging deur App2Sd mods.</string>
     <plurals name="corpsefinder_result_x_corpses_deleted">
         <item quantity="one">%d toepassing oorblyfsel geskrap</item>
@@ -235,6 +249,7 @@
     <string name="corpsefinder_owner_unknown">Onbekende eienaar</string>
     <string name="corpsefinder_corpse_hint_keeper">Hierdie item mag data bevat wat jy wil hou ten spyte van dit se eienaar wat gedeïnstalleer is, bv. foto\'s of rugsteune.</string>
     <string name="corpsefinder_corpse_hint_common">Hierdie item het \'n baie algemene naam en kan behoort aan nog geïnstalleerde toepassings wat SD Maid nie ken nie.</string>
+    <string name="systemcleaner_tool_name">SystemCleaner</string>
     <string name="systemcleaner_explanation_short">Oorbodigе data wat nie aan enige spesifieke toepassing behoort nie.</string>
     <plurals name="systemcleaner_result_x_items_deleted">
         <item quantity="one">%d ooreenkoms geskrap</item>
@@ -303,6 +318,7 @@
     <string name="systemcleaner_editor_unsaved_confirmation_message">Jy het ongestoorde veranderinge!</string>
     <string name="systemcleaner_customfilter_editor_label_label">Filter etiket</string>
     <string name="systemcleaner_customfilter_editor_warning">Aangepaste filters kan riskant wees. Kontroleer jou skandering resultate voor skrapping!</string>
+    <string name="systemcleaner_customfilter_editor_areas_label">Data-areas</string>
     <string name="systemcleaner_customfilter_editor_areas_explanation">As geen area gekies is nie, dan sal alle toeganklike data areas geskandeer en ooreengekom word.</string>
     <string name="systemcleaner_customfilter_editor_filetypes_label">Lêer tipe beperkings</string>
     <string name="systemcleaner_customfilter_editor_filetypes_files_label">Lêers</string>
@@ -336,6 +352,7 @@
     <string name="systemcleaner_customfilter_editor_age_explanation">Beperk resultate op grond van lêerouderdom (laaste gewysigde tyd). Laat ongestel om enige ouderdom te pas.</string>
     <string name="systemcleaner_customfilter_import_action">Voer nuwe filter in</string>
     <string name="systemcleaner_customfilter_export_action">Voer gekiesde filter uit</string>
+    <string name="appcleaner_tool_name">AppCleaner</string>
     <string name="appcleaner_explanation_short">Uitgeebare data wat aan spesifieke toepassings behoort.</string>
     <string name="appcleaner_filter_defaultcachespublic_label">Openbare verstek kas</string>
     <string name="appcleaner_filter_defaultcachespublic_summary">Verstek openbare toepassing kas. Toeganklik onder Android/data op ouer Android weergawes. Geskrap wanneer \"Maak kas skoon\" in die stelsel instellings getik word.</string>
@@ -385,8 +402,11 @@
     <string name="appcleaner_filter_whatsapp_sent_summary">Lêers gestuur van WhatsApp na ander.</string>
     <string name="appcleaner_filter_telegram_label">Telegram media lêers</string>
     <string name="appcleaner_filter_telegram_summary">Lêers ontvang of gestuur deur Telegram.</string>
+    <string name="appcleaner_filter_threema_label">Threema</string>
     <string name="appcleaner_filter_threema_summary">Lêers ontvang deur Threema.</string>
+    <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">Gestuur of ontvang lêers in gesprekke en WeChat oomblikke.</string>
+    <string name="appcleaner_filter_viber_label">Viber</string>
     <string name="appcleaner_filter_viber_summary">Gekasde media lêers wat weer afgelaai word wanneer dit in klets bekyk word.</string>
     <string name="appcleaner_filter_qqchat_label">QQ klets</string>
     <string name="appcleaner_filter_qqchat_summary">Gestuur of ontvang lêers in QQ klets gesprekke.</string>
@@ -428,6 +448,7 @@
     <string name="appcleaner_forcestop_before_clearing_label">Geforseerd stop voor uitvee</string>
     <string name="appcleaner_forcestop_before_clearing_summary">Stop toepassings geforseerd voor die uitvee van hul kas. Dit kan help om sommige toepassings se kas uit te vee, maar kan veroorsaak dat toepassings wanfunksioneer en handmatige herbegin vereis.</string>
     <string name="appcleaner_progress_force_stopping">Stop toepassings geforseerd…</string>
+    <string name="deduplicator_tool_name">Deduplicator</string>
     <string name="deduplicator_explanation_short">Vind duplikaat data op jou toestel.</string>
     <plurals name="deduplicator_result_x_clusters_processed">
         <item quantity="one">%d duplikaat geskrap</item>
@@ -504,6 +525,7 @@
     <string name="deduplicator_arbiter_mode_prefer_smaller">Verkies kleiner lêers</string>
     <string name="deduplicator_view_mode_groups_label">Groepe</string>
     <string name="deduplicator_view_mode_directories_label">Vouers</string>
+    <string name="squeezer_tool_name">Media Squeeze</string>
     <string name="squeezer_explanation_short">Komprimeer beelde om bergingsruimte te bespaar.</string>
     <plurals name="squeezer_result_x_images_found">
         <item quantity="one">%d beeld gevind</item>
@@ -535,7 +557,9 @@
     <string name="squeezer_quality_warning_low">Laer kwaliteite kan sigbare artefakte veroorsaak.</string>
     <string name="squeezer_quality_warning_high">Baie hoë kwaliteit bied minimale ruimtebesparings.</string>
     <string name="squeezer_types_category_label">Beeldtipes</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Sluit JPEG-beelde in (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Sluit WebP-beelde in (.webp).</string>
     <string name="squeezer_skip_compressed_title">Slaan voorheen gekomprimeerdes oor</string>
     <string name="squeezer_skip_compressed_description">Slaan beelde oor wat reeds deur SD Maid gekomprimeer is.</string>
@@ -552,6 +576,10 @@
     <string name="squeezer_compress_confirmation_title">Beelde komprimeer?</string>
     <string name="squeezer_compress_confirmation_message">Dit sal oorspronklike beelde met gekomprimeerde weergawes vervang. Hierdie aksie kan nie ongedaan gemaak word nie.</string>
     <string name="squeezer_history_title">Kompressiegeskiedenis</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="one">%1$d item (%2$s)</item>
+        <item quantity="other">%1$d items (%2$s)</item>
+    </plurals>
     <string name="squeezer_history_empty">Geen kompressiegeskiedenis nie</string>
     <string name="squeezer_history_clear_title">Vee kompressiegeskiedenis uit</string>
     <string name="squeezer_history_clear_message">Dit sal toelaat dat voorheen gekomprimeerde beelde weer gekomprimeer kan word. Die beelde self word nie geaffekteer nie.</string>
@@ -581,6 +609,7 @@
         <item quantity="other">Ten minste %d dae oud</item>
     </plurals>
     <string name="squeezer_estimated_savings_percent">Beraamde ~%d%% besparing vir JPEG-lêers</string>
+    <string name="appcontrol_tool_name">AppControl</string>
     <string name="appcontrol_explanation_short">Toepassings geïnstalleer op jou toestel.</string>
     <plurals name="appcontrol_x_apps_detected_label">
         <item quantity="one">%d toepassing opgespoor</item>
@@ -606,6 +635,7 @@
     <string name="appcontrol_app_exclude_edit_description">Hierdie toepassing is tans uitgesluit van een of meer gereedskap.</string>
     <string name="appcontrol_tag_user">Gebruiker</string>
     <string name="appcontrol_tag_active">Onlangs aktief</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
     <string name="appcontrol_tag_apk_bundle">Bondel</string>
     <string name="appcontrol_tag_system">Stelsel</string>
     <string name="appcontrol_tag_archived">Geargiveer</string>
@@ -657,6 +687,7 @@
     </plurals>
     <string name="appcontrol_app_sizes_title">Toepassing grootte</string>
     <string name="appcontrol_app_sizes_apk_label">Toepassing</string>
+    <string name="appcontrol_app_sizes_data_label">Data</string>
     <string name="appcontrol_app_sizes_cache_label">Kas</string>
     <string name="appcontrol_toggle_confirmation_title">Bevestig aksie</string>
     <plurals name="appcontrol_toggle_confirmation_message_x">
@@ -707,6 +738,7 @@
     <string name="appcontrol_item_screentime_x_since_y_label">Skerm tyd: %1$s sedert %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Laas opgedateer: %s</string>
     <string name="appcontrol_item_installedat_x_label">Geïnstalleer op: %s</string>
+    <string name="analyzer_tool_name">StorageAnalyzer</string>
     <string name="analyzer_explanation_short">Vind uit wat ruimte opneem op jou toestel.</string>
     <string name="analyzer_progress_scanning_device">Soek vir berging toestelle</string>
     <string name="analyzer_progress_scanning_storage">Skandeer berging</string>
@@ -756,6 +788,7 @@
     <string name="data_area_public_app_assets_official_label">Verstek openbare toepassing bates</string>
     <string name="data_area_public_storage_label">Openbare berging</string>
     <string name="data_area_sdcard_label">SD kaart</string>
+    <string name="data_areas_label">Data-areas</string>
     <string name="data_areas_description">Data areas verteenwoordig liggings op jou toestel wat toeganklik is vir SD Maid. Verskillende data areas mag beskikbaar wees afhangende van jou Android weergawe en die toestemmings wat verleen is.</string>
     <string name="data_areas_short_summary">Areas wat SD Maid kan toegang gebaseer op die tans verleende toestemmings.</string>
     <string name="exclusion_manager_title">Uitsluiting bestuurder</string>
@@ -850,6 +883,7 @@
     <string name="translation_encourage_title">Vertaal SD Maid</string>
     <string name="translation_encourage_body">SD Maid word deur vrywilligers vertaal. Vertaling, hersiening of proeflees, jou hulp word waardeer!</string>
     <string name="translation_translators_title">Hierdie weergawe is vertaal deur</string>
+    <string name="translation_translators_people">Person1;Person2(optional@email.com)</string>
     <string name="motd_setting_enabled_label">Belangrike boodskappe</string>
     <string name="motd_setting_enabled_explanation">Laat SD Maid toe om te kyk vir belangrike boodskappe van die ontwikkelaar.</string>
     <string name="updatecheck_setting_enabled_label">Opdatering kontrole</string>
@@ -903,20 +937,27 @@
         <item quantity="one">%d pad gekies</item>
         <item quantity="other">%d paaie gekies</item>
     </plurals>
+    <string name="picker_home_action">Data-areas</string>
     <string name="area_type_sdcard_label">Openbare berging</string>
     <string name="area_type_public_media_label">Openbare toepassing media</string>
     <string name="area_type_public_data_label">Openbare toepassing data</string>
     <string name="area_type_public_obb_label">Openbare toepassing hulpbronne</string>
     <string name="area_type_private_data_label">Private toepassing data</string>
     <string name="area_type_portable_label">Draagbare berging</string>
+    <string name="shortcut_appcontrol_short">Toep Beheer</string>
     <string name="shortcut_appcontrol_long">Bestuur geïnstalleerde toepassings</string>
     <string name="shortcut_onetap_short">Skandeer + Verwyder</string>
     <string name="shortcut_onetap_long">Skandeer en verwyder in een aksie</string>
     <string name="shortcuts_settings_category">Kortpaaie</string>
     <string name="shortcuts_onetap_enabled_title">Eentik-kortpad</string>
     <string name="shortcuts_onetap_enabled_summary">Wys \"Skandeer + Verwyder\"-kortpad wanneer die toepassingsikoon langgedruk word. Gebruik dieselfde gereedskap as die eentik-kontrolepaneel.</string>
+    <string name="swiper_label">Swiper</string>
+    <string name="swiper_tool_name">Swiper</string>
+    <string name="swiper_tool_description">Ruim vouers vinnig op — swiep deur lêers om te hou, verwyder of oor te slaan.</string>
+    <string name="swiper_dashcard_description">Ruim spesifieke vouers vinniger op as \'n lêerverkenner — swiep net elke lêer.</string>
     <string name="swiper_start_action">Begin swiep</string>
     <string name="swiper_continue_action">Gaan voort met sessie</string>
+    <string name="swiper_sessions_description">Hersien lêers in 3 eenvoudige stappe:\n\n1. Kies \'n vouer om te skandeer\n2. Swiep deur lêers om te hou, verwyder of oor te slaan\n3. Hersien jou keuses en bevestig\n\nNiks word verwyder totdat jy die finale verwyder-knoppie tik nie.</string>
     <string name="swiper_select_folders_action">Kies vouers</string>
     <string name="swiper_scanning_title">Skandeer…</string>
     <plurals name="swiper_result_x_items_found">
@@ -989,6 +1030,7 @@
     <string name="swiper_session_rename_hint">Voer \'n naam vir hierdie sessie in</string>
     <string name="swiper_sessions_current_sessions">Huidige sessies</string>
     <string name="swiper_session_paths_label">Paaie</string>
+    <string name="swiper_session_status_label">Status</string>
     <plurals name="swiper_session_status_to_keep">
         <item quantity="one">%d om te hou</item>
         <item quantity="other">%d om te hou</item>

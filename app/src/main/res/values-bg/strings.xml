@@ -42,6 +42,7 @@
     <string name="onboarding_welcome_body2">Спечелете място за съхранение чрез почистване след други приложения. Изтрийте разходни файлове и премахнете останали данни.</string>
     <string name="onboarding_welcome_body_beta">Това е бета (тестова) версия. Продължете с чувство за хумор и план за резервно копие. Моля, докладвайте проблемите, които срещнете.</string>
     <string name="onboarding_welcome_continue_action">Продължи</string>
+    <string name="onboarding_versus_title">SD Maid / SD Maid SE</string>
     <string name="onboarding_versus_body1">SD Maid SE (известен като SD Maid 2) е наследникът на SD Maid (известен като SD Maid 1). Ново приложение, оптимизирано за съвременен Android.</string>
     <string name="onboarding_versus_body2">Архитектурата на предшественика му е на над 7 години и не е проектирана за предизвикателствата на по-новите Android версии. Необходимо беше пълно преработване, за да продължи развитието.</string>
     <string name="onboarding_versus_body3">Помислете за преминаване към SD Maid SE за подобрени резултати.</string>
@@ -76,6 +77,7 @@
     <string name="ui_theme_style_setting_label">Стил на тема</string>
     <string name="ui_theme_style_setting_explanation">Цветовият стил, използван от темата на приложението.</string>
     <string name="ui_theme_style_default_label">По подразбиране</string>
+    <string name="ui_theme_style_materialyou_label">Material You</string>
     <string name="ui_previews_title">Предварителни прегледи на файлове</string>
     <string name="ui_previews_summary">Показване на предварителни прегледи на файлове във всички инструменти (напр. миниатюри на изображения и видеа).</string>
     <string name="ui_language_override_label">Език на приложението</string>
@@ -97,9 +99,16 @@
     <string name="support_debuglog_folder_empty_desc">Няма съхранени дебъг логове</string>
     <string name="support_debuglog_folder_delete_confirmation_title">Изтриване на всички дебъг логове?</string>
     <string name="support_debuglog_folder_delete_confirmation_message">Това ще изтрие окончателно всички съхранени сесии на дебъг логове. Това действие не може да бъде отменено.</string>
+    <string name="discord_label">Discord</string>
     <string name="discord_description">Място за провеждане на време и задаване на въпроси.</string>
     <string name="changelog_label">Списък на промените</string>
     <string name="settings_acknowledgements_label">Благодарности</string>
+    <string name="settings_acknowledgements_category_translations_title">Преводи</string>
+    <string name="settings_acknowledgements_category_translations_subtitle">Кой е превел това?</string>
+    <string name="settings_acknowledgements_category_thanks_title">Благодарности</string>
+    <string name="settings_acknowledgements_category_thanks_subtitle">Специални благодарности на нашите приятели.</string>
+    <string name="settings_acknowledgements_category_licenses_title">Лицензи</string>
+    <string name="settings_acknowledgements_category_licenses_subtitle">Софтуер, използван от SD Maid.</string>
     <string name="setup_label">Настройка</string>
     <string name="setup_incomplete_card_title">Настройката не е завършена</string>
     <string name="setup_incomplete_card_body">Завършете настройката на SD Maid за по-добри резултати.</string>
@@ -126,6 +135,7 @@
     <string name="setup_root_enable_root_use_label">Използвайте root, ако е наличен</string>
     <string name="setup_root_disable_root_use_label">Не използвайте root</string>
     <string name="setup_root_card_body2">Достъпно само на root устройства. Ако не сте направили тази модификация, тогава устройството ви не е root и тази настройка няма ефект.</string>
+    <string name="setup_shizuku_card_title">Shizuku</string>
     <string name="setup_shizuku_card_body">Позволете на SD Maid да използва Shizuku, където е възможно, за подобряване на резултатите и активиране на функции.</string>
     <string name="setup_shizuku_card_body2">Тази настройка няма ефект, ако Shizuku приложението не е настроено на вашето устройство.</string>
     <string name="setup_shizuku_card_root_info">Shizuku в комбинация с root достъп не активира допълнителни функции, но подобрява надеждността. SD Maid ще го използва като резервен метод.</string>
@@ -181,6 +191,7 @@
     <string name="settings_category_tools_label">Инструменти</string>
     <string name="settings_category_filter">Филтър</string>
     <string name="settings_category_risklevel">Ниво на риск</string>
+    <string name="corpsefinder_tool_name">CorpseFinder</string>
     <string name="corpsefinder_explanation_short">Данни, принадлежащи на вече премахнати приложения.</string>
     <string name="corpsefinder_settings_summary">Регулирайте филтрите за сканиране и нивата на риск.</string>
     <string name="corpsefinder_settings_risk_keeper_title">Включване на желани остатъци</string>
@@ -223,6 +234,7 @@
     <string name="corpsefinder_filter_appasec_label">Криптирани ресурси на приложения</string>
     <string name="corpsefinder_filter_appasec_summary">Криптирани ресурси на приложения, напр. игрови активи.</string>
     <string name="corpsefinder_filter_app2sd_summary">Данни, преместени във външно хранилище от App2Sd модификации.</string>
+    <string name="corpsefinder_filter_app2sd_label">App2SD</string>
     <plurals name="corpsefinder_result_x_corpses_deleted">
         <item quantity="one">%d остатък от приложение изтрит</item>
         <item quantity="other">%d остатъка от приложения изтрити</item>
@@ -237,6 +249,7 @@
     <string name="corpsefinder_owner_unknown">Неизвестен собственик</string>
     <string name="corpsefinder_corpse_hint_keeper">Този елемент може да съдържа данни, които искате да запазите, въпреки че собственикът му е деинсталиран, напр. снимки или резервни копия.</string>
     <string name="corpsefinder_corpse_hint_common">Този елемент има много често срещано име и може да принадлежи на все още инсталирани приложения, които SD Maid не знае.</string>
+    <string name="systemcleaner_tool_name">SystemCleaner</string>
     <string name="systemcleaner_explanation_short">Излишни данни, които не принадлежат на никое конкретно приложение.</string>
     <plurals name="systemcleaner_result_x_items_deleted">
         <item quantity="one">%d съвпадение изтрито</item>
@@ -339,6 +352,7 @@
     <string name="systemcleaner_customfilter_editor_age_explanation">Ограничаване на съвпаденията по възраст на файла (последна модификация). Оставете незададено за съвпадение с всякаква възраст.</string>
     <string name="systemcleaner_customfilter_import_action">Импортиране на нов филтър</string>
     <string name="systemcleaner_customfilter_export_action">Експортиране на избрания филтър</string>
+    <string name="appcleaner_tool_name">AppCleaner</string>
     <string name="appcleaner_explanation_short">Разходни данни, принадлежащи на конкретни приложения.</string>
     <string name="appcleaner_filter_defaultcachespublic_label">Публични кешове по подразбиране</string>
     <string name="appcleaner_filter_defaultcachespublic_summary">Публични кешове на приложения по подразбиране. Достъпни под Android/data в по-стари версии на Android. Изтриват се при докосване на \"Изчистване на кеш\" в системните настройки.</string>
@@ -388,8 +402,11 @@
     <string name="appcleaner_filter_whatsapp_sent_summary">Файлове, изпратени от WhatsApp на други.</string>
     <string name="appcleaner_filter_telegram_label">Telegram медийни файлове</string>
     <string name="appcleaner_filter_telegram_summary">Файлове, получени или изпратени чрез Telegram.</string>
+    <string name="appcleaner_filter_threema_label">Threema</string>
     <string name="appcleaner_filter_threema_summary">Файлове, получени чрез Threema.</string>
+    <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">Изпратени или получени файлове в разговори и WeChat моменти.</string>
+    <string name="appcleaner_filter_viber_label">Viber</string>
     <string name="appcleaner_filter_viber_summary">Кеширани медийни файлове, които се изтеглят отново при преглеждане в чат.</string>
     <string name="appcleaner_filter_qqchat_label">QQ чат</string>
     <string name="appcleaner_filter_qqchat_summary">Изпратени или получени файлове в QQ чат разговори.</string>
@@ -431,6 +448,7 @@
     <string name="appcleaner_forcestop_before_clearing_label">Принудително спиране преди изчистване</string>
     <string name="appcleaner_forcestop_before_clearing_summary">Принудително спиране на приложенията преди изчистване на кеша им. Може да помогне за изчистване на кеша на някои приложения, но може да причини неправилно поведение и да изисква ръчно рестартиране.</string>
     <string name="appcleaner_progress_force_stopping">Принудително спиране на приложения…</string>
+    <string name="deduplicator_tool_name">Deduplicator</string>
     <string name="deduplicator_explanation_short">Намиране на дублирани данни на вашето устройство.</string>
     <plurals name="deduplicator_result_x_clusters_processed">
         <item quantity="one">%d дубликат изтрит</item>
@@ -507,6 +525,7 @@
     <string name="deduplicator_arbiter_mode_prefer_smaller">Предпочитане на по-малки файлове</string>
     <string name="deduplicator_view_mode_groups_label">Групи</string>
     <string name="deduplicator_view_mode_directories_label">Папки</string>
+    <string name="squeezer_tool_name">Media Squeeze</string>
     <string name="squeezer_explanation_short">Компресиране на изображения за спестяване на място за съхранение.</string>
     <plurals name="squeezer_result_x_images_found">
         <item quantity="one">%d изображение намерено</item>
@@ -536,9 +555,11 @@
     <string name="squeezer_quality_description">По-ниско качество означава по-малък размер на файла, но намалено качество на изображението.</string>
     <string name="squeezer_quality_example_format">Пример: %1$s изображение → спестява ~%2$s при %3$d%% качество</string>
     <string name="squeezer_quality_warning_low">По-ниските качества могат да причинят видими артефакти.</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_quality_warning_high">Много високото качество осигурява минимални спестявания на място.</string>
     <string name="squeezer_types_category_label">Типове изображения</string>
     <string name="squeezer_type_jpeg_description">Включване на JPEG изображения (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Включване на WebP изображения (.webp).</string>
     <string name="squeezer_skip_compressed_title">Пропускане на вече компресирани</string>
     <string name="squeezer_skip_compressed_description">Пропускане на изображения, които вече са компресирани от SD Maid.</string>
@@ -588,6 +609,7 @@
         <item quantity="other">Поне %d дни стар</item>
     </plurals>
     <string name="squeezer_estimated_savings_percent">Очаквани ~%d%% спестявания за JPEG файлове</string>
+    <string name="appcontrol_tool_name">AppControl</string>
     <string name="appcontrol_explanation_short">Приложения, инсталирани на вашето устройство.</string>
     <plurals name="appcontrol_x_apps_detected_label">
         <item quantity="one">%d приложение открито</item>
@@ -619,6 +641,8 @@
     <string name="appcontrol_tag_not_installed">Не е инсталирано</string>
     <string name="appcontrol_tag_enabled">Активирано</string>
     <string name="appcontrol_tag_disabled">Деактивирано</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
+    <string name="appcontrol_tag_apk_bundle">Bundle</string>
     <string name="appcontrol_tag_debug">Дебъг</string>
     <string name="appcontrol_progress_enabling_package">Активиrane на приложение</string>
     <string name="appcontrol_progress_disabling_package">Деактивиране на приложение</string>
@@ -714,6 +738,7 @@
     <string name="appcontrol_item_screentime_x_since_y_label">Време на екрана: %1$s от %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Последно актуализирано: %s</string>
     <string name="appcontrol_item_installedat_x_label">Инсталирано на: %s</string>
+    <string name="analyzer_tool_name">StorageAnalyzer</string>
     <string name="analyzer_explanation_short">Разберете какво заема място на вашето устройство.</string>
     <string name="analyzer_progress_scanning_device">Търсене на устройства за хранилище</string>
     <string name="analyzer_progress_scanning_storage">Сканиране на хранилище</string>
@@ -858,6 +883,7 @@
     <string name="translation_encourage_title">Преведете SD Maid</string>
     <string name="translation_encourage_body">SD Maid се превежда от доброволци. Превод, преглед или корекция, вашата помощ се оценява!</string>
     <string name="translation_translators_title">Тази версия е преведена от</string>
+    <string name="translation_translators_people">Person1;Person2(optional@email.com)</string>
     <string name="motd_setting_enabled_label">Важни съобщения</string>
     <string name="motd_setting_enabled_explanation">Позволете на SD Maid да проверява за важни съобщения от разработчика.</string>
     <string name="updatecheck_setting_enabled_label">Проверка за актуализации</string>
@@ -918,6 +944,7 @@
     <string name="area_type_public_obb_label">Публични ресурси на приложения</string>
     <string name="area_type_private_data_label">Частни данни на приложения</string>
     <string name="area_type_portable_label">Преносимо хранилище</string>
+    <string name="shortcut_appcontrol_short">App Control</string>
     <string name="shortcut_appcontrol_long">Управление на инсталирани приложения</string>
     <string name="shortcut_onetap_short">Сканиране + Изтриване</string>
     <string name="shortcut_onetap_long">Сканиране и изтриване с едно действие</string>

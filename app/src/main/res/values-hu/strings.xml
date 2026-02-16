@@ -279,6 +279,7 @@
     <string name="systemcleaner_filter_screenshots_age_label">Képernyőkép életkora</string>
     <string name="systemcleaner_filter_screenshots_age_summary">A képernyőképek minimális életkora a törléshez.</string>
     <string name="systemcleaner_filter_superfluosapks_label">Felesleges APK-k</string>
+    <string name="systemcleaner_filter_superfluosapks_summary">A telepített alkalmazásverziók alapján már nem szükséges telepítőfájlok.</string>
     <string name="systemcleaner_filter_superfluosapks_includesameversion_label">Azonos verzió belefoglalása</string>
     <string name="systemcleaner_filter_superfluosapks_includesameversion_summary">A telepített verzióval megegyező APK fájlok is szerepeljenek. Tiltsd le, hogy csak a régebbi verziók legyenek eltávolítva.</string>
     <string name="systemcleaner_filter_lostdir_label">LOST.DIR mappák</string>
@@ -472,6 +473,7 @@
     <string name="deduplicator_detection_method_checksum_title">Tartalom ellenőrző összeg</string>
     <string name="deduplicator_detection_method_checksum_summary">Duplikátumok meghatározása a fájlok ellenőrző összegének kiszámításával. Az egyező ellenőrzőösszegű fájlok tartalma pontosan megegyezik.</string>
     <string name="deduplicator_detection_method_phash_title">Hasonló hash</string>
+    <string name="deduplicator_detection_method_phash_summary">Hasonló fájlok keresése tartalmi jellemzők elemzésével és perceptuális hash értékek összehasonlításával. ⚠️ A hasonlóság alapú felismerés téves találatokat is tartalmazhat, amelyek kézi ellenőrzést igényelnek.</string>
     <string name="deduplicator_occupied_space_label">Foglalt tároló</string>
     <plurals name="deduplicator_x_space_occupied_by_duplicates_msg">
         <item quantity="one">%s duplikátummal elfoglalva</item>
@@ -523,6 +525,64 @@
     <string name="deduplicator_arbiter_mode_prefer_smaller">Kisebb fájlok előnyben részesítése</string>
     <string name="deduplicator_view_mode_groups_label">Csoportok</string>
     <string name="deduplicator_view_mode_directories_label">Mappák</string>
+    <string name="squeezer_tool_name">Média Squeeze</string>
+    <string name="squeezer_explanation_short">Képek tömörítése a tárhely megtakarítása érdekében.</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="one">%d kép találva</item>
+        <item quantity="other">%d kép találva</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="one">~%s megtakarítható</item>
+        <item quantity="other">~%s megtakarítható</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="one">%d kép tömörítve</item>
+        <item quantity="other">%d kép tömörítve</item>
+    </plurals>
+    <plurals name="squeezer_preview_x_images">
+        <item quantity="one">%d kép kiválasztva</item>
+        <item quantity="other">%d kép kiválasztva</item>
+    </plurals>
+    <string name="squeezer_search_locations_title">Keresési helyek</string>
+    <string name="squeezer_search_locations_default_summary">Kamera mappák (alapértelmezett)</string>
+    <string name="squeezer_min_size_title">Minimális fájlméret</string>
+    <string name="squeezer_min_size_description">Az ennél kisebb képek kihagyása.</string>
+    <string name="squeezer_min_age_title">Minimális fájlkor</string>
+    <string name="squeezer_min_age_description">Csak az ennél régebbi képek bevonása.</string>
+    <string name="squeezer_compression_settings_label">Tömörítési beállítások</string>
+    <string name="squeezer_quality_label">Minőség</string>
+    <string name="squeezer_quality_title">Tömörítési minőség</string>
+    <string name="squeezer_quality_description">Alacsonyabb minőség kisebb fájlméretet jelent, de csökkentett képminőséggel.</string>
+    <string name="squeezer_quality_example_format">Példa: %1$s kép → ~%2$s megtakarítás %3$d%% minőségnél</string>
+    <string name="squeezer_quality_warning_low">Alacsonyabb minőségnél látható műtermékek jelenhetnek meg.</string>
+    <string name="squeezer_quality_warning_high">Nagyon magas minőség minimális helytakarékosságot biztosít.</string>
+    <string name="squeezer_types_category_label">Képtípusok</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
+    <string name="squeezer_type_jpeg_description">JPEG képek (.jpg, .jpeg) bevonása.</string>
+    <string name="squeezer_type_webp_title">WebP</string>
+    <string name="squeezer_type_webp_description">WebP képek (.webp) bevonása.</string>
+    <string name="squeezer_skip_compressed_title">Már tömörítettek kihagyása</string>
+    <string name="squeezer_skip_compressed_description">Az SD Maid által már tömörített képek kihagyása.</string>
+    <string name="squeezer_exif_marker_title">EXIF jelölő írása</string>
+    <string name="squeezer_exif_marker_description">Jelölő hozzáadása a kép EXIF felhasználói megjegyzés mezőjéhez az újratömörítés megakadályozására még a tömörítési előzmények törlése után is.</string>
+    <string name="squeezer_estimated_savings_format">~%s megtakarítás</string>
+    <string name="squeezer_no_savings_expected">Korlátozott megtakarítás</string>
+    <string name="squeezer_current_size_format">Méret: %s</string>
+    <string name="squeezer_compress_action">Tömörítés</string>
+    <string name="squeezer_compress_all_action">Összes tömörítése</string>
+    <string name="squeezer_preview_dialog_title">Tömörítés megerősítése</string>
+    <string name="squeezer_preview_total_size">Teljes méret</string>
+    <string name="squeezer_preview_estimated_savings">Becsült megtakarítás</string>
+    <string name="squeezer_compress_confirmation_title">Képek tömörítése?</string>
+    <string name="squeezer_compress_confirmation_message">Ez az eredeti képeket tömörített verziókkal cseréli le. Ez a művelet nem vonható vissza.</string>
+    <string name="squeezer_history_title">Tömörítési előzmények</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="one">%1$d elem (%2$s)</item>
+        <item quantity="other">%1$d elem (%2$s)</item>
+    </plurals>
+    <string name="squeezer_history_empty">Nincs tömörítési előzmény</string>
+    <string name="squeezer_history_clear_title">Tömörítési előzmények törlése</string>
+    <string name="squeezer_history_clear_message">Ez lehetővé teszi a korábban tömörített képek újratömörítését. Maguk a képek nem változnak.</string>
     <string name="squeezer_onboarding_title">A képtömörítésről</string>
     <string name="squeezer_onboarding_message">A képtömörítés csökkenti a fájlméretet a vizuális részletek eltávolításával. Ez a folyamat visszafordíthatatlan - az eredeti minőség nem állítható vissza.\n\nÍgy fognak kinézni a képeid:</string>
     <string name="squeezer_onboarding_original_label">Eredeti</string>
@@ -567,6 +627,7 @@
     <string name="appcontrol_app_launch_title">Alkalmazás indítása</string>
     <string name="appcontrol_app_launch_description">Indítsa el az alkalmazás elsődleges tevékenységét.</string>
     <string name="appcontrol_app_forcestop_title">Leállítás kényszerítése</string>
+    <string name="appcontrol_app_forcestop_description">Az alkalmazás leállítása. Megakadályozza az önálló indulást, amíg meg nem nyitod vagy újra nem indítod az eszközt.</string>
     <string name="appcontrol_app_uninstall_description">Alkalmazás eltávolítása az eszközről.</string>
     <string name="appcontrol_app_exclude_add_title">Alkalmazás kizárása</string>
     <string name="appcontrol_app_exclude_add_description">Zárja ki ezt az alkalmazást az SD Maid egyéb műveleteiből.</string>
@@ -582,6 +643,7 @@
     <string name="appcontrol_tag_not_installed">Nincs telepítve</string>
     <string name="appcontrol_tag_enabled">Engedélyezve</string>
     <string name="appcontrol_tag_disabled">Letiltva</string>
+    <string name="appcontrol_tag_debug">Hibakeresés</string>
     <string name="appcontrol_progress_enabling_package">Alkalmazás engedélyezése</string>
     <string name="appcontrol_progress_disabling_package">Alkalmazás letiltása</string>
     <string name="appcontrol_list_filteroptions_label">Szűrési lehetőségek</string>
@@ -596,6 +658,32 @@
     <plurals name="appcontrol_uninstall_result_message_x">
         <item quantity="one">%d alkalmazás eltávolításra került</item>
         <item quantity="other">%d alkalmazás eltávolításra került</item>
+    </plurals>
+    <string name="appcontrol_archive_action">Archiválás</string>
+    <string name="appcontrol_archive_selection_action">Alkalmazások archiválása</string>
+    <string name="appcontrol_archive_description">Archiválás a hely felszabadításához, miközben az alkalmazásadatok megmaradnak a későbbi visszaállításhoz.</string>
+    <string name="appcontrol_progress_archiving_app">Alkalmazás archiválása…</string>
+    <string name="appcontrol_archive_confirmation_title">Archiválás megerősítése</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="one">%d alkalmazás archiválása?</item>
+        <item quantity="other">%d alkalmazás archiválása?</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="one">%d alkalmazás archiválva</item>
+        <item quantity="other">%d alkalmazás archiválva</item>
+    </plurals>
+    <string name="appcontrol_restore_action">Visszaállítás</string>
+    <string name="appcontrol_restore_selection_action">Alkalmazások visszaállítása</string>
+    <string name="appcontrol_restore_description">Archivált alkalmazás visszaállítása teljesen telepített állapotra. Az alkalmazásadatok megmaradnak.</string>
+    <string name="appcontrol_progress_restoring_app">Alkalmazás visszaállítása…</string>
+    <string name="appcontrol_restore_confirmation_title">Visszaállítás megerősítése</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="one">%d alkalmazás visszaállítása?</item>
+        <item quantity="other">%d alkalmazás visszaállítása?</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="one">%d alkalmazás visszaállítva</item>
+        <item quantity="other">%d alkalmazás visszaállítva</item>
     </plurals>
     <string name="appcontrol_app_sizes_title">App méret</string>
     <string name="appcontrol_app_sizes_apk_label">App</string>
@@ -614,13 +702,19 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">Egy körülbelüli méret megállapítása minden egyes appnak.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">Tevékenység megállapítása</string>
     <string name="appcontrol_settings_module_activity_enabled_description">Nézze meg, hogy egy alkalmazás aktív (vagy nemrégiben volt-e) aktív.</string>
+    <string name="appcontrol_include_multiuser_label">Más felhasználók bevonása</string>
+    <string name="appcontrol_include_multiuser_summary">Az eszközön lévő más felhasználói profilok alkalmazásainak bevonása.</string>
     <string name="appcontrol_export_app_selection_action">Appok exportálása</string>
     <string name="appcontrol_export_title">App exportálása</string>
+    <string name="appcontrol_export_description">Az alkalmazás telepítőfájljainak mentése. Az alkalmazásadatok nem tartoznak bele.</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="one">%d alkalmazás exportálásra került</item>
         <item quantity="other">%d alkalmazás exportálásra került</item>
     </plurals>
     <string name="appcontrol_progress_exporting_x">Exportálás %s</string>
+    <string name="appcontrol_share_list_action">Lista megosztása</string>
+    <string name="appcontrol_share_list_title">Alkalmazásaim</string>
+    <string name="appcontrol_share_list_footer">Megosztva az SD Maid SE-vel</string>
     <string name="appcontrol_force_stop_selection_action">Alkalmazások kényszerített leállítása</string>
     <string name="appcontrol_force_stop_action">Leállítás kényszerítése</string>
     <string name="appcontrol_force_stop_confirm_title">Kényszerített leállítás megerősítése</string>
@@ -637,8 +731,13 @@
     <string name="appcontrol_automation_subtitle_force_stopping">Kényszerített leállítás…</string>
     <string name="appcontrol_automation_progress_find_force_stop">„Leállítás kényszerítése” gomb keresése (kulcsszavak: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">Az előző művelet megerősítésének kísérlete (kulcsszavak: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">Archiválás…</string>
+    <string name="appcontrol_automation_progress_find_archive">\"Archiválás\" gomb keresése (kulcsszavak: %s)</string>
+    <string name="appcontrol_automation_subtitle_restoring">Visszaállítás…</string>
+    <string name="appcontrol_automation_progress_find_restore">\"Visszaállítás\" gomb keresése (kulcsszavak: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Képernyőidő: %1$s %2$s óta</string>
     <string name="appcontrol_item_lastupdate_x_label">Utoljára frissítve: %s</string>
+    <string name="appcontrol_item_installedat_x_label">Telepítve: %s</string>
     <string name="analyzer_tool_name">TárhelyElemző</string>
     <string name="analyzer_explanation_short">Tudja meg, mi foglalja a helyet a készülékén.</string>
     <string name="analyzer_progress_scanning_device">Tárolóeszközök keresése</string>
@@ -656,6 +755,11 @@
         <item quantity="other">%s használt</item>
     </plurals>
     <string name="analyzer_content_access_opaque">Nincs közvetlen hozzáférés</string>
+    <string name="analyzer_content_create_swiper_session_action">Swiper munkamenet létrehozása</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="one">Swiper munkamenet létrehozva %d elemmel</item>
+        <item quantity="other">Swiper munkamenet létrehozva %d elemmel</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">Elsődleges tároló</string>
     <string name="analyzer_storage_type_primary_description">A készülék elsődleges tárhelye. Tartalmazza a belső SD-kártyát, az alkalmazások és a rendszeradatok privát tárhelyét.</string>
     <string name="analyzer_storage_type_secondary_title">Másodlagos tároló</string>
@@ -698,6 +802,7 @@
     <string name="exclusion_type_segment">Szegmens kizárása</string>
     <string name="exclusion_tags_alltools">Minden eszköz</string>
     <string name="exclusion_target_label">Kizárási cél</string>
+    <string name="exclusion_editor_path_change_action">Koppints az útvonal módosításához</string>
     <string name="exclusion_option_allow_partial">Részleges egyezések engedélyezése</string>
     <string name="exclusion_option_ignore_casing">Tömítés figyelmen kívül hagyása</string>
     <string name="exclusion_editor_affected_tools_label">Érintett eszközök</string>
@@ -788,6 +893,17 @@
     <string name="review_app_review_action">Áttekintés</string>
     <string name="review_app_dismiss_action">Talán később</string>
     <string name="review_app_body">Szeretnél véleményt hagyni az SD Maidről?️ ❤️</string>
+    <string name="anniversary_card_title">Boldog SD Maid évfordulót ❤️</string>
+    <string name="anniversary_card_install_date">Veled %s óta</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="one">Már %1$d éve együtt. Köszönjük, hogy az SD Maidre bízod Android készüléked tisztán tartását. Felszabadított hely: %2$s</item>
+        <item quantity="other">Már %1$d éve együtt. Készüléked az SD Maid segítségével tiszta és rendezett marad. Felszabadított hely: %2$s</item>
+    </plurals>
+    <string name="anniversary_share_title">SD Maid évfordulód megosztása</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="one">%1$d éve az SD Maiddel — Felszabadított hely: %2$s. Android készülékemet tisztán és rendezetten tartja. #SDMaid\nPróbáld ki: %3$s</item>
+        <item quantity="other">%1$d éve az SD Maiddel — Felszabadított hely: %2$s. Android készülékemet tisztán és rendezetten tartja. #SDMaid\nPróbáld ki: %3$s</item>
+    </plurals>
     <string name="stats_label">Előzmények</string>
     <plurals name="stats_dash_body_size">
         <item quantity="one">%s felszabadult.</item>

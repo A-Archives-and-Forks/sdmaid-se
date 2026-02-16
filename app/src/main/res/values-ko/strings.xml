@@ -269,6 +269,7 @@
     <string name="systemcleaner_filter_screenshots_age_label">스크린샷 기간</string>
     <string name="systemcleaner_filter_screenshots_age_summary">삭제 대상으로 간주할 스크린샷의 최소 기간입니다.</string>
     <string name="systemcleaner_filter_superfluosapks_label">불필요한 APK 파일</string>
+    <string name="systemcleaner_filter_superfluosapks_summary">설치된 앱 버전에 따라 더 이상 필요하지 않은 설치 파일입니다.</string>
     <string name="systemcleaner_filter_superfluosapks_includesameversion_label">동일 버전 포함</string>
     <string name="systemcleaner_filter_superfluosapks_includesameversion_summary">설치된 버전과 일치하는 APK 파일도 대상으로 합니다. 비활성화하면 이전 버전만 제거합니다.</string>
     <string name="systemcleaner_filter_lostdir_label">LOST.DIR 폴더</string>
@@ -457,6 +458,7 @@
     <string name="deduplicator_detection_method_checksum_title">콘텐츠 체크썸</string>
     <string name="deduplicator_detection_method_checksum_summary">파일에 대한 체크썸을 계산하여 중복 여부를 확인합니다. 체크썸이 일치하는 파일은 콘텐츠가 완전히 동일합니다.</string>
     <string name="deduplicator_detection_method_phash_title">인식 해시</string>
+    <string name="deduplicator_detection_method_phash_summary">콘텐츠 특성을 분석하고 인식 해시 값을 비교하여 유사한 파일을 찾습니다. ⚠️ 유사도 기반 탐지에는 수동 확인이 필요한 오탐이 포함될 수 있습니다.</string>
     <string name="deduplicator_occupied_space_label">사용 중인 저장공간</string>
     <plurals name="deduplicator_x_space_occupied_by_duplicates_msg">
         <item quantity="other">%s가 중복 파일로 점유되고 있습니다</item>
@@ -507,6 +509,59 @@
     <string name="deduplicator_arbiter_mode_prefer_smaller">작은 파일 선호</string>
     <string name="deduplicator_view_mode_groups_label">그룹</string>
     <string name="deduplicator_view_mode_directories_label">폴더</string>
+    <string name="squeezer_tool_name">미디어 스퀴즈</string>
+    <string name="squeezer_explanation_short">이미지를 압축하여 저장 공간을 절약합니다.</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="other">%d개의 이미지 발견</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="other">~%s 절약 가능</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="other">%d개의 이미지 압축됨</item>
+    </plurals>
+    <plurals name="squeezer_preview_x_images">
+        <item quantity="other">%d개의 이미지 선택됨</item>
+    </plurals>
+    <string name="squeezer_search_locations_title">검색 위치</string>
+    <string name="squeezer_search_locations_default_summary">카메라 폴더 (기본값)</string>
+    <string name="squeezer_min_size_title">최소 파일 크기</string>
+    <string name="squeezer_min_size_description">이 크기보다 작은 이미지를 건너뜁니다.</string>
+    <string name="squeezer_min_age_title">최소 파일 기간</string>
+    <string name="squeezer_min_age_description">이 기간보다 최근의 이미지만 포함합니다.</string>
+    <string name="squeezer_compression_settings_label">압축 설정</string>
+    <string name="squeezer_quality_label">품질</string>
+    <string name="squeezer_quality_title">압축 품질</string>
+    <string name="squeezer_quality_description">낮은 품질은 파일 크기가 작아지지만 이미지 품질이 저하됩니다.</string>
+    <string name="squeezer_quality_example_format">예시: %1$s 이미지 → %3$d%% 품질에서 ~%2$s 절약</string>
+    <string name="squeezer_quality_warning_low">낮은 품질은 눈에 보이는 아티팩트를 유발할 수 있습니다.</string>
+    <string name="squeezer_quality_warning_high">매우 높은 품질은 공간 절약이 거의 없습니다.</string>
+    <string name="squeezer_types_category_label">이미지 유형</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
+    <string name="squeezer_type_jpeg_description">JPEG 이미지 (.jpg, .jpeg)를 포함합니다.</string>
+    <string name="squeezer_type_webp_title">WebP</string>
+    <string name="squeezer_type_webp_description">WebP 이미지 (.webp)를 포함합니다.</string>
+    <string name="squeezer_skip_compressed_title">이미 압축된 파일 건너뛰기</string>
+    <string name="squeezer_skip_compressed_description">SD Maid에 의해 이미 압축된 이미지를 건너뜁니다.</string>
+    <string name="squeezer_exif_marker_title">EXIF 마커 기록</string>
+    <string name="squeezer_exif_marker_description">압축 기록이 삭제되더라도 재압축을 방지하기 위해 이미지의 EXIF 사용자 코멘트 필드에 마커를 추가합니다.</string>
+    <string name="squeezer_estimated_savings_format">~%s 절약</string>
+    <string name="squeezer_no_savings_expected">절약 효과 미미</string>
+    <string name="squeezer_current_size_format">크기: %s</string>
+    <string name="squeezer_compress_action">압축</string>
+    <string name="squeezer_compress_all_action">모두 압축</string>
+    <string name="squeezer_preview_dialog_title">압축 확인</string>
+    <string name="squeezer_preview_total_size">총 크기</string>
+    <string name="squeezer_preview_estimated_savings">예상 절약량</string>
+    <string name="squeezer_compress_confirmation_title">이미지를 압축하시겠습니까?</string>
+    <string name="squeezer_compress_confirmation_message">원본 이미지가 압축된 버전으로 대체됩니다. 이 작업은 되돌릴 수 없습니다.</string>
+    <string name="squeezer_history_title">압축 기록</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="other">%1$d개 항목 (%2$s)</item>
+    </plurals>
+    <string name="squeezer_history_empty">압축 기록 없음</string>
+    <string name="squeezer_history_clear_title">압축 기록 삭제</string>
+    <string name="squeezer_history_clear_message">이전에 압축된 이미지를 다시 압축할 수 있게 됩니다. 이미지 자체에는 영향이 없습니다.</string>
     <string name="squeezer_onboarding_title">이미지 압축 소개</string>
     <string name="squeezer_onboarding_message">이미지 압축은 시각적 세부 사항을 제거하여 파일 크기를 줄입니다. 이 과정은 되돌릴 수 없습니다 - 원래 품질을 복원할 수 없습니다.\n\n이미지가 어떻게 보일지 미리보기:</string>
     <string name="squeezer_onboarding_original_label">원본</string>
@@ -549,6 +604,7 @@
     <string name="appcontrol_app_launch_title">앱 실행하기</string>
     <string name="appcontrol_app_launch_description">이 앱을 실행합니다.</string>
     <string name="appcontrol_app_forcestop_title">강제 종료하기</string>
+    <string name="appcontrol_app_forcestop_description">앱을 중지합니다. 사용자가 직접 열거나 기기를 재부팅할 때까지 자동 실행을 방지합니다.</string>
     <string name="appcontrol_app_uninstall_description">기기에서 이 앱을 삭제합니다.</string>
     <string name="appcontrol_app_exclude_add_title">앱 제외</string>
     <string name="appcontrol_app_exclude_add_description">SD Maid의 다른 활동으로부터 이 앱을 제외합니다.</string>
@@ -564,6 +620,7 @@
     <string name="appcontrol_tag_not_installed">설치되지 않음</string>
     <string name="appcontrol_tag_enabled">사용하고 있습니다</string>
     <string name="appcontrol_tag_disabled">사용하지 않고 있습니다</string>
+    <string name="appcontrol_tag_debug">디버그</string>
     <string name="appcontrol_progress_enabling_package">앱 활성화 중</string>
     <string name="appcontrol_progress_disabling_package">앱 사용 중지하는 중</string>
     <string name="appcontrol_list_filteroptions_label">필터 설정</string>
@@ -577,6 +634,28 @@
     <string name="appcontrol_progress_uninstalling_app">앱 제거하기</string>
     <plurals name="appcontrol_uninstall_result_message_x">
         <item quantity="other">%d 앱을 제거했습니다.</item>
+    </plurals>
+    <string name="appcontrol_archive_action">보관</string>
+    <string name="appcontrol_archive_selection_action">앱 보관</string>
+    <string name="appcontrol_archive_description">나중에 복원할 수 있도록 앱 데이터를 유지하면서 공간을 확보하기 위해 보관합니다.</string>
+    <string name="appcontrol_progress_archiving_app">앱 보관 중…</string>
+    <string name="appcontrol_archive_confirmation_title">보관 확인</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="other">%d개의 앱을 보관하시겠습니까?</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="other">%d개의 앱이 보관되었습니다</item>
+    </plurals>
+    <string name="appcontrol_restore_action">복원</string>
+    <string name="appcontrol_restore_selection_action">앱 복원</string>
+    <string name="appcontrol_restore_description">보관된 앱을 완전히 설치된 상태로 복원합니다. 앱 데이터가 유지됩니다.</string>
+    <string name="appcontrol_progress_restoring_app">앱 복원 중…</string>
+    <string name="appcontrol_restore_confirmation_title">복원 확인</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="other">%d개의 앱을 복원하시겠습니까?</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="other">%d개의 앱이 복원되었습니다</item>
     </plurals>
     <string name="appcontrol_app_sizes_title">앱 크기</string>
     <string name="appcontrol_app_sizes_apk_label">앱</string>
@@ -593,12 +672,18 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">앱 크기의 대략적인 값을 확인합니다.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">앱 활성 여부 확인</string>
     <string name="appcontrol_settings_module_activity_enabled_description">앱이 실행되고 있는지 (또는 최근에 실행되었는지) 확인합니다.</string>
+    <string name="appcontrol_include_multiuser_label">다른 사용자 포함</string>
+    <string name="appcontrol_include_multiuser_summary">이 기기의 다른 사용자 프로필의 앱을 포함합니다.</string>
     <string name="appcontrol_export_app_selection_action">앱들 내보내기</string>
     <string name="appcontrol_export_title">앱 내보내기</string>
+    <string name="appcontrol_export_description">이 앱의 설치 파일을 저장합니다. 앱 데이터는 포함되지 않습니다.</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="other">%d개의 앱을 내보냈습니다</item>
     </plurals>
     <string name="appcontrol_progress_exporting_x">%s 내보내는 중</string>
+    <string name="appcontrol_share_list_action">목록 공유</string>
+    <string name="appcontrol_share_list_title">내 앱</string>
+    <string name="appcontrol_share_list_footer">SD Maid SE로 공유됨</string>
     <string name="appcontrol_force_stop_selection_action">강제 중지</string>
     <string name="appcontrol_force_stop_action">강제 종료</string>
     <string name="appcontrol_force_stop_confirm_title">강제 중지</string>
@@ -613,8 +698,13 @@
     <string name="appcontrol_automation_subtitle_force_stopping">강제 종료 중…</string>
     <string name="appcontrol_automation_progress_find_force_stop">\"강제 중지\" 버튼 찾는 중 (키워드: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">이전 작업 확인 시도 중 (키워드: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">보관 중…</string>
+    <string name="appcontrol_automation_progress_find_archive">\"보관\" 버튼 찾는 중 (키워드: %s)</string>
+    <string name="appcontrol_automation_subtitle_restoring">복원 중…</string>
+    <string name="appcontrol_automation_progress_find_restore">\"복원\" 버튼 찾는 중 (키워드: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">화면 시간: %2$s부터 %1$s</string>
     <string name="appcontrol_item_lastupdate_x_label">마지막 업데이트: %s</string>
+    <string name="appcontrol_item_installedat_x_label">설치일: %s</string>
     <string name="analyzer_tool_name">저장소 분석기</string>
     <string name="analyzer_explanation_short">무엇이 저장 공간을 차지하고 있는지 확인합니다.</string>
     <string name="analyzer_progress_scanning_device">저장 장치 검색 중</string>
@@ -630,6 +720,10 @@
         <item quantity="other">%s 사용 중</item>
     </plurals>
     <string name="analyzer_content_access_opaque">직접 접근 권한 없음</string>
+    <string name="analyzer_content_create_swiper_session_action">Swiper 세션 만들기</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="other">%d개 항목으로 Swiper 세션이 생성되었습니다</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">주 저장소</string>
     <string name="analyzer_storage_type_primary_description">기기의 주 저장공간입니다. 기기 내부의 \"sdcard\" 및 앱과 시스템 데이터를 저장하는 공간을 포함합니다.</string>
     <string name="analyzer_storage_type_secondary_title">추가 저장소</string>
@@ -672,6 +766,7 @@
     <string name="exclusion_type_segment">예외 구간</string>
     <string name="exclusion_tags_alltools">모든 도구</string>
     <string name="exclusion_target_label">예외 목표</string>
+    <string name="exclusion_editor_path_change_action">경로를 변경하려면 탭하세요</string>
     <string name="exclusion_option_allow_partial">부분 매칭 허용</string>
     <string name="exclusion_option_ignore_casing">대/소문자 무시</string>
     <string name="exclusion_editor_affected_tools_label">영향받은 도구</string>
@@ -760,6 +855,15 @@
     <string name="review_app_review_action">리뷰</string>
     <string name="review_app_dismiss_action">다음에 해요</string>
     <string name="review_app_body">SD Maid 리뷰를 남겨주시겠어요?️ ❤️</string>
+    <string name="anniversary_card_title">SD Maid 기념일을 축하합니다 ❤️</string>
+    <string name="anniversary_card_install_date">%s부터 함께하고 있습니다</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="other">함께한 지 %1$d년. SD Maid로 기기를 깔끔하게 유지하고 있습니다. 확보한 공간: %2$s</item>
+    </plurals>
+    <string name="anniversary_share_title">SD Maid 기념일 공유</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="other">SD Maid와 함께한 %1$d년 — 확보한 공간: %2$s. Android를 깔끔하게 유지합니다. #SDMaid\n사용해 보세요: %3$s</item>
+    </plurals>
     <string name="stats_label">이력</string>
     <plurals name="stats_dash_body_size">
         <item quantity="other">%s가 확보되었습니다.</item>

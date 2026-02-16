@@ -7,6 +7,9 @@
     <string name="dashboard_settings_oneclick_summary">Ξεκινήστε σάρωση και διαγραφή για όλα τα εργαλεία με ένα κλικ στο κουμπί δράσης του πίνακα εργαλείων, χωρίς επιπλέον επιβεβαιώσεις.</string>
     <string name="dashboard_settings_oneclick_tools_title">Εργαλεία με Ένα-Πάτημα</string>
     <string name="dashboard_settings_oneclick_tools_desc">Ποια εργαλεία πρέπει να περιλαμβάνονται στις λειτουργίες με ένα πάτημα;</string>
+    <string name="dashboard_card_config_title">Κάρτες πίνακα εργαλείων</string>
+    <string name="dashboard_card_config_desc">Ρύθμιση των καρτών που εμφανίζονται και της σειράς τους</string>
+    <string name="dashboard_card_config_header_title">Σύρετε για αναδιάταξη, εναλλαγή για εμφάνιση/απόκρυψη</string>
     <string name="debug_notification_channel_label">Ειδοποιήσεις εντοπισμού σφαλμάτων</string>
     <string name="debug_debuglog_file_label">Αρχείο καταγραφής</string>
     <string name="debug_debuglog_recording_progress">Καταγραφή αρχεία εντοπισμού σφαλμάτων</string>
@@ -88,6 +91,14 @@
     <string name="support_installid_desc">Οι αυτόματες αναφορές σφαλμάτων είναι ανώνυμες. Μοιραστείτε το αναγνωριστικό εγκατάστασης εάν ο προγραμματιστής πρέπει να βρει τις αναφορές σφαλμάτων.</string>
     <string name="support_debuglog_label">Αρχείο καταγραφής σφαλμάτων</string>
     <string name="support_debuglog_desc">Καταγράψτε όλα όσα κάνει η εφαρμογή σε ένα αρχείο κειμένου που μπορείτε να μοιραστείτε.</string>
+    <string name="support_debuglog_folder_label">Φάκελος αρχείων καταγραφής σφαλμάτων</string>
+    <plurals name="support_debuglog_folder_desc">
+        <item quantity="one">%d αποθηκευμένη συνεδρία καταγραφής σφαλμάτων (%s)</item>
+        <item quantity="other">%d αποθηκευμένες συνεδρίες καταγραφής σφαλμάτων (%s)</item>
+    </plurals>
+    <string name="support_debuglog_folder_empty_desc">Δεν υπάρχουν αποθηκευμένα αρχεία καταγραφής σφαλμάτων</string>
+    <string name="support_debuglog_folder_delete_confirmation_title">Διαγραφή όλων των αρχείων καταγραφής σφαλμάτων;</string>
+    <string name="support_debuglog_folder_delete_confirmation_message">Αυτό θα διαγράψει οριστικά όλες τις αποθηκευμένες συνεδρίες καταγραφής σφαλμάτων. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</string>
     <string name="discord_label">Discord</string>
     <string name="discord_description">Ένα μέρος για να κάνεις παρέα και να κάνεις ερωτήσεις.</string>
     <string name="changelog_label">Αρχείο αλλαγών</string>
@@ -170,7 +181,13 @@
     <string name="debug_bugreporter_label">Αυτόματες αναφορές σφαλμάτων</string>
     <string name="debug_bugreporter_summary">Αναφέρει αυτόματα ζητήματα, π.χ. λεπτομέρειες σχετικά με τα σφάλματα της εφαρμογής, ώστε να μπορώ να καταλάβω γιατί και να το διορθώσω.</string>
     <!-- Debug card (dashboard) -->
+    <string name="debug_card_title">Η λειτουργία εντοπισμού σφαλμάτων είναι ενεργοποιημένη</string>
+    <string name="debug_card_trace_mode_label">Ενεργοποίηση λειτουργίας ανίχνευσης</string>
+    <string name="debug_card_dryrun_mode_label">Δοκιμαστική λειτουργία (απενεργοποίηση διαγραφής)</string>
+    <string name="debug_card_areas_reload_action">Επαναφόρτωση περιοχών δεδομένων</string>
     <string name="debug_card_pkgs_reload_action">Επαναφόρτωση εφαρμογών</string>
+    <string name="debug_card_root_test_action">Δοκιμή root</string>
+    <string name="debug_card_shizuku_test_action">Δοκιμή Shizuku</string>
     <string name="settings_category_tools_label">Εργαλεία</string>
     <string name="settings_category_filter">Φίλτρο</string>
     <string name="settings_category_risklevel">Επίπεδο κινδύνου</string>
@@ -262,6 +279,9 @@
     <string name="systemcleaner_filter_screenshots_age_label">Ηλικία Στιγμιότυπου</string>
     <string name="systemcleaner_filter_screenshots_age_summary">Ελάχιστη ηλικία για στιγμιότυπα οθόνης που πρέπει να λαμβάνονται υπόψη για διαγραφή.</string>
     <string name="systemcleaner_filter_superfluosapks_label">Περιττά APK</string>
+    <string name="systemcleaner_filter_superfluosapks_summary">Αρχεία εγκατάστασης που δεν χρειάζονται πλέον με βάση τις εγκατεστημένες εκδόσεις εφαρμογών.</string>
+    <string name="systemcleaner_filter_superfluosapks_includesameversion_label">Συμπερίληψη ίδιας έκδοσης</string>
+    <string name="systemcleaner_filter_superfluosapks_includesameversion_summary">Στόχευση και αρχείων APK που αντιστοιχούν στην εγκατεστημένη έκδοση. Απενεργοποιήστε για αφαίρεση μόνο παλαιότερων εκδόσεων.</string>
     <string name="systemcleaner_filter_lostdir_label">Φάκελοι LOST.DIR</string>
     <string name="systemcleaner_filter_lostdir_summary">Προσωρινά αρχεία που δημιουργούνται κατά τη μεταφορά δεδομένων μεταξύ συσκευών Android.</string>
     <string name="systemcleaner_filter_linuxfiles_label">Αρχεία Linux</string>
@@ -322,8 +342,14 @@
     <string name="systemcleaner_customfilter_editor_name_matching_mode_equal_label">Το όνομα είναι ίσο με τη λέξη-κλειδί</string>
     <string name="systemcleaner_customfilter_last_edit">Τελευταία επεξεργασία: %s</string>
     <string name="systemcleaner_customfilter_editor_livesearch_label">Ζωντανή αναζήτηση</string>
+    <string name="systemcleaner_customfilter_editor_size_label">Περιορισμοί μεγέθους</string>
     <string name="systemcleaner_customfilter_editor_size_minimum_label">Ελάχιστο μέγεθος</string>
     <string name="systemcleaner_customfilter_editor_size_maximum_label">Μέγιστο μέγεθος</string>
+    <string name="systemcleaner_customfilter_editor_size_explanation">Περιορισμός αντιστοιχιών βάσει μεγέθους αρχείου. Αφήστε κενό για αντιστοίχιση οποιουδήποτε μεγέθους.</string>
+    <string name="systemcleaner_customfilter_editor_age_label">Περιορισμοί ηλικίας</string>
+    <string name="systemcleaner_customfilter_editor_age_minimum_label">Ελάχιστη ηλικία</string>
+    <string name="systemcleaner_customfilter_editor_age_maximum_label">Μέγιστη ηλικία</string>
+    <string name="systemcleaner_customfilter_editor_age_explanation">Περιορισμός αντιστοιχιών βάσει ηλικίας αρχείου (χρόνος τελευταίας τροποποίησης). Αφήστε κενό για αντιστοίχιση οποιασδήποτε ηλικίας.</string>
     <string name="systemcleaner_customfilter_import_action">Εισαγωγή νέου φίλτρου</string>
     <string name="systemcleaner_customfilter_export_action">Εξαγωγή επιλεγμένου φίλτρου</string>
     <string name="appcleaner_tool_name">Εκκαθάριση Εφαρμογών</string>
@@ -413,6 +439,9 @@
     </plurals>
     <string name="appcleaner_progress_shizuku_deleting_caches">Διαγραφή κρυφής προσωρινής μνήμης χρησιμοποιώντας το Shizuku</string>
     <string name="appcleaner_progress_determining_inaccessible_caches">Προσδιορισμός μη προσβάσιμων προσωρινών μνήμων</string>
+    <string name="appcleaner_forcestop_before_clearing_label">Αναγκαστική διακοπή πριν από την εκκαθάριση</string>
+    <string name="appcleaner_forcestop_before_clearing_summary">Αναγκαστική διακοπή εφαρμογών πριν από την εκκαθάριση της μνήμης cache τους. Μπορεί να βοηθήσει στην εκκαθάριση ορισμένων κρυφών μνημών εφαρμογών, αλλά μπορεί να προκαλέσει δυσλειτουργία εφαρμογών και να απαιτηθεί χειροκίνητη επανεκκίνηση.</string>
+    <string name="appcleaner_progress_force_stopping">Αναγκαστική διακοπή εφαρμογών…</string>
     <string name="appcleaner_automation_error_locked_appcache_title">Εκκαθάριση προσωρινής μνήμης μη διαθέσιμη</string>
     <string name="appcleaner_automation_error_locked_appcache_body">Το σύστημα έχει απενεργοποιήσει το κουμπί \"Εκκαθάριση μνήμης cache\" για αυτήν την εφαρμογή. Εξαιρέστε το για να επιταχύνετε την εκκαθάριση της μνήμης cache.</string>
     <string name="appcleaner_automation_error_no_settings_title">Μη διαθέσιμη οθόνη ρυθμίσεων</string>
@@ -433,6 +462,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">Εμφάνιση επιλογών που σας επιτρέπουν να διαγράψετε όλα τα αρχεία σε ένα σύνολο διπλότυπων έτσι ώστε να μην μείνει κανένα αρχείο.</string>
     <string name="deduplicator_search_locations_title">Τοποθεσίες αναζήτησης</string>
     <string name="deduplicator_search_locations_all_summary">Όλες οι προσβάσιμες περιοχές</string>
+    <string name="deduplicator_keep_prefer_paths_title">Προτίμηση διατήρησης σε</string>
+    <string name="deduplicator_keep_prefer_paths_summary">Κατά τη λήψη απόφασης για το ποιο αντίγραφο θα διατηρηθεί, προτιμήστε τη διατήρηση αρχείων σε αυτές τις τοποθεσίες.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">Δεν έχουν ρυθμιστεί τοποθεσίες</string>
     <string name="deduplicator_skip_minsize_title">Ελάχιστο μέγεθος</string>
     <string name="deduplicator_skip_minsize_description">Παράλειψη αρχείων που είναι μικρότερα από το ελάχιστο μέγεθος.</string>
     <string name="deduplicator_skip_uncommon_title">Παράλειψη ασυνήθιστων τύπων αρχείων</string>
@@ -460,30 +492,123 @@
     <string name="deduplicator_details_cluster_title">Σύνολο διπλότυπων</string>
     <string name="deduplicator_matches_exact_label">Ακριβή αντίγραφα</string>
     <string name="deduplicator_matches_similar_label">Παρόμοια αρχεία</string>
+    <string name="deduplicator_arbiter_title">Στρατηγική διαγραφής</string>
+    <string name="deduplicator_arbiter_summary">Ρύθμιση ποια αρχεία διατηρούνται και ποια διαγράφονται.</string>
+    <string name="deduplicator_arbiter_explanation">Κατά τη διαγραφή διπλότυπων, το SD Maid αποφασίζει ποιο αρχείο θα διατηρήσει ελέγχοντας κάθε κριτήριο με τη σειρά. Το πρώτο κριτήριο που δίνει σαφή νικητή καθορίζει το αποτέλεσμα. Σύρετε για αναδιάταξη, πατήστε για αλλαγή λειτουργίας.</string>
     <string name="deduplicator_arbiter_select_mode_title">Λειτουργία επιλογής</string>
+    <string name="deduplicator_arbiter_configure_paths_action">Ρύθμιση διαδρομών…</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_title">Τύπος διπλότυπου</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_description">Προτίμηση ακριβών αντιστοιχιών έναντι παρόμοιων αρχείων.</string>
+    <string name="deduplicator_arbiter_criterium_media_provider_title">Ευρετηρίαση πολυμέσων</string>
+    <string name="deduplicator_arbiter_criterium_media_provider_description">Λάβετε υπόψη αν τα αρχεία είναι ευρετηριασμένα από τον πάροχο πολυμέσων.</string>
+    <string name="deduplicator_arbiter_criterium_location_title">Τοποθεσία αποθήκευσης</string>
+    <string name="deduplicator_arbiter_criterium_location_description">Προτίμηση αρχείων σε εσωτερικό ή εξωτερικό αποθηκευτικό χώρο.</string>
+    <string name="deduplicator_arbiter_criterium_nesting_title">Βάθος φακέλου</string>
+    <string name="deduplicator_arbiter_criterium_nesting_description">Προτίμηση αρχείων σε ρηχότερες ή βαθύτερες δομές φακέλων.</string>
     <string name="deduplicator_arbiter_criterium_modified_title">Ημερομηνία τροποποίησης</string>
+    <string name="deduplicator_arbiter_criterium_modified_description">Προτίμηση παλαιότερων ή νεότερων αρχείων βάσει χρόνου τροποποίησης.</string>
     <string name="deduplicator_arbiter_criterium_size_title">Μέγεθος αρχείου</string>
+    <string name="deduplicator_arbiter_criterium_size_description">Προτίμηση μεγαλύτερων ή μικρότερων αρχείων όταν τα μεγέθη διαφέρουν.</string>
+    <string name="deduplicator_arbiter_criterium_preferred_path_title">Προτιμώμενες τοποθεσίες</string>
+    <string name="deduplicator_arbiter_criterium_preferred_path_description">Διατήρηση αρχείων στις ρυθμισμένες προτιμώμενες τοποθεσίες σας.</string>
+    <string name="deduplicator_arbiter_mode_prefer_checksum">Προτίμηση ακριβών αντιστοιχιών</string>
+    <string name="deduplicator_arbiter_mode_prefer_phash">Προτίμηση παρόμοιων αρχείων</string>
+    <string name="deduplicator_arbiter_mode_prefer_indexed">Προτίμηση ευρετηριασμένων αρχείων</string>
+    <string name="deduplicator_arbiter_mode_prefer_unknown">Προτίμηση μη ευρετηριασμένων αρχείων</string>
+    <string name="deduplicator_arbiter_mode_prefer_primary">Προτίμηση εσωτερικού αποθηκευτικού χώρου</string>
+    <string name="deduplicator_arbiter_mode_prefer_secondary">Προτίμηση εξωτερικού αποθηκευτικού χώρου</string>
+    <string name="deduplicator_arbiter_mode_prefer_shallow">Προτίμηση ρηχών φακέλων</string>
+    <string name="deduplicator_arbiter_mode_prefer_deeper">Προτίμηση βαθύτερων φακέλων</string>
+    <string name="deduplicator_arbiter_mode_prefer_older">Προτίμηση παλαιότερων αρχείων</string>
+    <string name="deduplicator_arbiter_mode_prefer_newer">Προτίμηση νεότερων αρχείων</string>
+    <string name="deduplicator_arbiter_mode_prefer_larger">Προτίμηση μεγαλύτερων αρχείων</string>
+    <string name="deduplicator_arbiter_mode_prefer_smaller">Προτίμηση μικρότερων αρχείων</string>
     <string name="deduplicator_view_mode_groups_label">Ομάδες</string>
     <string name="deduplicator_view_mode_directories_label">Φάκελοι</string>
+    <string name="squeezer_tool_name">Media Squeeze</string>
+    <string name="squeezer_explanation_short">Συμπίεση εικόνων για εξοικονόμηση αποθηκευτικού χώρου.</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="one">Βρέθηκε %d εικόνα</item>
+        <item quantity="other">Βρέθηκαν %d εικόνες</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="one">~%s μπορεί να εξοικονομηθεί</item>
+        <item quantity="other">~%s μπορούν να εξοικονομηθούν</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="one">%d εικόνα συμπιέστηκε</item>
+        <item quantity="other">%d εικόνες συμπιέστηκαν</item>
+    </plurals>
+    <plurals name="squeezer_preview_x_images">
+        <item quantity="one">%d εικόνα επιλεγμένη</item>
+        <item quantity="other">%d εικόνες επιλεγμένες</item>
+    </plurals>
+    <string name="squeezer_search_locations_title">Τοποθεσίες αναζήτησης</string>
+    <string name="squeezer_search_locations_default_summary">Φάκελοι κάμερας (προεπιλογή)</string>
     <string name="squeezer_min_size_title">Ελάχιστο μέγεθος αρχείου</string>
+    <string name="squeezer_min_size_description">Παράλειψη εικόνων μικρότερων από αυτό το μέγεθος.</string>
+    <string name="squeezer_min_age_title">Ελάχιστη ηλικία αρχείου</string>
+    <string name="squeezer_min_age_description">Συμπερίληψη μόνο εικόνων παλαιότερων από αυτή την ηλικία.</string>
+    <string name="squeezer_compression_settings_label">Ρυθμίσεις συμπίεσης</string>
     <string name="squeezer_quality_label">Ποιότητα</string>
     <string name="squeezer_quality_title">Ποιότητα συμπίεσης</string>
+    <string name="squeezer_quality_description">Χαμηλότερη ποιότητα σημαίνει μικρότερο μέγεθος αρχείου αλλά μειωμένη ποιότητα εικόνας.</string>
+    <string name="squeezer_quality_example_format">Παράδειγμα: %1$s εικόνα → εξοικονομεί ~%2$s σε %3$d%% ποιότητα</string>
+    <string name="squeezer_quality_warning_low">Χαμηλότερες ποιότητες μπορεί να προκαλέσουν ορατά τεχνουργήματα.</string>
+    <string name="squeezer_quality_warning_high">Πολύ υψηλή ποιότητα παρέχει ελάχιστη εξοικονόμηση χώρου.</string>
     <string name="squeezer_types_category_label">Τύποι εικόνων</string>
     <string name="squeezer_type_jpeg_title">JPEG</string>
+    <string name="squeezer_type_jpeg_description">Συμπερίληψη εικόνων JPEG (.jpg, .jpeg).</string>
     <string name="squeezer_type_webp_title">WebP</string>
+    <string name="squeezer_type_webp_description">Συμπερίληψη εικόνων WebP (.webp).</string>
+    <string name="squeezer_skip_compressed_title">Παράλειψη ήδη συμπιεσμένων</string>
+    <string name="squeezer_skip_compressed_description">Παράλειψη εικόνων που έχουν ήδη συμπιεστεί από το SD Maid.</string>
+    <string name="squeezer_exif_marker_title">Εγγραφή σημαδιού EXIF</string>
+    <string name="squeezer_exif_marker_description">Προσθήκη σημαδιού στο πεδίο σχολίων χρήστη EXIF της εικόνας για αποτροπή επανασυμπίεσης ακόμα και αν εκκαθαριστεί το ιστορικό συμπίεσης.</string>
+    <string name="squeezer_estimated_savings_format">~%s εξοικονόμηση</string>
+    <string name="squeezer_no_savings_expected">Περιορισμένη εξοικονόμηση</string>
     <string name="squeezer_current_size_format">Μέγεθος: %s</string>
     <string name="squeezer_compress_action">Συμπίεση</string>
     <string name="squeezer_compress_all_action">Συμπίεση όλων</string>
+    <string name="squeezer_preview_dialog_title">Επιβεβαίωση συμπίεσης</string>
     <string name="squeezer_preview_total_size">Συνολικό μέγεθος</string>
+    <string name="squeezer_preview_estimated_savings">Εκτιμώμενη εξοικονόμηση</string>
+    <string name="squeezer_compress_confirmation_title">Συμπίεση εικόνων;</string>
+    <string name="squeezer_compress_confirmation_message">Αυτό θα αντικαταστήσει τις αρχικές εικόνες με συμπιεσμένες εκδόσεις. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</string>
     <string name="squeezer_history_title">Ιστορικό συμπίεσης</string>
     <plurals name="squeezer_history_summary">
         <item quantity="one">%1$d στοιχείο (%2$s)</item>
         <item quantity="other">%1$d στοιχεία (%2$s)</item>
     </plurals>
+    <string name="squeezer_history_empty">Κανένα ιστορικό συμπίεσης</string>
     <string name="squeezer_history_clear_title">Εκκαθάριση ιστορικού συμπίεσης</string>
+    <string name="squeezer_history_clear_message">Αυτό θα επιτρέψει σε εικόνες που έχουν ήδη συμπιεστεί να συμπιεστούν ξανά. Οι ίδιες οι εικόνες δεν επηρεάζονται.</string>
+    <string name="squeezer_onboarding_title">Σχετικά με τη Συμπίεση Εικόνων</string>
+    <string name="squeezer_onboarding_message">Η συμπίεση εικόνων μειώνει το μέγεθος αρχείου αφαιρώντας οπτική λεπτομέρεια. Αυτή η διαδικασία είναι μη αναστρέψιμη - η αρχική ποιότητα δεν μπορεί να αποκατασταθεί.\n\nΑκολουθεί μια προεπισκόπηση του πώς θα μοιάζουν οι εικόνες σας:</string>
+    <string name="squeezer_onboarding_original_label">Πρωτότυπο</string>
+    <string name="squeezer_onboarding_compressed_label">Μετά τη συμπίεση</string>
+    <string name="squeezer_onboarding_quality_label">Ποιότητα: %d%%</string>
+    <string name="squeezer_onboarding_got_it">Κατάλαβα</string>
     <string name="squeezer_compare_action">Προβολή σύγκρισης</string>
+    <string name="squeezer_no_example_found">Δεν βρέθηκαν εικόνες στις επιλεγμένες διαδρομές.</string>
+    <string name="squeezer_result_empty_message">Δεν βρέθηκαν συμπιέσιμες εικόνες.</string>
+    <string name="squeezer_setup_warning">Η συμπίεση μειώνει μόνιμα την ποιότητα εικόνας για εξοικονόμηση αποθηκευτικού χώρου. Αυτό δεν μπορεί να αναιρεθεί. Ελέγξτε προσεκτικά τις ρυθμίσεις σας πριν ξεκινήσετε.</string>
+    <string name="squeezer_setup_explanation">Το Media Squeeze μειώνει το μέγεθος αρχείου εικόνων για εξοικονόμηση αποθηκευτικού χώρου. Αυτό μειώνει μόνιμα την ποιότητα εικόνας και δεν μπορεί να αναιρεθεί. Ελέγξτε προσεκτικά τις ρυθμίσεις σας πριν ξεκινήσετε.</string>
+    <string name="squeezer_setup_paths_title">Τοποθεσίες αναζήτησης</string>
+    <string name="squeezer_setup_paths_default">Επιλέξτε φακέλους για αναζήτηση</string>
     <string name="squeezer_setup_quality_title">Ποιότητα συμπίεσης</string>
+    <string name="squeezer_setup_age_title">Ελάχιστη ηλικία</string>
+    <string name="squeezer_setup_age_none">Χωρίς όριο (συμπερίληψη όλων των αρχείων)</string>
     <string name="squeezer_setup_start_action">Έναρξη σάρωσης</string>
+    <string name="squeezer_quality_hint_very_low">Ποιότητα κάτω από 40% μπορεί να δημιουργήσει αχρησιμοποίητες εικόνες.</string>
+    <string name="squeezer_quality_hint_low">Χαμηλότερη ποιότητα εξοικονομεί περισσότερο χώρο αλλά μπορεί να προκαλέσει ορατά τεχνουργήματα.</string>
+    <string name="squeezer_quality_hint_high">Πολύ υψηλή ποιότητα παρέχει ελάχιστη εξοικονόμηση χώρου.</string>
+    <string name="squeezer_quality_hint_normal">Ισορροπημένη ποιότητα και εξοικονόμηση χώρου.</string>
+    <plurals name="squeezer_min_age_x_days">
+        <item quantity="one">Τουλάχιστον %d ημέρα παλιό</item>
+        <item quantity="other">Τουλάχιστον %d ημέρες παλιό</item>
+    </plurals>
+    <string name="squeezer_estimated_savings_percent">Εκτιμώμενη ~%d%% εξοικονόμηση για αρχεία JPEG</string>
     <string name="appcontrol_tool_name">Έλεγχος Εφαρμογών</string>
     <string name="appcontrol_explanation_short">Εφαρμογές εγκατεστημένες στη συσκευή σας.</string>
     <plurals name="appcontrol_x_apps_detected_label">
@@ -518,6 +643,7 @@
     <string name="appcontrol_tag_not_installed">Δεν έχει εγκατασταθεί</string>
     <string name="appcontrol_tag_enabled">Ενεργοποιημένο</string>
     <string name="appcontrol_tag_disabled">Απενεργοποιημένο</string>
+    <string name="appcontrol_tag_debug">Αποσφαλμάτωση</string>
     <string name="appcontrol_progress_enabling_package">Ενεργοποίηση εφαρμογής</string>
     <string name="appcontrol_progress_disabling_package">Απενεργοποίηση εφαρμογής</string>
     <string name="appcontrol_list_filteroptions_label">Επιλογές φίλτρου</string>
@@ -533,12 +659,31 @@
         <item quantity="one">%d εφαρμογή απεγκαταστάθηκε</item>
         <item quantity="other">%d εφαρμογές απεγκαταστάθηκαν</item>
     </plurals>
+    <string name="appcontrol_archive_action">Αρχειοθέτηση</string>
+    <string name="appcontrol_archive_selection_action">Αρχειοθέτηση εφαρμογών</string>
+    <string name="appcontrol_archive_description">Αρχειοθέτηση για εξοικονόμηση χώρου διατηρώντας τα δεδομένα εφαρμογής για μελλοντική επαναφορά.</string>
+    <string name="appcontrol_progress_archiving_app">Αρχειοθέτηση εφαρμογής…</string>
+    <string name="appcontrol_archive_confirmation_title">Επιβεβαίωση αρχειοθέτησης</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="one">Αρχειοθέτηση %d εφαρμογής;</item>
+        <item quantity="other">Αρχειοθέτηση %d εφαρμογών;</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="one">%d εφαρμογή αρχειοθετήθηκε</item>
+        <item quantity="other">%d εφαρμογές αρχειοθετήθηκαν</item>
+    </plurals>
     <string name="appcontrol_restore_action">Επαναφορά</string>
     <string name="appcontrol_restore_selection_action">Επαναφορά εφαρμογών</string>
+    <string name="appcontrol_restore_description">Επαναφορά αρχειοθετημένης εφαρμογής σε πλήρως εγκατεστημένη κατάσταση. Τα δεδομένα εφαρμογής διατηρούνται.</string>
     <string name="appcontrol_progress_restoring_app">Επαναφορά εφαρμογής…</string>
+    <string name="appcontrol_restore_confirmation_title">Επιβεβαίωση επαναφοράς</string>
     <plurals name="appcontrol_restore_confirmation_x">
         <item quantity="one">Επαναφορά %d εφαρμογής;</item>
         <item quantity="other">Επαναφορά %d εφαρμογών;</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="one">%d εφαρμογή επαναφέρθηκε</item>
+        <item quantity="other">%d εφαρμογές επαναφέρθηκαν</item>
     </plurals>
     <string name="appcontrol_app_sizes_title">Μέγεθος εφαρμογής</string>
     <string name="appcontrol_app_sizes_apk_label">Εφαρμογή</string>
@@ -567,7 +712,9 @@
         <item quantity="other">Έγινε εξαγωγή %d εφαρμογών</item>
     </plurals>
     <string name="appcontrol_progress_exporting_x">Εξαγωγή %s</string>
-    <string name="appcontrol_share_list_title">Οι εφαρμογές</string>
+    <string name="appcontrol_share_list_action">Κοινοποίηση λίστας</string>
+    <string name="appcontrol_share_list_title">Οι εφαρμογές μου</string>
+    <string name="appcontrol_share_list_footer">Κοινοποιήθηκε μέσω SD Maid SE</string>
     <string name="appcontrol_force_stop_selection_action">Επιβολή διακοπής εφαρμογών</string>
     <string name="appcontrol_force_stop_action">Επιβολή διακοπής</string>
     <string name="appcontrol_force_stop_confirm_title">Επιβεβαίωση επιβολής διακοπής</string>
@@ -584,7 +731,10 @@
     <string name="appcontrol_automation_subtitle_force_stopping">Επιβολή διακοπής…</string>
     <string name="appcontrol_automation_progress_find_force_stop">Αναζήτηση για το κουμπί \"Αναγκαστική διακοπή\" (λέξεις-κλειδιά: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">Προσπάθεια επιβεβαίωσης προηγούμενης ενέργειας (λέξεις-κλειδιά: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">Αρχειοθέτηση…</string>
+    <string name="appcontrol_automation_progress_find_archive">Αναζήτηση για το κουμπί \"Αρχειοθέτηση\" (λέξεις-κλειδιά: %s)</string>
     <string name="appcontrol_automation_subtitle_restoring">Επαναφορά…</string>
+    <string name="appcontrol_automation_progress_find_restore">Αναζήτηση για το κουμπί \"Επαναφορά\" (λέξεις-κλειδιά: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Χρόνος χρήσης οθόνης: %1$s από %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Τελευταία ενημέρωση: %s</string>
     <string name="appcontrol_item_installedat_x_label">Εγκαταστάθηκε σε: %s</string>
@@ -605,6 +755,11 @@
         <item quantity="other">%s χρησιμοποιούνται</item>
     </plurals>
     <string name="analyzer_content_access_opaque">Δεν υπάρχει άμεση πρόσβαση</string>
+    <string name="analyzer_content_create_swiper_session_action">Δημιουργία συνεδρίας Swiper</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="one">Δημιουργήθηκε συνεδρία Swiper με %d αντικείμενο</item>
+        <item quantity="other">Δημιουργήθηκε συνεδρία Swiper με %d αντικείμενα</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">Πρωτεύων αποθηκευτικός χώρος</string>
     <string name="analyzer_storage_type_primary_description">Ο κυρίως αποθηκευτικός χώρος της συσκευής σας. Περιέχει την εσωτερική κάρτα SD, ιδιωτικό χώρο αποθήκευσης για εφαρμογές και δεδομένα συστήματος.</string>
     <string name="analyzer_storage_type_secondary_title">Δευτερεύων αποθηκευτικός χώρος</string>
@@ -647,6 +802,7 @@
     <string name="exclusion_type_segment">Εξαίρεση τμήματος</string>
     <string name="exclusion_tags_alltools">Όλα τα εργαλεία</string>
     <string name="exclusion_target_label">Στόχος εξαίρεσης</string>
+    <string name="exclusion_editor_path_change_action">Πατήστε για αλλαγή διαδρομής</string>
     <string name="exclusion_option_allow_partial">Να επιτρέπονται μερικές αντιστοιχίες</string>
     <string name="exclusion_option_ignore_casing">Παράβλεψη πεζών-κεφαλαίων</string>
     <string name="exclusion_editor_affected_tools_label">Επηρεαζόμενα εργαλεία</string>
@@ -795,20 +951,145 @@
     <string name="shortcuts_settings_category">Συντομεύσεις</string>
     <string name="shortcuts_onetap_enabled_title">Συντόμευση ενός πατήματος</string>
     <string name="shortcuts_onetap_enabled_summary">Εμφάνιση συντόμευσης \"Σάρωση + Διαγραφή\" όταν πατάτε παρατεταμένα το εικονίδιο της εφαρμογής. Χρησιμοποιεί τα ίδια εργαλεία με τον πίνακα ενός πατήματος.</string>
+    <string name="swiper_label">Swiper</string>
+    <string name="swiper_tool_name">Swiper</string>
+    <string name="swiper_tool_description">Αποσυμφόρηση φακέλων γρήγορα — σαρώστε αρχεία για διατήρηση, διαγραφή ή παράλειψη.</string>
+    <string name="swiper_dashcard_description">Αποσυμφόρηση συγκεκριμένων φακέλων πιο γρήγορα από μια εξερεύνηση αρχείων — απλά σαρώστε κάθε αρχείο.</string>
+    <string name="swiper_start_action">Ξεκινήστε σάρωση</string>
+    <string name="swiper_continue_action">Συνέχεια συνεδρίας</string>
+    <string name="swiper_sessions_description">Ελέγξτε αρχεία σε 3 απλά βήματα:\n\n1. Επιλέξτε φάκελο για σάρωση\n2. Σαρώστε αρχεία για διατήρηση, διαγραφή ή παράλειψη\n3. Ελέγξτε τις επιλογές σας και επιβεβαιώστε\n\nΤίποτα δεν αφαιρείται μέχρι να πατήσετε το τελικό κουμπί διαγραφής.</string>
     <string name="swiper_select_folders_action">Επιλογή φακέλων</string>
     <string name="swiper_scanning_title">Σάρωση…</string>
+    <plurals name="swiper_result_x_items_found">
+        <item quantity="one">Βρέθηκε %d αντικείμενο</item>
+        <item quantity="other">Βρέθηκαν %d αντικείμενα</item>
+    </plurals>
+    <plurals name="swiper_result_x_items_deleted">
+        <item quantity="one">%d αντικείμενο διαγράφηκε</item>
+        <item quantity="other">%d αντικείμενα διαγράφηκαν</item>
+    </plurals>
+    <plurals name="swiper_result_x_items_failed">
+        <item quantity="one">%d αντικείμενο απέτυχε</item>
+        <item quantity="other">%d αντικείμενα απέτυχαν</item>
+    </plurals>
     <string name="swiper_item_position">#%1$d από %2$d</string>
     <string name="swiper_keep_action">Διατήρηση</string>
     <string name="swiper_skip_action">Παράλειψη</string>
+    <string name="swiper_review_action">Αξιολόγηση</string>
+    <string name="swiper_status_title">Αξιολόγηση αποφάσεων</string>
     <string name="swiper_status_action_keep_selected">Διατήρηση επιλεγμένων</string>
     <string name="swiper_status_action_delete_selected">Διαγραφή επιλεγμένων</string>
     <string name="swiper_status_action_reset_selected">Επαναφορά επιλεγμένων</string>
+    <string name="swiper_decision_undecided">Αναποφάσιστο</string>
     <string name="swiper_retry_action">Επανάληψη</string>
+    <string name="swiper_delete_confirmation_title">Διαγραφή αρχείων;</string>
+    <plurals name="swiper_delete_confirmation_message">
+        <item quantity="one">Αυτό θα διαγράψει οριστικά %1$d αρχείο (%2$s). Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</item>
+        <item quantity="other">Αυτό θα διαγράψει οριστικά %1$d αρχεία (%2$s). Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</item>
+    </plurals>
+    <plurals name="swiper_delete_confirmation_message_partial_undecided">
+        <item quantity="one">%d αναποφάσιστο αντικείμενο θα παραμείνει για μεταγενέστερη αξιολόγηση.</item>
+        <item quantity="other">%d αναποφάσιστα αντικείμενα θα παραμείνουν για μεταγενέστερη αξιολόγηση.</item>
+    </plurals>
+    <string name="swiper_delete_x_action">Διαγραφή %1$d</string>
+    <string name="swiper_settings_swap_directions_title">Εναλλαγή κατευθύνσεων σάρωσης</string>
+    <string name="swiper_settings_swap_directions_summary">Σάρωση αριστερά για διατήρηση, δεξιά για διαγραφή.</string>
+    <string name="swiper_settings_show_details_title">Εμφάνιση λεπτομερειών αρχείου</string>
+    <string name="swiper_settings_show_details_summary">Εμφάνιση ονόματος αρχείου, μεγέθους και ημερομηνίας στην οθόνη σάρωσης.</string>
+    <string name="swiper_settings_haptic_feedback_title">Απτική ανάδραση</string>
+    <string name="swiper_settings_haptic_feedback_summary">Δόνηση κατά τη λήψη αποφάσεων διατήρησης ή διαγραφής.</string>
+    <string name="swiper_discard_session_confirmation_title">Απόρριψη συνεδρίας;</string>
+    <string name="swiper_discard_session_confirmation_message">Όλες οι αποφάσεις θα χαθούν. Είστε σίγουροι;</string>
+    <string name="swiper_no_preview_available">Δεν υπάρχει διαθέσιμη προεπισκόπηση</string>
+    <plurals name="swiper_dashcard_session_context">
+        <item quantity="one">Συνέχεια συνεδρίας από %1$d ημέρα πριν (%2$d%% ολοκληρωμένο)</item>
+        <item quantity="other">Συνέχεια συνεδρίας από %1$d ημέρες πριν (%2$d%% ολοκληρωμένο)</item>
+    </plurals>
+    <plurals name="swiper_dashcard_x_sessions">
+        <item quantity="one">%d συνεδρία</item>
+        <item quantity="other">%d συνεδρίες</item>
+    </plurals>
+    <plurals name="swiper_dashcard_x_undecided_items">
+        <item quantity="one">%d αναποφάσιστο αντικείμενο</item>
+        <item quantity="other">%d αναποφάσιστα αντικείμενα</item>
+    </plurals>
+    <string name="swiper_session_timestamps">Δημιουργήθηκε %1$s, τελευταία δραστηριότητα %2$s</string>
+    <string name="swiper_session_remove_action">Αφαίρεση συνεδρίας</string>
+    <string name="swiper_sessions_empty_hint">Πατήστε + για να επιλέξετε φάκελο και ξεκινήστε τη σάρωση</string>
+    <string name="swiper_sessions_upgrade_body">Αναβαθμίστε για να αφαιρέσετε αυτούς τους περιορισμούς και να υποστηρίξετε την ανάπτυξη. Η δωρεάν έκδοση περιορίζεται σε:</string>
+    <plurals name="swiper_sessions_upgrade_files_limit">
+        <item quantity="one">%d αρχείο ανά συνεδρία</item>
+        <item quantity="other">%d αρχεία ανά συνεδρία</item>
+    </plurals>
+    <plurals name="swiper_sessions_upgrade_sessions_limit">
+        <item quantity="one">%d συνεδρία</item>
+        <item quantity="other">%d συνεδρίες</item>
+    </plurals>
+    <string name="swiper_session_default_label">Συνεδρία #%d</string>
+    <string name="swiper_session_rename_title">Μετονομασία συνεδρίας</string>
+    <string name="swiper_session_rename_hint">Εισάγετε ένα όνομα για αυτή τη συνεδρία</string>
+    <string name="swiper_sessions_current_sessions">Τρέχουσες συνεδρίες</string>
     <string name="swiper_session_paths_label">Διαδρομές</string>
     <string name="swiper_session_status_label">Κατάσταση</string>
-    <!-- Shorter versions for side-by-side display -->
+    <plurals name="swiper_session_status_to_keep">
+        <item quantity="one">%d για διατήρηση</item>
+        <item quantity="other">%d για διατήρηση</item>
+    </plurals>
+    <plurals name="swiper_session_status_to_delete">
+        <item quantity="one">%d για διαγραφή</item>
+        <item quantity="other">%d για διαγραφή</item>
+    </plurals>
+    <plurals name="swiper_session_status_undecided">
+        <item quantity="one">%d αναποφάσιστο</item>
+        <item quantity="other">%d αναποφάσιστα</item>
+    </plurals>
+    <plurals name="swiper_session_status_already_kept">
+        <item quantity="one">%d ήδη διατηρημένο</item>
+        <item quantity="other">%d ήδη διατηρημένα</item>
+    </plurals>
+    <plurals name="swiper_session_status_already_deleted">
+        <item quantity="one">%d ήδη διαγραμμένο</item>
+        <item quantity="other">%d ήδη διαγραμμένα</item>
+    </plurals>
+    <plurals name="swiper_session_status_kept">
+        <item quantity="one">%d διατηρημένο</item>
+        <item quantity="other">%d διατηρημένα</item>
+    </plurals>
+    <plurals name="swiper_session_status_deleted">
+        <item quantity="one">%d διαγραμμένο</item>
+        <item quantity="other">%d διαγραμμένα</item>
+    </plurals>
+    <string name="swiper_exclude_confirmation_message">Εξαίρεση του \"%1$s\" από τις σαρώσεις Swiper;</string>
+    <string name="swiper_sessions_header_title">Έτοιμοι για αποσυμφόρηση;</string>
+    <string name="swiper_sessions_suggestions_label">Δοκιμάστε να ξεκινήσετε με:</string>
+    <string name="swiper_sessions_suggestion_downloads">Φάκελος λήψεων</string>
     <string name="swiper_sessions_suggestion_screenshots">Στιγμιότυπα οθόνης</string>
-    <!-- Swiper stamp variations (Tinder-style labels) -->
-    <!-- Swiper gesture overlay -->
-    <!-- Swiper help dialog -->
+    <string name="swiper_sessions_suggestion_camera">Φωτογραφίες κάμερας</string>
+    <string name="swiper_stamp_keep_1">Κράτα!</string>
+    <string name="swiper_stamp_keep_2">Ωραίο!</string>
+    <string name="swiper_stamp_keep_3">Ναι!</string>
+    <string name="swiper_stamp_keep_4">Σώσε!</string>
+    <string name="swiper_stamp_delete_1">Όχι!</string>
+    <string name="swiper_stamp_delete_2">Αντίο!</string>
+    <string name="swiper_stamp_delete_3">Σκουπίδια!</string>
+    <string name="swiper_stamp_delete_4">Διέγραψε!</string>
+    <string name="swiper_stamp_skip_1">Πέρασε!</string>
+    <string name="swiper_stamp_skip_2">Μπα!</string>
+    <string name="swiper_stamp_skip_3">Αργότερα!</string>
+    <string name="swiper_stamp_skip_4">Ίσως!</string>
+    <string name="swiper_stamp_undo_1">Αναίρεση!</string>
+    <string name="swiper_stamp_undo_2">Πίσω!</string>
+    <string name="swiper_stamp_undo_3">Ωχ!</string>
+    <string name="swiper_stamp_undo_4">Περίμενε!</string>
+    <string name="swiper_gesture_overlay_dismiss">Πατήστε οπουδήποτε για να ξεκινήσετε</string>
+    <string name="swiper_gesture_overlay_dismiss_action">Κατάλαβα</string>
+    <string name="swiper_gesture_overlay_left_delete">← Διαγραφή</string>
+    <string name="swiper_gesture_overlay_right_keep">Διατήρηση →</string>
+    <string name="swiper_gesture_overlay_left_keep">← Διατήρηση</string>
+    <string name="swiper_gesture_overlay_right_delete">Διαγραφή →</string>
+    <string name="swiper_gesture_overlay_up_skip">↑ Παράλειψη</string>
+    <string name="swiper_gesture_overlay_down_undo">↓ Αναίρεση</string>
+    <string name="swiper_help_action">Βοήθεια</string>
+    <string name="swiper_help_title">Πώς λειτουργεί το Swiper</string>
+    <string name="swiper_help_message">Σαρώστε κάθε αρχείο για να λάβετε μια απόφαση:\n\n← Σάρωση αριστερά: %1$s\n→ Σάρωση δεξιά: %2$s\n↑ Σάρωση πάνω: Παράλειψη\n↓ Σάρωση κάτω: Αναίρεση (μετά την πρώτη σάρωση)\n\nΜπορείτε επίσης να χρησιμοποιήσετε τα κουμπιά στο κάτω μέρος.\n\nΌταν τελειώσετε, πατήστε \"Αξιολόγηση\" για να δείτε όλες τις αποφάσεις σας. Τίποτα δεν διαγράφεται μέχρι να επιβεβαιώσετε στην οθόνη αξιολόγησης.</string>
 </resources>

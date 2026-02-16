@@ -597,7 +597,9 @@
     <string name="squeezer_quality_warning_low">Nižšie kvality môžu spôsobiť viditeľné artefakty.</string>
     <string name="squeezer_quality_warning_high">Veľmi vysoká kvalita poskytuje minimálnu úsporu miesta.</string>
     <string name="squeezer_types_category_label">Typy obrázkov</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Zahrnúť obrázky JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Zahrnúť obrázky WebP (.webp).</string>
     <string name="squeezer_skip_compressed_title">Preskočiť predtým komprimované</string>
     <string name="squeezer_skip_compressed_description">Preskočiť obrázky, ktoré už boli komprimované aplikáciou SD Maid.</string>

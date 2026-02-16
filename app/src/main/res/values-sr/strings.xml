@@ -572,7 +572,9 @@
     <string name="squeezer_quality_warning_low">Нижи квалитети могу изазвати видљиве артефакте.</string>
     <string name="squeezer_quality_warning_high">Веома висок квалитет пружа минималну уштеду простора.</string>
     <string name="squeezer_types_category_label">Типови слика</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Укључи JPEG слике (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Укључи WebP слике (.webp).</string>
     <string name="squeezer_skip_compressed_title">Прескочи претходно компримоване</string>
     <string name="squeezer_skip_compressed_description">Прескочи слике које су већ компримоване од стране СД Чистача.</string>

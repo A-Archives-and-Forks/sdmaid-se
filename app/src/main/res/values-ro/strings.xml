@@ -595,6 +595,11 @@
     <string name="squeezer_compress_confirmation_title">Comprimați imaginile?</string>
     <string name="squeezer_compress_confirmation_message">Acest lucru va înlocui imaginile originale cu versiuni comprimate. Această acțiune nu poate fi anulată.</string>
     <string name="squeezer_history_title">Istoric compresie</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="one">%1$d element (%2$s)</item>
+        <item quantity="few">%1$d elemente (%2$s)</item>
+        <item quantity="other">%1$d de elemente (%2$s)</item>
+    </plurals>
     <string name="squeezer_history_empty">Fără istoric de compresie</string>
     <string name="squeezer_history_clear_title">Ștergeți istoricul de compresie</string>
     <string name="squeezer_history_clear_message">Acest lucru va permite comprimarea din nou a imaginilor comprimate anterior. Imaginile în sine nu sunt afectate.</string>
@@ -989,8 +994,11 @@
     <string name="shortcuts_onetap_enabled_summary">Afișează comanda rapidă „Scanare + Ștergere” atunci când apăsați lung pe pictograma aplicației. Utilizează aceleași instrumente ca și tabloul de bord cu o singură atingere.</string>
     <string name="swiper_label">Glisare</string>
     <string name="swiper_tool_name">Glisare</string>
+    <string name="swiper_tool_description">Dezaglomerați folderele rapid — glisați fișierele pentru a păstra, șterge sau sări.</string>
+    <string name="swiper_dashcard_description">Dezaglomerați foldere specifice mai rapid decât un explorator de fișiere — doar glisați fiecare fișier.</string>
     <string name="swiper_start_action">Începeți glisarea</string>
     <string name="swiper_continue_action">Continuați sesiunea</string>
+    <string name="swiper_sessions_description">Revizuiți fișierele în 3 pași simpli:\n\n1. Alegeți un folder de scanat\n2. Glisați fișierele pentru a păstra, șterge sau sări\n3. Revizuiți alegerile și confirmați\n\nNimic nu este eliminat până nu atingeți butonul final de ștergere.</string>
     <string name="swiper_select_folders_action">Selectați foldere</string>
     <string name="swiper_scanning_title">Se scanează…</string>
     <plurals name="swiper_result_x_items_found">
@@ -1019,6 +1027,16 @@
     <string name="swiper_decision_undecided">Indecis</string>
     <string name="swiper_retry_action">Reîncărcați</string>
     <string name="swiper_delete_confirmation_title">Ștergeți fișierele?</string>
+    <plurals name="swiper_delete_confirmation_message">
+        <item quantity="one">Aceasta va șterge permanent %1$d fișier (%2$s). Această acțiune nu poate fi anulată.</item>
+        <item quantity="few">Aceasta va șterge permanent %1$d fișiere (%2$s). Această acțiune nu poate fi anulată.</item>
+        <item quantity="other">Aceasta va șterge permanent %1$d fișiere (%2$s). Această acțiune nu poate fi anulată.</item>
+    </plurals>
+    <plurals name="swiper_delete_confirmation_message_partial_undecided">
+        <item quantity="one">%d element indecis va rămâne pentru revizuire ulterioară.</item>
+        <item quantity="few">%d elemente indecise vor rămâne pentru revizuire ulterioară.</item>
+        <item quantity="other">%d elemente indecise vor rămâne pentru revizuire ulterioară.</item>
+    </plurals>
     <string name="swiper_delete_x_action">Ștergeți %1$d</string>
     <string name="swiper_settings_swap_directions_title">Schimbați direcțiile de glisare</string>
     <string name="swiper_settings_swap_directions_summary">Trageți cu degetul spre stânga pentru a păstra, spre dreapta pentru a șterge.</string>
@@ -1029,6 +1047,11 @@
     <string name="swiper_discard_session_confirmation_title">Renunțați la sesiune?</string>
     <string name="swiper_discard_session_confirmation_message">Toate deciziile vor fi pierdute. Sunteți sigur?</string>
     <string name="swiper_no_preview_available">Nu există previzualizare disponibilă</string>
+    <plurals name="swiper_dashcard_session_context">
+        <item quantity="one">Continuați sesiunea de acum %1$d zi (%2$d%% finalizat)</item>
+        <item quantity="few">Continuați sesiunea de acum %1$d zile (%2$d%% finalizat)</item>
+        <item quantity="other">Continuați sesiunea de acum %1$d zile (%2$d%% finalizat)</item>
+    </plurals>
     <plurals name="swiper_dashcard_x_sessions">
         <item quantity="one">%d sesiune</item>
         <item quantity="few">%d sesiuni</item>
@@ -1042,6 +1065,17 @@
     <string name="swiper_session_timestamps">Creat %1$s, ultima activitate %2$s</string>
     <string name="swiper_session_remove_action">Eliminați sesiune</string>
     <string name="swiper_sessions_empty_hint">Atingeți + pentru a selecta un folder și a începe glisarea</string>
+    <string name="swiper_sessions_upgrade_body">Faceți upgrade pentru a elimina aceste limite și a susține dezvoltarea. Versiunea gratuită este limitată la:</string>
+    <plurals name="swiper_sessions_upgrade_files_limit">
+        <item quantity="one">%d fișier per sesiune</item>
+        <item quantity="few">%d fișiere per sesiune</item>
+        <item quantity="other">%d fișiere per sesiune</item>
+    </plurals>
+    <plurals name="swiper_sessions_upgrade_sessions_limit">
+        <item quantity="one">%d sesiune</item>
+        <item quantity="few">%d sesiuni</item>
+        <item quantity="other">%d sesiuni</item>
+    </plurals>
     <string name="swiper_session_default_label">Sesiune #%d</string>
     <string name="swiper_session_rename_title">Redenumiți sesiune</string>
     <string name="swiper_session_rename_hint">Introduceți un nume pentru această sesiune</string>

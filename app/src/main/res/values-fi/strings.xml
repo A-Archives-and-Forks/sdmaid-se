@@ -402,8 +402,11 @@
     <string name="appcleaner_filter_whatsapp_sent_summary">WhatsAppista muille lähetetyt tiedostot.</string>
     <string name="appcleaner_filter_telegram_label">Telegram-mediatiedostot</string>
     <string name="appcleaner_filter_telegram_summary">Telegramilla vastaanotetut tai lähetetyt tiedostot.</string>
+    <string name="appcleaner_filter_threema_label">Threema</string>
     <string name="appcleaner_filter_threema_summary">Threeman kautta vastaanotetut tiedostot.</string>
+    <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">WeChat-sovelluksen väliaikaistiedostot.</string>
+    <string name="appcleaner_filter_viber_label">Viber</string>
     <string name="appcleaner_filter_viber_summary">Viber-sovelluksen väliaikaistiedostot.</string>
     <string name="appcleaner_filter_qqchat_label">QQ-chat</string>
     <string name="appcleaner_filter_qqchat_summary">Lähetetyt tai vastaanotetut tiedostot QQ-chat-keskusteluissa.</string>
@@ -554,7 +557,9 @@
     <string name="squeezer_quality_warning_low">Matalampi laatu voi aiheuttaa näkyviä artefakteja.</string>
     <string name="squeezer_quality_warning_high">Erittäin korkea laatu tarjoaa minimaalisia tilansäästöjä.</string>
     <string name="squeezer_types_category_label">Kuvatyypit</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Sisällytä JPEG-kuvat (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Sisällytä WebP-kuvat (.webp).</string>
     <string name="squeezer_skip_compressed_title">Ohita aiemmin pakatut</string>
     <string name="squeezer_skip_compressed_description">Ohita kuvat jotka SD Maid on jo pakkannut.</string>

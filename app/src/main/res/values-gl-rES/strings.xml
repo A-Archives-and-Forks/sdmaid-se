@@ -228,6 +228,7 @@
     <string name="corpsefinder_filter_appsource_private_summary">Datos de instalación de aplicacións restrinxidos, p. ex. aplicacións de terceiros protexidas.</string>
     <string name="corpsefinder_filter_appasec_label">Recursos de aplicacións cifrados</string>
     <string name="corpsefinder_filter_appasec_summary">Recursos de aplicacións cifrados, p. ex. recursos de xogos.</string>
+    <string name="corpsefinder_filter_app2sd_label">App2SD</string>
     <string name="corpsefinder_filter_app2sd_summary">Datos movidos ao almacenamento externo mediante modificacións App2Sd.</string>
     <plurals name="corpsefinder_result_x_corpses_deleted">
         <item quantity="one">%d resto de aplicación eliminado</item>
@@ -394,8 +395,11 @@
     <string name="appcleaner_filter_whatsapp_sent_summary">Ficheiros enviados desde WhatsApp a outras persoas.</string>
     <string name="appcleaner_filter_telegram_label">Ficheiros multimedia de Telegram</string>
     <string name="appcleaner_filter_telegram_summary">Ficheiros recibidos ou enviados a través de Telegram.</string>
+    <string name="appcleaner_filter_threema_label">Threema</string>
     <string name="appcleaner_filter_threema_summary">Ficheiros recibidos a través de Threema.</string>
+    <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">Ficheiros enviados ou recibidos en conversas e momentos de WeChat.</string>
+    <string name="appcleaner_filter_viber_label">Viber</string>
     <string name="appcleaner_filter_viber_summary">Ficheiros multimedia en caché que se descargan de novo cando se ven no chat.</string>
     <string name="appcleaner_filter_qqchat_label">Chat QQ</string>
     <string name="appcleaner_filter_qqchat_summary">Ficheiros enviados ou recibidos en conversas de chat QQ.</string>
@@ -545,7 +549,9 @@
     <string name="squeezer_quality_warning_low">Calidades máis baixas poden causar artefactos visibles.</string>
     <string name="squeezer_quality_warning_high">Calidade moi alta proporciona un aforro mínimo de espazo.</string>
     <string name="squeezer_types_category_label">Tipos de imaxe</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Incluír imaxes JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Incluír imaxes WebP (.webp).</string>
     <string name="squeezer_skip_compressed_title">Omitir previamente comprimidas</string>
     <string name="squeezer_skip_compressed_description">Omitir imaxes que xa foron comprimidas por SD Maid.</string>
@@ -618,6 +624,7 @@
     <string name="appcontrol_app_exclude_add_description">Excluír esta aplicación doutras operacións en SD Maid.</string>
     <string name="appcontrol_app_exclude_edit_title">Editar exclusión</string>
     <string name="appcontrol_app_exclude_edit_description">Esta aplicación está actualmente excluída dunha ou máis ferramentas.</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
     <string name="appcontrol_tag_user">Usuario</string>
     <string name="appcontrol_tag_active">Activa recentemente</string>
     <string name="appcontrol_tag_apk_bundle">Paquete</string>
@@ -627,6 +634,7 @@
     <string name="appcontrol_tag_not_installed">Non instalada</string>
     <string name="appcontrol_tag_enabled">Activada</string>
     <string name="appcontrol_tag_disabled">Desactivada</string>
+    <string name="appcontrol_tag_debug">Debug</string>
     <string name="appcontrol_progress_enabling_package">Activando aplicación</string>
     <string name="appcontrol_progress_disabling_package">Desactivando aplicación</string>
     <string name="appcontrol_list_filteroptions_label">Opcións de filtro</string>
@@ -1072,4 +1080,9 @@
     <string name="swiper_help_action">Axuda</string>
     <string name="swiper_help_title">Como funciona Swiper</string>
     <string name="swiper_help_message">Pasa o dedo en cada ficheiro para tomar unha decisión:\n\n← Pasar á esquerda: %1$s\n→ Pasar á dereita: %2$s\n↑ Pasar cara arriba: Saltar\n↓ Pasar cara abaixo: Desfacer (despois do primeiro xesto)\n\nTamén podes usar os botóns de abaixo.\n\nCando remates, toca \"Revisar\" para ver todas as túas decisións. Non se elimina nada ata que confirmes na pantalla de revisión.</string>
+    <string name="swiper_label">Swiper</string>
+    <string name="swiper_tool_name">Swiper</string>
+    <string name="swiper_tool_description">Ordena cartafoles rapidamente -- pasa o dedo polos ficheiros para gardar, eliminar ou saltar.</string>
+    <string name="swiper_dashcard_description">Ordena cartafoles específicos máis rápido que cun explorador de ficheiros -- simplemente pasa o dedo en cada ficheiro.</string>
+    <string name="swiper_sessions_description">Revisa ficheiros en 3 sinxelos pasos:\n\n1. Escolle un cartafol para escanear\n2. Pasa o dedo polos ficheiros para gardar, eliminar ou saltar\n3. Revisa as túas eleccións e confirma\n\nNon se elimina nada ata que toques o botón final de eliminar.</string>
 </resources>

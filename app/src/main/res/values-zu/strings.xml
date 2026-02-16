@@ -551,7 +551,9 @@
     <string name="squeezer_quality_warning_low">Amakhwalithi aphansi angabangela izinkinga ezibonakalayo.</string>
     <string name="squeezer_quality_warning_high">Ikhwalithi ephezulu kakhulu ihlinzeka ngokonga kancane.</string>
     <string name="squeezer_types_category_label">Izinhlobo zezithombe</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Faka izithombe ze-JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Faka izithombe ze-WebP (.webp).</string>
     <string name="squeezer_skip_compressed_title">Yeqa ezicindezelwe ngaphambilini</string>
     <string name="squeezer_skip_compressed_description">Yeqa izithombe esezicindezelwe yi-SD Maid.</string>
