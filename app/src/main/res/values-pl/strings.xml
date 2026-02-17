@@ -2,31 +2,31 @@
 <resources>
     <string name="dashboard_delete_all_message">Czy na pewno chcesz usunąć wyniki we wszystkich narzędziach?</string>
     <string name="dashboard_settings_category">Panel główny</string>
-    <string name="dashboard_motd_title">Wiadomość od twórcy</string>
+    <string name="dashboard_motd_title">Wiadomość od programisty</string>
     <string name="dashboard_settings_oneclick_title">Tryb jednego dotknięcia</string>
     <string name="dashboard_settings_oneclick_summary">Rozpocznij skanowanie i usuwanie dla wszystkich narzędzi, dotykając przycisku akcji na pulpicie nawigacyjnym, bez dodatkowych potwierdzeń.</string>
     <string name="dashboard_settings_oneclick_tools_title">Narzędzia jednego dotknięcia</string>
     <string name="dashboard_settings_oneclick_tools_desc">Które narzędzia powinny być zawarte w operacjach jednego dotknięcia?</string>
     <string name="dashboard_card_config_title">Karty panelu głównego</string>
-    <string name="dashboard_card_config_desc">Skonfiguruj wyświetlanie i kolejność kart</string>
+    <string name="dashboard_card_config_desc">Skonfiguruj, które karty są wyświetlane i w jakiej kolejności</string>
     <string name="dashboard_card_config_header_title">Przeciągnij, aby zmienić kolejność, przełącz, aby pokazać/ukryć</string>
     <string name="debug_notification_channel_label">Powiadomienia debugowania</string>
-    <string name="debug_debuglog_file_label">Zapisany plik logu</string>
-    <string name="debug_debuglog_recording_progress">Rejestrowanie logu debugowania</string>
-    <string name="debug_debuglog_record_action">Rejestruj log debugowania</string>
+    <string name="debug_debuglog_file_label">Zapisany plik dziennika</string>
+    <string name="debug_debuglog_recording_progress">Rejestrowanie dziennika debugowania</string>
+    <string name="debug_debuglog_record_action">Rejestruj dziennik debugowania</string>
     <string name="debug_debuglog_stop_action">Zatrzymaj rejestrowanie</string>
-    <string name="debug_debuglog_sensitive_information_message">Wygenerowany plik zawiera poufne informacje (np. nazwy plików i zainstalowane aplikacje). Dziel się nim tylko z zaufanymi osobami.</string>
-    <string name="debug_debuglog_screen_title">Log debugowania</string>
+    <string name="debug_debuglog_sensitive_information_message">Wygenerowany plik zawiera poufne informacje (np. nazwy plików i zainstalowane aplikacje). Udostępniaj go tylko zaufanym podmiotom.</string>
+    <string name="debug_debuglog_screen_title">Dziennik debugowania</string>
     <string name="debug_debuglog_screen_discard_action">Odrzuć</string>
     <string name="debug_debuglog_screen_session_path_label">Ścieżka sesji</string>
-    <string name="debug_debuglog_screen_log_files_label">Pliki logów</string>
+    <string name="debug_debuglog_screen_log_files_label">Pliki dziennika</string>
     <plurals name="debug_debuglog_screen_log_files_ready">
         <item quantity="one">%1$d plik gotowy (%2$s)</item>
         <item quantity="few">%1$d pliki gotowe (%2$s)</item>
         <item quantity="many">%1$d plików gotowych (%2$s)</item>
         <item quantity="other">%1$d plików gotowych (%2$s)</item>
     </plurals>
-    <string name="settings_debuglog_explanation">Funkcja rejestruje wszystko, co robi aplikacja, do pliku, który można udostępnić. Wygenerowany plik zawiera poufne informacje (np. nazwy plików i zainstalowane aplikacje). Dziel się nim tylko z zaufanymi osobami (np. z programistą, który rozwiązuje problem).</string>
+    <string name="settings_debuglog_explanation">Ta funkcja rejestruje wszystkie działania aplikacji do pliku, który można udostępniać. Wygenerowany plik zawiera poufne informacje (np. nazwy plików i zainstalowane aplikacje). Udostępniaj go tylko zaufanym podmiotom (np. programiście rozwiązującym problem).</string>
     <string name="tasks_activity_notification_channel_label">Aktywne zadania</string>
     <string name="tasks_activity_working_notification_title">SD Maid pracuje</string>
     <plurals name="tasks_activity_active_notification_message">
@@ -45,14 +45,14 @@
     <string name="tasks_result_subtext">Wynik zadania</string>
     <string name="onboarding_welcome_title">Witaj</string>
     <string name="onboarding_welcome_body1">SD Maid SE zarządza plikami, aplikacjami i pamięcią urządzenia.</string>
-    <string name="onboarding_welcome_body2">Zwolnij przestrzeń na urządzeniu, usuwając niepotrzebne pliki i dane pozostałe po innych aplikacjach.</string>
-    <string name="onboarding_welcome_body_beta">To jest wersja beta (testowa). Działaj z poczuciem humoru i planem awaryjnym, a napotkane problemy zgłaszaj jak najszybciej.</string>
+    <string name="onboarding_welcome_body2">Zyskaj miejsce w pamięci, sprzątając po innych aplikacjach. Usuń zbędne pliki i pozostałości danych.</string>
+    <string name="onboarding_welcome_body_beta">To wersja beta (testowa). Zachowaj poczucie humoru i plan awaryjny. Prosimy o zgłaszanie napotkanych problemów.</string>
     <string name="onboarding_welcome_continue_action">Kontynuuj</string>
     <string name="onboarding_versus_title">SD Maid / SD Maid SE</string>
     <string name="onboarding_versus_body1">SD Maid SE (tj. SD Maid 2) to następca SD Maid (tj. SD Maid 1). Jest to nowa aplikacja zoptymalizowana dla nowszych wersji Androida.</string>
-    <string name="onboarding_versus_body2">Architektura poprzednika była przestarzała (ponad 7 lat) i nie była przystosowana do nowych wyzwań w nowszych wersjach Androida. Niezbędna była kompletna przebudowa, aby kontynuować dalszy rozwój.</string>
+    <string name="onboarding_versus_body2">Architektura poprzednika ma ponad 7 lat i nie była zaprojektowana pod wyzwania nowszych wersji Androida. Konieczny był całkowita przebudowa, aby kontynuować rozwój.</string>
     <string name="onboarding_versus_body3">Rozważ przejście na SD Maid SE, aby uzyskać lepsze wyniki.</string>
-    <string name="onboarding_versus_body4">\"Status Pro\" SD Maid 1 nie jest możliwy do przeniesienia na SD Maid 2/SE. Po 12 latach darmowej aktualizacji wymagany jest nowy zakup dla podtrzymania rozwoju (na potrzeby twórcy).</string>
+    <string name="onboarding_versus_body4">Niestety nie można przenieść statusu Pro z SD Maid 1 do SD Maid 2/SE. Po 12 latach bezpłatnych aktualizacji konieczny jest nowy zakup, aby wesprzeć rozwój (wesprzyj programistę).</string>
     <string name="onboarding_versus_continue_action">Kontynuuj</string>
     <string name="onboarding_privacy_title">Prywatność</string>
     <string name="onboarding_privacy_body1">SD Maid nie ma reklam i nie sprzedaje danych użytkowników.</string>
@@ -62,7 +62,7 @@
     <string name="onboarding_privacy_continue_action">Kontynuuj</string>
     <string name="onboarding_setup_title">Konfiguracja</string>
     <string name="onboarding_setup_body1">SD Maid przeszuka wszystkie dostępne obszary danych.</string>
-    <string name="onboarding_setup_body2">To, co jest dostępne, zależy od twojego urządzenia, wersji Androida i przyznanych uprawnień.</string>
+    <string name="onboarding_setup_body2">Dostęp do określonych treści zależy od urządzenia, wersji systemu Android i udzielonych uprawnień.</string>
     <string name="onboarding_setup_body3">Zacznij korzystać z SD Maid, konfigurując dostęp do obszarów, które powinny być przeszukane.</string>
     <string name="onboarding_setup_continue_action">Konfiguruj dostęp</string>
     <string name="settings_privacy_policy_label">Polityka prywatności</string>
@@ -113,7 +113,7 @@
     <string name="settings_acknowledgements_label">Podziękowania</string>
     <string name="settings_acknowledgements_category_translations_title">Tłumaczenia</string>
     <string name="settings_acknowledgements_category_translations_subtitle">Kto to przetłumaczył?</string>
-    <string name="settings_acknowledgements_category_thanks_title">Podziękowania</string>
+    <string name="settings_acknowledgements_category_thanks_title">Dzięki</string>
     <string name="settings_acknowledgements_category_thanks_subtitle">Szczególne podziękowania dla naszych przyjaciół.</string>
     <string name="settings_acknowledgements_category_licenses_title">Licencje</string>
     <string name="settings_acknowledgements_category_licenses_subtitle">Oprogramowanie używane przez SD Maid.</string>
@@ -124,11 +124,11 @@
     <string name="setup_incomplete_card_dismiss_action">Odrzuć</string>
     <string name="setup_incomplete_card_continue_action">Kontynuuj konfigurację</string>
     <string name="setup_title">Konfiguracja</string>
-    <string name="setup_forcedshow_summary">Pokaż ponownie ekran konfiguracji, w tym elementy już ustawione.</string>
-    <string name="setup_checking_card_body">Weryfikacja zakończenia konfiguracji i funkcjonalności.</string>
+    <string name="setup_forcedshow_summary">Pokaż ponownie ekran konfiguracji, uwzględniając już wykonane elementy.</string>
+    <string name="setup_checking_card_body">Weryfikacja ukończenia konfiguracji i funkcjonalności.</string>
     <string name="general_error_setup_require_label">Konfiguracja nie jest ukończona</string>
     <string name="general_error_setup_require_msg">Do korzystania z tej funkcji wymagana jest dalsza konfiguracja. Wykonaj pozostałe kroki konfiguracji.</string>
-    <string name="setup_saf_card_title">Struktura dostępu do magazynu</string>
+    <string name="setup_saf_card_title">Mechanizm dostępu do pamięci</string>
     <string name="setup_saf_card_body">Popraw wyniki, udzielając SD Maid dostępu do dodatkowych obszarów.</string>
     <string name="setup_saf_card_body2">W większości przypadków okno zostanie otwarte z wybraną już właściwą ścieżką. Wpis będzie zielony, gdy dostęp zostanie udzielony. </string>
     <string name="setup_saf_error_wrong_path">Wybrano nieprawidłową ścieżkę</string>
@@ -170,7 +170,7 @@
     <string name="setup_acs_state_ondemand">Usługa zostanie uruchomiona na żądanie</string>
     <string name="setup_acs_state_stopped">Usługa ułatwień dostępu jest zatrzymana</string>
     <string name="setup_acs_state_stopped_hint">Usługa jest włączona, ale nie jest uruchomiona. Spróbuj wyłączyć i włączyć lub zrestartować urządzenie. Upewnij się, że aplikacja SD Maid nie jest „optymalizowana” przez system.</string>
-    <string name="setup_acs_state_stopped_hint_miui">Jeśli usługa jest ciągle wyłączana po pewnym czasie, spróbuj włączyć opcję „Auto Start” dla SD Maid w ustawieniach systemowych.</string>
+    <string name="setup_acs_state_stopped_hint_miui">Jeśli usługa jest ciągle wyłączana po pewnym czasie, spróbuj włączyć opcję „Autostart” dla SD Maid w ustawieniach systemowych.</string>
     <string name="setup_acs_consent_positive_action">Włącz usługę i udziel dostępu</string>
     <string name="setup_acs_consent_negative_action">Nie używaj usługi ułatwień dostępu</string>
     <string name="setup_acs_allow_hint">Jeśli widzisz małą ikonkę na krawędzi ekranu, to przypadkowo włączono opcję \"skrót\".</string>
@@ -180,7 +180,7 @@
     <string name="setup_inventory_card_title">Zasobnik aplikacji</string>
     <string name="setup_inventory_card_body">SD Maid musi wiedzieć, których aplikacji potrzebujesz, aby znaleźć pliki, które nie należą do żadnej zainstalowanej aplikacji.</string>
     <string name="setup_inventory_card_extra">Szukaj uprawnień o nazwie \"Lista aplikacji\" lub \"Zapytaj o wszystkie pakiety\".</string>
-    <string name="setup_inventory_invalid_message">System dostarczył nieprawidłową listę zainstalowanych aplikacji (np. zbyt mało lub niektóre z nich były niedostępne). Przejdź do ustawień systemowych i zezwól SD Maid na dostęp do „Listy aplikacji”.</string>
+    <string name="setup_inventory_invalid_message">System dostarczył nieprawidłową listę zainstalowanych aplikacji (np. zbyt małą lub niektóre z nich nie działały). Przejdź do ustawień systemu i zezwól aplikacji SD Maid na dostęp do „Listy aplikacji”.</string>
     <string name="dataarea_warningcard_empty_message">SD Maid nie znalazło żadnych obszarów danych, które można przeskanować. Czy konfiguracja została ukończona?</string>
     <string name="dataarea_warningcard_label">Obszary danych</string>
     <string name="dataarea_warningcard_reload_action">Przeładuj obszary danych</string>
@@ -191,7 +191,7 @@
     <!-- Debug card (dashboard) -->
     <string name="debug_card_title">Tryb debugowania jest włączony</string>
     <string name="debug_card_trace_mode_label">Włącz tryb śledzenia</string>
-    <string name="debug_card_dryrun_mode_label">Tryb testowy (bez usuwania)</string>
+    <string name="debug_card_dryrun_mode_label">Tryb testowy (wyłącz usuwanie)</string>
     <string name="debug_card_areas_reload_action">Przeładuj obszary danych</string>
     <string name="debug_card_pkgs_reload_action">Przeładuj aplikacje</string>
     <string name="debug_card_root_test_action">Test roota</string>
@@ -391,7 +391,7 @@
     <string name="appcleaner_include_minimumage_label">Minimalny wiek</string>
     <string name="appcleaner_include_minimumage_summary">Pomiń pliki, które są młodsze niż minimalny wiek.</string>
     <string name="appcleaner_automation_romtype_detection_label">Wykrywanie systemu operacyjnego</string>
-    <string name="appcleaner_automation_romtype_detection_summary">Automatyzacja oparta na ułatwieniach dostępu może się nie powieść, jeśli SD Maid nie wykryje poprawnie systemu operacyjnego. Użyj tego ustawienia, aby zastąpić wykryty system operacyjny.</string>
+    <string name="appcleaner_automation_romtype_detection_summary">Automatyzacja oparta na usłudze ułatwień dostępu może się nie powieść, jeśli SD Maid nie wykryje poprawnie systemu operacyjnego. Użyj tego ustawienia, aby zastąpić wykryty system operacyjny.</string>
     <string name="appcleaner_filter_codecache_label">Pamięć podręczna kodu</string>
     <string name="appcleaner_filter_codecache_summary">Pamięć podręczna kodu JVM. Bloki kodu bajtowego kompilowane w kod natywny.</string>
     <string name="appcleaner_filter_advertisement_label">Dane reklam</string>
@@ -694,7 +694,7 @@
     <string name="appcontrol_progress_disabling_package">Wyłączanie aplikacji</string>
     <string name="appcontrol_list_filteroptions_label">Opcje filtrowania</string>
     <string name="appcontrol_list_sortmode_name_label">Nazwa aplikacji</string>
-    <string name="appcontrol_list_sortmode_updated_label">Ostatnio zaktualizowany</string>
+    <string name="appcontrol_list_sortmode_updated_label">Ostatnio zaktualizowano</string>
     <string name="appcontrol_list_sortmode_installed_label">Pierwsza instalacja</string>
     <string name="appcontrol_list_sortmode_packagename_label">Nazwa pakietu</string>
     <string name="appcontrol_list_sortmode_size_label">Rozmiar</string>
@@ -833,7 +833,7 @@
         <item quantity="other">Sesja Przesuwacza utworzona z %d elementów</item>
     </plurals>
     <string name="analyzer_storage_type_primary_title">Pamięć podstawowa</string>
-    <string name="analyzer_storage_type_primary_description">Podstawowa pamięć Twojego urządzenia. Zawiera wewnętrzną kartę SD, prywatne miejsce na aplikacje i dane systemowe.</string>
+    <string name="analyzer_storage_type_primary_description">Podstawowa pamięć twojego urządzenia. Zawiera wewnętrzną kartę SD, prywatne miejsce na aplikacje i dane systemowe.</string>
     <string name="analyzer_storage_type_secondary_title">Pamięć zewnętrzna</string>
     <string name="analyzer_storage_type_secondary_description">Pamięć dodatkowa, zwykle wymienna karta SD. Zawiera pliki multimedialne i dane z aplikacji, które je obsługują.</string>
     <string name="analyzer_storage_type_tertiary_title">Pamięć przenośna</string>
@@ -851,17 +851,17 @@
     <string name="analyzer_storage_content_app_data_label">Dane aplikacji</string>
     <string name="analyzer_storage_content_app_data_description">Dane, ustawienia i pamięci podręczne.</string>
     <string name="analyzer_storage_content_app_media_label">Multimedia aplikacji</string>
-    <string name="analyzer_storage_content_app_media_description">Pliki multimedialne z tej aplikacji, np. odebrane zdjęcia WhatsApp.</string>
+    <string name="analyzer_storage_content_app_media_description">Pliki multimedialne z tej aplikacji, np. zdjęcia otrzymane przez WhatsApp.</string>
     <string name="analyzer_storage_content_app_extra_label">Dodatkowe pliki aplikacji</string>
     <string name="analyzer_storage_content_app_extra_description">Dodatkowe dane, które aplikacja umieściła poza domyślnymi ścieżkami, np. zdjęcia lub pobierania.</string>
     <string name="analyzer_app_details_app_occupies_x_on_y">Aplikacja zajmuje %1$s na \"%2$s\".</string>
     <string name="analyzer_app_details_app_is_archived">Aplikacja została zarchiwizowana.</string>
     <string name="data_area_public_app_data_official_label">Domyślne publiczne dane aplikacji</string>
     <string name="data_area_public_app_assets_official_label">Domyślne zasoby aplikacji publicznych</string>
-    <string name="data_area_public_storage_label">Magazyn publiczny</string>
+    <string name="data_area_public_storage_label">Pamięć publiczna</string>
     <string name="data_area_sdcard_label">Karta SD</string>
     <string name="data_areas_label">Obszary danych</string>
-    <string name="data_areas_description">Obszary danych reprezentują miejsca na Twoim urządzeniu, które są dostępne dla SD Maid. W zależności od wersji Androida i udzielonych uprawnień mogą być dostępne różne obszary danych.</string>
+    <string name="data_areas_description">Obszary danych reprezentują miejsca na twoim urządzeniu, które są dostępne dla SD Maid. W zależności od wersji Androida i udzielonych uprawnień mogą być dostępne różne obszary danych.</string>
     <string name="data_areas_short_summary">Obszary, do których SD Maid może uzyskać dostęp na podstawie aktualnie udzielonych uprawnień.</string>
     <string name="exclusion_manager_title">Menedżer wykluczeń</string>
     <string name="exclusion_manager_desc">Zarządzaj wykluczeniami plików i aplikacji.</string>
@@ -887,7 +887,7 @@
     <string name="exclusion_import_action">Importuj wykluczenia</string>
     <string name="exclusion_export_action">Eksportuj wykluczenia</string>
     <string name="exclusion_create_pkg_hint">Użyj narzędzia Zarządzanie aplikacjami, aby utworzyć wykluczenia aplikacji.</string>
-    <string name="exclusion_create_path_hint">Użyj narzędzia Analizator magazynu do utworzenia wykluczeń ścieżek.</string>
+    <string name="exclusion_create_path_hint">Użyj narzędzia Analizator pamięci do utworzenia wykluczeń ścieżek.</string>
     <plurals name="exclusion_x_new_exclusions">
         <item quantity="one">Utworzono jedno wykluczenie</item>
         <item quantity="few">Utworzono %d wykluczenia</item>
@@ -895,7 +895,7 @@
         <item quantity="other">Utworzono %d wykluczeń</item>
     </plurals>
     <string name="exclusion_show_defaults_action">Pokaż domyślne</string>
-    <string name="automation_accessibility_service_description">Użytkownicy ze specjalnymi potrzebami w zakresie ułatwień dostępu mogą włączyć tę usługę, aby umożliwić SD Maid automatyzację zadań, które w innym przypadku wymagałyby żmudnej ręcznej interakcji użytkownika (np. usuwanie pamięci podręcznej).\n\nPrzykład: jeśli poinstruujesz SD Maid, aby zatrzymywała wiele aplikacji, SD Maid może z tego korzystać aby otworzyć każdy ekran ustawień aplikacji, znajdź przycisk „Wymuś zatrzymanie” i dotknij go.\n\nSD Maid zawsze będzie wyraźnie widoczne podczas korzystania z tej usługi i zapewni użytkownikowi łatwy sposób natychmiastowego anulowania dowolnej interakcji.\n\nNie działania będą wykonywane bez uprzedniej zgody użytkownika. Usługę tę można ponownie wyłączyć w dowolnym momencie bez negatywnych skutków.</string>
+    <string name="automation_accessibility_service_description">Użytkownicy ze specjalnymi potrzebami w zakresie dostępności mogą włączyć tę usługę, aby umożliwić aplikacji SD Maid automatyzację zadań, które w przeciwnym razie wymagałyby żmudnej, ręcznej interakcji użytkownika (np. usuwanie pamięci podręcznej).\n\nPrzykład: Jeśli polecisz aplikacji SD Maid zatrzymanie wielu aplikacji, może ona użyć tej usługi, aby otworzyć ekran ustawień każdej z nich, znaleźć przycisk „Wymuś zatrzymanie” i go nacisnąć.\n\nSD Maid będzie zawsze widoczny podczas korzystania z tej usługi i umożliwi użytkownikowi łatwe natychmiastowe anulowanie dowolnej interakcji.\n\nŻadne działania nie zostaną wykonane bez uprzedniej zgody użytkownika. Usługę można w każdej chwili wyłączyć ponownie bez negatywnych skutków.</string>
     <string name="automation_screenoverlay_explanation">SD Maid wchodzi w interakcję z twoim urządzeniem. Nie jest możliwe jednoczesne korzystanie z ekranu. Poczekaj na zakończenie operacji lub anuluj ją.</string>
     <string name="automation_active_title">SD Maid pracuje</string>
     <string name="automation_error_no_consent_title">Błąd automatyzacji</string>
@@ -937,7 +937,7 @@
         <item quantity="other">Co %d dni</item>
     </plurals>
     <string name="scheduler_schedule_repeat_interval">Częstotliwość powtarzania</string>
-    <string name="scheduler_inaccurate_execution_hint">Oczekiwane czasy wykonania są przybliżone. Harmonogramy mogą być opóźnione lub przyspieszone, jeśli pozwoli to zaoszczędzić baterię.</string>
+    <string name="scheduler_inaccurate_execution_hint">Przewidywane czasy wykonania są przybliżone. Harmonogramy mogą zostać opóźnione lub przyspieszone, jeśli będzie to skutkowało oszczędzaniem baterii.</string>
     <string name="scheduler_no_active_schedules_subtitle">Brak aktywnych harmonogramów</string>
     <string name="scheduler_setting_nopowersaving_title">Pomiń przy niskim stanie baterii</string>
     <string name="scheduler_setting_nopowersaving_summary">Jeśli telefon jest w trybie oszczędzania energii, zaplanowane wykonanie zostanie pominięte.</string>
@@ -957,7 +957,7 @@
     <string name="updates_dashcard_title">Aktualizacja dostępna</string>
     <string name="updates_dashcard_body">Dostępna jest aktualizacja. Masz %1$s, a najnowsza wersja to %2$s.</string>
     <string name="translation_encourage_title">Przetłumacz SD Maid</string>
-    <string name="translation_encourage_body">Aplikacja SD Maid jest tłumaczona przez wolontariuszy. Tłumaczenie, recenzowanie lub korekta, każda pomoc jest mile widziana!</string>
+    <string name="translation_encourage_body">SD Maid jest tłumaczony przez wolontariuszy. Tłumaczenie, recenzja lub korekta – twoja pomoc jest bardzo doceniana!</string>
     <string name="translation_translators_title">Ta wersja została przetłumaczona przez</string>
     <string name="translation_translators_people">Łukasz Kuchta (kuchtapc2015@gmail.com);
 Damian Stasik (sd@coded.pl);
@@ -1028,10 +1028,10 @@ Karol Szastok (K4r0lSz);</string>
         <item quantity="other">%d wybranych ścieżek</item>
     </plurals>
     <string name="picker_home_action">Obszary danych</string>
-    <string name="area_type_sdcard_label">Pamięć ogólnodostępna</string>
-    <string name="area_type_public_media_label">Ogólnodostępne multimedia aplikacji</string>
-    <string name="area_type_public_data_label">Ogólnodostępne dane aplikacji</string>
-    <string name="area_type_public_obb_label">Ogólnodostępne zasoby aplikacji</string>
+    <string name="area_type_sdcard_label">Pamięć publiczna</string>
+    <string name="area_type_public_media_label">Publiczne multimedia aplikacji</string>
+    <string name="area_type_public_data_label">Publiczne dane aplikacji</string>
+    <string name="area_type_public_obb_label">Publiczne zasoby aplikacji</string>
     <string name="area_type_private_data_label">Prywatne dane aplikacji</string>
     <string name="area_type_portable_label">Pamięć przenośna</string>
     <string name="shortcut_appcontrol_short">Kontrola aplikacji</string>
@@ -1122,7 +1122,7 @@ Karol Szastok (K4r0lSz);</string>
     <string name="swiper_session_timestamps">Utworzono %1$s, ostatnia aktywność %2$s</string>
     <string name="swiper_session_remove_action">Usuń sesję</string>
     <string name="swiper_sessions_empty_hint">Dotknij + aby wybrać folder i zacząć przesuwać</string>
-    <string name="swiper_sessions_upgrade_body">Ulepsz, aby usunąć te limity i wesprzeć rozwój. Wersja darmowa jest ograniczona do:</string>
+    <string name="swiper_sessions_upgrade_body">Uaktualnij, aby usunąć te limity i wesprzeć rozwój. Wersja darmowa jest ograniczona do:</string>
     <plurals name="swiper_sessions_upgrade_files_limit">
         <item quantity="one">%d plik na sesję</item>
         <item quantity="few">%d pliki na sesję</item>
