@@ -447,6 +447,7 @@
     <string name="appcleaner_automation_error_securitycenter_permission_body">Der HyperOS-Sicherheits-App (com.miui.securitycenter) fehlt die Berechtigung zur Nutzung von Statistiken (GET_USAGE_STATS). Dies behindert Funktionen wie \"Daten löschen\" in den App-Details und Cache-Clearing über den Barrierefreiheitsdienst. Gewähre die Berechtigung, um die volle Funktionalität wiederherzustellen.</string>
     <string name="appcleaner_forcestop_before_clearing_label">Vor dem Leeren zwangsweise beenden</string>
     <string name="appcleaner_forcestop_before_clearing_summary">Apps vor dem Leeren ihres Caches zwangsbeenden. Dies kann helfen, den Cache einiger Apps zu leeren, kann aber dazu führen, dass Apps nicht richtig funktionieren und manuell neu gestartet werden müssen.</string>
+    <string name="appcleaner_progress_force_stopping">Apps werden zwangsbeendet…</string>
     <string name="deduplicator_tool_name">Duplikat-Entferner</string>
     <string name="deduplicator_explanation_short">Finde doppelte Daten auf deinem Gerät.</string>
     <plurals name="deduplicator_result_x_clusters_processed">
@@ -461,6 +462,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">Zeige Optionen an, mit denen Du alle Dateien in einem Duplikatsatz löschen kannst, sodass keine Datei übrig bleibt.</string>
     <string name="deduplicator_search_locations_title">Suchorte</string>
     <string name="deduplicator_search_locations_all_summary">Alle zugänglichen Bereiche</string>
+    <string name="deduplicator_keep_prefer_paths_title">Bevorzugt behalten in</string>
+    <string name="deduplicator_keep_prefer_paths_summary">Bei der Entscheidung, welches Duplikat behalten wird, Dateien an diesen Speicherorten bevorzugen.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">Keine Speicherorte konfiguriert</string>
     <string name="deduplicator_skip_minsize_title">Mindestgröße</string>
     <string name="deduplicator_skip_minsize_description">Überspringe Dateien, die kleiner als die Mindestgröße sind.</string>
     <string name="deduplicator_skip_uncommon_title">Überspringe ungewöhnliche Dateitypen</string>
@@ -488,7 +492,14 @@
     <string name="deduplicator_details_cluster_title">Satz Duplikate</string>
     <string name="deduplicator_matches_exact_label">Exakte Kopien</string>
     <string name="deduplicator_matches_similar_label">Ähnliche Dateien</string>
+    <string name="deduplicator_arbiter_title">Löschstrategie</string>
+    <string name="deduplicator_arbiter_summary">Konfiguriere, welche Dateien behalten und welche gelöscht werden.</string>
     <string name="deduplicator_arbiter_explanation">Beim Löschen von Duplikaten entscheidet SD Maid, welche Datei behalten wird, indem jedes Kriterium der Reihe nach geprüft wird. Das erste Kriterium mit einem klaren Ergebnis bestimmt die Entscheidung. Ziehen zum Neuordnen, tippen zum Ändern des Modus.</string>
+    <string name="deduplicator_arbiter_select_mode_title">Modus auswählen</string>
+    <string name="deduplicator_arbiter_configure_paths_action">Pfade konfigurieren…</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_title">Duplikattyp</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_description">Exakte Übereinstimmungen gegenüber ähnlichen Dateien bevorzugen.</string>
+    <string name="deduplicator_arbiter_criterium_media_provider_title">Media-Indizierung</string>
     <string name="deduplicator_arbiter_criterium_media_provider_description">Berücksichtige, ob Dateien vom Media-Provider indiziert sind.</string>
     <string name="deduplicator_arbiter_criterium_location_title">Speicherort</string>
     <string name="deduplicator_arbiter_criterium_location_description">Bevorzuge Dateien auf internem oder externem Speicher.</string>
@@ -546,7 +557,9 @@
     <string name="squeezer_quality_warning_low">Niedrigere Qualitäten können sichtbare Artefakte verursachen.</string>
     <string name="squeezer_quality_warning_high">Sehr hohe Qualität bietet minimale Platzersparnis.</string>
     <string name="squeezer_types_category_label">Bildtypen</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">JPEG-Bilder einbeziehen (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">WebP-Bilder einbeziehen (.webp).</string>
     <string name="squeezer_skip_compressed_title">Bereits komprimierte überspringen</string>
     <string name="squeezer_skip_compressed_description">Bilder überspringen, die bereits von SD Maid komprimiert wurden.</string>
@@ -572,6 +585,7 @@
     <string name="squeezer_history_clear_message">Dies ermöglicht es, zuvor komprimierte Bilder erneut zu komprimieren. Die Bilder selbst werden nicht beeinflusst.</string>
     <string name="squeezer_onboarding_title">Über Bildkomprimierung</string>
     <string name="squeezer_onboarding_message">Bildkomprimierung reduziert die Dateigröße durch Entfernen visueller Details. Dieser Vorgang ist irreversibel - die Originalqualität kann nicht wiederhergestellt werden.\n\nHier ist eine Vorschau, wie deine Bilder aussehen werden:</string>
+    <string name="squeezer_onboarding_original_label">Original</string>
     <string name="squeezer_onboarding_compressed_label">Nach Komprimierung</string>
     <string name="squeezer_onboarding_quality_label">Qualität: %d%%</string>
     <string name="squeezer_onboarding_got_it">Verstanden</string>
@@ -629,6 +643,7 @@
     <string name="appcontrol_tag_not_installed">Nicht installiert</string>
     <string name="appcontrol_tag_enabled">Aktiviert</string>
     <string name="appcontrol_tag_disabled">Deaktiviert</string>
+    <string name="appcontrol_tag_debug">Debug</string>
     <string name="appcontrol_progress_enabling_package">App aktivieren</string>
     <string name="appcontrol_progress_disabling_package">App deaktivieren</string>
     <string name="appcontrol_list_filteroptions_label">Filteroptionen</string>
@@ -936,8 +951,13 @@
     <string name="shortcuts_settings_category">Verknüpfungen</string>
     <string name="shortcuts_onetap_enabled_title">Ein-Tipp-Verknüpfung</string>
     <string name="shortcuts_onetap_enabled_summary">Zeige \"Scan + Löschen\"-Verknüpfung bei langem Drücken des App-Symbols. Verwendet die gleichen Werkzeuge wie Ein-Tipp-Dashboard.</string>
+    <string name="swiper_label">Swiper</string>
+    <string name="swiper_tool_name">Swiper</string>
+    <string name="swiper_tool_description">Ordner schnell aufräumen — durch Dateien wischen, um sie zu behalten, zu löschen oder zu überspringen.</string>
+    <string name="swiper_dashcard_description">Bestimmte Ordner schneller aufräumen als mit einem Dateimanager — einfach über jede Datei wischen.</string>
     <string name="swiper_start_action">Wischen starten</string>
     <string name="swiper_continue_action">Sitzung fortsetzen</string>
+    <string name="swiper_sessions_description">Dateien in 3 einfachen Schritten durchgehen:\n\n1. Einen Ordner zum Scannen auswählen\n2. Durch Dateien wischen, um sie zu behalten, zu löschen oder zu überspringen\n3. Deine Auswahl überprüfen und bestätigen\n\nNichts wird entfernt, bis du den endgültigen Löschen-Button drückst.</string>
     <string name="swiper_select_folders_action">Ordner auswählen</string>
     <string name="swiper_scanning_title">Scanne…</string>
     <plurals name="swiper_result_x_items_found">
@@ -1010,6 +1030,7 @@
     <string name="swiper_session_rename_hint">Einen Namen für diese Sitzung eingeben</string>
     <string name="swiper_sessions_current_sessions">Aktuelle Sitzungen</string>
     <string name="swiper_session_paths_label">Pfade</string>
+    <string name="swiper_session_status_label">Status</string>
     <plurals name="swiper_session_status_to_keep">
         <item quantity="one">%d zum Behalten</item>
         <item quantity="other">%d zum Behalten</item>
@@ -1043,6 +1064,7 @@
     <string name="swiper_sessions_header_title">Bereit zum Aufräumen?</string>
     <string name="swiper_sessions_suggestions_label">Versuche es mit:</string>
     <string name="swiper_sessions_suggestion_downloads">Downloads-Ordner</string>
+    <string name="swiper_sessions_suggestion_screenshots">Screenshots</string>
     <string name="swiper_sessions_suggestion_camera">Kameraaufnahmen</string>
     <!-- Swiper stamp variations (Tinder-style labels) -->
     <string name="swiper_stamp_keep_1">Behalten!</string>

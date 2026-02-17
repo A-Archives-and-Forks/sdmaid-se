@@ -94,6 +94,15 @@
     <string name="support_installid_desc">Automatska izvješća o greškama su anonimna. Podijelite svoj ID instalacije ako razvojni programer treba pronaći vaša izvješća o greškama.</string>
     <string name="support_debuglog_label">Zapisnik za otklanjanje pogrešaka</string>
     <string name="support_debuglog_desc">Snimite sve što aplikacija radi u tekstualnu datoteku koju možete dijeliti.</string>
+    <string name="support_debuglog_folder_label">Mapa zapisnika za otklanjanje pogrešaka</string>
+    <plurals name="support_debuglog_folder_desc">
+        <item quantity="one">%1$d datoteka koristi %2$s</item>
+        <item quantity="few">%1$d datoteke koriste %2$s</item>
+        <item quantity="other">%1$d datoteka koristi %2$s</item>
+    </plurals>
+    <string name="support_debuglog_folder_empty_desc">Nema pohranjenih zapisnika za otklanjanje pogrešaka</string>
+    <string name="support_debuglog_folder_delete_confirmation_title">Izbrisati sve zapisnike za otklanjanje pogrešaka?</string>
+    <string name="support_debuglog_folder_delete_confirmation_message">Ovo će trajno izbrisati sve pohranjene sesije zapisnika za otklanjanje pogrešaka. Ova radnja se ne može poništiti.</string>
     <string name="discord_label">Discord</string>
     <string name="discord_description">Mjesto za druženje i postavljanje pitanja.</string>
     <string name="changelog_label">Dnevnik promjena</string>
@@ -177,6 +186,8 @@
     <string name="debug_bugreporter_summary">Automatski prijavljuje probleme, npr. pojedinosti o rušenju aplikacije kako bih mogao shvatiti zašto i popraviti to.</string>
     <!-- Debug card (dashboard) -->
     <string name="debug_card_title">Način otklanjanja pogrešaka je omogućen</string>
+    <string name="debug_card_trace_mode_label">Omogući način praćenja</string>
+    <string name="debug_card_dryrun_mode_label">Probni način rada (onemogući brisanje)</string>
     <string name="debug_card_areas_reload_action">Ponovno učitaj područja podataka</string>
     <string name="debug_card_pkgs_reload_action">Ponovno učitaj aplikacije</string>
     <string name="debug_card_root_test_action">Testiraj root</string>
@@ -278,6 +289,9 @@
     <string name="systemcleaner_filter_screenshots_age_label">Starost snimke zaslona</string>
     <string name="systemcleaner_filter_screenshots_age_summary">Minimalna starost snimki zaslona koja se uzima u obzir kod brisanja.</string>
     <string name="systemcleaner_filter_superfluosapks_label">Suvišni APK-ovi</string>
+    <string name="systemcleaner_filter_superfluosapks_summary">Instalacijske datoteke koje više nisu potrebne na temelju instaliranih verzija aplikacija.</string>
+    <string name="systemcleaner_filter_superfluosapks_includesameversion_label">Uključi istu verziju</string>
+    <string name="systemcleaner_filter_superfluosapks_includesameversion_summary">Također ciljaj APK datoteke koje odgovaraju instaliranoj verziji. Onemogućite da biste uklonili samo starije verzije.</string>
     <string name="systemcleaner_filter_lostdir_label">LOST.DIR mape</string>
     <string name="systemcleaner_filter_lostdir_summary">Privremene datoteke koje se stvaraju prilikom prijenosa podataka između Android uređaja.</string>
     <string name="systemcleaner_filter_linuxfiles_label">Linux datoteke</string>
@@ -338,10 +352,14 @@
     <string name="systemcleaner_customfilter_editor_name_matching_mode_equal_label">Naziv je jednak ključnoj riječi</string>
     <string name="systemcleaner_customfilter_last_edit">Zadnje uređivanje: %s</string>
     <string name="systemcleaner_customfilter_editor_livesearch_label">Pretraživanje uživo</string>
+    <string name="systemcleaner_customfilter_editor_size_label">Ograničenja veličine</string>
     <string name="systemcleaner_customfilter_editor_size_minimum_label">Minimalna veličina</string>
     <string name="systemcleaner_customfilter_editor_size_maximum_label">Maksimalna veličina</string>
+    <string name="systemcleaner_customfilter_editor_size_explanation">Ograničite podudaranja na temelju veličine datoteke. Ostavite nepostavljeno za podudaranje s bilo kojom veličinom.</string>
+    <string name="systemcleaner_customfilter_editor_age_label">Ograničenja starosti</string>
     <string name="systemcleaner_customfilter_editor_age_minimum_label">Minimalna starost</string>
     <string name="systemcleaner_customfilter_editor_age_maximum_label">Maksimalna starost</string>
+    <string name="systemcleaner_customfilter_editor_age_explanation">Ograničite podudaranja na temelju starosti datoteke (vrijeme zadnje izmjene). Ostavite nepostavljeno za podudaranje s bilo kojom starosti.</string>
     <string name="systemcleaner_customfilter_import_action">Uvezi novi filter</string>
     <string name="systemcleaner_customfilter_export_action">Izvezi odabrani filter</string>
     <string name="appcleaner_tool_name">Čistač aplikacija</string>
@@ -440,7 +458,9 @@
     <string name="appcleaner_automation_error_no_settings_body">Ova sistemska aplikacija nema zaslon postavki. Čišćenje predmemorije putem usluge pristupačnosti nije moguće. Izuzmite ju za ubrzavanje čišćenja predmemorije.</string>
     <string name="appcleaner_automation_error_securitycenter_permission_title">Sistemska aplikacija pogrešno konfigurirana</string>
     <string name="appcleaner_automation_error_securitycenter_permission_body">Aplikaciji Sigurnost HyperOS-a (com.miui.securitycenter) nedostaje dopuštenje za statistiku korištenja (GET_USAGE_STATS). To prekida rad značajki poput \"Izbriši podatke\" u detaljima aplikacije i brisanja predmemorije putem pristupačnosti. Dajte dopuštenje za vraćanje pune funkcionalnosti.</string>
+    <string name="appcleaner_forcestop_before_clearing_label">Prisilno zaustavi prije čišćenja</string>
     <string name="appcleaner_forcestop_before_clearing_summary">Prisilno zaustavi aplikacije prije čišćenja njihove predmemorije. Može pomoći očistiti predmemoriju nekih aplikacija, ali može uzrokovati neispravno ponašanje aplikacija i zahtijevati ručno ponovno pokretanje.</string>
+    <string name="appcleaner_progress_force_stopping">Prisilno zaustavljanje aplikacija…</string>
     <string name="deduplicator_tool_name">Deduplikator</string>
     <string name="deduplicator_explanation_short">Pronađite duplicirane podatke na svom uređaju.</string>
     <plurals name="deduplicator_result_x_clusters_processed">
@@ -457,6 +477,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">Prikaži opcije koje vam omogućavaju brisanje svih datoteka u setu duplikata tako da ne ostane nijedna datoteka.</string>
     <string name="deduplicator_search_locations_title">Lokacije pretraživanja</string>
     <string name="deduplicator_search_locations_all_summary">Sva dostupna područja</string>
+    <string name="deduplicator_keep_prefer_paths_title">Preferiraj zadržavanje u</string>
+    <string name="deduplicator_keep_prefer_paths_summary">Prilikom odlučivanja koji duplikat zadržati, preferiraj zadržavanje datoteka na ovim lokacijama.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">Nema konfiguriranih lokacija</string>
     <string name="deduplicator_skip_minsize_title">Minimalna veličina</string>
     <string name="deduplicator_skip_minsize_description">Preskoči datoteke koje su manje od minimalne veličine.</string>
     <string name="deduplicator_skip_uncommon_title">Preskoči neuobičajene tipove datoteka</string>
@@ -485,7 +508,14 @@
     <string name="deduplicator_details_cluster_title">Set duplikata</string>
     <string name="deduplicator_matches_exact_label">Potpune kopije</string>
     <string name="deduplicator_matches_similar_label">Slične datoteke</string>
+    <string name="deduplicator_arbiter_title">Strategija brisanja</string>
+    <string name="deduplicator_arbiter_summary">Konfigurirajte koje datoteke se zadržavaju, a koje brišu.</string>
     <string name="deduplicator_arbiter_explanation">Prilikom brisanja duplikata, SD Maid odlučuje koju datoteku zadržati provjeravajući svaki kriterij redom. Prvi kriterij koji proizvede jasnog pobjednika određuje rezultat. Povucite za promjenu redoslijeda, dodirnite za promjenu načina.</string>
+    <string name="deduplicator_arbiter_select_mode_title">Odaberi način</string>
+    <string name="deduplicator_arbiter_configure_paths_action">Konfiguriraj putanje…</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_title">Vrsta duplikata</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_description">Preferiraj točna podudaranja nad sličnim datotekama.</string>
+    <string name="deduplicator_arbiter_criterium_media_provider_title">Indeksiranje medija</string>
     <string name="deduplicator_arbiter_criterium_media_provider_description">Razmotrite jesu li datoteke indeksirane od strane pružatelja medija.</string>
     <string name="deduplicator_arbiter_criterium_location_title">Lokacija pohrane</string>
     <string name="deduplicator_arbiter_criterium_location_description">Preferiraj datoteke na unutarnjoj ili vanjskoj pohrani.</string>
@@ -636,6 +666,7 @@
     <string name="appcontrol_tag_not_installed">Nije instalirano</string>
     <string name="appcontrol_tag_enabled">Omogućeno</string>
     <string name="appcontrol_tag_disabled">Onemogućeno</string>
+    <string name="appcontrol_tag_debug">Otklanjanje pogrešaka</string>
     <string name="appcontrol_progress_enabling_package">Omogućavanje aplikacije</string>
     <string name="appcontrol_progress_disabling_package">Onemogućavanje aplikacije</string>
     <string name="appcontrol_list_filteroptions_label">Opcije filtera</string>

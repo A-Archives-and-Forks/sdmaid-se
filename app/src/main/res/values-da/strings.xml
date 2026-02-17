@@ -7,6 +7,9 @@
     <string name="dashboard_settings_oneclick_summary">Start scanning og sletning for alle værktøjer med et tryk på kontrolpanelets handlingsknap uden ekstra bekræftelser.</string>
     <string name="dashboard_settings_oneclick_tools_title">Enkeltkliksværktøjer</string>
     <string name="dashboard_settings_oneclick_tools_desc">Hvilke værktøjer skal inkluderes i enkeltklik-operationer?</string>
+    <string name="dashboard_card_config_title">Kontrolpanelkort</string>
+    <string name="dashboard_card_config_desc">Konfigurer hvilke kort der vises og deres rækkefølge</string>
+    <string name="dashboard_card_config_header_title">Træk for at ændre rækkefølge, slå til/fra for at vise/skjule</string>
     <string name="debug_notification_channel_label">Fejlfindingsmeddelelser</string>
     <string name="debug_debuglog_file_label">Logfil optaget</string>
     <string name="debug_debuglog_recording_progress">Optager fejlfindingslog</string>
@@ -88,8 +91,14 @@
     <string name="support_installid_desc">Automatiske fejlrapporter er anonyme. Del dit installations-ID, hvis udvikleren skal finde dine rapporter.</string>
     <string name="support_debuglog_label">Fejlfindingslog</string>
     <string name="support_debuglog_desc">Optag alt, appen gør, til en tekstfil, som du kan dele.</string>
+    <string name="support_debuglog_folder_label">Fejlfindingslogmappe</string>
+    <plurals name="support_debuglog_folder_desc">
+        <item quantity="one">%1$d fil bruger %2$s</item>
+        <item quantity="other">%1$d filer bruger %2$s</item>
+    </plurals>
     <string name="support_debuglog_folder_empty_desc">Ingen fejlfindingslogs gemt</string>
     <string name="support_debuglog_folder_delete_confirmation_title">Slet alle fejlfindingslogs?</string>
+    <string name="support_debuglog_folder_delete_confirmation_message">Dette vil permanent slette alle gemte fejlfindingslogsessioner. Denne handling kan ikke fortrydes.</string>
     <string name="discord_label">Discord</string>
     <string name="discord_description">Et sted at hænge ud og stille spørgsmål.</string>
     <string name="changelog_label">Ændringslog</string>
@@ -449,6 +458,7 @@
     <string name="deduplicator_detection_method_checksum_title">Indholdskontrolsum</string>
     <string name="deduplicator_detection_method_checksum_summary">Find duplikater ved at beregne kontrolsummer for filer. Filer med ens kontrolsum har nøjagtigt det samme indhold.</string>
     <string name="deduplicator_detection_method_phash_title">Perceptuel hash</string>
+    <string name="deduplicator_detection_method_phash_summary">Find lignende filer ved at analysere indholdsegenskaber og sammenligne perceptuelle hashværdier. Lighedsbaseret detektion kan inkludere falske positiver der kræver manuel verifikation.</string>
     <string name="deduplicator_occupied_space_label">Optaget lagerplads</string>
     <plurals name="deduplicator_x_space_occupied_by_duplicates_msg">
         <item quantity="one">%s er optaget af duplikater</item>
@@ -469,20 +479,59 @@
     <string name="deduplicator_matches_similar_label">Lignende filer</string>
     <string name="deduplicator_arbiter_title">Sletningsstrategi</string>
     <string name="deduplicator_arbiter_summary">Vælg hvilke filer der gemmes, og hvilke der slettes.</string>
+    <string name="deduplicator_arbiter_explanation">Når duplikater slettes, beslutter SD Maid hvilken fil der skal beholdes ved at tjekke hvert kriterium i rækkefølge. Det første kriterium der giver en klar vinder bestemmer resultatet. Træk for at ændre rækkefølge, tryk for at ændre tilstand.</string>
     <string name="deduplicator_arbiter_select_mode_title">Vælg tilstand</string>
     <string name="deduplicator_arbiter_configure_paths_action">Indstil stier…</string>
+    <string name="deduplicator_arbiter_criterium_duplicate_type_title">Duplikattype</string>
     <string name="deduplicator_arbiter_criterium_duplicate_type_description">Foretræk nøjagtige matches over lignende filer.</string>
     <string name="deduplicator_arbiter_criterium_media_provider_title">Indeksering af medier</string>
+    <string name="deduplicator_arbiter_criterium_media_provider_description">Overvej om filer er indekseret af mediaudbyderen.</string>
     <string name="deduplicator_arbiter_criterium_location_title">Lagerplacering</string>
     <string name="deduplicator_arbiter_criterium_location_description">Foretræk filer på internt eller eksternt lager.</string>
     <string name="deduplicator_arbiter_criterium_nesting_title">Mappe dybde</string>
+    <string name="deduplicator_arbiter_criterium_nesting_description">Foretræk filer i lavere eller dybere mappestrukturer.</string>
     <string name="deduplicator_arbiter_criterium_modified_title">Ændringsdato</string>
+    <string name="deduplicator_arbiter_criterium_modified_description">Foretræk ældre eller nyere filer baseret på ændringstidspunkt.</string>
+    <string name="deduplicator_arbiter_criterium_size_title">Filstørrelse</string>
+    <string name="deduplicator_arbiter_criterium_size_description">Foretræk større eller mindre filer når størrelserne er forskellige.</string>
+    <string name="deduplicator_arbiter_criterium_preferred_path_title">Foretrukne placeringer</string>
+    <string name="deduplicator_arbiter_criterium_preferred_path_description">Behold filer i dine konfigurerede foretrukne placeringer.</string>
+    <string name="deduplicator_arbiter_mode_prefer_checksum">Foretræk nøjagtige matches</string>
+    <string name="deduplicator_arbiter_mode_prefer_phash">Foretræk lignende filer</string>
+    <string name="deduplicator_arbiter_mode_prefer_indexed">Foretræk indekserede filer</string>
+    <string name="deduplicator_arbiter_mode_prefer_unknown">Foretræk ikke-indekserede filer</string>
+    <string name="deduplicator_arbiter_mode_prefer_primary">Foretræk internt lager</string>
+    <string name="deduplicator_arbiter_mode_prefer_secondary">Foretræk eksternt lager</string>
+    <string name="deduplicator_arbiter_mode_prefer_shallow">Foretræk lavere mapper</string>
+    <string name="deduplicator_arbiter_mode_prefer_deeper">Foretræk dybere mapper</string>
+    <string name="deduplicator_arbiter_mode_prefer_older">Foretræk ældre filer</string>
+    <string name="deduplicator_arbiter_mode_prefer_newer">Foretræk nyere filer</string>
+    <string name="deduplicator_arbiter_mode_prefer_larger">Foretræk større filer</string>
+    <string name="deduplicator_arbiter_mode_prefer_smaller">Foretræk mindre filer</string>
+    <string name="deduplicator_view_mode_groups_label">Grupper</string>
+    <string name="deduplicator_view_mode_directories_label">Mapper</string>
+    <string name="squeezer_tool_name">Media Squeeze</string>
+    <string name="squeezer_explanation_short">Komprimér billeder for at spare lagerplads.</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="one">%d billede fundet</item>
+        <item quantity="other">%d billeder fundet</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="one">~%s kan spares</item>
+        <item quantity="other">~%s kan spares</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="one">%d billede komprimeret</item>
+        <item quantity="other">%d billeder komprimeret</item>
+    </plurals>
     <plurals name="squeezer_preview_x_images">
         <item quantity="one">%d billede valgt</item>
         <item quantity="other">%d billeder valgt</item>
     </plurals>
+    <string name="squeezer_search_locations_title">Søgeplacering</string>
     <string name="squeezer_search_locations_default_summary">Kameramapper (standard)</string>
     <string name="squeezer_min_size_title">Minimum filstørrelse</string>
+    <string name="squeezer_min_size_description">Spring billeder over, der er mindre end denne størrelse.</string>
     <string name="squeezer_min_age_title">Minimum fil alder</string>
     <string name="squeezer_min_age_description">Inkludér kun billeder ældre end denne alder.</string>
     <string name="squeezer_compression_settings_label">Komprimering indstillinger</string>
@@ -490,12 +539,19 @@
     <string name="squeezer_quality_title">Kompressions kvalitet</string>
     <string name="squeezer_quality_description">Lavere kvalitet betyder mindre filstørrelse, men reduceret billedkvalitet.</string>
     <string name="squeezer_quality_warning_low">Lavere kvaliteter kan forårsage synlige artefakter.</string>
+    <string name="squeezer_quality_example_format">Eksempel: %1$s billede → sparer ~%2$s ved %3$d%% kvalitet</string>
     <string name="squeezer_quality_warning_high">Meget høj kvalitet giver minimal pladsbesparelser.</string>
+    <string name="squeezer_types_category_label">Billedtyper</string>
     <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Inkluder JPEG-billeder (.jpg, .jpeg).</string>
     <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Inkludér WebP-billeder (.Webp).</string>
+    <string name="squeezer_skip_compressed_title">Spring tidligere komprimerede over</string>
     <string name="squeezer_skip_compressed_description">Spring billeder over, der allerede er komprimeret af SD Maid.</string>
+    <string name="squeezer_exif_marker_title">Skriv EXIF-markør</string>
+    <string name="squeezer_exif_marker_description">Tilføj en markør til billedets EXIF-brugerkommentarfelt for at forhindre genkomprimering, selvom komprimeringshistorikken ryddes.</string>
+    <string name="squeezer_estimated_savings_format">~%s besparelse</string>
+    <string name="squeezer_no_savings_expected">Begrænset besparelse</string>
     <string name="squeezer_current_size_format">Størrelse: %s</string>
     <string name="squeezer_compress_action">Komprimér</string>
     <string name="squeezer_compress_all_action">Komprimer alle</string>
@@ -504,9 +560,16 @@
     <string name="squeezer_preview_estimated_savings">Estimeret besparelse</string>
     <string name="squeezer_compress_confirmation_title">Komprimer billeder?</string>
     <string name="squeezer_compress_confirmation_message">Dette vil erstatte originale billeder med komprimerede versioner. Denne handling kan ikke fortrydes.</string>
+    <string name="squeezer_history_title">Komprimeringshistorik</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="one">%1$d element (%2$s)</item>
+        <item quantity="other">%1$d elementer (%2$s)</item>
+    </plurals>
     <string name="squeezer_history_empty">Ingen komprimeringshistorik</string>
     <string name="squeezer_history_clear_title">Ryd komprimeringshistorik</string>
+    <string name="squeezer_history_clear_message">Dette vil tillade, at tidligere komprimerede billeder kan komprimeres igen. Selve billederne påvirkes ikke.</string>
     <string name="squeezer_onboarding_title">Om Billedkomprimering</string>
+    <string name="squeezer_onboarding_message">Billedkomprimering reducerer filstørrelsen ved at fjerne visuelle detaljer. Denne proces er irreversibel - den originale kvalitet kan ikke genskabes.\n\nHer er en forhåndsvisning af, hvordan dine billeder vil se ud:</string>
     <string name="squeezer_onboarding_original_label">Oprindelig</string>
     <string name="squeezer_onboarding_compressed_label">Efter komprimering</string>
     <string name="squeezer_onboarding_quality_label">Kvalitet: %d%%</string>
@@ -514,6 +577,23 @@
     <string name="squeezer_compare_action">Vis sammenligning</string>
     <string name="squeezer_no_example_found">Ingen billeder fundet i valgte stier.</string>
     <string name="squeezer_result_empty_message">Ingen komprimerbare billeder fundet.</string>
+    <string name="squeezer_setup_warning">Komprimering reducerer permanent billedkvaliteten for at spare lagerplads. Dette kan ikke fortrydes. Gennemgå dine indstillinger omhyggeligt, før du starter.</string>
+    <string name="squeezer_setup_explanation">Media Squeeze reducerer filstørrelsen af billeder for at frigøre lagerplads. Dette reducerer permanent billedkvaliteten og kan ikke fortrydes. Gennemgå dine indstillinger omhyggeligt, før du starter.</string>
+    <string name="squeezer_setup_paths_title">Søgeplacering</string>
+    <string name="squeezer_setup_paths_default">Vælg mapper at søge i</string>
+    <string name="squeezer_setup_quality_title">Komprimeringskvalitet</string>
+    <string name="squeezer_setup_age_title">Minimumsalder</string>
+    <string name="squeezer_setup_age_none">Ingen grænse (inkludér alle filer)</string>
+    <string name="squeezer_setup_start_action">Start scanning</string>
+    <string name="squeezer_quality_hint_very_low">Kvalitet under 40% kan skabe ubrugelige billeder.</string>
+    <string name="squeezer_quality_hint_low">Lavere kvalitet sparer mere plads, men kan forårsage synlige artefakter.</string>
+    <string name="squeezer_quality_hint_high">Meget høj kvalitet giver minimal pladsbesparelse.</string>
+    <string name="squeezer_quality_hint_normal">Afbalanceret kvalitet og pladsbesparelse.</string>
+    <plurals name="squeezer_min_age_x_days">
+        <item quantity="one">Mindst %d dag gammel</item>
+        <item quantity="other">Mindst %d dage gammel</item>
+    </plurals>
+    <string name="squeezer_estimated_savings_percent">Estimeret ~%d%% besparelse for JPEG-filer</string>
     <string name="appcontrol_tool_name">AppControl</string>
     <string name="appcontrol_explanation_short">Apps installeret på denne enhed.</string>
     <plurals name="appcontrol_x_apps_detected_label">
@@ -548,6 +628,7 @@
     <string name="appcontrol_tag_not_installed">Ikke installeret</string>
     <string name="appcontrol_tag_enabled">Aktiveret</string>
     <string name="appcontrol_tag_disabled">Deaktiveret</string>
+    <string name="appcontrol_tag_debug">Fejlsøgning</string>
     <string name="appcontrol_progress_enabling_package">Aktiverer app</string>
     <string name="appcontrol_progress_disabling_package">Deaktiverer app</string>
     <string name="appcontrol_list_filteroptions_label">Filtreringsmuligheder</string>
@@ -562,6 +643,32 @@
     <plurals name="appcontrol_uninstall_result_message_x">
         <item quantity="one">%d app blev afinstalleret</item>
         <item quantity="other">%d apps blev afinstalleret</item>
+    </plurals>
+    <string name="appcontrol_archive_action">Arkivér</string>
+    <string name="appcontrol_archive_selection_action">Arkivér apps</string>
+    <string name="appcontrol_archive_description">Arkivér for at frigøre plads mens appdata bevares til senere gendannelse.</string>
+    <string name="appcontrol_progress_archiving_app">Arkiverer app…</string>
+    <string name="appcontrol_archive_confirmation_title">Bekræft arkivering</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="one">Arkivér %d app? Dette frigør plads men bevarer appdata.</item>
+        <item quantity="other">Arkivér %d apps? Dette frigør plads men bevarer appdata.</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="one">%d app blev arkiveret</item>
+        <item quantity="other">%d apps blev arkiveret</item>
+    </plurals>
+    <string name="appcontrol_restore_action">Gendan</string>
+    <string name="appcontrol_restore_selection_action">Gendan apps</string>
+    <string name="appcontrol_restore_description">Gendan arkiveret app til fuldt installeret tilstand. Appdata bevares.</string>
+    <string name="appcontrol_progress_restoring_app">Gendanner app…</string>
+    <string name="appcontrol_restore_confirmation_title">Bekræft gendannelse</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="one">Gendan %d arkiveret app?</item>
+        <item quantity="other">Gendan %d arkiverede apps?</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="one">%d app blev gendannet</item>
+        <item quantity="other">%d apps blev gendannet</item>
     </plurals>
     <string name="appcontrol_app_sizes_title">Appstørrelse</string>
     <string name="appcontrol_app_sizes_apk_label">App</string>
@@ -590,6 +697,9 @@
         <item quantity="other">%d apps blev eksporteret</item>
     </plurals>
     <string name="appcontrol_progress_exporting_x">Eksporterer %s</string>
+    <string name="appcontrol_share_list_action">Del liste</string>
+    <string name="appcontrol_share_list_title">Mine apps</string>
+    <string name="appcontrol_share_list_footer">Delt via SD Maid SE</string>
     <string name="appcontrol_force_stop_selection_action">Tving apps til at stoppe</string>
     <string name="appcontrol_force_stop_action">Gennemtving stop</string>
     <string name="appcontrol_force_stop_confirm_title">Bekræft gennemtving stop</string>
@@ -606,6 +716,10 @@
     <string name="appcontrol_automation_subtitle_force_stopping">Tvinger stop…</string>
     <string name="appcontrol_automation_progress_find_force_stop">Leder efter knappen \"Gennemtving stop\" (søgeord: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">Forsøger at bekræfte tidligere handling (søgeord: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">Arkiverer…</string>
+    <string name="appcontrol_automation_progress_find_archive">Leder efter knappen \"Arkivér\" (søgeord: %s)</string>
+    <string name="appcontrol_automation_subtitle_restoring">Gendanner…</string>
+    <string name="appcontrol_automation_progress_find_restore">Leder efter knappen \"Gendan\" (søgeord: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Skærmtid: %1$s siden %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Sidst opdateret: %s</string>
     <string name="appcontrol_item_installedat_x_label">Installeret: %s</string>
@@ -626,6 +740,11 @@
         <item quantity="other">%s brugt</item>
     </plurals>
     <string name="analyzer_content_access_opaque">Ingen direkte adgang tilgængelig</string>
+    <string name="analyzer_content_create_swiper_session_action">Opret Swiper-session</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="one">Swiper-session oprettet med %d element</item>
+        <item quantity="other">Swiper-session oprettet med %d elementer</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">Primær lager</string>
     <string name="analyzer_storage_type_primary_description">Det primære lager på din enhed. Indeholder det interne SD-kort samt privat lager til apps og systemdata.</string>
     <string name="analyzer_storage_type_secondary_title">Sekundær lager</string>
@@ -761,7 +880,15 @@
     <string name="review_app_body">Har du lyst til at give SD Maid en anmeldelse? ❤️</string>
     <string name="anniversary_card_title">Glædelig SD Maid Jubilæum ❤️</string>
     <string name="anniversary_card_install_date">Med dig siden %s</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="one">%1$d år sammen! Tak fordi du stoler på SD Maid til at holde din Android ren og ryddelig. Frigjort plads: %2$s</item>
+        <item quantity="other">%1$d år sammen! Tak fordi du stoler på SD Maid til at holde din Android ren og ryddelig. Frigjort plads: %2$s</item>
+    </plurals>
     <string name="anniversary_share_title">Del dit SD Maid jubilæum</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="one">%1$d år med SD Maid — Frigjort plads: %2$s. Holder din Android ren og ryddelig. #SDMaid\nPrøv det: %3$s</item>
+        <item quantity="other">%1$d år med SD Maid — Frigjort plads: %2$s. Holder din Android ren og ryddelig. #SDMaid\nPrøv det: %3$s</item>
+    </plurals>
     <string name="stats_label">Historik</string>
     <plurals name="stats_dash_body_size">
         <item quantity="one">%s er blevet frigjort.</item>
@@ -808,13 +935,150 @@
     <string name="shortcut_onetap_long">Scan og slet i én handling</string>
     <string name="shortcuts_settings_category">Genveje</string>
     <string name="shortcuts_onetap_enabled_title">Ettryksgenvej</string>
+    <string name="shortcuts_onetap_enabled_summary">Vis \"Scan + Slet\"-genvejen ved langt tryk på app-ikonet. Bruger de samme værktøjer som ettryks-kontrolpanelet.</string>
     <string name="swiper_label">Swiper</string>
     <string name="swiper_tool_name">Swiper</string>
+    <string name="swiper_tool_description">Ryd op i mapper hurtigt — stryg gennem filer for at beholde, slette eller springe over.</string>
+    <string name="swiper_dashcard_description">Ryd op i bestemte mapper hurtigere end en filhåndtering — stryg bare hver fil.</string>
     <string name="swiper_start_action">Start strygning</string>
     <string name="swiper_continue_action">Fortsæt session</string>
+    <string name="swiper_sessions_description">Gennemgå filer i 3 enkle trin:\n\n1. Vælg en mappe at scanne\n2. Stryg gennem filer for at beholde, slette eller springe over\n3. Gennemgå dine valg og bekræft\n\nIntet fjernes, før du trykker på den endelige sletteknap.</string>
     <string name="swiper_select_folders_action">Vælg mapper</string>
+    <string name="swiper_scanning_title">Scanner…</string>
+    <plurals name="swiper_result_x_items_found">
+        <item quantity="one">%d element fundet</item>
+        <item quantity="other">%d elementer fundet</item>
+    </plurals>
+    <plurals name="swiper_result_x_items_deleted">
+        <item quantity="one">%d element slettet</item>
+        <item quantity="other">%d elementer slettet</item>
+    </plurals>
+    <plurals name="swiper_result_x_items_failed">
+        <item quantity="one">%d element mislykkedes</item>
+        <item quantity="other">%d elementer mislykkedes</item>
+    </plurals>
+    <string name="swiper_item_position">#%1$d af %2$d</string>
+    <string name="swiper_keep_action">Behold</string>
+    <string name="swiper_skip_action">Spring over</string>
+    <string name="swiper_review_action">Gennemgå</string>
+    <string name="swiper_status_title">Gennemgå beslutninger</string>
+    <string name="swiper_status_action_keep_selected">Behold valgte</string>
+    <string name="swiper_status_action_delete_selected">Slet valgte</string>
+    <string name="swiper_status_action_reset_selected">Nulstil valgte</string>
+    <string name="swiper_decision_undecided">Uafgjort</string>
+    <string name="swiper_retry_action">Prøv igen</string>
+    <string name="swiper_delete_confirmation_title">Slet filer?</string>
+    <plurals name="swiper_delete_confirmation_message">
+        <item quantity="one">Dette vil permanent slette %1$d fil (%2$s). Denne handling kan ikke fortrydes.</item>
+        <item quantity="other">Dette vil permanent slette %1$d filer (%2$s). Denne handling kan ikke fortrydes.</item>
+    </plurals>
+    <plurals name="swiper_delete_confirmation_message_partial_undecided">
+        <item quantity="one">%d uafgjort element vil forblive til senere gennemgang.</item>
+        <item quantity="other">%d uafgjorte elementer vil forblive til senere gennemgang.</item>
+    </plurals>
+    <string name="swiper_delete_x_action">Slet %1$d</string>
+    <string name="swiper_settings_swap_directions_title">Byt strygeretninger</string>
+    <string name="swiper_settings_swap_directions_summary">Stryg til venstre for at beholde, til højre for at slette.</string>
+    <string name="swiper_settings_show_details_title">Vis fildetaljer</string>
+    <string name="swiper_settings_show_details_summary">Vis filnavn, størrelse og dato på strygeskærmen.</string>
+    <string name="swiper_settings_haptic_feedback_title">Haptisk feedback</string>
+    <string name="swiper_settings_haptic_feedback_summary">Vibrer ved behold- eller sletbeslutninger.</string>
+    <string name="swiper_discard_session_confirmation_title">Kassér session?</string>
+    <string name="swiper_discard_session_confirmation_message">Alle beslutninger vil gå tabt. Er du sikker?</string>
+    <string name="swiper_no_preview_available">Ingen forhåndsvisning tilgængelig</string>
+    <plurals name="swiper_dashcard_session_context">
+        <item quantity="one">Fortsæt session fra %1$d dag siden (%2$d%% færdig)</item>
+        <item quantity="other">Fortsæt session fra %1$d dage siden (%2$d%% færdig)</item>
+    </plurals>
+    <plurals name="swiper_dashcard_x_sessions">
+        <item quantity="one">%d session</item>
+        <item quantity="other">%d sessioner</item>
+    </plurals>
+    <plurals name="swiper_dashcard_x_undecided_items">
+        <item quantity="one">%d uafgjort element</item>
+        <item quantity="other">%d uafgjorte elementer</item>
+    </plurals>
+    <string name="swiper_session_timestamps">Oprettet %1$s, seneste aktivitet %2$s</string>
+    <string name="swiper_session_remove_action">Fjern session</string>
+    <string name="swiper_sessions_empty_hint">Tryk + for at vælge en mappe og begynde at stryge</string>
+    <string name="swiper_sessions_upgrade_body">Opgrader for at fjerne disse begrænsninger og støtte udviklingen. Den gratis version er begrænset til:</string>
+    <plurals name="swiper_sessions_upgrade_files_limit">
+        <item quantity="one">%d fil pr. session</item>
+        <item quantity="other">%d filer pr. session</item>
+    </plurals>
+    <plurals name="swiper_sessions_upgrade_sessions_limit">
+        <item quantity="one">%d session</item>
+        <item quantity="other">%d sessioner</item>
+    </plurals>
+    <string name="swiper_session_default_label">Session #%d</string>
+    <string name="swiper_session_rename_title">Omdøb session</string>
+    <string name="swiper_session_rename_hint">Indtast et navn til denne session</string>
+    <string name="swiper_sessions_current_sessions">Aktuelle sessioner</string>
+    <string name="swiper_session_paths_label">Stier</string>
+    <string name="swiper_session_status_label">Status</string>
+    <plurals name="swiper_session_status_to_keep">
+        <item quantity="one">%d at beholde</item>
+        <item quantity="other">%d at beholde</item>
+    </plurals>
+    <plurals name="swiper_session_status_to_delete">
+        <item quantity="one">%d at slette</item>
+        <item quantity="other">%d at slette</item>
+    </plurals>
+    <plurals name="swiper_session_status_undecided">
+        <item quantity="one">%d uafgjort</item>
+        <item quantity="other">%d uafgjorte</item>
+    </plurals>
+    <plurals name="swiper_session_status_already_kept">
+        <item quantity="one">%d allerede beholdt</item>
+        <item quantity="other">%d allerede beholdt</item>
+    </plurals>
+    <plurals name="swiper_session_status_already_deleted">
+        <item quantity="one">%d allerede slettet</item>
+        <item quantity="other">%d allerede slettet</item>
+    </plurals>
     <!-- Shorter versions for side-by-side display -->
+    <plurals name="swiper_session_status_kept">
+        <item quantity="one">%d beholdt</item>
+        <item quantity="other">%d beholdt</item>
+    </plurals>
+    <plurals name="swiper_session_status_deleted">
+        <item quantity="one">%d slettet</item>
+        <item quantity="other">%d slettet</item>
+    </plurals>
+    <string name="swiper_exclude_confirmation_message">Ekskluder \"%1$s\" fra Swiper-scanninger?</string>
+    <string name="swiper_sessions_header_title">Klar til at rydde op?</string>
+    <string name="swiper_sessions_suggestions_label">Prøv at starte med:</string>
+    <string name="swiper_sessions_suggestion_downloads">Downloadmappe</string>
+    <string name="swiper_sessions_suggestion_screenshots">Skærmbilleder</string>
+    <string name="swiper_sessions_suggestion_camera">Kamerarulle</string>
     <!-- Swiper stamp variations (Tinder-style labels) -->
+    <string name="swiper_stamp_keep_1">Behold!</string>
+    <string name="swiper_stamp_keep_2">Fedt!</string>
+    <string name="swiper_stamp_keep_3">Ja!</string>
+    <string name="swiper_stamp_keep_4">Gem!</string>
+    <string name="swiper_stamp_delete_1">Nej!</string>
+    <string name="swiper_stamp_delete_2">Farvel!</string>
+    <string name="swiper_stamp_delete_3">Skrald!</string>
+    <string name="swiper_stamp_delete_4">Slet!</string>
+    <string name="swiper_stamp_skip_1">Spring over!</string>
+    <string name="swiper_stamp_skip_2">Meh!</string>
+    <string name="swiper_stamp_skip_3">Senere!</string>
+    <string name="swiper_stamp_skip_4">Måske!</string>
+    <string name="swiper_stamp_undo_1">Fortryd!</string>
+    <string name="swiper_stamp_undo_2">Tilbage!</string>
+    <string name="swiper_stamp_undo_3">Ups!</string>
+    <string name="swiper_stamp_undo_4">Vent!</string>
     <!-- Swiper gesture overlay -->
+    <string name="swiper_gesture_overlay_dismiss">Tryk hvor som helst for at starte</string>
+    <string name="swiper_gesture_overlay_dismiss_action">Forstået</string>
+    <string name="swiper_gesture_overlay_left_delete">← Slet</string>
+    <string name="swiper_gesture_overlay_right_keep">Behold →</string>
+    <string name="swiper_gesture_overlay_left_keep">← Behold</string>
+    <string name="swiper_gesture_overlay_right_delete">Slet →</string>
+    <string name="swiper_gesture_overlay_up_skip">↑ Spring over</string>
+    <string name="swiper_gesture_overlay_down_undo">↓ Fortryd</string>
     <!-- Swiper help dialog -->
+    <string name="swiper_help_action">Hjælp</string>
+    <string name="swiper_help_title">Sådan fungerer Swiper</string>
+    <string name="swiper_help_message">Stryg hver fil for at tage en beslutning:\n\n← Stryg til venstre: %1$s\n→ Stryg til højre: %2$s\n↑ Stryg op: Spring over\n↓ Stryg ned: Fortryd (efter første stryg)\n\nDu kan også bruge knapperne i bunden.\n\nNår du er færdig, tryk \"Gennemgå\" for at se alle dine beslutninger. Intet slettes, før du bekræfter på gennemgangsskærmen.</string>
 </resources>

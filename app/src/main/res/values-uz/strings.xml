@@ -42,6 +42,7 @@
     <string name="onboarding_welcome_body2">Boshqa ilovalar ortidagi axlatni tozalash orqali xotira joyini bo\'shating. Keraksiz fayllarni o\'chiring va qolgan ma\'lumotlarni olib tashlang.</string>
     <string name="onboarding_welcome_body_beta">Bu beta (sinov) versiyasidir. Hazil tuyg\'usi va zaxira reja bilan davom eting. Iltimos, duch kelgan muammolarni xabar qiling.</string>
     <string name="onboarding_welcome_continue_action">Davom etish</string>
+    <string name="onboarding_versus_title">SD Maid / SD Maid SE</string>
     <string name="onboarding_versus_body1">SD Maid SE (ya\'ni SD Maid 2) SD Maid (ya\'ni SD Maid 1)ning vorisi hisoblanadi. Zamonaviy Android uchun optimallashtirilgan yangi ilova.</string>
     <string name="onboarding_versus_body2">Uning oldingi versiyasining arxitekturasi 7 yoshdan oshiq va yangi Android versiyalarining qiyinchiliklari uchun mo\'ljallanmagan. Rivojlanishni davom ettirish uchun to\'liq qayta loyihalash zarur edi.</string>
     <string name="onboarding_versus_body3">Yaxshiroq natijalar uchun SD Maid SE ga o\'tishni ko\'rib chiqing.</string>
@@ -76,6 +77,7 @@
     <string name="ui_theme_style_setting_label">Mavzu uslubi</string>
     <string name="ui_theme_style_setting_explanation">Ilovaning mavzusini sozlashda ishlatiladigan rang uslubi.</string>
     <string name="ui_theme_style_default_label">Standart</string>
+    <string name="ui_theme_style_materialyou_label">Material You</string>
     <string name="ui_previews_title">Fayl oldindan koʻrish</string>
     <string name="ui_previews_summary">Barcha vositalarda fayl oldindan koʻrishini koʻrsatish (masalan, rasm va video kichik rasmlari).</string>
     <string name="ui_language_override_label">Ilova tili</string>
@@ -97,6 +99,7 @@
     <string name="support_debuglog_folder_empty_desc">Saqlangan xatolik loglari yo\'q</string>
     <string name="support_debuglog_folder_delete_confirmation_title">Barcha xatolik loglarini o\'chirish kerakmi?</string>
     <string name="support_debuglog_folder_delete_confirmation_message">Bu barcha saqlangan xatolik log sessiyalarini butunlay o\'chiradi. Bu amalni qaytarib bo\'lmaydi.</string>
+    <string name="discord_label">Discord</string>
     <string name="discord_description">Muloqot qilish va savollar berish uchun joy.</string>
     <string name="changelog_label">O\'zgarishlar jurnali</string>
     <string name="settings_acknowledgements_label">Minnatdorchilik</string>
@@ -132,6 +135,7 @@
     <string name="setup_root_enable_root_use_label">Mavjud bo\'lsa root kirish huquqidan foydalanish</string>
     <string name="setup_root_disable_root_use_label">Root kirish huquqidan foydalanmang</string>
     <string name="setup_root_card_body2">Faqat root huquqi olingan qurilmalarda mavjud. Agar siz bu o\'zgarishni qilmagan bo\'lsangiz, qurilmangiz root huquqiga ega emas va bu sozlama ta\'sir qilmaydi.</string>
+    <string name="setup_shizuku_card_title">Shizuku</string>
     <string name="setup_shizuku_card_body">Natijalarni yaxshilash va xususiyatlarni yoqish uchun imkon qadar SD Maid ga Shizuku dan foydalanishga ruxsat bering.</string>
     <string name="setup_shizuku_card_body2">Agar Shizuku ilovasi qurilmangizda sozlanmagan bo\'lsa, bu sozlama ta\'sir qilmaydi.</string>
     <string name="setup_shizuku_card_root_info">Shizuku root kirish huquqi bilan birgalikda qo\'shimcha xususiyatlarni yoqmaydi, lekin ishonchlilikni oshiradi. SD Maid uni zaxira usul sifatida ishlatadi.</string>
@@ -398,9 +402,13 @@
     <string name="appcleaner_filter_whatsapp_sent_summary">WhatsApp orqali boshqalarga yuborilgan fayllar.</string>
     <string name="appcleaner_filter_telegram_label">Telegram media fayllari</string>
     <string name="appcleaner_filter_telegram_summary">Telegram orqali qabul qilingan yoki yuborilgan fayllar.</string>
+    <string name="appcleaner_filter_threema_label">Threema</string>
     <string name="appcleaner_filter_threema_summary">Threema orqali qabul qilingan fayllar.</string>
+    <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">Suhbatlarda va WeChat lahzalarida yuborilgan yoki qabul qilingan fayllar.</string>
+    <string name="appcleaner_filter_viber_label">Viber</string>
     <string name="appcleaner_filter_viber_summary">Chatda ko\'rilganda qayta yuklab olinadigan keshlangan media fayllar.</string>
+    <string name="appcleaner_filter_qqchat_label">QQ chat</string>
     <string name="appcleaner_filter_qqchat_summary">QQ chat suhbatlarida yuborilgan yoki qabul qilingan fayllar.</string>
     <string name="appcleaner_delete_all_confirmation_message">Barcha ilovalar uchun sarflash mumkin bo\'lgan elementlarni o\'chirish kerakmi?</string>
     <plurals name="appcleaner_result_x_items_deleted">
@@ -454,6 +462,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">Takrorlanganlar to\'plamidagi barcha fayllarni o\'chirishga ruxsat beruvchi variantlarni ko\'rsating, shunda hech qanday fayl qolmaydi.</string>
     <string name="deduplicator_search_locations_title">Qidiruv joylari</string>
     <string name="deduplicator_search_locations_all_summary">Barcha kirish mumkin bo\'lgan hududlar</string>
+    <string name="deduplicator_keep_prefer_paths_title">Saqlash uchun afzal joy</string>
+    <string name="deduplicator_keep_prefer_paths_summary">Dublikatlardan qaysi birini saqlashni hal qilishda ushbu joylardagi fayllarni saqlashni afzal ko\'ring.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">Hech qanday joy sozlanmagan</string>
     <string name="deduplicator_skip_minsize_title">Minimal hajm</string>
     <string name="deduplicator_skip_minsize_description">Minimal hajmdan kichik fayllarni o\'tkazib yuborish.</string>
     <string name="deduplicator_skip_uncommon_title">Noodatiy fayl turlarini o\'tkazib yuborish</string>
@@ -546,7 +557,9 @@
     <string name="squeezer_quality_warning_low">Past sifat ko\'rinadigan artefaktlarni keltirib chiqarishi mumkin.</string>
     <string name="squeezer_quality_warning_high">Juda yuqori sifat minimal joy tejaydi.</string>
     <string name="squeezer_types_category_label">Rasm turlari</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">JPEG rasmlarni qo\'shish (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">WebP rasmlarni qo\'shish (.webp).</string>
     <string name="squeezer_skip_compressed_title">Oldin siqilganlarni o\'tkazib yuborish</string>
     <string name="squeezer_skip_compressed_description">SD Maid tomonidan allaqachon siqilgan rasmlarni o\'tkazib yuborish.</string>
@@ -596,6 +609,7 @@
         <item quantity="other">Kamida %d kunlik</item>
     </plurals>
     <string name="squeezer_estimated_savings_percent">JPEG fayllar uchun taxminan ~%d%% tejash</string>
+    <string name="appcontrol_tool_name">AppControl</string>
     <string name="appcontrol_explanation_short">Qurilmangizda o\'rnatilgan ilovalar.</string>
     <plurals name="appcontrol_x_apps_detected_label">
         <item quantity="one">%d ilova aniqlandi</item>
@@ -613,6 +627,7 @@
     <string name="appcontrol_app_launch_title">Ilovani ishga tushirish</string>
     <string name="appcontrol_app_launch_description">Ushbu ilovaning asosiy faoliyatini ishga tushirish.</string>
     <string name="appcontrol_app_forcestop_title">Majburiy to\'xtatish</string>
+    <string name="appcontrol_app_forcestop_description">Ilovani to\'xtatish. Siz ochguningizcha yoki qurilma qayta ishga tushguncha o\'zini ishga tushirishining oldini olish.</string>
     <string name="appcontrol_app_uninstall_description">Ushbu ilovani qurilmangizdan o\'chirish.</string>
     <string name="appcontrol_app_exclude_add_title">Ilovani chiqarib tashlash</string>
     <string name="appcontrol_app_exclude_add_description">Ushbu ilovani SD Maid dagi boshqa operatsiyalardan chiqarib tashlash.</string>
@@ -620,6 +635,7 @@
     <string name="appcontrol_app_exclude_edit_description">Ushbu ilova hozirda bir yoki bir nechta vositalardan chiqarib tashlangan.</string>
     <string name="appcontrol_tag_user">Foydalanuvchi</string>
     <string name="appcontrol_tag_active">Yaqinda faol</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
     <string name="appcontrol_tag_apk_bundle">To\'plam</string>
     <string name="appcontrol_tag_system">Tizim</string>
     <string name="appcontrol_tag_archived">Arxivlangan</string>
@@ -627,6 +643,7 @@
     <string name="appcontrol_tag_not_installed">O\'rnatilmagan</string>
     <string name="appcontrol_tag_enabled">Yoqilgan</string>
     <string name="appcontrol_tag_disabled">O\'chirilgan</string>
+    <string name="appcontrol_tag_debug">Nosozliklarni tuzatish</string>
     <string name="appcontrol_progress_enabling_package">Ilovani yoqish</string>
     <string name="appcontrol_progress_disabling_package">Ilovani o\'chirish</string>
     <string name="appcontrol_list_filteroptions_label">Filtr variantlari</string>
@@ -685,8 +702,11 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">Har bir ilovaning hajmini taxminiy aniqlash.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">Faollikni aniqlash</string>
     <string name="appcontrol_settings_module_activity_enabled_description">Ilova faol ekanligini (yoki yaqinda bo\'lganligini) aniqlash.</string>
+    <string name="appcontrol_include_multiuser_label">Boshqa foydalanuvchilarni qo\'shish</string>
+    <string name="appcontrol_include_multiuser_summary">Ushbu qurilmadagi boshqa foydalanuvchi profillaridagi ilovalarni qo\'shish.</string>
     <string name="appcontrol_export_app_selection_action">Ilovalarni eksport qilish</string>
     <string name="appcontrol_export_title">Ilovani eksport qilish</string>
+    <string name="appcontrol_export_description">Ushbu ilovaning o\'rnatish fayllarini saqlash. Bu ilova ma\'lumotlarini o\'z ichiga olmaydi.</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="one">%d ilova eksport qilindi</item>
         <item quantity="other">%d ilova eksport qilindi</item>
@@ -717,6 +737,8 @@
     <string name="appcontrol_automation_progress_find_restore">\"Tiklash\" tugmasi izlanmoqda (kalit so\'zlar: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Ekran vaqti: %1$s %2$s dan beri</string>
     <string name="appcontrol_item_lastupdate_x_label">Oxirgi yangilanish: %s</string>
+    <string name="appcontrol_item_installedat_x_label">O\'rnatilgan sana: %s</string>
+    <string name="analyzer_tool_name">StorageAnalyzer</string>
     <string name="analyzer_explanation_short">Qurilmangizda nimaning joy egallayotganini aniqlash.</string>
     <string name="analyzer_progress_scanning_device">Xotira qurilmalarini qidirish</string>
     <string name="analyzer_progress_scanning_storage">Xotirani skanerlash</string>

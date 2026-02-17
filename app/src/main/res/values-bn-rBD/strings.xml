@@ -92,6 +92,10 @@
     <string name="support_debuglog_label">ডিবাগ লগ</string>
     <string name="support_debuglog_desc">অ্যাপটি কী করছে তা একটি টেক্সট ফাইলে রেকর্ড করুন যাতে আপনি শেয়ার করতে পারেন।</string>
     <string name="support_debuglog_folder_label">লগ ফোল্ডার ডিবাগ করুন</string>
+    <plurals name="support_debuglog_folder_desc">
+        <item quantity="one">%1$d ফাইল %2$s ব্যবহার করছে</item>
+        <item quantity="other">%1$d ফাইল %2$s ব্যবহার করছে</item>
+    </plurals>
     <string name="support_debuglog_folder_empty_desc">কোনও ডিবাগ লগ সংরক্ষণ করা হয়নি</string>
     <string name="support_debuglog_folder_delete_confirmation_title">সব ডিবাগ লগ মুছে ফেলবেন?</string>
     <string name="support_debuglog_folder_delete_confirmation_message">এটি সমস্ত সঞ্চিত ডিবাগ লগ সেশন স্থায়ীভাবে মুছে ফেলবে। এই ক্রিয়াটি পূর্বাবস্থায় ফেরানো যাবে না।</string>
@@ -434,7 +438,9 @@
     <string name="appcleaner_automation_error_no_settings_body">এই সিস্টেম অ্যাপটিতে কোনও সেটিংস স্ক্রিন নেই। অ্যাক্সেসিবিলিটি পরিষেবার মাধ্যমে ক্যাশ সাফ করা সম্ভব নয়। ক্যাশ সাফ করার গতি বাড়ানোর জন্য এটি বাদ দিন।</string>
     <string name="appcleaner_automation_error_securitycenter_permission_title">সিস্টেম অ্যাপটি ভুলভাবে কনফিগার করা হয়েছে</string>
     <string name="appcleaner_automation_error_securitycenter_permission_body">HyperOS এর নিরাপত্তা অ্যাপ (com.miui.securitycenter) তে ব্যবহারের পরিসংখ্যান অনুমতি (GET_USAGE_STATS) অনুপস্থিত। এটি অ্যাপের বিবরণে \"ডেটা সাফ করুন\" এবং অ্যাক্সেসিবিলিটির মাধ্যমে ক্যাশ সাফ করার মতো বৈশিষ্ট্যগুলিকে ভেঙে দেয়। সম্পূর্ণ কার্যকারিতা পুনরুদ্ধার করার অনুমতি দিন।</string>
-    <string name="appcleaner_forcestop_before_clearing_summary">ক্যাশ পরিষ্কার করার আগে অ্যাপ জোর করে বন্ধ করুন। এটি কিছু অ্যাপের ক্যাশ পরিষ্কার করতে সাহায্য করতে পারে, তবে অ্যাপ অস্বাভাবিক আচরণ করতে পারে এবং ম্যানুয়ালি পুনরায় চালু করতে হতে পারে।</string>
+    <string name="appcleaner_forcestop_before_clearing_label">সাফ করার আগে জোর করে বন্ধ করুন</string>
+    <string name="appcleaner_forcestop_before_clearing_summary">ক্যাশ সাফ করার আগে অ্যাপগুলি জোর করে বন্ধ করুন। এটি কিছু অ্যাপের ক্যাশ সাফ করতে সাহায্য করতে পারে, তবে অ্যাপগুলি ভুলভাবে কাজ করতে পারে এবং ম্যানুয়ালি পুনরায় চালু করতে হতে পারে।</string>
+    <string name="appcleaner_progress_force_stopping">অ্যাপগুলি জোর করে বন্ধ করা হচ্ছে…</string>
     <string name="deduplicator_tool_name">ডিডুপ্লিকেটর</string>
     <string name="deduplicator_explanation_short">আপনার ডিভাইসে ডুপ্লিকেট ডেটা খুঁজুন।</string>
     <plurals name="deduplicator_result_x_clusters_processed">

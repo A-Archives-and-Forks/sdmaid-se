@@ -472,6 +472,7 @@
     <string name="deduplicator_detection_method_checksum_title">Suma de comprobación del contenido</string>
     <string name="deduplicator_detection_method_checksum_summary">Determina los duplicados calculando las sumas de verificación para los archivos. Los archivos con las sumas de comprobación coincidentes tienen exactamente el mismo contenido.</string>
     <string name="deduplicator_detection_method_phash_title">Hash conceptual</string>
+    <string name="deduplicator_detection_method_phash_summary">Encontrar archivos similares analizando características del contenido y comparando valores de hash perceptual. La detección basada en similitud puede incluir falsos positivos que requieren verificación manual.</string>
     <string name="deduplicator_occupied_space_label">Almacenamiento ocupado</string>
     <plurals name="deduplicator_x_space_occupied_by_duplicates_msg">
         <item quantity="one">%s está ocupado por duplicados</item>
@@ -523,8 +524,67 @@
     <string name="deduplicator_arbiter_mode_prefer_smaller">Preferir archivos más chicos</string>
     <string name="deduplicator_view_mode_groups_label">Grupos</string>
     <string name="deduplicator_view_mode_directories_label">Carpetas</string>
+    <string name="squeezer_tool_name">Media Squeeze</string>
+    <string name="squeezer_explanation_short">Comprimir imágenes para ahorrar espacio de almacenamiento.</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="one">%d imagen encontrada</item>
+        <item quantity="other">%d imágenes encontradas</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="one">~%s de ahorro estimado</item>
+        <item quantity="other">~%s de ahorro estimado</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="one">%d imagen comprimida</item>
+        <item quantity="other">%d imágenes comprimidas</item>
+    </plurals>
+    <plurals name="squeezer_preview_x_images">
+        <item quantity="one">%d imagen</item>
+        <item quantity="other">%d imágenes</item>
+    </plurals>
+    <string name="squeezer_search_locations_title">Ubicaciones de búsqueda</string>
+    <string name="squeezer_search_locations_default_summary">Carpetas de cámara (predeterminado)</string>
+    <string name="squeezer_min_size_title">Tamaño mínimo de archivo</string>
+    <string name="squeezer_min_size_description">Omitir imágenes más chicas que este tamaño.</string>
+    <string name="squeezer_min_age_title">Antigüedad mínima del archivo</string>
+    <string name="squeezer_min_age_description">Solo incluir imágenes más viejas que esta antigüedad.</string>
+    <string name="squeezer_compression_settings_label">Configuración de compresión</string>
+    <string name="squeezer_quality_label">Calidad</string>
+    <string name="squeezer_quality_title">Calidad de compresión</string>
+    <string name="squeezer_quality_description">Menor calidad significa menor tamaño de archivo pero menor calidad de imagen.</string>
+    <string name="squeezer_quality_example_format">Ejemplo: imagen %1$s → ahorra ~%2$s al %3$d%% de calidad</string>
+    <string name="squeezer_quality_warning_low">Las calidades más bajas pueden causar artefactos visibles.</string>
+    <string name="squeezer_quality_warning_high">La calidad muy alta proporciona un ahorro mínimo de espacio.</string>
+    <string name="squeezer_types_category_label">Tipos de imagen</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
+    <string name="squeezer_type_jpeg_description">Incluir imágenes JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
+    <string name="squeezer_type_webp_description">Incluir imágenes WebP (.webp).</string>
+    <string name="squeezer_skip_compressed_title">Omitir previamente comprimidas</string>
+    <string name="squeezer_skip_compressed_description">Omitir imágenes que ya fueron comprimidas por SD Maid.</string>
+    <string name="squeezer_exif_marker_title">Escribir marcador EXIF</string>
+    <string name="squeezer_exif_marker_description">Agregar un marcador al campo de comentario EXIF de la imagen para evitar la recompresión incluso si se borra el historial de compresión.</string>
+    <string name="squeezer_estimated_savings_format">~%s de ahorro</string>
+    <string name="squeezer_no_savings_expected">Ahorro limitado</string>
+    <string name="squeezer_current_size_format">Tamaño: %s</string>
+    <string name="squeezer_compress_action">Comprimir</string>
+    <string name="squeezer_compress_all_action">Comprimir todo</string>
+    <string name="squeezer_preview_dialog_title">Confirmar compresión</string>
+    <string name="squeezer_preview_total_size">Tamaño total</string>
+    <string name="squeezer_preview_estimated_savings">Ahorro estimado</string>
+    <string name="squeezer_compress_confirmation_title">¿Comprimir imágenes?</string>
+    <string name="squeezer_compress_confirmation_message">Esto reemplazará las imágenes originales con versiones comprimidas. Esta acción no se puede deshacer.</string>
+    <string name="squeezer_history_title">Historial de compresión</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="one">%d imagen comprimida previamente</item>
+        <item quantity="other">%d imágenes comprimidas previamente</item>
+    </plurals>
+    <string name="squeezer_history_empty">Sin historial de compresión</string>
+    <string name="squeezer_history_clear_title">Borrar historial de compresión</string>
+    <string name="squeezer_history_clear_message">Esto permitirá que las imágenes previamente comprimidas sean comprimidas de nuevo. Las imágenes en sí no se ven afectadas.</string>
     <string name="squeezer_onboarding_title">Acerca de la compresión de imágenes</string>
     <string name="squeezer_onboarding_message">La compresión de imágenes reduce el tamaño del archivo eliminando detalles visuales. Este proceso es irreversible - la calidad original no se puede restaurar.\n\nAcá tenés una vista previa de cómo se verán tus imágenes:</string>
+    <string name="squeezer_onboarding_original_label">Original</string>
     <string name="squeezer_onboarding_compressed_label">Después de la compresión</string>
     <string name="squeezer_onboarding_quality_label">Calidad: %d%%</string>
     <string name="squeezer_onboarding_got_it">Entendido</string>
@@ -566,6 +626,7 @@
     <string name="appcontrol_app_launch_title">Iniciar aplicación</string>
     <string name="appcontrol_app_launch_description">Iniciar la actividad principal de esta aplicación.</string>
     <string name="appcontrol_app_forcestop_title">Forzar la detención</string>
+    <string name="appcontrol_app_forcestop_description">Detener la aplicación. Evitar que se inicie sola hasta que la abras o se reinicie el dispositivo.</string>
     <string name="appcontrol_app_uninstall_description">Desinstalar esta aplicación de tu dispositivo.</string>
     <string name="appcontrol_app_exclude_add_title">Excluir aplicación</string>
     <string name="appcontrol_app_exclude_add_description">Excluir esta aplicación de otras operaciones en SD Maid.</string>
@@ -588,6 +649,7 @@ Archivo: Textos de la aplicación (aplicación principal)</string>
     <string name="appcontrol_tag_not_installed">No instalada</string>
     <string name="appcontrol_tag_enabled">Activado</string>
     <string name="appcontrol_tag_disabled">Desactivado</string>
+    <string name="appcontrol_tag_debug">Depuración</string>
     <string name="appcontrol_progress_enabling_package">Activando aplicación</string>
     <string name="appcontrol_progress_disabling_package">Desactivando aplicación</string>
     <string name="appcontrol_list_filteroptions_label">Opciones del filtro</string>
@@ -602,6 +664,32 @@ Archivo: Textos de la aplicación (aplicación principal)</string>
     <plurals name="appcontrol_uninstall_result_message_x">
         <item quantity="one">%d aplicación fue desinstalada</item>
         <item quantity="other">%d aplicaciones fueron desinstaladas</item>
+    </plurals>
+    <string name="appcontrol_archive_action">Archivar</string>
+    <string name="appcontrol_archive_selection_action">Archivar aplicaciones</string>
+    <string name="appcontrol_archive_description">Archivar para liberar espacio manteniendo los datos de la app para restaurar después.</string>
+    <string name="appcontrol_progress_archiving_app">Archivando aplicación…</string>
+    <string name="appcontrol_archive_confirmation_title">Confirmar archivado</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="one">¿Archivar %d aplicación? Esto liberará espacio pero mantendrá los datos de la app.</item>
+        <item quantity="other">¿Archivar %d aplicaciones? Esto liberará espacio pero mantendrá los datos de las apps.</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="one">%d aplicación fue archivada</item>
+        <item quantity="other">%d aplicaciones fueron archivadas</item>
+    </plurals>
+    <string name="appcontrol_restore_action">Restaurar</string>
+    <string name="appcontrol_restore_selection_action">Restaurar aplicaciones</string>
+    <string name="appcontrol_restore_description">Restaurar la aplicación archivada a un estado completamente instalado. Los datos de la app se conservan.</string>
+    <string name="appcontrol_progress_restoring_app">Restaurando aplicación…</string>
+    <string name="appcontrol_restore_confirmation_title">Confirmar restauración</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="one">¿Restaurar %d aplicación archivada?</item>
+        <item quantity="other">¿Restaurar %d aplicaciones archivadas?</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="one">%d aplicación fue restaurada</item>
+        <item quantity="other">%d aplicaciones fueron restauradas</item>
     </plurals>
     <string name="appcontrol_app_sizes_title">Tamaño de la aplicación</string>
     <string name="appcontrol_app_sizes_apk_label">Aplicación</string>
@@ -624,13 +712,19 @@ Archivo: Textos de la aplicación (aplicación principal)</string>
     <string name="appcontrol_settings_module_sizing_enabled_description">Obtenga una estimación aproximada del tamaño de cada aplicación.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">Determinar actividad</string>
     <string name="appcontrol_settings_module_activity_enabled_description">Vea si una aplicación está (o estuvo recientemente) activa.</string>
+    <string name="appcontrol_include_multiuser_label">Incluir otros usuarios</string>
+    <string name="appcontrol_include_multiuser_summary">Incluir aplicaciones de otros perfiles de usuario en este dispositivo.</string>
     <string name="appcontrol_export_app_selection_action">Exportar aplicaciones</string>
     <string name="appcontrol_export_title">Exportar aplicación</string>
+    <string name="appcontrol_export_description">Guardar los archivos de instalación de esta aplicación. Esto no incluye los datos de la app.</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="one">%d aplicación fue exportada</item>
         <item quantity="other">%d aplicaciones fueron exportadas</item>
     </plurals>
     <string name="appcontrol_progress_exporting_x">Exportando %s</string>
+    <string name="appcontrol_share_list_action">Compartir lista</string>
+    <string name="appcontrol_share_list_title">Mis aplicaciones</string>
+    <string name="appcontrol_share_list_footer">Compartido vía SD Maid SE</string>
     <string name="appcontrol_force_stop_selection_action">Forzar la detención de las aplicaciones</string>
     <string name="appcontrol_force_stop_action">Forzar la detención</string>
     <string name="appcontrol_force_stop_confirm_title">Confirmar la detención a la fuerza</string>
@@ -647,8 +741,13 @@ Archivo: Textos de la aplicación (aplicación principal)</string>
     <string name="appcontrol_automation_subtitle_force_stopping">Forzando la detención…</string>
     <string name="appcontrol_automation_progress_find_force_stop">Buscando el botón \"Forzar la detención\" (palabras clave: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">Intentando confirmar la acción anterior (palabras clave: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">Archivando…</string>
+    <string name="appcontrol_automation_progress_find_archive">Buscando el botón \"Archivar\" (palabras clave: %s)</string>
+    <string name="appcontrol_automation_subtitle_restoring">Restaurando…</string>
+    <string name="appcontrol_automation_progress_find_restore">Buscando el botón \"Restaurar\" (palabras clave: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Tiempo de pantalla: %1$s desde %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Última actualización: %s</string>
+    <string name="appcontrol_item_installedat_x_label">Instalado el: %s</string>
     <string name="analyzer_tool_name">Analizador del Almacenamiento</string>
     <string name="analyzer_explanation_short">Averigua qué ocupa espacio en tu dispositivo.</string>
     <string name="analyzer_progress_scanning_device">Buscando dispositivos de almacenamiento</string>
@@ -666,6 +765,11 @@ Archivo: Textos de la aplicación (aplicación principal)</string>
         <item quantity="other">%s Usado</item>
     </plurals>
     <string name="analyzer_content_access_opaque">No hay acceso directo disponible</string>
+    <string name="analyzer_content_create_swiper_session_action">Crear sesión de Swiper</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="one">Sesión de Swiper creada con %d elemento</item>
+        <item quantity="other">Sesión de Swiper creada con %d elementos</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">Almacenamiento Primario</string>
     <string name="analyzer_storage_type_primary_description">El almacenamiento principal de su dispositivo. Contiene la tarjeta SD interna, el almacenamiento privado para aplicaciones y datos del sistema.</string>
     <string name="analyzer_storage_type_secondary_title">Almacenamiento Secundario</string>
@@ -708,6 +812,7 @@ Archivo: Textos de la aplicación (aplicación principal)</string>
     <string name="exclusion_type_segment">Excluir por partes</string>
     <string name="exclusion_tags_alltools">Todas las herramientas</string>
     <string name="exclusion_target_label">Objetivo de la exclusión</string>
+    <string name="exclusion_editor_path_change_action">Tocá para cambiar la ruta</string>
     <string name="exclusion_option_allow_partial">Permitir las coincidencias parciales</string>
     <string name="exclusion_option_ignore_casing">Ignorar carcasa</string>
     <string name="exclusion_editor_affected_tools_label">Herramientas afectadas</string>
@@ -798,6 +903,17 @@ Archivo: Textos de la aplicación (aplicación principal)</string>
     <string name="review_app_review_action">Reseña</string>
     <string name="review_app_dismiss_action">Quizás más tarde</string>
     <string name="review_app_body">¿Te gustaría dejar una reseña de SD Maid?️ ❤️</string>
+    <string name="anniversary_card_title">Feliz aniversario de SD Maid ❤️</string>
+    <string name="anniversary_card_install_date">Con vos desde %s</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="one">¡%d año juntos! Gracias por ser parte de esta aventura.</item>
+        <item quantity="other">¡%d años juntos! Gracias por ser parte de esta aventura.</item>
+    </plurals>
+    <string name="anniversary_share_title">Compartí tu aniversario de SD Maid</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="one">¡Llevo %d año usando SD Maid SE para mantener mi dispositivo limpio y ordenado!</item>
+        <item quantity="other">¡Llevo %d años usando SD Maid SE para mantener mi dispositivo limpio y ordenado!</item>
+    </plurals>
     <string name="stats_label">Historial</string>
     <plurals name="stats_dash_body_size">
         <item quantity="one">%s ha sido liberado.</item>

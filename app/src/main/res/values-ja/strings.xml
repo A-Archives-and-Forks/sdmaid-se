@@ -102,6 +102,7 @@
     <string name="settings_acknowledgements_category_translations_title">翻訳</string>
     <string name="settings_acknowledgements_category_translations_subtitle">誰がこの文章を翻訳しましたか？</string>
     <string name="settings_acknowledgements_category_thanks_title">謝辞</string>
+    <string name="settings_acknowledgements_category_thanks_subtitle">友人の皆様への特別な感謝。</string>
     <string name="settings_acknowledgements_category_licenses_title">ライセンス</string>
     <string name="settings_acknowledgements_category_licenses_subtitle">SD Maidが使用しているソフトウェア</string>
     <string name="setup_label">セットアップ</string>
@@ -456,6 +457,7 @@
     <string name="deduplicator_detection_method_checksum_title">コンテンツのチェックサム</string>
     <string name="deduplicator_detection_method_checksum_summary">ファイルのチェックサムを計算することで重複を決定します。チェックサムに一致するファイルは全く同じ内容を持ちます。</string>
     <string name="deduplicator_detection_method_phash_title">概念ハッシュ</string>
+    <string name="deduplicator_detection_method_phash_summary">コンテンツの特徴を分析し知覚ハッシュ値を比較して類似ファイルを検出します。⚠️ 類似性に基づく検出では誤検出が含まれる場合があり、手動確認が必要です。</string>
     <string name="deduplicator_occupied_space_label">占拠されたストレージ</string>
     <plurals name="deduplicator_x_space_occupied_by_duplicates_msg">
         <item quantity="other">%sが重複により占有されています</item>
@@ -534,7 +536,9 @@
     <string name="squeezer_quality_warning_low">品質が低いと目に見えるアーティファクトが発生する場合があります。</string>
     <string name="squeezer_quality_warning_high">非常に高い品質では容量の節約がごくわずかです。</string>
     <string name="squeezer_types_category_label">画像タイプ</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">JPEG画像（.jpg、.jpeg）を含めます。</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">WebP画像（.webp）を含めます。</string>
     <string name="squeezer_skip_compressed_title">圧縮済みをスキップ</string>
     <string name="squeezer_skip_compressed_description">SD Maidで既に圧縮された画像をスキップします。</string>
@@ -599,6 +603,7 @@
     <string name="appcontrol_app_launch_title">アプリを起動</string>
     <string name="appcontrol_app_launch_description">このアプリのプライマリアクティビティを起動します。</string>
     <string name="appcontrol_app_forcestop_title">強制停止</string>
+    <string name="appcontrol_app_forcestop_description">アプリを停止します。手動で開くかデバイスを再起動するまで、アプリの自動起動を防止します。</string>
     <string name="appcontrol_app_uninstall_description">端末からこのアプリをアンインストールします。</string>
     <string name="appcontrol_app_exclude_add_title">除外するアプリ</string>
     <string name="appcontrol_app_exclude_add_description">SD Maidの他の操作からこのアプリを除外します。</string>
@@ -666,8 +671,11 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">各アプリのサイズの大まかな推定値を取得します。</string>
     <string name="appcontrol_settings_module_activity_enabled_label">アクティビティの決定</string>
     <string name="appcontrol_settings_module_activity_enabled_description">アプリがアクティブであるか(または最近アクティブであったか)を確認します。</string>
+    <string name="appcontrol_include_multiuser_label">他のユーザーを含める</string>
+    <string name="appcontrol_include_multiuser_summary">このデバイスの他のユーザープロファイルのアプリを含めます。</string>
     <string name="appcontrol_export_app_selection_action">アプリをエクスポート</string>
     <string name="appcontrol_export_title">アプリをエクスポート</string>
+    <string name="appcontrol_export_description">このアプリのインストールファイルを保存します。アプリデータは含まれません。</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="other">%d個のアプリをエクスポートしました</item>
     </plurals>
@@ -695,6 +703,7 @@
     <string name="appcontrol_automation_progress_find_restore">\"復元\" ボタンを探しています（キーワード：%s）</string>
     <string name="appcontrol_item_screentime_x_since_y_label">スクリーンタイム: %2$sから%1$s</string>
     <string name="appcontrol_item_lastupdate_x_label">最終更新: %s</string>
+    <string name="appcontrol_item_installedat_x_label">インストール日: %s</string>
     <string name="analyzer_tool_name">ストレージ解析</string>
     <string name="analyzer_explanation_short">お使いのデバイスのスペースを占有しているものをご覧ください。</string>
     <string name="analyzer_progress_scanning_device">ストレージデバイスを検索中</string>
@@ -845,6 +854,15 @@
     <string name="review_app_review_action">レビュー</string>
     <string name="review_app_dismiss_action">また後で</string>
     <string name="review_app_body">SDメイドをレビューしませんか？ ❤️</string>
+    <string name="anniversary_card_title">SD Maid記念日おめでとう ❤️</string>
+    <string name="anniversary_card_install_date">%sからあなたと一緒です</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="other">SD Maidと%1$d年。Androidをきれいに保つSD Maidを信頼してくれてありがとう。解放した容量: %2$s</item>
+    </plurals>
+    <string name="anniversary_share_title">SD Maid記念日を共有</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="other">SD Maidと%1$d年 — 解放した容量: %2$s。Androidをきれいに保っています。#SDMaid\nお試しください: %3$s</item>
+    </plurals>
     <string name="stats_label">履歴</string>
     <plurals name="stats_dash_body_size">
         <item quantity="other">%sが解放されました。</item>
@@ -883,8 +901,11 @@
     <string name="area_type_portable_label">ポータブルストレージ</string>
     <string name="shortcut_appcontrol_short">アプリを管理</string>
     <string name="shortcut_appcontrol_long">インストールされたアプリを管理</string>
+    <string name="shortcut_onetap_short">スキャン + 削除</string>
+    <string name="shortcut_onetap_long">スキャンと削除を一括実行</string>
     <string name="shortcuts_settings_category">ショートカット</string>
     <string name="shortcuts_onetap_enabled_title">ワンタップショートカット</string>
+    <string name="shortcuts_onetap_enabled_summary">アプリアイコンを長押しすると「スキャン + 削除」ショートカットを表示します。ワンタップダッシュボードと同じツールを使用します。</string>
     <string name="swiper_label">Swiper</string>
     <string name="swiper_tool_name">Swiper</string>
     <string name="swiper_tool_description">フォルダを素早く整理 — ファイルをスワイプして保持、削除、スキップ。</string>

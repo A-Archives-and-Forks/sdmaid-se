@@ -98,6 +98,7 @@
     </plurals>
     <string name="support_debuglog_folder_empty_desc">هیچ گزارش اشکال‌زدایی ذخیره نشده است</string>
     <string name="support_debuglog_folder_delete_confirmation_title">تمام گزارش‌های اشکال‌زدایی حذف شوند؟</string>
+    <string name="support_debuglog_folder_delete_confirmation_message">این کار تمام جلسات ذخیره شده گزارش اشکال‌زدایی را به طور دائم حذف خواهد کرد. این عمل قابل بازگشت نیست.</string>
     <string name="discord_label">دیسکورد</string>
     <string name="discord_description">یک مکان برای وقت گذرانی و پرسش سوالات.</string>
     <string name="changelog_label">گزارش تغییرات</string>
@@ -180,6 +181,13 @@
     <string name="debug_bugreporter_label">ارسال خودکار مشکلات</string>
     <string name="debug_bugreporter_summary">به طور خودکار مشکلات را گزارش می‌دهد، مانند جزئیات درباره‌ی خرابی‌های برنامه، تا بتوانم علت آن را بفهمم و آن را رفع کنم.</string>
     <!-- Debug card (dashboard) -->
+    <string name="debug_card_title">حالت اشکال‌زدایی فعال است</string>
+    <string name="debug_card_trace_mode_label">فعال کردن حالت ردیابی</string>
+    <string name="debug_card_dryrun_mode_label">حالت آزمایشی (غیرفعال کردن حذف)</string>
+    <string name="debug_card_areas_reload_action">بارگذاری دوباره ناحیه‌های داده</string>
+    <string name="debug_card_pkgs_reload_action">بارگذاری دوباره برنامه‌ها</string>
+    <string name="debug_card_root_test_action">تست روت</string>
+    <string name="debug_card_shizuku_test_action">تست Shizuku</string>
     <string name="settings_category_tools_label">ابزارها</string>
     <string name="settings_category_filter">فیلتر</string>
     <string name="settings_category_risklevel">سطح خطر</string>
@@ -271,6 +279,8 @@
     <string name="systemcleaner_filter_screenshots_age_label">سن عکس صفحه</string>
     <string name="systemcleaner_filter_screenshots_age_summary">حداقل سن برای اسکرین‌شات‌ها که برای حذف شدن در نظر گرفته می‌شود.</string>
     <string name="systemcleaner_filter_superfluosapks_label">فایل های نصبی اضافی</string>
+    <string name="systemcleaner_filter_superfluosapks_includesameversion_label">شامل نسخه مشابه</string>
+    <string name="systemcleaner_filter_superfluosapks_includesameversion_summary">فایل‌های APK که با نسخه نصب شده مطابقت دارند نیز هدف قرار بگیرند. غیرفعال کنید تا فقط نسخه‌های قدیمی‌تر حذف شوند.</string>
     <string name="systemcleaner_filter_lostdir_label">پوشه‌های LOST.DIR</string>
     <string name="systemcleaner_filter_lostdir_summary">فایل‌های موقت که هنگام انتقال داده بین دستگاه‌های اندرویدی ایجاد می‌شوند.</string>
     <string name="systemcleaner_filter_linuxfiles_label">فایل‌های لینوکس</string>
@@ -331,7 +341,13 @@
     <string name="systemcleaner_customfilter_editor_name_matching_mode_equal_label">نام برابر با کلید‌واژه</string>
     <string name="systemcleaner_customfilter_last_edit">آخرین ویرایش: %s</string>
     <string name="systemcleaner_customfilter_editor_livesearch_label">جستجو زنده</string>
+    <string name="systemcleaner_customfilter_editor_size_label">محدودیت اندازه</string>
+    <string name="systemcleaner_customfilter_editor_size_minimum_label">حداقل اندازه</string>
+    <string name="systemcleaner_customfilter_editor_size_maximum_label">حداکثر اندازه</string>
     <string name="systemcleaner_customfilter_editor_size_explanation">محدود کردن نتایج بر اساس اندازه فایل. برای تطبیق هر اندازه‌ای خالی بگذارید.</string>
+    <string name="systemcleaner_customfilter_editor_age_label">محدودیت سن</string>
+    <string name="systemcleaner_customfilter_editor_age_minimum_label">حداقل سن</string>
+    <string name="systemcleaner_customfilter_editor_age_maximum_label">حداکثر سن</string>
     <string name="systemcleaner_customfilter_editor_age_explanation">محدود کردن نتایج بر اساس سن فایل (آخرین زمان تغییر). برای تطبیق هر سنی خالی بگذارید.</string>
     <string name="systemcleaner_customfilter_import_action">واردات فیلتر جدید</string>
     <string name="systemcleaner_customfilter_export_action">صادرات فیلتر انتخاب شده</string>
@@ -428,7 +444,9 @@
     <string name="appcleaner_automation_error_no_settings_body">این برنامه سیستمی صفحه تنظیماتی ندارد. پاک کردن کش از طریق سرویس دسترسی امکان‌پذیر نیست. آن را حذف کنید تا پاک کردن کش سریع‌تر شود.</string>
     <string name="appcleaner_automation_error_securitycenter_permission_title">برنامه سیستمی اشتباه پیکربندی شده</string>
     <string name="appcleaner_automation_error_securitycenter_permission_body">برنامه امنیتی HyperOS (com.miui.securitycenter) فاقد مجوز آمار استفاده (GET_USAGE_STATS) است. این امر ویژگی‌هایی مانند \"پاک کردن داده\" در جزئیات برنامه و پاک کردن کش از طریق دسترسی را می‌شکند. مجوز را اعطا کنید تا عملکرد کامل بازیابی شود.</string>
+    <string name="appcleaner_forcestop_before_clearing_label">توقف اجباری قبل از پاکسازی</string>
     <string name="appcleaner_forcestop_before_clearing_summary">قبل از پاکسازی حافظه نهان، برنامه‌ها را به اجبار متوقف کنید. این می‌تواند به پاکسازی حافظه نهان برخی برنامه‌ها کمک کند، اما ممکن است باعث اختلال در برنامه‌ها شود و نیاز به راه‌اندازی مجدد دستی داشته باشد.</string>
+    <string name="appcleaner_progress_force_stopping">در حال توقف اجباری برنامه‌ها…</string>
     <string name="deduplicator_tool_name">حذف تکراری</string>
     <string name="deduplicator_explanation_short">پیدا کردن داده‌های تکراری در دستگاه شما.</string>
     <plurals name="deduplicator_result_x_clusters_processed">
@@ -443,6 +461,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">نمایش گزینه‌هایی که به شما اجازه می‌دهد همه فایل‌ها در یک مجموعه تکراری را حذف کنید به طوری که هیچ فایلی باقی نماند.</string>
     <string name="deduplicator_search_locations_title">جستجوی مکان‌ها</string>
     <string name="deduplicator_search_locations_all_summary">تمام مناطق قابل دسترسی</string>
+    <string name="deduplicator_keep_prefer_paths_title">ترجیح نگه‌داشتن در</string>
+    <string name="deduplicator_keep_prefer_paths_summary">هنگام تصمیم‌گیری درباره نگه‌داشتن کدام نسخه تکراری، فایل‌های موجود در این مکان‌ها ترجیح داده شوند.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">هیچ مکانی تنظیم نشده</string>
     <string name="deduplicator_skip_minsize_title">حداقل اندازه</string>
     <string name="deduplicator_skip_minsize_description">فایل‌هایی که کمتر از اندازه حداقل هستند را نادیده بگیرید.</string>
     <string name="deduplicator_skip_uncommon_title">چشم‌پوشی از انواع فایل‌های نادر</string>
@@ -470,6 +491,8 @@
     <string name="deduplicator_details_cluster_title">مجموعه‌ای از فایل‌های تکراری</string>
     <string name="deduplicator_matches_exact_label">نسخه‌های دقیقا مشابه</string>
     <string name="deduplicator_matches_similar_label">فایل های مشابه</string>
+    <string name="deduplicator_arbiter_title">استراتژی حذف</string>
+    <string name="deduplicator_arbiter_summary">تنظیم کنید کدام فایل‌ها نگهداری و کدام حذف شوند.</string>
     <string name="deduplicator_arbiter_explanation">هنگام حذف فایل‌های تکراری، SD Maid با بررسی هر معیار به ترتیب تصمیم می‌گیرد کدام فایل حفظ شود. اولین معیاری که نتیجه مشخصی داشته باشد، تعیین‌کننده است. برای تغییر ترتیب بکشید، برای تغییر حالت ضربه بزنید.</string>
     <string name="deduplicator_arbiter_select_mode_title">انتخاب حالت</string>
     <string name="deduplicator_arbiter_configure_paths_action">پیکربندی مسیرها…</string>
@@ -533,7 +556,9 @@
     <string name="squeezer_quality_warning_low">کیفیت‌های پایین‌تر ممکن است آثار قابل مشاهده‌ای ایجاد کنند.</string>
     <string name="squeezer_quality_warning_high">کیفیت بسیار بالا صرفه‌جویی حداقلی در فضا ارائه می‌دهد.</string>
     <string name="squeezer_types_category_label">انواع تصاویر</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">شامل تصاویر JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">شامل تصاویر WebP (.webp).</string>
     <string name="squeezer_skip_compressed_title">رد کردن فایل‌های قبلاً فشرده شده</string>
     <string name="squeezer_skip_compressed_description">رد کردن تصاویری که قبلاً توسط SD Maid فشرده شده‌اند.</string>
@@ -617,6 +642,7 @@
     <string name="appcontrol_tag_not_installed">نصب نشده</string>
     <string name="appcontrol_tag_enabled">فعال</string>
     <string name="appcontrol_tag_disabled">غیرفعال</string>
+    <string name="appcontrol_tag_debug">اشکال‌زدایی</string>
     <string name="appcontrol_progress_enabling_package">فعال کردن برنامه</string>
     <string name="appcontrol_progress_disabling_package">غیرفعال کردن برنامه</string>
     <string name="appcontrol_list_filteroptions_label">گزینه‌های فیلتر</string>
@@ -924,8 +950,13 @@
     <string name="shortcuts_settings_category">میانبر‌ها</string>
     <string name="shortcuts_onetap_enabled_title">میانبر تک ضربه‌ای</string>
     <string name="shortcuts_onetap_enabled_summary">نمایش میانبر «اسکن + حذف» هنگام لمس طولانی نماد برنامه. از همان ابزارهای داشبورد تک‌ضربه‌ای استفاده می‌کند.</string>
+    <string name="swiper_label">Swiper</string>
+    <string name="swiper_tool_name">Swiper</string>
+    <string name="swiper_tool_description">پوشه‌ها را به سرعت مرتب کنید — فایل‌ها را بکشید تا نگه دارید، حذف کنید یا رد شوید.</string>
+    <string name="swiper_dashcard_description">پوشه‌های خاص را سریع‌تر از مرورگر فایل مرتب کنید — فقط هر فایل را بکشید.</string>
     <string name="swiper_start_action">شروع کشیدن</string>
     <string name="swiper_continue_action">ادامه جلسه</string>
+    <string name="swiper_sessions_description">فایل‌ها را در ۳ مرحله ساده مرور کنید:\n\n۱. یک پوشه برای اسکن انتخاب کنید\n۲. فایل‌ها را بکشید تا نگه دارید، حذف کنید یا رد شوید\n۳. انتخاب‌های خود را بررسی و تأیید کنید\n\nهیچ چیز حذف نمی‌شود تا دکمه نهایی حذف را بزنید.</string>
     <string name="swiper_select_folders_action">انتخاب پوشه‌ها</string>
     <string name="swiper_scanning_title">در حال اسکن…</string>
     <plurals name="swiper_result_x_items_found">

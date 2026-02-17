@@ -457,6 +457,7 @@
     <string name="deduplicator_detection_method_checksum_title">內容校驗和</string>
     <string name="deduplicator_detection_method_checksum_summary">通過計算文件校驗和以確定重複文件。校驗和相同的文件具有完全相同的內容。</string>
     <string name="deduplicator_detection_method_phash_title">感知哈希值</string>
+    <string name="deduplicator_detection_method_phash_summary">透過分析內容特徵和比較感知雜湊值來尋找相似檔案。⚠️ 基於相似度的偵測可能會包含誤判結果，需要手動驗證。</string>
     <string name="deduplicator_occupied_space_label">已佔用空間</string>
     <plurals name="deduplicator_x_space_occupied_by_duplicates_msg">
         <item quantity="other">%s 被重複項佔用</item>
@@ -507,6 +508,59 @@
     <string name="deduplicator_arbiter_mode_prefer_smaller">優先較小檔案</string>
     <string name="deduplicator_view_mode_groups_label">群組</string>
     <string name="deduplicator_view_mode_directories_label">資料夾</string>
+    <string name="squeezer_tool_name">媒體壓縮</string>
+    <string name="squeezer_explanation_short">壓縮圖片以節省儲存空間。</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="other">找到 %d 張圖片</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="other">預計可節省約 %s</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="other">已壓縮 %d 張圖片</item>
+    </plurals>
+    <plurals name="squeezer_preview_x_images">
+        <item quantity="other">已選取 %d 張圖片</item>
+    </plurals>
+    <string name="squeezer_search_locations_title">搜尋位置</string>
+    <string name="squeezer_search_locations_default_summary">相機資料夾（預設）</string>
+    <string name="squeezer_min_size_title">最小檔案大小</string>
+    <string name="squeezer_min_size_description">略過小於此大小的圖片。</string>
+    <string name="squeezer_min_age_title">最小檔案年齡</string>
+    <string name="squeezer_min_age_description">僅包含超過此年齡的圖片。</string>
+    <string name="squeezer_compression_settings_label">壓縮設定</string>
+    <string name="squeezer_quality_label">品質</string>
+    <string name="squeezer_quality_title">壓縮品質</string>
+    <string name="squeezer_quality_description">較低品質表示較小的檔案大小，但圖片品質會降低。</string>
+    <string name="squeezer_quality_example_format">範例：%1$s 圖片 → 以 %3$d%% 品質節省約 %2$s</string>
+    <string name="squeezer_quality_warning_low">較低品質可能導致可見瑕疵。</string>
+    <string name="squeezer_quality_warning_high">非常高的品質只能提供極少的空間節省。</string>
+    <string name="squeezer_types_category_label">圖片類型</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
+    <string name="squeezer_type_jpeg_description">包含 JPEG 圖片（.jpg、.jpeg）。</string>
+    <string name="squeezer_type_webp_title">WebP</string>
+    <string name="squeezer_type_webp_description">包含 WebP 圖片（.webp）。</string>
+    <string name="squeezer_skip_compressed_title">略過已壓縮的檔案</string>
+    <string name="squeezer_skip_compressed_description">略過已被 SD Maid 壓縮過的圖片。</string>
+    <string name="squeezer_exif_marker_title">寫入 EXIF 標記</string>
+    <string name="squeezer_exif_marker_description">在圖片的 EXIF 使用者評論欄位附加標記，以防止再次壓縮，即使壓縮歷史記錄被清除。</string>
+    <string name="squeezer_estimated_savings_format">預計節省約 %s</string>
+    <string name="squeezer_no_savings_expected">有限的節省</string>
+    <string name="squeezer_current_size_format">大小：%s</string>
+    <string name="squeezer_compress_action">壓縮</string>
+    <string name="squeezer_compress_all_action">全部壓縮</string>
+    <string name="squeezer_preview_dialog_title">確認壓縮</string>
+    <string name="squeezer_preview_total_size">總大小</string>
+    <string name="squeezer_preview_estimated_savings">預計節省</string>
+    <string name="squeezer_compress_confirmation_title">壓縮圖片？</string>
+    <string name="squeezer_compress_confirmation_message">這將以壓縮版本取代原始圖片。此操作無法撤銷。</string>
+    <string name="squeezer_history_title">壓縮歷史記錄</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="other">%1$d 個項目（%2$s）</item>
+    </plurals>
+    <string name="squeezer_history_empty">沒有壓縮歷史記錄</string>
+    <string name="squeezer_history_clear_title">清除壓縮歷史記錄</string>
+    <string name="squeezer_history_clear_message">這將允許先前壓縮的圖片再次被壓縮。圖片本身不受影響。</string>
     <string name="squeezer_onboarding_title">關於圖片壓縮</string>
     <string name="squeezer_onboarding_message">圖片壓縮透過移除視覺細節來縮小檔案大小。此過程不可逆 - 無法恢復原始品質。\n\n以下是壓縮後的預覽效果：</string>
     <string name="squeezer_onboarding_original_label">原圖</string>
@@ -549,6 +603,7 @@
     <string name="appcontrol_app_launch_title">啟動應用程式</string>
     <string name="appcontrol_app_launch_description">啟動這個應用程式的主要活動。</string>
     <string name="appcontrol_app_forcestop_title">強制停止</string>
+    <string name="appcontrol_app_forcestop_description">停止應用程式。在您開啟或裝置重新啟動之前，防止它自行啟動。</string>
     <string name="appcontrol_app_uninstall_description">從您的裝置中解除安裝這個應用程式。</string>
     <string name="appcontrol_app_exclude_add_title">排除應用程式</string>
     <string name="appcontrol_app_exclude_add_description">從 SD 女僕的其他作業中排除這個應用程式。</string>
@@ -564,6 +619,7 @@
     <string name="appcontrol_tag_not_installed">未安裝</string>
     <string name="appcontrol_tag_enabled">已啟用</string>
     <string name="appcontrol_tag_disabled">已停用</string>
+    <string name="appcontrol_tag_debug">除錯</string>
     <string name="appcontrol_progress_enabling_package">正在啟用應用程式</string>
     <string name="appcontrol_progress_disabling_package">正在停用應用程式</string>
     <string name="appcontrol_list_filteroptions_label">過濾器選項</string>
@@ -577,6 +633,28 @@
     <string name="appcontrol_progress_uninstalling_app">正在解除安裝應用程式</string>
     <plurals name="appcontrol_uninstall_result_message_x">
         <item quantity="other">已解除安裝 %d 個應用程式</item>
+    </plurals>
+    <string name="appcontrol_archive_action">封存</string>
+    <string name="appcontrol_archive_selection_action">封存應用程式</string>
+    <string name="appcontrol_archive_description">封存以釋放空間，同時保留應用程式資料以供日後還原。</string>
+    <string name="appcontrol_progress_archiving_app">正在封存應用程式…</string>
+    <string name="appcontrol_archive_confirmation_title">確認封存</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="other">封存 %d 個應用程式？</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="other">已封存 %d 個應用程式</item>
+    </plurals>
+    <string name="appcontrol_restore_action">還原</string>
+    <string name="appcontrol_restore_selection_action">還原應用程式</string>
+    <string name="appcontrol_restore_description">將已封存的應用程式還原為完整安裝狀態。應用程式資料會被保留。</string>
+    <string name="appcontrol_progress_restoring_app">正在還原應用程式…</string>
+    <string name="appcontrol_restore_confirmation_title">確認還原</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="other">還原 %d 個應用程式？</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="other">已還原 %d 個應用程式</item>
     </plurals>
     <string name="appcontrol_app_sizes_title">應用程式大小</string>
     <string name="appcontrol_app_sizes_apk_label">應用程式</string>
@@ -593,12 +671,18 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">粗略估計每個應用程式的大小。</string>
     <string name="appcontrol_settings_module_activity_enabled_label">確認的活動</string>
     <string name="appcontrol_settings_module_activity_enabled_description">檢查應用程式是否活動（或最近活動）。</string>
+    <string name="appcontrol_include_multiuser_label">包含其他使用者</string>
+    <string name="appcontrol_include_multiuser_summary">包含此裝置上其他使用者設定檔的應用程式。</string>
     <string name="appcontrol_export_app_selection_action">導出應用程式</string>
     <string name="appcontrol_export_title">導出應用程式</string>
+    <string name="appcontrol_export_description">儲存此應用程式的安裝檔案。不包含應用程式資料。</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="other">已匯出 %d 個應用程式</item>
     </plurals>
     <string name="appcontrol_progress_exporting_x">正在導出 %s</string>
+    <string name="appcontrol_share_list_action">分享清單</string>
+    <string name="appcontrol_share_list_title">我的應用程式</string>
+    <string name="appcontrol_share_list_footer">透過 SD Maid SE 分享</string>
     <string name="appcontrol_force_stop_selection_action">強制停止</string>
     <string name="appcontrol_force_stop_action">強制停止</string>
     <string name="appcontrol_force_stop_confirm_title">強制停止</string>
@@ -613,8 +697,13 @@
     <string name="appcontrol_automation_subtitle_force_stopping">強制停止 %s</string>
     <string name="appcontrol_automation_progress_find_force_stop">尋找「強制停止」按鈕（關鍵字：%s）</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">嘗試確認先前動作（關鍵字：%s）</string>
+    <string name="appcontrol_automation_subtitle_archiving">正在封存…</string>
+    <string name="appcontrol_automation_progress_find_archive">尋找「封存」按鈕（關鍵字：%s）</string>
+    <string name="appcontrol_automation_subtitle_restoring">正在還原…</string>
+    <string name="appcontrol_automation_progress_find_restore">尋找「還原」按鈕（關鍵字：%s）</string>
     <string name="appcontrol_item_screentime_x_since_y_label">螢幕時間：%2$s 以來 %1$s</string>
     <string name="appcontrol_item_lastupdate_x_label">最後更新：%s</string>
+    <string name="appcontrol_item_installedat_x_label">安裝日期：%s</string>
     <string name="analyzer_tool_name">儲存分析器</string>
     <string name="analyzer_explanation_short">找出哪些檔案佔用您的裝置空間。</string>
     <string name="analyzer_progress_scanning_device">正在搜尋儲存裝置</string>
@@ -630,6 +719,10 @@
         <item quantity="other">%s 已用</item>
     </plurals>
     <string name="analyzer_content_access_opaque">沒有可用的直接存取</string>
+    <string name="analyzer_content_create_swiper_session_action">建立 Swiper 工作階段</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="other">已建立包含 %d 個項目的 Swiper 工作階段</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">主要儲存空間</string>
     <string name="analyzer_storage_type_primary_description">您裝置的主要儲存空間，包含內部「SD 卡」、應用程式和系統資料的私人儲存空間。</string>
     <string name="analyzer_storage_type_secondary_title">次要儲存空間</string>
@@ -672,6 +765,7 @@
     <string name="exclusion_type_segment">區段排除</string>
     <string name="exclusion_tags_alltools">所有工具</string>
     <string name="exclusion_target_label">排除目標</string>
+    <string name="exclusion_editor_path_change_action">點擊以更改路徑</string>
     <string name="exclusion_option_allow_partial">允許部分相符</string>
     <string name="exclusion_option_ignore_casing">忽略大小寫</string>
     <string name="exclusion_editor_affected_tools_label">受影響的工具</string>
@@ -760,6 +854,15 @@
     <string name="review_app_review_action">評論</string>
     <string name="review_app_dismiss_action">稍後再說</string>
     <string name="review_app_body">您想為 SD 女僕留下評論嗎？️ ❤️</string>
+    <string name="anniversary_card_title">SD Maid 週年快樂 ❤️</string>
+    <string name="anniversary_card_install_date">自 %s 起與您相伴</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="other">已一起走過 %1$d 年。感謝您信任 SD Maid 保持您的 Android 裝置整潔有序。已釋放空間：%2$s</item>
+    </plurals>
+    <string name="anniversary_share_title">分享您的 SD Maid 週年紀念</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="other">與 SD Maid 相伴 %1$d 年 — 已釋放空間：%2$s。保持您的 Android 裝置整潔有序。#SDMaid\n試試看：%3$s</item>
+    </plurals>
     <string name="stats_label">歷史記錄</string>
     <plurals name="stats_dash_body_size">
         <item quantity="other">已釋放 %s。</item>

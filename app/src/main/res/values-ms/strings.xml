@@ -434,6 +434,7 @@
     <string name="appcleaner_forcestop_before_clearing_label">Paksa berhenti sebelum membersih</string>
     <string name="appcleaner_forcestop_before_clearing_summary">Paksa berhenti aplikasi sebelum membersihkan cachenya. Ia boleh membantu membersihkan cache sesetengah aplikasi, tetapi mungkin menyebabkan aplikasi tidak berfungsi dengan betul dan memerlukan mula semula secara manual.</string>
     <string name="appcleaner_progress_force_stopping">Memaksa berhenti aplikasi…</string>
+    <string name="deduplicator_tool_name">Pendua</string>
     <string name="deduplicator_explanation_short">Cari data pendua pada peranti anda.</string>
     <plurals name="deduplicator_result_x_clusters_processed">
         <item quantity="other">%d pendua dipadam</item>
@@ -445,6 +446,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">Tunjukkan pilihan yang membolehkan anda memadam semua fail dalam set pendua supaya tiada fail yang tinggal.</string>
     <string name="deduplicator_search_locations_title">Lokasi carian</string>
     <string name="deduplicator_search_locations_all_summary">Semua kawasan yang boleh diakses</string>
+    <string name="deduplicator_keep_prefer_paths_title">Keutamaan penyimpanan dalam</string>
+    <string name="deduplicator_keep_prefer_paths_summary">Apabila menentukan pendua mana yang disimpan, utamakan fail di lokasi ini.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">Tiada lokasi dikonfigurasi</string>
     <string name="deduplicator_skip_minsize_title">Saiz minimum</string>
     <string name="deduplicator_skip_minsize_description">Langkau fail yang kurang daripada saiz minimum.</string>
     <string name="deduplicator_skip_uncommon_title">Langkau jenis fail yang jarang</string>
@@ -532,7 +536,9 @@
     <string name="squeezer_quality_warning_low">Kualiti rendah mungkin menyebabkan artifak yang kelihatan.</string>
     <string name="squeezer_quality_warning_high">Kualiti sangat tinggi memberikan penjimatan ruang yang minimum.</string>
     <string name="squeezer_types_category_label">Jenis imej</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Sertakan imej JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Sertakan imej WebP (.webp).</string>
     <string name="squeezer_skip_compressed_title">Langkau yang telah dimampatkan</string>
     <string name="squeezer_skip_compressed_description">Langkau imej yang telah dimampatkan oleh SD Maid.</string>
@@ -604,12 +610,15 @@
     <string name="appcontrol_app_exclude_edit_description">Buat masa ini aplikasi ini dikecualikan daripada satu atau lebih alatan.</string>
     <string name="appcontrol_tag_user">Pengguna</string>
     <string name="appcontrol_tag_active">Baru-baru ini aktif</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
+    <string name="appcontrol_tag_apk_bundle">Bundle</string>
     <string name="appcontrol_tag_system">Sistem</string>
     <string name="appcontrol_tag_archived">Diarkibkan</string>
     <string name="appcontrol_tag_uninstalled">Data sahaja</string>
     <string name="appcontrol_tag_not_installed">Tidak dipasang</string>
     <string name="appcontrol_tag_enabled">Didayakan</string>
     <string name="appcontrol_tag_disabled">Dinyahdayakan</string>
+    <string name="appcontrol_tag_debug">Debug</string>
     <string name="appcontrol_progress_enabling_package">Mendayakan aplikasi</string>
     <string name="appcontrol_progress_disabling_package">Menyahdayakan aplikasi</string>
     <string name="appcontrol_list_filteroptions_label">Pilihan penapis</string>
@@ -648,6 +657,8 @@
     </plurals>
     <string name="appcontrol_app_sizes_title">Saiz aplikasi</string>
     <string name="appcontrol_app_sizes_apk_label">APK</string>
+    <string name="appcontrol_app_sizes_data_label">Data</string>
+    <string name="appcontrol_app_sizes_cache_label">Cache</string>
     <string name="appcontrol_toggle_confirmation_title">Togol</string>
     <plurals name="appcontrol_toggle_confirmation_message_x">
         <item quantity="other">Tukar keadaan dibolehkan/dilumpuhkan untuk %d aplikasi?</item>
@@ -659,6 +670,8 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">Dapatkan anggaran kasar saiz setiap aplikasi.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">Tentukan aktiviti</string>
     <string name="appcontrol_settings_module_activity_enabled_description">Membolehkan pengumpulan maklumat penggunaan aplikasi</string>
+    <string name="appcontrol_include_multiuser_label">Sertakan pengguna lain</string>
+    <string name="appcontrol_include_multiuser_summary">Sertakan aplikasi dari profil pengguna lain pada peranti ini.</string>
     <string name="appcontrol_export_app_selection_action">Eksport aplikasi terpilih</string>
     <string name="appcontrol_export_title">Eksport</string>
     <plurals name="appcontrol_export_result_message_x">
@@ -959,6 +972,7 @@
     <string name="swiper_session_rename_hint">Masukkan nama untuk sesi ini</string>
     <string name="swiper_sessions_current_sessions">Sesi semasa</string>
     <string name="swiper_session_paths_label">Laluan</string>
+    <string name="swiper_session_status_label">Status</string>
     <plurals name="swiper_session_status_to_keep">
         <item quantity="other">%d untuk disimpan</item>
     </plurals>

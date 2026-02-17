@@ -413,6 +413,7 @@
     <string name="appcontrol_tag_not_installed">Heb ei osod</string>
     <string name="appcontrol_tag_enabled">Wedi\'i alluogi</string>
     <string name="appcontrol_tag_disabled">Wedi\'i analluogi</string>
+    <string name="appcontrol_tag_debug">Dadfygio</string>
     <string name="appcontrol_progress_enabling_package">Galluogi ap</string>
     <string name="appcontrol_progress_disabling_package">Analluogi ap</string>
     <string name="appcontrol_list_filteroptions_label">Opsiynau hidlo</string>
@@ -433,10 +434,15 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">Cael amcangyfrif bras o faint pob ap.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">Pennu gweithgaredd</string>
     <string name="appcontrol_settings_module_activity_enabled_description">Darganfod a yw ap yn weithgar (neu\'n ddiweddar wedi bod yn weithgar).</string>
+    <string name="appcontrol_include_multiuser_label">Cynnwys defnyddwyr eraill</string>
+    <string name="appcontrol_include_multiuser_summary">Cynnwys apiau o broffiliau defnyddwyr eraill ar y ddyfais hon.</string>
     <string name="appcontrol_export_app_selection_action">Allforio apiau</string>
     <string name="appcontrol_export_title">Allforio ap</string>
     <string name="appcontrol_export_description">Cadw ffeiliau gosod yr ap hwn. Nid yw hyn yn cynnwys data ap.</string>
     <string name="appcontrol_progress_exporting_x">Allforio %s</string>
+    <string name="appcontrol_share_list_action">Rhannu rhestr</string>
+    <string name="appcontrol_share_list_title">Fy Apiau</string>
+    <string name="appcontrol_share_list_footer">Wedi\'i rannu trwy SD Maid SE</string>
     <string name="appcontrol_force_stop_selection_action">Gorfodi apiau i stopio</string>
     <string name="appcontrol_force_stop_action">Gorfodi i stopio</string>
     <string name="appcontrol_force_stop_confirm_title">Cadarnhau gorfodi i stopio</string>
@@ -445,6 +451,10 @@
     <string name="appcontrol_automation_subtitle_force_stopping">Gorfodi stopio…</string>
     <string name="appcontrol_automation_progress_find_force_stop">Chwilio am fotwm "Gorfodi i stopio" (allweddeiriau: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">Ceisio cadarnhau gweithred flaenorol (allweddeiriau: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">Yn archifo…</string>
+    <string name="appcontrol_automation_progress_find_archive">Chwilio am fotwm \"Archifo\" (allweddeiriau: %s)</string>
+    <string name="appcontrol_automation_subtitle_restoring">Yn adfer…</string>
+    <string name="appcontrol_automation_progress_find_restore">Chwilio am fotwm \"Adfer\" (allweddeiriau: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Amser sgrin: %1$s ers %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Diweddarwyd diwethaf: %s</string>
     <string name="appcontrol_item_installedat_x_label">Gosodwyd ar: %s</string>
@@ -457,6 +467,15 @@
     <string name="analyzer_progress_scanning_system">Sganio data system</string>
     <string name="analyzer_device_storage_title">Storfa dyfais</string>
     <string name="analyzer_content_access_opaque">Dim mynediad uniongyrchol ar gael</string>
+    <string name="analyzer_content_create_swiper_session_action">Creu sesiwn Swiper</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="zero">Sesiwn Swiper wedi\'i chreu gyda %d eitem</item>
+        <item quantity="one">Sesiwn Swiper wedi\'i chreu gyda %d eitem</item>
+        <item quantity="two">Sesiwn Swiper wedi\'i chreu gyda %d eitem</item>
+        <item quantity="few">Sesiwn Swiper wedi\'i chreu gyda %d eitem</item>
+        <item quantity="many">Sesiwn Swiper wedi\'i chreu gyda %d eitem</item>
+        <item quantity="other">Sesiwn Swiper wedi\'i chreu gyda %d eitem</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">Storfa cynradd</string>
     <string name="analyzer_storage_type_primary_description">Storfa cynradd eich dyfais. Yn cynnwys y cerdyn SD mewnol, storfa breifat ar gyfer apiau a data system.</string>
     <string name="analyzer_storage_type_secondary_title">Storfa eilaidd</string>
@@ -499,6 +518,7 @@
     <string name="exclusion_type_segment">Eithriad segment</string>
     <string name="exclusion_tags_alltools">Pob offeryn</string>
     <string name="exclusion_target_label">Targed eithrio</string>
+    <string name="exclusion_editor_path_change_action">Tapiwch i newid llwybr</string>
     <string name="exclusion_option_allow_partial">Caniatáu cyfatebiadau rhannol</string>
     <string name="exclusion_option_ignore_casing">Anwybyddu prif lythrennau</string>
     <string name="exclusion_editor_affected_tools_label">Offer a effeithir</string>
@@ -581,6 +601,19 @@
     <string name="review_app_review_action">Adolygu</string>
     <string name="review_app_dismiss_action">Efallai\'n hwyrach</string>
     <string name="review_app_body">Hoffech chi adael adolygiad i SD Maid?️ ❤️</string>
+    <string name="anniversary_card_title">Pen-blwydd Hapus SD Maid ❤️</string>
+    <string name="anniversary_card_install_date">Gyda chi ers %s</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="one">Eisoes %1$d flwyddyn gyda\'n gilydd. Diolch am ymddiried yn SD Maid i gadw\'ch Android yn lân ac yn daclus. Gofod wedi\'i ryddhau: %2$s</item>
+        <item quantity="two">Eisoes %1$d flynedd gyda\'n gilydd. Mae\'ch dyfais yn aros yn lân ac yn daclus gyda SD Maid. Gofod wedi\'i ryddhau: %2$s</item>
+        <item quantity="other">%1$d o flynyddoedd yn gryf. Mae\'ch dyfais yn aros yn lân ac yn daclus gyda SD Maid. Gofod wedi\'i ryddhau: %2$s</item>
+    </plurals>
+    <string name="anniversary_share_title">Rhannwch eich pen-blwydd SD Maid</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="one">%1$d flwyddyn gyda SD Maid — Gofod wedi\'i ryddhau: %2$s. Cadw\'ch Android yn lân ac yn daclus. #SDMaid\nRhowch gynnig arno: %3$s</item>
+        <item quantity="two">%1$d flynedd gyda SD Maid — Gofod wedi\'i ryddhau: %2$s. Cadw\'ch Android yn lân ac yn daclus. #SDMaid\nRhowch gynnig arno: %3$s</item>
+        <item quantity="other">%1$d o flynyddoedd gyda SD Maid — Gofod wedi\'i ryddhau: %2$s. Cadw\'ch Android yn lân ac yn daclus. #SDMaid\nRhowch gynnig arno: %3$s</item>
+    </plurals>
     <string name="stats_label">Hanes</string>
     <string name="stats_report_status_success">Llwyddiant</string>
     <string name="stats_report_status_partial_success">Llwyddiant rhannol</string>
@@ -732,6 +765,48 @@
         <item quantity="few">Dadosodwyd %d ap</item>
         <item quantity="many">Dadosodwyd %d ap</item>
         <item quantity="other">Dadosodwyd %d o apiau</item>
+    </plurals>
+    <string name="appcontrol_archive_action">Archifo</string>
+    <string name="appcontrol_archive_selection_action">Archifo apiau</string>
+    <string name="appcontrol_archive_description">Archifo i ryddhau gofod wrth gadw data\'r ap ar gyfer adfer yn ddiweddarach.</string>
+    <string name="appcontrol_progress_archiving_app">Yn archifo ap…</string>
+    <string name="appcontrol_archive_confirmation_title">Cadarnhau archifo</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="zero">Archifo %d ap?</item>
+        <item quantity="one">Archifo %d ap?</item>
+        <item quantity="two">Archifo %d ap?</item>
+        <item quantity="few">Archifo %d ap?</item>
+        <item quantity="many">Archifo %d ap?</item>
+        <item quantity="other">Archifo %d o apiau?</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="zero">%d ap wedi\'u harchifo</item>
+        <item quantity="one">%d ap wedi\'i archifo</item>
+        <item quantity="two">%d ap wedi\'u harchifo</item>
+        <item quantity="few">%d ap wedi\'u harchifo</item>
+        <item quantity="many">%d ap wedi\'u harchifo</item>
+        <item quantity="other">%d o apiau wedi\'u harchifo</item>
+    </plurals>
+    <string name="appcontrol_restore_action">Adfer</string>
+    <string name="appcontrol_restore_selection_action">Adfer apiau</string>
+    <string name="appcontrol_restore_description">Adfer ap wedi\'i archifo i gyflwr wedi\'i osod yn llawn. Mae data\'r ap yn cael ei gadw.</string>
+    <string name="appcontrol_progress_restoring_app">Yn adfer ap…</string>
+    <string name="appcontrol_restore_confirmation_title">Cadarnhau adfer</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="zero">Adfer %d ap?</item>
+        <item quantity="one">Adfer %d ap?</item>
+        <item quantity="two">Adfer %d ap?</item>
+        <item quantity="few">Adfer %d ap?</item>
+        <item quantity="many">Adfer %d ap?</item>
+        <item quantity="other">Adfer %d o apiau?</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="zero">%d ap wedi\'u hadfer</item>
+        <item quantity="one">%d ap wedi\'i adfer</item>
+        <item quantity="two">%d ap wedi\'u hadfer</item>
+        <item quantity="few">%d ap wedi\'u hadfer</item>
+        <item quantity="many">%d ap wedi\'u hadfer</item>
+        <item quantity="other">%d o apiau wedi\'u hadfer</item>
     </plurals>
     <plurals name="appcontrol_toggle_confirmation_message_x">
         <item quantity="zero">Newid cyflwr galluogi/analluogi %d ap?</item>
@@ -943,7 +1018,84 @@
 
     <string name="deduplicator_view_mode_groups_label">Grwpiau</string>
     <string name="deduplicator_view_mode_directories_label">Ffolderi</string>
-
+    <string name="squeezer_tool_name">Gwasgu Cyfryngau</string>
+    <string name="squeezer_explanation_short">Cywasgu delweddau i arbed gofod storio.</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="zero">%d delwedd wedi\'u canfod</item>
+        <item quantity="one">%d ddelwedd wedi\'i chanfod</item>
+        <item quantity="two">%d ddelwedd wedi\'u canfod</item>
+        <item quantity="few">%d delwedd wedi\'u canfod</item>
+        <item quantity="many">%d delwedd wedi\'u canfod</item>
+        <item quantity="other">%d delwedd wedi\'u canfod</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="zero">gellir arbed ~%s</item>
+        <item quantity="one">gellir arbed ~%s</item>
+        <item quantity="two">gellir arbed ~%s</item>
+        <item quantity="few">gellir arbed ~%s</item>
+        <item quantity="many">gellir arbed ~%s</item>
+        <item quantity="other">gellir arbed ~%s</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="zero">%d delwedd wedi\'u cywasgu</item>
+        <item quantity="one">%d ddelwedd wedi\'i chywasgu</item>
+        <item quantity="two">%d ddelwedd wedi\'u cywasgu</item>
+        <item quantity="few">%d delwedd wedi\'u cywasgu</item>
+        <item quantity="many">%d delwedd wedi\'u cywasgu</item>
+        <item quantity="other">%d delwedd wedi\'u cywasgu</item>
+    </plurals>
+    <plurals name="squeezer_preview_x_images">
+        <item quantity="zero">%d delwedd wedi\'u dewis</item>
+        <item quantity="one">%d ddelwedd wedi\'i dewis</item>
+        <item quantity="two">%d ddelwedd wedi\'u dewis</item>
+        <item quantity="few">%d delwedd wedi\'u dewis</item>
+        <item quantity="many">%d delwedd wedi\'u dewis</item>
+        <item quantity="other">%d delwedd wedi\'u dewis</item>
+    </plurals>
+    <string name="squeezer_search_locations_title">Lleoliadau chwilio</string>
+    <string name="squeezer_search_locations_default_summary">Ffolderi camera (rhagosodiad)</string>
+    <string name="squeezer_min_size_title">Maint ffeil lleiaf</string>
+    <string name="squeezer_min_size_description">Hepgor delweddau llai na\'r maint hwn.</string>
+    <string name="squeezer_min_age_title">Oedran ffeil lleiaf</string>
+    <string name="squeezer_min_age_description">Dim ond cynnwys delweddau hŷn na\'r oedran hwn.</string>
+    <string name="squeezer_compression_settings_label">Gosodiadau cywasgu</string>
+    <string name="squeezer_quality_label">Ansawdd</string>
+    <string name="squeezer_quality_title">Ansawdd cywasgu</string>
+    <string name="squeezer_quality_description">Mae ansawdd is yn golygu maint ffeil llai ond ansawdd delwedd is.</string>
+    <string name="squeezer_quality_example_format">Enghraifft: delwedd %1$s → arbed ~%2$s ar %3$d%% ansawdd</string>
+    <string name="squeezer_quality_warning_low">Gall ansawdd is achosi arteffactau gweladwy.</string>
+    <string name="squeezer_quality_warning_high">Mae ansawdd uchel iawn yn darparu ychydig iawn o arbedion gofod.</string>
+    <string name="squeezer_types_category_label">Mathau o ddelweddau</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
+    <string name="squeezer_type_jpeg_description">Cynnwys delweddau JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
+    <string name="squeezer_type_webp_description">Cynnwys delweddau WebP (.webp).</string>
+    <string name="squeezer_skip_compressed_title">Hepgor rhai wedi\'u cywasgu\'n flaenorol</string>
+    <string name="squeezer_skip_compressed_description">Hepgor delweddau sydd eisoes wedi\'u cywasgu gan SD Maid.</string>
+    <string name="squeezer_exif_marker_title">Ysgrifennu marcwr EXIF</string>
+    <string name="squeezer_exif_marker_description">Atodi marcwr i faes sylw defnyddiwr EXIF y ddelwedd i atal ail-gywasgu hyd yn oed os caiff yr hanes cywasgu ei glirio.</string>
+    <string name="squeezer_estimated_savings_format">~%s o arbedion</string>
+    <string name="squeezer_no_savings_expected">Arbedion cyfyngedig</string>
+    <string name="squeezer_current_size_format">Maint: %s</string>
+    <string name="squeezer_compress_action">Cywasgu</string>
+    <string name="squeezer_compress_all_action">Cywasgu popeth</string>
+    <string name="squeezer_preview_dialog_title">Cadarnhau cywasgu</string>
+    <string name="squeezer_preview_total_size">Cyfanswm maint</string>
+    <string name="squeezer_preview_estimated_savings">Arbedion amcangyfrifedig</string>
+    <string name="squeezer_compress_confirmation_title">Cywasgu delweddau?</string>
+    <string name="squeezer_compress_confirmation_message">Bydd hyn yn disodli delweddau gwreiddiol â fersiynau wedi\'u cywasgu. Ni ellir dadwneud y weithred hon.</string>
+    <string name="squeezer_history_title">Hanes cywasgu</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="zero">%1$d eitem (%2$s)</item>
+        <item quantity="one">%1$d eitem (%2$s)</item>
+        <item quantity="two">%1$d eitem (%2$s)</item>
+        <item quantity="few">%1$d eitem (%2$s)</item>
+        <item quantity="many">%1$d eitem (%2$s)</item>
+        <item quantity="other">%1$d eitem (%2$s)</item>
+    </plurals>
+    <string name="squeezer_history_empty">Dim hanes cywasgu</string>
+    <string name="squeezer_history_clear_title">Clirio hanes cywasgu</string>
+    <string name="squeezer_history_clear_message">Bydd hyn yn caniatáu i ddelweddau a gywasgrwyd yn flaenorol gael eu cywasgu eto. Nid yw\'r delweddau eu hunain yn cael eu heffeithio.</string>
     <string name="squeezer_onboarding_title">Am gywasgu delweddau</string>
     <string name="squeezer_onboarding_message">Mae cywasgu delweddau yn lleihau maint ffeil drwy dynnu manylion gweledol. Mae\'r broses hon yn anwrthdroadwy - ni ellir adfer yr ansawdd gwreiddiol.\n\nDyma ragolwg o sut bydd eich delweddau\'n edrych:</string>
     <string name="squeezer_onboarding_original_label">Gwreiddiol</string>

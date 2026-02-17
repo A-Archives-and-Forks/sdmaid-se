@@ -228,6 +228,7 @@
     <string name="corpsefinder_filter_appsource_private_summary">Takmarkaðar uppsetningargögn, t.d. vernduð forrit þriðja aðila.</string>
     <string name="corpsefinder_filter_appasec_label">Dulkóðuð auðlindir forrita</string>
     <string name="corpsefinder_filter_appasec_summary">Dulkóðaðar auðlindir forrita, t.d. eignir leikja.</string>
+    <string name="corpsefinder_filter_app2sd_label">App2SD</string>
     <string name="corpsefinder_filter_app2sd_summary">Gögn flutt á ytri geymslu með App2Sd breytingum.</string>
     <plurals name="corpsefinder_result_x_corpses_deleted">
         <item quantity="one">%d forritaleif eytt</item>
@@ -544,7 +545,9 @@
     <string name="squeezer_quality_warning_low">Lægri gæði gætu valdið sjáanlegum göllum.</string>
     <string name="squeezer_quality_warning_high">Mjög há gæði veita lágmarks plásssparnað.</string>
     <string name="squeezer_types_category_label">Myndategundir</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Taka JPEG myndir (.jpg, .jpeg) með.</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Taka WebP myndir (.webp) með.</string>
     <string name="squeezer_skip_compressed_title">Sleppa áður þjöppuðum</string>
     <string name="squeezer_skip_compressed_description">Sleppa myndum sem SD Maid hefur þegar þjappað.</string>
@@ -619,6 +622,7 @@
     <string name="appcontrol_app_exclude_edit_description">Þetta forrit er nú útilokað frá einu eða fleiri verkfærum.</string>
     <string name="appcontrol_tag_user">Notandi</string>
     <string name="appcontrol_tag_active">Nýlega virkt</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
     <string name="appcontrol_tag_apk_bundle">Búnt</string>
     <string name="appcontrol_tag_system">Kerfi</string>
     <string name="appcontrol_tag_archived">Safnað</string>

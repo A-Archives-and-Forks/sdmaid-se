@@ -417,6 +417,7 @@
     <string name="appcontrol_tag_not_installed">Gan suiteáil</string>
     <string name="appcontrol_tag_enabled">Cumasaithe</string>
     <string name="appcontrol_tag_disabled">Díchumasaithe</string>
+    <string name="appcontrol_tag_debug">Dífhabhtú</string>
     <string name="appcontrol_progress_enabling_package">Aip á cumasú</string>
     <string name="appcontrol_progress_disabling_package">Aip á díchumasú</string>
     <string name="appcontrol_list_filteroptions_label">Roghanna scagtha</string>
@@ -437,10 +438,15 @@
     <string name="appcontrol_settings_module_sizing_enabled_description">Faigh meastachán garbh ar mhéid gach aipe.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">Cinntigh gníomhaíocht</string>
     <string name="appcontrol_settings_module_activity_enabled_description">Faigh amach an bhfuil aip gníomhach (nó go raibh le déanaí).</string>
+    <string name="appcontrol_include_multiuser_label">Cuimsigh úsáideoirí eile</string>
+    <string name="appcontrol_include_multiuser_summary">Cuimsigh aipeanna ó phróifílí úsáideoirí eile ar an ngléas seo.</string>
     <string name="appcontrol_export_app_selection_action">Easpórtáil aipeanna</string>
     <string name="appcontrol_export_title">Easpórtáil aip</string>
     <string name="appcontrol_export_description">Sábháil comhaid suiteála na haipe seo. Ní chuimsíonn sé seo sonraí na haipe.</string>
     <string name="appcontrol_progress_exporting_x">%s á easpórtáil</string>
+    <string name="appcontrol_share_list_action">Roinn liosta</string>
+    <string name="appcontrol_share_list_title">Mo Chuid Aipeanna</string>
+    <string name="appcontrol_share_list_footer">Roinnte trí SD Maid SE</string>
     <string name="appcontrol_force_stop_selection_action">Éignigh stop aipeanna</string>
     <string name="appcontrol_force_stop_action">Éignigh stop</string>
     <string name="appcontrol_force_stop_confirm_title">Deimhnigh éigniú stop</string>
@@ -449,6 +455,10 @@
     <string name="appcontrol_automation_subtitle_force_stopping">Éigniú stop…</string>
     <string name="appcontrol_automation_progress_find_force_stop">Ag lorg cnaipe \"Éignigh stop\" (eochairfhocail: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">Ag iarraidh gníomh roimhe seo a dheimhniú (eochairfhocail: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">Ag cartlannú…</string>
+    <string name="appcontrol_automation_progress_find_archive">Ag lorg cnaipe \"Cartlannaigh\" (eochairfhocail: %s)</string>
+    <string name="appcontrol_automation_subtitle_restoring">Ag athchóiriú…</string>
+    <string name="appcontrol_automation_progress_find_restore">Ag lorg cnaipe \"Athchóirigh\" (eochairfhocail: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Am scáileáin: %1$s ó %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Nuashonraithe is déanaí: %s</string>
     <string name="analyzer_tool_name">StorageAnalyzer</string>
@@ -460,6 +470,14 @@
     <string name="analyzer_progress_scanning_system">Sonraí an chórais á scanadh</string>
     <string name="analyzer_device_storage_title">Stóráil gléis</string>
     <string name="analyzer_content_access_opaque">Níl rochtain dhíreach ar fáil</string>
+    <string name="analyzer_content_create_swiper_session_action">Cruthaigh seisiún Swiper</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="one">Seisiún Swiper cruthaithe le %d mír</item>
+        <item quantity="two">Seisiún Swiper cruthaithe le %d mhír</item>
+        <item quantity="few">Seisiún Swiper cruthaithe le %d mhír</item>
+        <item quantity="many">Seisiún Swiper cruthaithe le %d mír</item>
+        <item quantity="other">Seisiún Swiper cruthaithe le %d mír</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">Príomhstóráil</string>
     <string name="analyzer_storage_type_primary_description">Príomhstór do ghléis. Cuimsíonn sé an cárta SD inmheánach, stór príobháideach d\'aipeanna agus sonraí córais.</string>
     <string name="analyzer_storage_type_secondary_title">Stór tánaisteach</string>
@@ -501,6 +519,7 @@
     <string name="exclusion_type_path">Eisiamh conaire</string>
     <string name="exclusion_type_segment">Eisiamh deighilte</string>
     <string name="exclusion_target_label">Sprioc eisiaimh</string>
+    <string name="exclusion_editor_path_change_action">Tapáil chun conair a athrú</string>
     <string name="exclusion_option_allow_partial">Ceadaigh meaitseálacha páirteacha</string>
     <string name="exclusion_option_ignore_casing">Déan neamhaird ar chásáil</string>
     <string name="exclusion_editor_affected_tools_label">Uirlisí difear orthu</string>
@@ -582,6 +601,23 @@
     <string name="review_app_review_action">Athbhreithniú</string>
     <string name="review_app_dismiss_action">B\'fhéidir níos déanaí</string>
     <string name="review_app_body">Ar mhaith leat athbhreithniú a fhágáil ar SD Maid?️ ❤️</string>
+    <string name="anniversary_card_title">Comhghairdeas Cothrom Bliaina SD Maid ❤️</string>
+    <string name="anniversary_card_install_date">In éineacht leat ó %s</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="one">%1$d bhliain le chéile cheana féin. Go raibh maith agat as muinín a chur i SD Maid chun do Android a choinneáil glan agus néata. Spás saoraithe: %2$s</item>
+        <item quantity="two">%1$d bhliain go láidir. Fanann do ghléas glan agus néata le SD Maid. Spás saoraithe: %2$s</item>
+        <item quantity="few">%1$d bliana go láidir. Fanann do ghléas glan agus néata le SD Maid. Spás saoraithe: %2$s</item>
+        <item quantity="many">%1$d mbliana go láidir. Fanann do ghléas glan agus néata le SD Maid. Spás saoraithe: %2$s</item>
+        <item quantity="other">%1$d bliain go láidir. Fanann do ghléas glan agus néata le SD Maid. Spás saoraithe: %2$s</item>
+    </plurals>
+    <string name="anniversary_share_title">Roinn do chothrom bliaina SD Maid</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="one">%1$d bhliain le SD Maid — Spás saoraithe: %2$s. Ag coinneáil do Android glan agus néata. #SDMaid\nBain triail as: %3$s</item>
+        <item quantity="two">%1$d bhliain le SD Maid — Spás saoraithe: %2$s. Ag coinneáil do Android glan agus néata. #SDMaid\nBain triail as: %3$s</item>
+        <item quantity="few">%1$d bliana le SD Maid — Spás saoraithe: %2$s. Ag coinneáil do Android glan agus néata. #SDMaid\nBain triail as: %3$s</item>
+        <item quantity="many">%1$d mbliana le SD Maid — Spás saoraithe: %2$s. Ag coinneáil do Android glan agus néata. #SDMaid\nBain triail as: %3$s</item>
+        <item quantity="other">%1$d bliain le SD Maid — Spás saoraithe: %2$s. Ag coinneáil do Android glan agus néata. #SDMaid\nBain triail as: %3$s</item>
+    </plurals>
     <string name="stats_label">Stair</string>
     <string name="stats_report_status_success">Rath</string>
     <string name="stats_report_status_partial_success">Rath páirteach</string>
@@ -716,6 +752,44 @@
         <item quantity="few">Díshuiteáladh %d aip</item>
         <item quantity="many">Díshuiteáladh %d n-aip</item>
         <item quantity="other">Díshuiteáladh %d aip</item>
+    </plurals>
+    <string name="appcontrol_archive_action">Cartlannaigh</string>
+    <string name="appcontrol_archive_selection_action">Cartlannaigh aipeanna</string>
+    <string name="appcontrol_archive_description">Cartlannaigh chun spás a shaoradh agus sonraí aipe a choinneáil le haghaidh athchóirithe níos déanaí.</string>
+    <string name="appcontrol_progress_archiving_app">Ag cartlannú aipe…</string>
+    <string name="appcontrol_archive_confirmation_title">Dearbhaigh cartlannú</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="one">Cartlannaigh %d aip?</item>
+        <item quantity="two">Cartlannaigh %d aip?</item>
+        <item quantity="few">Cartlannaigh %d aip?</item>
+        <item quantity="many">Cartlannaigh %d n-aip?</item>
+        <item quantity="other">Cartlannaigh %d aip?</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="one">%d aip cartlannaithe</item>
+        <item quantity="two">%d aip cartlannaithe</item>
+        <item quantity="few">%d aip cartlannaithe</item>
+        <item quantity="many">%d n-aip cartlannaithe</item>
+        <item quantity="other">%d aip cartlannaithe</item>
+    </plurals>
+    <string name="appcontrol_restore_action">Athchóirigh</string>
+    <string name="appcontrol_restore_selection_action">Athchóirigh aipeanna</string>
+    <string name="appcontrol_restore_description">Athchóirigh aip chartlannaithe go staid suiteáilte iomlán. Coinnítear sonraí aipe.</string>
+    <string name="appcontrol_progress_restoring_app">Ag athchóiriú aipe…</string>
+    <string name="appcontrol_restore_confirmation_title">Dearbhaigh athchóiriú</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="one">Athchóirigh %d aip?</item>
+        <item quantity="two">Athchóirigh %d aip?</item>
+        <item quantity="few">Athchóirigh %d aip?</item>
+        <item quantity="many">Athchóirigh %d n-aip?</item>
+        <item quantity="other">Athchóirigh %d aip?</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="one">%d aip athchóirithe</item>
+        <item quantity="two">%d aip athchóirithe</item>
+        <item quantity="few">%d aip athchóirithe</item>
+        <item quantity="many">%d n-aip athchóirithe</item>
+        <item quantity="other">%d aip athchóirithe</item>
     </plurals>
     <plurals name="appcontrol_toggle_confirmation_message_x">
         <item quantity="one">Athraigh staid cumasaithe/díchumasaithe %d aip?</item>
@@ -912,7 +986,79 @@
 
     <string name="deduplicator_view_mode_groups_label">Grúpaí</string>
     <string name="deduplicator_view_mode_directories_label">Fillteáin</string>
-
+    <string name="squeezer_tool_name">Fáisceadh Meán</string>
+    <string name="squeezer_explanation_short">Comhbhrúigh íomhánna chun spás stórála a shábháil.</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="one">%d íomhá aimsithe</item>
+        <item quantity="two">%d íomhá aimsithe</item>
+        <item quantity="few">%d íomhá aimsithe</item>
+        <item quantity="many">%d n-íomhá aimsithe</item>
+        <item quantity="other">%d íomhá aimsithe</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="one">is féidir ~%s a shábháil</item>
+        <item quantity="two">is féidir ~%s a shábháil</item>
+        <item quantity="few">is féidir ~%s a shábháil</item>
+        <item quantity="many">is féidir ~%s a shábháil</item>
+        <item quantity="other">is féidir ~%s a shábháil</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="one">%d íomhá comhbhrúite</item>
+        <item quantity="two">%d íomhá comhbhrúite</item>
+        <item quantity="few">%d íomhá comhbhrúite</item>
+        <item quantity="many">%d n-íomhá comhbhrúite</item>
+        <item quantity="other">%d íomhá comhbhrúite</item>
+    </plurals>
+    <plurals name="squeezer_preview_x_images">
+        <item quantity="one">%d íomhá roghnaithe</item>
+        <item quantity="two">%d íomhá roghnaithe</item>
+        <item quantity="few">%d íomhá roghnaithe</item>
+        <item quantity="many">%d n-íomhá roghnaithe</item>
+        <item quantity="other">%d íomhá roghnaithe</item>
+    </plurals>
+    <string name="squeezer_search_locations_title">Suímh chuardaigh</string>
+    <string name="squeezer_search_locations_default_summary">Fillteáin ceamara (réamhshocrú)</string>
+    <string name="squeezer_min_size_title">Méid íosta comhaid</string>
+    <string name="squeezer_min_size_description">Scipeáil íomhánna níos lú ná an méid seo.</string>
+    <string name="squeezer_min_age_title">Aois íosta comhaid</string>
+    <string name="squeezer_min_age_description">Ní chuimsítear ach íomhánna níos sine ná an aois seo.</string>
+    <string name="squeezer_compression_settings_label">Socruithe comhbhrúite</string>
+    <string name="squeezer_quality_label">Cáilíocht</string>
+    <string name="squeezer_quality_title">Cáilíocht comhbhrúite</string>
+    <string name="squeezer_quality_description">Ciallaíonn cáilíocht níos ísle méid comhaid níos lú ach cáilíocht íomhá laghdaithe.</string>
+    <string name="squeezer_quality_example_format">Sampla: íomhá %1$s → sábhálann ~%2$s ag %3$d%% cáilíocht</string>
+    <string name="squeezer_quality_warning_low">D\'fhéadfadh cáilíocht níos ísle déantáin infheicthe a chruthú.</string>
+    <string name="squeezer_quality_warning_high">Soláthraíonn cáilíocht an-ard coigilteas spáis íosta.</string>
+    <string name="squeezer_types_category_label">Cineálacha íomhá</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
+    <string name="squeezer_type_jpeg_description">Cuimsigh íomhánna JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
+    <string name="squeezer_type_webp_description">Cuimsigh íomhánna WebP (.webp).</string>
+    <string name="squeezer_skip_compressed_title">Scipeáil cinn chomhbhrúite cheana</string>
+    <string name="squeezer_skip_compressed_description">Scipeáil íomhánna a comhbhrúíodh cheana ag SD Maid.</string>
+    <string name="squeezer_exif_marker_title">Scríobh marcóir EXIF</string>
+    <string name="squeezer_exif_marker_description">Cuir marcóir le réimse nóta tráchta úsáideora EXIF na híomhá chun athchomhbhrú a chosc fiú má ghlantar an stair chomhbhrú.</string>
+    <string name="squeezer_estimated_savings_format">~%s coigilteas</string>
+    <string name="squeezer_no_savings_expected">Coigilteas teoranta</string>
+    <string name="squeezer_current_size_format">Méid: %s</string>
+    <string name="squeezer_compress_action">Comhbhrúigh</string>
+    <string name="squeezer_compress_all_action">Comhbhrúigh gach ceann</string>
+    <string name="squeezer_preview_dialog_title">Dearbhaigh comhbhrú</string>
+    <string name="squeezer_preview_total_size">Méid iomlán</string>
+    <string name="squeezer_preview_estimated_savings">Coigilteas measta</string>
+    <string name="squeezer_compress_confirmation_title">Comhbhrúigh íomhánna?</string>
+    <string name="squeezer_compress_confirmation_message">Cuirfidh sé seo leaganacha comhbhrúite in ionad na n-íomhánna bunaidh. Ní féidir an gníomh seo a chealú.</string>
+    <string name="squeezer_history_title">Stair chomhbhrúite</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="one">%1$d mír (%2$s)</item>
+        <item quantity="two">%1$d mhír (%2$s)</item>
+        <item quantity="few">%1$d mhír (%2$s)</item>
+        <item quantity="many">%1$d mír (%2$s)</item>
+        <item quantity="other">%1$d mír (%2$s)</item>
+    </plurals>
+    <string name="squeezer_history_empty">Gan stair chomhbhrúite</string>
+    <string name="squeezer_history_clear_title">Glan stair chomhbhrúite</string>
+    <string name="squeezer_history_clear_message">Ligfidh sé seo d\'íomhánna a comhbhrúíodh cheana a bheith comhbhrúite arís. Ní dhéantar difear do na híomhánna féin.</string>
     <string name="squeezer_onboarding_title">Faoi chomhbhrú íomhá</string>
     <string name="squeezer_onboarding_message">Laghdaíonn comhbhrú íomhá méid an chomhaid trí mhionsonraí amhairc a bhaint. Ní féidir an próiseas seo a aisiompú - ní féidir an cháilíocht bhunaidh a athchóiriú.\n\nSeo réamhamharc ar conas a bheidh do chuid íomhánna:</string>
     <string name="squeezer_onboarding_original_label">Bunaidh</string>

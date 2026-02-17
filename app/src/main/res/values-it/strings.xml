@@ -279,6 +279,7 @@
     <string name="systemcleaner_filter_screenshots_age_label">Età Screenshot</string>
     <string name="systemcleaner_filter_screenshots_age_summary">Età minima da considerare per l\'eliminazione degli screenshot.</string>
     <string name="systemcleaner_filter_superfluosapks_label">APK superflui</string>
+    <string name="systemcleaner_filter_superfluosapks_summary">File di installazione non più necessari in base alle versioni delle app installate.</string>
     <string name="systemcleaner_filter_superfluosapks_includesameversion_label">Includi stessa versione</string>
     <string name="systemcleaner_filter_superfluosapks_includesameversion_summary">Includi anche i file APK che corrispondono alla versione installata. Disabilita per rimuovere solo le versioni precedenti.</string>
     <string name="systemcleaner_filter_lostdir_label">Cartelle LOST.DIR</string>
@@ -473,6 +474,7 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
     <string name="deduplicator_detection_method_checksum_title">Checksum (verifica) del contenuto</string>
     <string name="deduplicator_detection_method_checksum_summary">Determina i duplicati calcolando il checksum dei file. I file con checksum corrispondenti hanno lo stesso identico contenuto.</string>
     <string name="deduplicator_detection_method_phash_title">Hash percettivo</string>
+    <string name="deduplicator_detection_method_phash_summary">Trova file simili analizzando le caratteristiche del contenuto e confrontando i valori di hash percettivo. ⚠️ Il rilevamento basato sulla somiglianza potrebbe includere falsi positivi che richiedono verifica manuale.</string>
     <string name="deduplicator_occupied_space_label">Spazio occupato</string>
     <plurals name="deduplicator_x_space_occupied_by_duplicates_msg">
         <item quantity="one">%s è occupato da duplicati</item>
@@ -524,6 +526,66 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
     <string name="deduplicator_arbiter_mode_prefer_smaller">Preferisci file più piccoli</string>
     <string name="deduplicator_view_mode_groups_label">Gruppi</string>
     <string name="deduplicator_view_mode_directories_label">Cartelle</string>
+
+    <string name="squeezer_tool_name">Media Squeeze</string>
+    <string name="squeezer_explanation_short">Comprimi le immagini per risparmiare spazio di archiviazione.</string>
+    <plurals name="squeezer_result_x_images_found">
+        <item quantity="one">%d immagine trovata</item>
+        <item quantity="other">%d immagini trovate</item>
+    </plurals>
+    <plurals name="squeezer_result_x_estimated_savings">
+        <item quantity="one">~%s può essere risparmiato</item>
+        <item quantity="other">~%s possono essere risparmiati</item>
+    </plurals>
+    <plurals name="squeezer_result_x_images_compressed">
+        <item quantity="one">%d immagine compressa</item>
+        <item quantity="other">%d immagini compresse</item>
+    </plurals>
+    <plurals name="squeezer_preview_x_images">
+        <item quantity="one">%d immagine selezionata</item>
+        <item quantity="other">%d immagini selezionate</item>
+    </plurals>
+    <string name="squeezer_search_locations_title">Posizioni di ricerca</string>
+    <string name="squeezer_search_locations_default_summary">Cartelle fotocamera (predefinito)</string>
+    <string name="squeezer_min_size_title">Dimensione minima del file</string>
+    <string name="squeezer_min_size_description">Ignora le immagini più piccole di questa dimensione.</string>
+    <string name="squeezer_min_age_title">Età minima del file</string>
+    <string name="squeezer_min_age_description">Includi solo le immagini più vecchie di questa età.</string>
+    <string name="squeezer_compression_settings_label">Impostazioni di compressione</string>
+    <string name="squeezer_quality_label">Qualità</string>
+    <string name="squeezer_quality_title">Qualità di compressione</string>
+    <string name="squeezer_quality_description">Una qualità inferiore significa file più piccoli ma qualità dell\'immagine ridotta.</string>
+    <string name="squeezer_quality_example_format">Esempio: immagine %1$s → risparmio ~%2$s al %3$d%% di qualità</string>
+    <string name="squeezer_quality_warning_low">Qualità inferiori possono causare artefatti visibili.</string>
+    <string name="squeezer_quality_warning_high">Una qualità molto alta fornisce risparmi minimi di spazio.</string>
+    <string name="squeezer_types_category_label">Tipi di immagine</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
+    <string name="squeezer_type_jpeg_description">Includi immagini JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
+    <string name="squeezer_type_webp_description">Includi immagini WebP (.webp).</string>
+    <string name="squeezer_skip_compressed_title">Salta le già compresse</string>
+    <string name="squeezer_skip_compressed_description">Ignora le immagini già compresse da SD Maid.</string>
+    <string name="squeezer_exif_marker_title">Scrivi marcatore EXIF</string>
+    <string name="squeezer_exif_marker_description">Aggiungi un marcatore nel campo commento utente EXIF dell\'immagine per impedire la ricompressione anche se la cronologia di compressione viene cancellata.</string>
+    <string name="squeezer_estimated_savings_format">~%s di risparmio</string>
+    <string name="squeezer_no_savings_expected">Risparmio limitato</string>
+    <string name="squeezer_current_size_format">Dimensione: %s</string>
+    <string name="squeezer_compress_action">Comprimi</string>
+    <string name="squeezer_compress_all_action">Comprimi tutto</string>
+    <string name="squeezer_preview_dialog_title">Conferma compressione</string>
+    <string name="squeezer_preview_total_size">Dimensione totale</string>
+    <string name="squeezer_preview_estimated_savings">Risparmio stimato</string>
+    <string name="squeezer_compress_confirmation_title">Comprimere le immagini?</string>
+    <string name="squeezer_compress_confirmation_message">Questo sostituirà le immagini originali con versioni compresse. Questa azione non può essere annullata.</string>
+    <string name="squeezer_history_title">Cronologia compressione</string>
+    <plurals name="squeezer_history_summary">
+        <item quantity="one">%1$d elemento (%2$s)</item>
+        <item quantity="other">%1$d elementi (%2$s)</item>
+    </plurals>
+    <string name="squeezer_history_empty">Nessuna cronologia di compressione</string>
+    <string name="squeezer_history_clear_title">Cancella cronologia compressione</string>
+    <string name="squeezer_history_clear_message">Questo permetterà di comprimere nuovamente le immagini già compresse. Le immagini stesse non vengono modificate.</string>
+
     <string name="squeezer_onboarding_title">Informazioni sulla compressione immagini</string>
     <string name="squeezer_onboarding_message">La compressione riduce la dimensione dei file rimuovendo dettagli visivi. Questo processo è irreversibile - la qualità originale non può essere ripristinata.\n\nEcco un\'anteprima di come appariranno le tue immagini:</string>
     <string name="squeezer_onboarding_original_label">Originale</string>
@@ -568,6 +630,7 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
     <string name="appcontrol_app_launch_title">Avvia app</string>
     <string name="appcontrol_app_launch_description">Apre l\'applicazione.</string>
     <string name="appcontrol_app_forcestop_title">Arresto forzato</string>
+    <string name="appcontrol_app_forcestop_description">Arresta l\'app. Impedisce il suo riavvio fino a quando non la apri o il dispositivo viene riavviato.</string>
     <string name="appcontrol_app_uninstall_description">Disinstalla quest\'app dal tuo dispositivo.</string>
     <string name="appcontrol_app_exclude_add_title">Escludi app</string>
     <string name="appcontrol_app_exclude_add_description">Escludi quest\'app dalle operazioni in SD Maid.</string>
@@ -583,6 +646,7 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
     <string name="appcontrol_tag_not_installed">Non installato</string>
     <string name="appcontrol_tag_enabled">Attivo</string>
     <string name="appcontrol_tag_disabled">Disabilitato</string>
+    <string name="appcontrol_tag_debug">Debug</string>
     <string name="appcontrol_progress_enabling_package">Attivazione app</string>
     <string name="appcontrol_progress_disabling_package">Disattivazione app</string>
     <string name="appcontrol_list_filteroptions_label">Opzioni filtro</string>
@@ -594,6 +658,32 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
     <string name="appcontrol_list_sortmode_screentime_label">Tempo schermo</string>
     <string name="appcontrol_list_sortmode_size_caveat_msg">Le dimensioni delle app sono stimate per ragioni di prestazioni. Utilizzare lo StorageAnalyzer per dati più accurati.</string>
     <string name="appcontrol_progress_uninstalling_app">Rimozione app</string>
+    <string name="appcontrol_archive_action">Archivia</string>
+    <string name="appcontrol_archive_selection_action">Archivia app</string>
+    <string name="appcontrol_archive_description">Archivia per liberare spazio mantenendo i dati dell\'app per un successivo ripristino.</string>
+    <string name="appcontrol_progress_archiving_app">Archiviazione app…</string>
+    <string name="appcontrol_archive_confirmation_title">Conferma archiviazione</string>
+    <plurals name="appcontrol_archive_confirmation_x">
+        <item quantity="one">Archiviare %d app?</item>
+        <item quantity="other">Archiviare %d app?</item>
+    </plurals>
+    <plurals name="appcontrol_archive_result_x">
+        <item quantity="one">%d app archiviata</item>
+        <item quantity="other">%d app archiviate</item>
+    </plurals>
+    <string name="appcontrol_restore_action">Ripristina</string>
+    <string name="appcontrol_restore_selection_action">Ripristina app</string>
+    <string name="appcontrol_restore_description">Ripristina l\'app archiviata allo stato completamente installato. I dati dell\'app vengono preservati.</string>
+    <string name="appcontrol_progress_restoring_app">Ripristino app…</string>
+    <string name="appcontrol_restore_confirmation_title">Conferma ripristino</string>
+    <plurals name="appcontrol_restore_confirmation_x">
+        <item quantity="one">Ripristinare %d app?</item>
+        <item quantity="other">Ripristinare %d app?</item>
+    </plurals>
+    <plurals name="appcontrol_restore_result_x">
+        <item quantity="one">%d app ripristinata</item>
+        <item quantity="other">%d app ripristinate</item>
+    </plurals>
     <plurals name="appcontrol_uninstall_result_message_x">
         <item quantity="one">%d app è stata disinstallata</item>
         <item quantity="other">%d app sono state disinstallate</item>
@@ -615,13 +705,19 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
     <string name="appcontrol_settings_module_sizing_enabled_description">Ottieni una stima delle dimensioni di ogni app.</string>
     <string name="appcontrol_settings_module_activity_enabled_label">Controllo attività</string>
     <string name="appcontrol_settings_module_activity_enabled_description">Scopri se un\'app è in esecuzione (o se lo è stata di recente).</string>
+    <string name="appcontrol_include_multiuser_label">Includi altri utenti</string>
+    <string name="appcontrol_include_multiuser_summary">Includi le app di altri profili utente su questo dispositivo.</string>
     <string name="appcontrol_export_app_selection_action">Esporta applicazioni</string>
     <string name="appcontrol_export_title">Esporta app</string>
+    <string name="appcontrol_export_description">Salva i file di installazione di questa app. I dati dell\'app non sono inclusi.</string>
     <plurals name="appcontrol_export_result_message_x">
         <item quantity="one">%d app è stata esportata</item>
         <item quantity="other">%d app sono state esportate</item>
     </plurals>
     <string name="appcontrol_progress_exporting_x">Esportazione %s</string>
+    <string name="appcontrol_share_list_action">Condividi elenco</string>
+    <string name="appcontrol_share_list_title">Le mie app</string>
+    <string name="appcontrol_share_list_footer">Condiviso tramite SD Maid SE</string>
     <string name="appcontrol_force_stop_selection_action">Arresto forzato app</string>
     <string name="appcontrol_force_stop_action">Arresto forzato</string>
     <string name="appcontrol_force_stop_confirm_title">Conferma arresto forzato</string>
@@ -638,8 +734,13 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
     <string name="appcontrol_automation_subtitle_force_stopping">Arresto in corso…</string>
     <string name="appcontrol_automation_progress_find_force_stop">Cercando il bottone \"Arresto forzato\" (Parole chiave: %s)</string>
     <string name="appcontrol_automation_progress_find_ok_confirmation">Cercando di confermare l\'azione precedente (parole chiave: %s)</string>
+    <string name="appcontrol_automation_subtitle_archiving">Archiviazione…</string>
+    <string name="appcontrol_automation_progress_find_archive">Cercando il pulsante \"Archivia\" (parole chiave: %s)</string>
+    <string name="appcontrol_automation_subtitle_restoring">Ripristino…</string>
+    <string name="appcontrol_automation_progress_find_restore">Cercando il pulsante \"Ripristina\" (parole chiave: %s)</string>
     <string name="appcontrol_item_screentime_x_since_y_label">Tempo schermo: %1$s da %2$s</string>
     <string name="appcontrol_item_lastupdate_x_label">Ultimo aggiornamento: %s</string>
+    <string name="appcontrol_item_installedat_x_label">Installato il: %s</string>
     <string name="analyzer_tool_name">StorageAnalyzer</string>
     <string name="analyzer_explanation_short">Scopri cosa sta occupando lo spazio del tuo dispositivo.</string>
     <string name="analyzer_progress_scanning_device">Cercando dispositivi di memoria</string>
@@ -657,6 +758,11 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
         <item quantity="other">%s utilizzati</item>
     </plurals>
     <string name="analyzer_content_access_opaque">Accesso non disponibile</string>
+    <string name="analyzer_content_create_swiper_session_action">Crea sessione Swiper</string>
+    <plurals name="analyzer_content_swiper_session_created_x_items">
+        <item quantity="one">Sessione Swiper creata con %d elemento</item>
+        <item quantity="other">Sessione Swiper creata con %d elementi</item>
+    </plurals>
     <string name="analyzer_storage_type_primary_title">Archivio principale</string>
     <string name="analyzer_storage_type_primary_description">L\'archiviazione primaria del tuo dispositivo. Contiene la memoria di sistema e quella di applicazioni e dati dell\'utente.</string>
     <string name="analyzer_storage_type_secondary_title">Archivio secondario</string>
@@ -699,6 +805,7 @@ Se non lo si vuole usare: Disabilita l\'opzione \"Includi cache inaccessibili\".
     <string name="exclusion_type_segment">Esclusione segmento</string>
     <string name="exclusion_tags_alltools">Tutti gli strumenti</string>
     <string name="exclusion_target_label">Target dell\'esclusione</string>
+    <string name="exclusion_editor_path_change_action">Tocca per cambiare percorso</string>
     <string name="exclusion_option_allow_partial">Consenti risultati parziali</string>
     <string name="exclusion_option_ignore_casing">Non distinguere maiuscole e minuscole</string>
     <string name="exclusion_editor_affected_tools_label">Strumenti interessati</string>
@@ -792,6 +899,15 @@ Esempio: Il segmento \"DCIM/Camera\" escluderà anche \"/sdcard/DCIM/Camera/phot
     <string name="review_app_body">Vuoi lasciare una recensione su SD Maid? ❤️</string>
     <string name="anniversary_card_title">Felice anniversario a SD Maid ♥️</string>
     <string name="anniversary_card_install_date">Con te dal %s</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="one">Già %1$d anno insieme. Grazie per aver affidato a SD Maid la pulizia del tuo Android. Spazio liberato: %2$s</item>
+        <item quantity="other">%1$d anni insieme. Il tuo dispositivo resta pulito e ordinato con SD Maid. Spazio liberato: %2$s</item>
+    </plurals>
+    <string name="anniversary_share_title">Condividi il tuo anniversario con SD Maid</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="one">%1$d anno con SD Maid — Spazio liberato: %2$s. Mantengo il mio Android pulito e ordinato. #SDMaid\nProvalo: %3$s</item>
+        <item quantity="other">%1$d anni con SD Maid — Spazio liberato: %2$s. Mantengo il mio Android pulito e ordinato. #SDMaid\nProvalo: %3$s</item>
+    </plurals>
     <string name="stats_label">Cronologia</string>
     <plurals name="stats_dash_body_size">
         <item quantity="one">%s è stato liberato</item>

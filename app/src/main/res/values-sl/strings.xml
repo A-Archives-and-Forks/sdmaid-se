@@ -597,7 +597,9 @@
     <string name="squeezer_quality_warning_low">Nižje kakovosti lahko povzročijo vidne artefakte.</string>
     <string name="squeezer_quality_warning_high">Zelo visoka kakovost omogoča le minimalen prihranek prostora.</string>
     <string name="squeezer_types_category_label">Vrste slik</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">Vključi slike JPEG (.jpg, .jpeg).</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">Vključi slike WebP (.webp).</string>
     <string name="squeezer_skip_compressed_title">Preskoči že stisnjene</string>
     <string name="squeezer_skip_compressed_description">Preskoči slike, ki jih je SD Maid že stisnil.</string>
@@ -1196,6 +1198,7 @@
     <string name="swiper_stamp_delete_3">V smeti!</string>
     <string name="swiper_stamp_delete_4">Izbriši!</string>
     <string name="swiper_stamp_skip_1">Preskoči!</string>
+    <string name="swiper_stamp_skip_2">Meh!</string>
     <string name="swiper_stamp_skip_3">Kasneje!</string>
     <string name="swiper_stamp_skip_4">Mogoče!</string>
     <string name="swiper_stamp_undo_1">Razveljavi!</string>

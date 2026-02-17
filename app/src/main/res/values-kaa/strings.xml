@@ -367,6 +367,7 @@
     <string name="appcleaner_filter_whatsapp_sent_summary">WhatsApp арқылы басқаларға жіберилген файллар.</string>
     <string name="appcleaner_filter_telegram_label">Telegram медиа файллары</string>
     <string name="appcleaner_filter_telegram_summary">Telegram арқылы алынған немесе жіберилген файллар.</string>
+    <string name="appcleaner_filter_threema_label">Threema</string>
     <string name="appcleaner_filter_threema_summary">Threema arqalı alıngan fayllar.</string>
     <string name="appcleaner_filter_wechat_label">WeChat</string>
     <string name="appcleaner_filter_wechat_summary">Söylesuv hám WeChat momentlerinde jiberilgen yamasa alıngan fayllar.</string>
@@ -496,7 +497,9 @@
     <string name="squeezer_quality_warning_low">To\'men sapalarda ko\'rinetug\'ın artefaktlar payda bolıwı mu\'mkin.</string>
     <string name="squeezer_quality_warning_high">Juqarı sapa az orın u\'nemleydi.</string>
     <string name="squeezer_types_category_label">Su\'wret tu\'rleri</string>
+    <string name="squeezer_type_jpeg_title">JPEG</string>
     <string name="squeezer_type_jpeg_description">JPEG su\'wretlerdi (.jpg, .jpeg) qosıw.</string>
+    <string name="squeezer_type_webp_title">WebP</string>
     <string name="squeezer_type_webp_description">WebP su\'wretlerdi (.webp) qosıw.</string>
     <string name="squeezer_skip_compressed_title">Aldın sıǵıstırılǵanlardı atlap o\'tiw</string>
     <string name="squeezer_skip_compressed_description">SD Maid ta\'repinen aldın sıǵıstırılǵan su\'wretlerdi atlap o\'tiw.</string>
@@ -522,6 +525,7 @@
     <string name="squeezer_history_clear_message">Bul aldın sıǵıstırılǵan su\'wretlerdi qayta sıǵıstırıwǵa mu\'mkinshilik beredi. Su\'wretlerdiń o\'zleri ta\'sir etilmeydi.</string>
     <string name="squeezer_onboarding_title">Su\'wret sıǵıstırıw haqqında</string>
     <string name="squeezer_onboarding_message">Su\'wret sıǵıstırıw ko\'riniw detallarin alıp taslaw arqalı fayl o\'lshemin kemeyterdi. Bul protsess qaytarılmas - original sapa qayta tikleniwi mu\'mkin emes.\n\nSu\'wretleriniz qalay ko\'rinetuǵının aldın alıw:</string>
+    <string name="squeezer_onboarding_original_label">Original</string>
     <string name="squeezer_onboarding_compressed_label">Sıǵıstırılǵannan keyin</string>
     <string name="squeezer_onboarding_quality_label">Sapa: %d%%</string>
     <string name="squeezer_onboarding_got_it">Tu\'sindim</string>
@@ -568,6 +572,7 @@
     <string name="appcontrol_app_exclude_add_description">Bul qosímshanı SD Maidtıń basqa ámellerinen shetlew.</string>
     <string name="appcontrol_app_exclude_edit_title">Shetlewdi ózgertiw</string>
     <string name="appcontrol_app_exclude_edit_description">Bul qosímsha házirgi waqıtta bir yamasa birneshe quraldan shetlengen.</string>
+    <string name="appcontrol_tag_apk_base">APK</string>
     <string name="appcontrol_tag_user">Paydalanıwshı</string>
     <string name="appcontrol_tag_active">Jaqında aktiv</string>
     <string name="appcontrol_tag_apk_bundle">Toplam</string>
@@ -967,4 +972,9 @@
     <string name="swiper_help_action">Járdem</string>
     <string name="swiper_help_title">Swiper qalay islaydi</string>
     <string name="swiper_help_message">Sheshim qabıl etiw ushın hár fayldi sırǵıtıń:\n\n← Sheske sırǵıtıw: %1$s\n→ Oń táreplege sırǵıtıw: %2$s\n↑ Joqarıǵa sırǵıtıw: O\'tiw\n↓ Tómenke sırǵıtıw: Qaytarıw (birinshi sırǵıtıwdan keyin)\n\nSiz tómendegi túymelerdi de paydalana alasız.\n\nTamam bolǵanda, barlıq sheshimlerińizdi kóriw ushın \"Ko\'rip shıǵıw\" túymesin basıń. Ko\'rip shıǵıw ekranında tastıyıqlaǵansha hesh nárse o\'shirilmeydi.</string>
+    <string name="swiper_label">Swiper</string>
+    <string name="swiper_tool_name">Swiper</string>
+    <string name="swiper_tool_description">Papkalardı tez retke keltiw -- faylları saqlap qalıw, o\'shiriw yamasa o\'tiw ushın sıypań.</string>
+    <string name="swiper_dashcard_description">Belgli papkalardı fayl menejerinen tezrek retke keltiriń -- hár fayldı sıypań.</string>
+    <string name="swiper_sessions_description">Faylları 3 qádem menen tekserip shıǵıń:\n\n1. Skanerlew ushın papka tańlań\n2. Faylları saqlap qalıw, o\'shiriw yamasa o\'tiw ushın sıypań\n3. Tańlawlarıńızdı tekserip, tastıyıqlań\n\nSońǵı o\'shiriw túymesin baspaǵansha hesh nárse o\'shirilmeydi.</string>
 </resources>

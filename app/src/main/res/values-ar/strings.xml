@@ -1047,6 +1047,23 @@
     <string name="review_app_body">هل ترغب في ترك تعليق لـ SD Med؟ ❤️</string>
     <string name="anniversary_card_title">ذكرى الذاكرة SD السعيدة ❤️</string>
     <string name="anniversary_card_install_date">معك منذ %s</string>
+    <plurals name="anniversary_card_body">
+        <item quantity="zero">%1$d سنوات معًا بالفعل. شكرًا لثقتك بـ SD Maid للحفاظ على نظافة جهاز Android. المساحة المحررة: %2$s</item>
+        <item quantity="one">%1$d سنة معًا بالفعل. شكرًا لثقتك بـ SD Maid للحفاظ على نظافة جهاز Android. المساحة المحررة: %2$s</item>
+        <item quantity="two">%1$d سنتان معًا. جهازك يبقى نظيفًا ومرتبًا مع SD Maid. المساحة المحررة: %2$s</item>
+        <item quantity="few">%1$d سنوات معًا. جهازك يبقى نظيفًا ومرتبًا مع SD Maid. المساحة المحررة: %2$s</item>
+        <item quantity="many">%1$d سنة معًا. جهازك يبقى نظيفًا ومرتبًا مع SD Maid. المساحة المحررة: %2$s</item>
+        <item quantity="other">%1$d سنة معًا. جهازك يبقى نظيفًا ومرتبًا مع SD Maid. المساحة المحررة: %2$s</item>
+    </plurals>
+    <string name="anniversary_share_title">شارك ذكرى SD Maid</string>
+    <plurals name="anniversary_share_text">
+        <item quantity="zero">%1$d سنوات مع SD Maid — المساحة المحررة: %2$s. الحفاظ على نظافة جهاز Android. #SDMaid\nجربه: %3$s</item>
+        <item quantity="one">%1$d سنة مع SD Maid — المساحة المحررة: %2$s. الحفاظ على نظافة جهاز Android. #SDMaid\nجربه: %3$s</item>
+        <item quantity="two">%1$d سنتان مع SD Maid — المساحة المحررة: %2$s. الحفاظ على نظافة جهاز Android. #SDMaid\nجربه: %3$s</item>
+        <item quantity="few">%1$d سنوات مع SD Maid — المساحة المحررة: %2$s. الحفاظ على نظافة جهاز Android. #SDMaid\nجربه: %3$s</item>
+        <item quantity="many">%1$d سنة مع SD Maid — المساحة المحررة: %2$s. الحفاظ على نظافة جهاز Android. #SDMaid\nجربه: %3$s</item>
+        <item quantity="other">%1$d سنة مع SD Maid — المساحة المحررة: %2$s. الحفاظ على نظافة جهاز Android. #SDMaid\nجربه: %3$s</item>
+    </plurals>
     <string name="stats_label">السجل</string>
     <plurals name="stats_dash_body_size">
         <item quantity="zero">تم تحرير %s.</item>
