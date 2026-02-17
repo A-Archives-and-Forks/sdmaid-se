@@ -269,6 +269,7 @@
     <string name="systemcleaner_filter_screenshots_age_label">Lama Tangkapan layar</string>
     <string name="systemcleaner_filter_screenshots_age_summary">Lama tangkapan layar untuk dipertimbangkan dihapus.</string>
     <string name="systemcleaner_filter_superfluosapks_label">Berkas APK tidak digunakan</string>
+    <string name="systemcleaner_filter_superfluosapks_summary">File konfigurasi yang tidak lagi digunakan oleh versi aplikasi yang terpasang.</string>
     <string name="systemcleaner_filter_superfluosapks_includesameversion_label">Sertakan versi yang sama</string>
     <string name="systemcleaner_filter_superfluosapks_includesameversion_summary">Juga targetkan berkas APK yang sesuai dengan versi yang terpasang. Nonaktifkan untuk hanya menghapus versi lama.</string>
     <string name="systemcleaner_filter_lostdir_label">Folder LOST.DIR</string>
@@ -446,6 +447,9 @@
     <string name="deduplicator_protection_deleteall_allowed_summary">Tampilkan opsi yang memungkinkan Anda menghapus semua file dalam satu set duplikat sehingga tidak ada file yang tersisa.</string>
     <string name="deduplicator_search_locations_title">Lokasi pencarian</string>
     <string name="deduplicator_search_locations_all_summary">Semua area yang dapat diakses</string>
+    <string name="deduplicator_keep_prefer_paths_title">Utamakan menyimpan di</string>
+    <string name="deduplicator_keep_prefer_paths_summary">Saat memutuskan duplikat mana yang disimpan, utamakan menyimpan file di lokasi ini.</string>
+    <string name="deduplicator_keep_prefer_paths_none_summary">Tidak ada lokasi yang dikonfigurasikan</string>
     <string name="deduplicator_skip_minsize_title">Ukuran minimum</string>
     <string name="deduplicator_skip_minsize_description">Lewati file yang berada di bawah ukuran minimum.</string>
     <string name="deduplicator_skip_uncommon_title">Lewati jenis file yang tidak umum</string>
@@ -505,9 +509,6 @@
     <string name="deduplicator_arbiter_mode_prefer_smaller">Utamakan file yang lebih kecil</string>
     <string name="deduplicator_view_mode_groups_label">Grup</string>
     <string name="deduplicator_view_mode_directories_label">Folder</string>
-    <string name="deduplicator_keep_prefer_paths_title">Utamakan menyimpan di</string>
-    <string name="deduplicator_keep_prefer_paths_summary">Saat memutuskan duplikat mana yang disimpan, utamakan menyimpan file di lokasi ini.</string>
-    <string name="deduplicator_keep_prefer_paths_none_summary">Tidak ada lokasi yang dikonfigurasikan</string>
     <string name="squeezer_tool_name">Optimasi Media</string>
     <string name="squeezer_explanation_short">Perkecil gambar untuk menghemat ruang penyimpanan.</string>
     <plurals name="squeezer_result_x_images_found">
@@ -558,9 +559,6 @@
     <plurals name="squeezer_history_summary">
         <item quantity="other">%1$d item (%2$s)</item>
     </plurals>
-    <string name="squeezer_compare_action">Lihat perbandingan</string>
-    <string name="squeezer_no_example_found">Tidak ada gambar ditemukan di jalur yang dipilih.</string>
-    <string name="squeezer_result_empty_message">Tidak ada gambar yang dapat dikompresi ditemukan.</string>
     <string name="squeezer_history_empty">Tidak ada riwayat kompresi</string>
     <string name="squeezer_history_clear_title">Hapus riwayat kompresi</string>
     <string name="squeezer_history_clear_message">Ini akan memungkinkan gambar yang sudah dikompresi untuk dikompresi lagi. Gambar itu sendiri tidak terpengaruh.</string>
@@ -570,6 +568,9 @@
     <string name="squeezer_onboarding_compressed_label">Setelah kompresi</string>
     <string name="squeezer_onboarding_quality_label">Kualitas: %d%%</string>
     <string name="squeezer_onboarding_got_it">Mengerti</string>
+    <string name="squeezer_compare_action">Lihat perbandingan</string>
+    <string name="squeezer_no_example_found">Tidak ada gambar ditemukan di jalur yang dipilih.</string>
+    <string name="squeezer_result_empty_message">Tidak ada gambar yang dapat dikompresi ditemukan.</string>
     <string name="squeezer_setup_warning">Kompresi secara permanen mengurangi kualitas gambar untuk menghemat ruang penyimpanan. Ini tidak dapat dibatalkan. Tinjau pengaturan Anda dengan cermat sebelum memulai.</string>
     <string name="squeezer_setup_explanation">Optimasi Media mengurangi ukuran file gambar untuk membebaskan ruang penyimpanan. Ini secara permanen mengurangi kualitas gambar dan tidak dapat dibatalkan. Tinjau pengaturan Anda dengan cermat sebelum memulai.</string>
     <string name="squeezer_setup_paths_title">Lokasi pencarian</string>
@@ -939,7 +940,7 @@
         <item quantity="other">Ini akan menghapus secara permanen. %1$d file (%2$s). Tindakan ini tidak dapat dibatalkan.</item>
     </plurals>
     <plurals name="swiper_delete_confirmation_message_partial_undecided">
-        <item quantity="other">%d Item yang belum diputuskan akan tetap ada untuk ditinjau kemudian.</item>
+        <item quantity="other">%d item belum diputuskan akan tetap ada untuk ditinjau nanti.</item>
     </plurals>
     <string name="swiper_delete_x_action">Hapus %1$d</string>
     <string name="swiper_settings_swap_directions_title">Tukar arah geser</string>
