@@ -251,7 +251,6 @@
     <string name="corpsefinder_corpse_hint_common">این مورد دارای نام بسیار رایجی است و ممکن است متعلق به برنامه‌هایی باشد که هنوز نصب هستند و SD Maid آن‌ها را نمی‌شناسد.</string>
     <string name="systemcleaner_tool_name">پاکسازی سیستم</string>
     <string name="systemcleaner_explanation_short">داده‌های اضافی که به هیچ برنامه خاصی تعلق ندارند.</string>
-    <string name="systemcleaner_settings_summary">فیلترهای اسکن و سطوح خطر را تنظیم کنید.</string>
     <plurals name="systemcleaner_result_x_items_deleted">
         <item quantity="one">%d تطابق حذف شد.</item>
         <item quantity="other">%d تطابق حذف شد.</item>

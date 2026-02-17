@@ -243,7 +243,6 @@
     <string name="corpsefinder_corpse_hint_common">Berkas ini memiliki nama yang umum dan kemungkinan masih berkaitan dengan aplikasi yang terpasang yang tidak diketahui oleh SD Maid.</string>
     <string name="systemcleaner_tool_name">Pembersih Sistem</string>
     <string name="systemcleaner_explanation_short">Data berlebihan yang bukan milik aplikasi tertentu.</string>
-    <string name="systemcleaner_settings_summary">Sesuaikan filter pemindaian dan tingkat risiko.</string>
     <plurals name="systemcleaner_result_x_items_deleted">
         <item quantity="other">%d kecocokan dihapus</item>
     </plurals>

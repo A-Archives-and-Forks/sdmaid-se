@@ -268,7 +268,6 @@ SD Maid ישתמש בו כאלטרנטיבה.</string>
     <string name="corpsefinder_corpse_hint_common">לפריט זה יש שם נפוץ מאוד ויכול להיות שייך לאפליקציות שעדיין מותקנות ש-SD Maid לא מכיר.</string>
     <string name="systemcleaner_tool_name">מנקה מערכת</string>
     <string name="systemcleaner_explanation_short">נתונים מיותרים שלא שייכים לאף אפליקציה ספציפית.</string>
-    <string name="systemcleaner_settings_summary">התאם מסנני סריקה ורמות סיכון.</string>
     <plurals name="systemcleaner_result_x_items_deleted">
         <item quantity="one">התאמה %d נמחקה</item>
         <item quantity="two">%d התאמות נמחקו</item>
