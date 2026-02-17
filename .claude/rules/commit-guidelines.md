@@ -1,9 +1,9 @@
-# Commit Message Guidelines
+# Commit & Pull Request Guidelines
 
-## Format
+## Commit Message Format
 
 ```
-<module>: <user-friendly title>
+<module>: <title>
 
 <detailed technical description>
 
@@ -14,7 +14,7 @@
 
 ## Module Prefixes
 
-Use these prefixes to categorize commits by SD Maid SE's cleaning tools:
+Use these prefixes to categorize commits and PR titles:
 - **AppCleaner**: App cache and junk cleaning functionality
 - **CorpseFinder**: Finding and removing data from uninstalled apps
 - **SystemCleaner**: System-wide file cleaning with configurable filters
@@ -25,18 +25,27 @@ Use these prefixes to categorize commits by SD Maid SE's cleaning tools:
 - **General**: Cross-cutting concerns, architecture, build system
 - **Fix**: Bug fixes that don't fit a specific module
 
-## Title Guidelines
+## Commit Title Guidelines
 
-- **Keep user-friendly**: Titles appear in changelogs, so make them understandable to end users
-- **Be specific but concise**: Describe what the user will experience, not internal implementation details
-- **Use action words**: "Fix", "Add", "Improve", "Update", "Remove"
+Commit titles are for **developers** reading `git log`. They can be technical and reference internal names.
 
-## Examples
+- **Be clear and descriptive**: Describe what was actually changed in the code
+- **Use action words**: "Fix", "Add", "Improve", "Update", "Remove", "Refactor"
+- **Technical references are fine**: Class names, method names, and implementation details are acceptable
 
-### Good Examples
+### Commit Examples
 
 ```
-AppCleaner: Fix automation issues on HyperOS/MIUI devices
+Fix: Use vmScope instead of viewModelScope for error handling
+
+Replace viewModelScope with vmScope in PickerViewModel and 5 other
+ViewModels using DynamicStateFlow. The vmScope includes a
+CoroutineExceptionHandler that routes errors to errorEvents instead
+of crashing the app.
+```
+
+```
+AppCleaner: Fix MODE_DEFAULT handling in RealmeSpecs
 
 When checking if the Security Center app has PACKAGE_USAGE_STATS permission,
 MODE_DEFAULT was incorrectly treated as "permission denied"...
@@ -44,29 +53,43 @@ MODE_DEFAULT was incorrectly treated as "permission denied"...
 Closes #1827
 ```
 
+## Pull Request Titles
+
+PR titles use the same module prefixes as commits. Title rules (ELI5, user-facing language) are enforced by the devtools
+PR skill.
+
+## Pull Request Description Format
+
+### What changed
+
+User-friendly explanation of what this PR does. Describe the problem that was fixed or the feature that was added from
+the user's perspective. No internal class or method names.
+
+For non-user-facing PRs (refactors, tests, CI, dependency bumps): write "No user-facing behavior change" followed by a
+brief internal description.
+
+### Developer TLDR
+
+Brief technical summary for developers reviewing the code. Can reference class names, methods, and implementation
+details. Keep it scannable with bullet points.
+
+### Example
+
+```markdown
+## What changed
+
+Fixed a crash that could happen when browsing files on devices without root or ADB access.
+
+## Developer TLDR
+
+- `viewModelScope` → `vmScope` in PickerViewModel and 5 DynamicStateFlow usages
+- `vmScope` includes CoroutineExceptionHandler that routes to errorEvents instead of crashing
+- Narrowed `catch(Exception)` to `catch(IOException)` to avoid swallowing CancellationException
+- Added ViewModel2ScopeTest regression test
 ```
-CorpseFinder: Improve detection of leftover app data
 
-Enhanced the detection algorithm to better identify remnant files...
+## Conventions
 
-Fixes #1234
-```
-
-### Bad Examples
-
-```
-Fix: Correct API level check in RealmeSpecs
-```
-*Too technical for changelog, should be "AppCleaner: Fix cache deletion on Realme devices"*
-
-```
-Handle AppOpsManager MODE_DEFAULT in security center permission check
-```
-*No module prefix, too technical for users*
-
-## Technical Details
-
-- **Body**: Include technical implementation details that developers need
 - **Issue references**: Use "Closes #123", "Fixes #123", or "Resolves #123"
 - **Breaking changes**: Mark with "BREAKING:" prefix if applicable
 - **Co-authors**: Use "Co-authored-by:" for pair programming
