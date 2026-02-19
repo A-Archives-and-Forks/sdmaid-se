@@ -2,7 +2,8 @@
 
 # SD Maid 2/SE
 
-[![API](https://img.shields.io/badge/API-26%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=26)
+[![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/d4rken-org/sdmaid-se?include_prereleases)](https://github.com/d4rken-org/sdmaid-se/releases/latest)
+[![RB Status](https://shields.rbtlog.dev/simple/eu.darken.sdmse)](https://shields.rbtlog.dev/eu.darken.sdmse)
 [![Crowdin](https://badges.crowdin.net/sdmaid-se/localized.svg)](https://crowdin.com/project/sdmaid-se)
 [![Code tests & eval](https://img.shields.io/github/actions/workflow/status/d4rken-org/sdmaid-se/code-checks.yml?logo=githubactions&label=Code%20tests
 )](https://github.com/d4rken-org/sdmaid-se/actions)
@@ -24,6 +25,8 @@ Features include:
 * Controlling/disabling apps (AppControl)
 * Storage overview (StorageAnalyzer)
 * Find duplicate data (Deduplicator)
+* Image compression (Media Squeeze)
+* Swipe assisted deletion (Swiper)
 * Root and Shizuku support
 
 [SD Maid SE](https://github.com/d4rken-org/sdmaid-se) is the successor
@@ -52,6 +55,7 @@ sponsor ❤️.
 
 * Upgrade to **SD Maid SE Pro** on [Google Play](https://play.google.com/store/apps/details?id=eu.darken.sdmse)
 * [Become a sponsor](https://github.com/sponsors/d4rken) on GitHub
+* [Buy me a coffee](https://buymeacoffee.com/tydarken) ☕
 
 ## Get help
 
