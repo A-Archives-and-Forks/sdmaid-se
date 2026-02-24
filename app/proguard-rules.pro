@@ -1,5 +1,8 @@
 -dontobfuscate
 
+# Play Core KTX references this compile-time-only GMS annotation not on the runtime classpath
+-dontwarn com.google.android.gms.common.annotation.NoNullnessRewrite
+
 # Prevent R8 from merging exception classes, which masks real exception types in crash reports
 -keep,allowshrinking class * extends java.lang.Throwable
 
